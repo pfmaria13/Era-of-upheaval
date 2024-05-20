@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: Mont-italic;
+    src: url("../fonts/MontBoldItalic.ttf");
+}
+
+@font-face {
     font-family: BogartTrial;
     src: url("../fonts/Bogart-Regular-trial.ttf");
 }
@@ -27,7 +32,7 @@ body {
 
 .site-header {
     display: flex;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
     justify-content: space-between;
 }
 
@@ -56,11 +61,15 @@ body {
 }
 
 .preface {
+    padding-bottom: 43px;
     display: flex;
     column-gap: 50px;
     padding-left: 40px;
+    padding-top: 48px;
 }
 .preface-content {
+    display: flex;
+    flex-direction: column;
     padding-right: 155px;
 }
 .preface-heading {
@@ -76,12 +85,36 @@ body {
     padding-bottom: 8px;
 }
 
+.preface-text-last {
+    font-size: 24px;
+    line-height: 30.67px;
+    padding-bottom: 16px;
+}
+
 .preface-bold {
-    font-family: Mont-bold;
+    font-family: Mont-italic;
     font-weight: 700;
     font-size: 24px;
     font-style: italic;
     line-height: 30.67px;
-    padding-top: 10px;
-    padding-left: 25px;
+    padding-bottom: 16px;
+    padding-left: 32px;
 }
+
+.button-next {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.button-next-text {
+    position: absolute;
+    top: 0;
+    font-size: 32px;
+    color: white;
+    font-style: normal;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.44px;
+}
+
