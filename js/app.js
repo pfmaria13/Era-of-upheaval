@@ -2,8 +2,8 @@ let btnPage1 = document.querySelector(".button-next");
 let page2 = document.querySelector(".page2");
 let btnPage2Choice1 = document.querySelector(".button-page2-choice1");
 let page3Choice1 = document.querySelector(".page3-choice1");
-let btnPage2Choice2 = document.querySelector(".button-page2-choice2")
-let page3Choice2 = document.querySelector(".page3-choice2")
+let btnPage2Choice2 = document.querySelector(".button-page2-choice2");
+let page3Choice2 = document.querySelector(".page3-choice2");
 
 
 btnPage1.addEventListener("click", () => {
