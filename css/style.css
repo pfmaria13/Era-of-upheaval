@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: Mont-Semibold;
+    src: url("../fonts/MontSemiBold.ttf");
+}
+
+@font-face {
     font-family: Mont-italic;
     src: url("../fonts/MontBoldItalic.ttf");
 }
@@ -31,9 +36,12 @@ body {
 }
 
 .site-header {
+    background: white;
     display: flex;
     padding: 40px 40px 0 40px;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -60,17 +68,44 @@ body {
     line-height: 31.2px;
 }
 
+.play-again {
+    margin-top: 19px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 216px;
+    height: 47px;
+    background-image: url("../img/play-again.png");
+    font-size: 24px;
+    color: #5F44C9;
+    font-family: Mont-Semibold;
+    transition: 0.7s;
+}
+
+.play-again:hover {
+    background-image: url("../img/play-again-hover.png");
+    color: white;
+}
+
+.preface-bar {
+    position: fixed;
+    top: 0;
+    width: 64px;
+    height: 808px;
+    margin: 173px 0 0 40px;
+}
+
 .preface {
     padding-bottom: 43px;
     display: flex;
     column-gap: 50px;
-    padding-left: 40px;
-    padding-top: 48px;
+
 }
 .preface-content {
     display: flex;
     flex-direction: column;
-    padding-right: 155px;
+    padding: 48px 150px 0 155px;
 }
 .preface-heading {
     line-height: 40.9px;
@@ -106,15 +141,162 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+    width: 171px;
+    height: 57px;
+    background-image: url("../img/button-next.png");
+    transition: 0.7s;
+}
+
+.button-next:hover {
+    background-image: url("../img/button-next-hover.png");
 }
 
 .button-next-text {
     position: absolute;
-    top: 0;
+    top: 8px;
     font-size: 32px;
     color: white;
-    font-style: normal;
-    line-height: 150%; /* 30px */
-    letter-spacing: -0.44px;
 }
 
+.button-next-div {
+    display: flex;
+    justify-content: center;
+}
+.page2 {
+    padding-top: 300px;
+    padding-bottom: 43px;
+    display: none;
+    column-gap: 50px;
+    padding-left: 40px;
+}
+
+.page2-content {
+    padding-left: 155px;
+}
+
+.page2-text1 {
+    padding-top: 122.5px;
+}
+
+.page2-text {
+    font-size: 24px;
+    padding-bottom: 8px;
+    width: 682px;
+}
+
+.button-page2-choice1 {
+    margin-top: 52px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url("img/page2-choice1.png");
+    width: 557px;
+    height: 157px;
+    filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
+}
+
+.button-page2-choice1 {
+    filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
+}
+
+.text-page2-choice1 {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 461px;
+    height: 93px;
+    font-size: 24px;
+    color: #2D1D38;
+    text-indent: -25px;
+}
+
+.button-page2-choice2 {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.img-page2-choice2 {
+    filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
+}
+
+.text-page2-choice2 {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 461px;
+    height: 62px;
+    font-size: 24px;
+    color: #2D1D38;
+    text-indent: 35px;
+    margin-left: 10px;
+}
+
+.page2-img {
+    padding-right: 40px;
+}
+
+.bar-page2 {
+    top: 0;
+    position: fixed;
+    width: 64px;
+    height: 808px;
+    margin: 173px 0 0 0;
+}
+
+.page3-choice1 {
+    padding-top: 400px;
+    display: none;
+    column-gap: 50px;
+    padding-left: 40px;
+}
+
+.page3-content-choice1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-page3-choice1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page3-choice1-img {
+    width: 951px;
+    height: 572.14px;
+    padding-top: 22.86px;
+}
+
+.page3-text1-choice1 {
+    font-size: 24px;
+    padding: 72px 155px 8px 0;
+}
+
+.page3-text2-choice1 {
+    font-size: 24px;
+    width: 442px;
+}
+
+.button-page3-choice1 {
+    margin-top: 119px;
+}
+
+
+.page3-choice2 {
+    padding-top: 400px;
+    display: none;
+    column-gap: 50px;
+    padding-left: 40px;
+}
+
+.button-page3-choice2 {
+    margin-top: 112px;
+}
+
+.page3-text2-choice2 {
+    font-size: 24px;
+    width: 672px;
+}
