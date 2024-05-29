@@ -21,19 +21,18 @@
     </header>
     <main>
         <ol class="progress-bar">
-            <li class="is-active"><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
+            <li class="li1 is-active"><span></span></li>
+            <li class="li2 in-progress"><span></span></li>
+            <li class="li3"><span></span></li>
+            <li class="li4"><span></span></li>
+            <li class="li5"><span></span></li>
+            <li class="li6"><span></span></li>
+            <li class="li7"><span></span></li>
+            <li class="li8"><span></span></li>
+            <li class="li9"><span></span></li>
         </ol>
         <section class="noble">
             <div class="preface">
-<!--                <img src="img/bar.png" alt="Шкала этапов" class="preface-bar">-->
                 <div class="preface-content">
                     <p class="preface-heading">Предисловие</p>
                     <p class="preface-text">На дворе – последнее десятилетие XIX столетия. Дворянин Иван Александрович Райский живет в Петербурге, лишь изредка навещая свое уральское поместье и завод, в то время как дела ведет старый управляющий, нанятый еще при отце Ивана Александровича.</p>
@@ -45,14 +44,11 @@
                     <p class="preface-bold">Желаю Вам здоровья и всех благ. Собираетесь ли вы приехать в этом году? Может быть, мастера какого столичного с собой привезли бы, чтоб оборудование проверил, а то, глядишь, снова простои будут.</p>
                     <p class="preface-bold">С наилучшими пожеланиями, преданный Вам, Иннокентий”. </p>
                     <div class="button-next-div">
-                        <button class="button-next button-page1" id="button-next1" onclick="viewDiv()">
-                            <p class="button-next-text">Далее</p>
-                        </button>
+                        <button class="button-next button-page1">Далее</button>
                     </div>
                 </div>
             </div>
             <div class="page2" id="page2">
-                <img src="img/bar2.png" alt="Шкала этапов" class="bar-page2">
                 <div class="page2-content">
                     <p class="page2-text page2-text1">Иван Александрович перечитал письмо дважды
                         и понял, что пора посетить свои уральские владения. Однако в Петербурге оставались еще некоторые дела, которые также надо было уладить.</p>
@@ -68,47 +64,146 @@
                 </div>
                 <img src="img/page2-img.png" alt="Изображение" class="page2-img">
             </div>
+
             <div class="page3-choice1">
-                <img src="img/bar2.png" alt="Шкала этапов" class="bar2">
-                <div class="page3-content-choice1">
-                    <p class="page3-text1-choice1">Иван Александрович приезжает на Урал. Оказывается, дела на заводе идут хуже, чем он ожидал. Тем не менее, управляющий успел подготовить поместье к его приезду, а также предупредить рабочих и прислугу. Так как Иван Александрович приехал так скоро,
-                        у него есть возможность сразу заняться делами завода.</p>
-                    <div class="row-page3-choice1">
-                        <div class="left-page3-choice1">
-                            <p class="page3-text2-choice1">Кроме того, по совету управляющего он решает привезти с собой столичного мастера, чтобы тот осмотрел оборудование, а значит теперь дела завода начнут постепенно налаживаться.</p>
-                            <div class="button-next-div">
-                                <button class="button-next button-page3-choice1">
-                                    <p class="button-next-text">Далее</p>
-                                </button>
-                            </div>
+                <p class="page3-text1">Иван Александрович приезжает на Урал. Оказывается, дела на заводе идут хуже, чем он ожидал. Тем не менее, управляющий успел подготовить поместье к его приезду, а также предупредить рабочих и прислугу. Так как Иван Александрович приехал так скоро,
+                    у него есть возможность сразу заняться делами завода.</p>
+                <div class="row-page3">
+                    <div class="left-page3-choice1">
+                        <p class="page3-text2-choice1">Кроме того, по совету управляющего он решает привезти с собой столичного мастера, чтобы тот осмотрел оборудование, а значит теперь дела завода начнут постепенно налаживаться.</p>
+                        <div class="button-next-div">
+                            <button class="button-next button-page3-choice1">Далее</button>
                         </div>
-                        <img src="img/page3-choice1-img.png" alt="Изображение" class="page3-choice1-img">
                     </div>
+                    <img src="img/page3-choice1-img.png" alt="Изображение" class="page3-choice1-img">
                 </div>
             </div>
             <div class="page3-choice2">
-                <img src="img/bar2.png" alt="Шкала этапов" class="bar2">
-                <div class="page3-content-choice1">
-                    <p class="page3-text1-choice1">Денег, которые посылает управляющий, не хватает на то, чтобы вести привычный образ жизни. Кроме того, Иван Александрович уже успел залезть в долги в столице, поэтому решает вернуться на Урал и заняться делами завода.</p>
-                    <div class="row-page3-choice1">
-                        <div class="left-page3-choice1">
-                            <p class="page3-text2-choice2">Он приезжает без предупреждения: дом оказывается не готов, а прислугу управляющий распустил, чтобы сократить расходы.</p>
-                            <p class="page3-text2-choice2">Когда он едет смотреть завод, оказывается,
-                                что рабочих на заводе осталось мало, а работать
-                                им приходится на износ. Оборудование выходит
-                                из строя все чаще, и за его ремонт приходится платить все больше.</p>
-                            <div class="button-next-div">
-                                <button class="button-next button-page3-choice2">
-                                    <p class="button-next-text">Далее</p>
-                                </button>
-                            </div>
+                <p class="page3-text1">Денег, которые посылает управляющий, не хватает на то, чтобы вести привычный образ жизни. Кроме того, Иван Александрович уже успел залезть в долги в столице, поэтому решает вернуться на Урал и заняться делами завода.</p>
+                <div class="row-page3">
+                    <div class="left-page3">
+                        <p class="page3-text2-choice2">Он приезжает без предупреждения: дом оказывается не готов, а прислугу управляющий распустил, чтобы сократить расходы.</p>
+                        <p class="page3-text3-choice2">Когда он едет смотреть завод, оказывается,
+                            что рабочих на заводе осталось мало, а работать
+                            им приходится на износ. Оборудование выходит
+                            из строя все чаще, и за его ремонт приходится платить все больше.</p>
+                        <div class="button-next-div">
+                            <button class="button-next button-page3-choice2">Далее</button>
                         </div>
-                        <img src="img/page3-choice2-img.png" alt="Изображение" class="page3-choice1-img">
                     </div>
+                    <img src="img/page3-choice2-img.png" alt="Изображение" class="page3-choice1-img">
                 </div>
             </div>
-
-
+            <div class="page4">
+                <p class="page4-text">Ивану Александровичу, отвыкшему от уральских мест, надо бы освоиться в городе, вспомнив родные места. Он решает прогуляться по Екатеринбургу, посмотрев на то, как изменился уездный центр
+                    за время его отсутствия. </p>
+                <p class="page4-text">Куда же ему пойти?</p>
+                <div class="page4-bottom-content">
+                    <div class="page4-choices">
+                        <button class="page4-choice1 choice">В Нуровский сквер</button>
+                        <button class="page4-choice2 choice">В Харитоновский сад</button>
+                        <button class="page4-choice3 choice">В магазин Штроля, чтобы взять<br>велосипед напрокат и проехаться<br>по большей части города</button>
+                    </div>
+                    <img src="img/page4-img.png" alt="" class="page4-img">
+                </div>
+            </div>
+            <div class="page5-choice1-2">
+                <p class="page5-text">Иван Александрович прогуливается по скверу, удивляясь,
+                    как похорошели родные сердцу места.</p>
+                <div class="page5-bottom">
+                    <button class="button-next button-page5 button-page5-1">Далее</button>
+                    <img src="img/page5-img.png" alt="" class="page5-img">
+                </div>
+            </div>
+            <div class="page5-choice3">
+                <p class="page5-text">Иван Александрович едет на велосипеде, поражаясь, как похорошел город за время его отсутствия.</p>
+                <div class="page5-bottom">
+                    <button class="button-next button-page5 button-page5-2">Далее</button>
+                    <img src="img/page5-img.png" alt="" class="page5-img">
+                </div>
+            </div>
+            <div class="page6">
+                <div class="page6-left">
+                    <p class="page6-text">С приездом хозяина дела на заводе идут лучше. Рабочие трудятся усерднее, надеясь на прибавку к жалованию,
+                        но ремонтные работы требуют больших финансовых затрат,
+                        и для того, чтобы улучшить финансовое состояние, Иван Александрович решает:</p>
+                    <button class="page6-choice1 choice">Сдать комнату в своем доме</button>
+                    <button class="page6-choice2 choice">Продать завод</button>
+                    <button class="page6-choice3 choice">Полностью обновить оборудование на заводе</button>
+                </div>
+                <img src="img/page6-img.png" alt="" class="page6-img">
+            </div>
+            <div class="page7-choice1">
+                <div class="page7-choice13-left">
+                    <p class="page7-choice13-text">На объявление Ивана Александровича откликнулся студент Уральского горного училища. Платит он, конечно, немного, но любая копейка в данной ситуации лишней не будет. Тем не менее,
+                        на финансовое состояние молодого дворянина
+                        это не особо влияет.</p>
+                    <button class="button-next button-page7-choice1">Далее</button>
+                </div>
+                <img src="img/page7-choice1-img.png" alt="" class="page7-choice1-img">
+            </div>
+            <div class="page7-choice2">
+                <p class="page7-choice2-text page7-choice2-text1">Так как завод, принадлежащий Ивану Александровичу, мягко говоря, убыточный, ему пришлось долго искать того, кто был бы готов купить сие предприятие. </p>
+                <div class="page7-choice2-content">
+                    <div class="page7-choice2-left">
+                        <p class="page7-choice2-text">В итоге дворянин продал его на аукционе по довольно низкой цене. Теперь у Ивана Александровича есть деньги, но нет постоянного источника дохода. </p>
+                        <p class="page7-choice2-text">С этими деньгами он возвращается в Петербург, чтобы ненадолго продолжить беззаботную светскую жизнь. В спешке он собирает чемоданы, чтобы навсегда покинуть уральские места…</p>
+                        <p class="page7-choice2-text2">К сожалению, вы проиграли.</p>
+                        <button class="button-play-again">Начать заново</button>
+                    </div>
+                    <img src="img/page7-choice2-img.png" alt="" class="page7-choice2-img">
+                </div>
+            </div>
+            <div class="page7-choice3">
+                <div class="page7-choice13-left">
+                    <p class="page7-choice13-text">Вложение денег оказалось грамотным решением,
+                        и, хотя в данный момент Ивану Александровичу пришлось взять заем в банке, чтобы полностью оплатить новое оборудование, в дальнейшем завод станет перспективным предприятием. Кроме того, это значительно повысило престиж молодого дворянина среди светских кругов Урала.</p>
+                    <button class="button-next button-page7-choice3">Далее</button>
+                </div>
+                <img src="img/page7-choice3-img.png" alt="" class="page7-choice3-img">
+            </div>
+            <div class="page8">
+                <p class="page8-text1">Иван Александрович узнает, что вечером в благородном собрании  будет бал. Он решает посетить его, верно полагая, что это хорошая возможность заявить о себе. </p>
+                <div class="page8-content">
+                    <div class="page8-left">
+                        <p class="page8-text">На балу присутствуют известные и уважаемые люди города. Поговорив с ними, Иван Александрович понял, что пора попробовать себя в чем-то новом, чтобы не отставать от предпринимателей и улучшить свое финансовое положение
+                            и престиж в городе. </p>
+                        <p class="page8-text">Чем же заняться?</p>
+                        <button class="page8-choice1 choice">Построить мукомольный завод</button>
+                        <button class="page8-choice2 choice">Выкупить кондитерский магазин</button>
+                        <button class="page8-choice3 choice">Открыть шляпную мастерскую</button>
+                    </div>
+                    <img src="img/page8-img.png" alt="" class="page8-img">
+                </div>
+            </div>
+            <div class="page9-choice1">
+                <p class="page9-text">Прозорливый выбор! </p>
+                <p class="page9-text">Предприятие приносит хороший доход, а Ивана Александровича стали приглашать на съезды мукомолов, престиж дворянина в городе значительно возрос.</p>
+                <div class="page9-bottom">
+                    <button class="button-next button-page9 button-page9-choice1">Далее</button>
+                    <img src="img/page9-choice1-img.png" alt="" class="page9-choice1-img">
+                </div>
+            </div>
+            <div class="page9-choice2">
+                <p class="page9-text">Иван Александрович, к сожалению, не учел множество факторов. Его предприятие не приносит ожидаемого дохода, так как ему сложно конкурировать с магазином Афониных , который уже пользуется известностью
+                    и популярностью у клиентов.</p>
+                <p class="page9-text page9-choice2-text">Несмотря на это, покупка кондитерского магазина стоила Ивану Александровичу недорого, и он сумел сохранить привычный достаток.</p>
+                <div class="page9-bottom">
+                    <button class="button-next button-page9 button-page9-choice2">Далее</button>
+                    <img src="img/page9-choice2-img.png" alt="" class="page9-choice2-img">
+                </div>
+            </div>
+            <div class="page9-choice3">
+                <p class="page9-text">Иван Александрович явно поторопился с выбором и плохо изучил конъюнктуру рынка уездной столицы. Хотя спрос на шляпы среди модников и модниц велик, хорошего дохода магазин не приносит: в Екатеринбурге уже есть порядка 10 шляпных мастерских. Молодой дворянин быстро теряет деньги. </p>
+                <p class="page9-text">Его предприятия терпят крах, а сам он разоряется…</p>
+                <div class="page9-choice3-bottom">
+                    <div class="page9-choice3-left">
+                        <p class="page9-text2">К сожалению, вы проиграли.</p>
+                        <button class="button-play-again">Начать заново</button>
+                    </div>
+                    <img src="img/page9-choice3-img.png" alt="" class="page9-choice3-img">
+                </div>
+            </div>
         </section>
 
 
