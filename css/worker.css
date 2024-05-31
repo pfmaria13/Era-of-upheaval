@@ -184,7 +184,8 @@ p {
 
 .page2-buttons {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    column-gap: 8%;
     padding-top: 64px;
 }
 
@@ -228,6 +229,7 @@ p {
 
 .page4-buttons {
     display: flex;
+    justify-content: space-between;
 }
 
 .page4-choice1, .page4-choice2{
@@ -304,6 +306,8 @@ p {
 .page6-buttons {
     display: flex;
     padding-top: 56px;
+    column-gap: 10%;
+    padding-right: 40px;
 }
 
 .page6-choice1 {
@@ -566,6 +570,7 @@ p {
 .page12-buttons {
     display: flex;
     padding-top: 56px;
+    justify-content: space-between;
 }
 
 .page12-choice1 {
@@ -663,6 +668,7 @@ p {
 .page14-buttons {
     display: flex;
     padding-top: 56px;
+    justify-content: space-between;
 }
 
 .page14-choice1 {
