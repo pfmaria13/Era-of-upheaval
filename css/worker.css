@@ -80,7 +80,7 @@
     bottom: -4px;
     left: -72px;
     z-index: 2;
-    background: linear-gradient(to right, #6C6174, #5F44C9);
+    background: linear-gradient(to right, #6C6174, #986CCF);
     height: 4px;
 }
 
@@ -94,7 +94,7 @@
     left: -72px;
     z-index: 2;
     height: 4px;
-    background: linear-gradient(to right, #5F44C9, #2D1D38);
+    background: linear-gradient(to right, #986CCF, #2D1D38);
 }
 
 .progress-bar .is-complete:before {
@@ -120,8 +120,8 @@
 }
 
 .progress-bar .is-active:before {
-    background-color: #5F44C9;
-    border-color: #5F44C9;
+    background-color: #986CCF;
+    border-color: #986CCF;
     transform: scale(1.3);
 }
 
