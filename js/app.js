@@ -35,6 +35,18 @@ btnRulesMain.addEventListener("click", () => {
 });
 
 btnPeasant.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+
     document.location='peasant.html';
 });
 
@@ -55,9 +67,33 @@ btnNoble.addEventListener("click", () => {
 });
 
 btnMerchant.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/merchant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+
     document.location='merchant.html';
 });
 
 btnWorker.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+
     document.location='worker.html';
 });
