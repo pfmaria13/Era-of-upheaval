@@ -35,17 +35,29 @@ btnRulesMain.addEventListener("click", () => {
 });
 
 btnPeasant.addEventListener("click", () => {
-    setTimeout(() => {mainChoice.style.display = "none"},700);
+    document.location='peasant.html';
 });
 
 btnNoble.addEventListener("click", () => {
-    setTimeout(() => {mainChoice.style.display = "none"},700);
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+
+    document.location='noble.html';
 });
 
 btnMerchant.addEventListener("click", () => {
-    setTimeout(() => {mainChoice.style.display = "none"},700);
+    document.location='merchant.html';
 });
 
 btnWorker.addEventListener("click", () => {
-    setTimeout(() => {mainChoice.style.display = "none"},700);
+    document.location='worker.html';
 });
