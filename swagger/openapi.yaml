@@ -1,0 +1,129 @@
+openapi: 3.0.3
+info:
+  title: >-
+    Онлайн-ресурс - "Человек в эпоху потрясений, Урал на рубеже XIX-XX веков" -
+    OpenAPI 3.0
+  description: >-
+    Документация состоит из описанных запросов к базе данных при изменении
+    содержимого таблиц в ходе прохождения квеста, а также при аутентификации
+    администратора для просмотра статистики прохождения квеста.
+
+    - [Репозиторий онлайн-ресурса](https://github.com/pfmaria13/Era-of-upheaval)
+  version: 1.0.0
+servers:
+  - url: https://d390e552fd3a.hosting.myjino.ru/
+tags:
+  - name: database
+    description: Изменение данных БД
+  - name: administration
+    description: Аутентификация администратора и просмотр статистики БД
+paths:
+  /database/updateGames:
+    put:
+      tags:
+        - database
+      summary: Увеличение сыгранных игр за конкретного персонажа
+      description: Увеличение сыгранных игр за конкретного персонажа
+      operationId: updateGames
+      requestBody:
+        description: Обновление показателя сыгранных игр за конкретного персонажа
+        content:
+          SQLite:
+            schema:
+              $ref: '#/components/schemas/DatabaseUpdateGames'
+        required: true
+      responses:
+        '200':
+          description: Данные успешно обновлены
+        '400':
+          description: Некорректный запрос
+  /database/updateWins:
+    put:
+      tags:
+        - database
+      summary: Увеличение количества побед за конкретного персонажа
+      description: Увеличение количества побед за конкретного персонажа
+      operationId: updateWins
+      requestBody:
+        description: Обновление показателя побед за конкретного персонажа
+        content:
+          SQLite:
+            schema:
+              $ref: '#/components/schemas/DatabaseUpdateWins'
+        required: true
+      responses:
+        '200':
+          description: Данные успешно обновлены
+        '400':
+          description: Некорректный запрос
+  /database/updateDefeats:
+    put:
+      tags:
+        - database
+      summary: Увеличение количества поражений за конкретного персонажа
+      description: Увеличение количества поражений за конкретного персонажа
+      operationId: updateDefeats
+      requestBody:
+        description: Обновление показателя поражений за конкретного персонажа
+        content:
+          SQLite:
+            schema:
+              $ref: '#/components/schemas/DatabaseUpdateDefeats'
+        required: true
+      responses:
+        '200':
+          description: Данные успешно обновлены
+        '400':
+          description: Некорректный запрос
+  /administration/authentication:
+    post:
+      tags:
+        - administration
+      summary: Аутентификация администратора
+      description: Аутентификация администратора
+      operationId: administrationAuthentication
+      requestBody:
+        description: Аутентификация администратора в админ-панели
+        content:
+          json:
+            schema:
+              $ref: '#/components/schemas/AdministrationAuthentication'
+        required: true
+      responses:
+        '200':
+          description: Успешная аутентификация
+        '404':
+          description: Нет доступа
+  /administration/stats:
+    get:
+      tags:
+        - administration
+      summary: Просмотр статистики квеста
+      operationId: administrationStats
+      description: >-
+        Просмотр статистики квеста в админ-панели (будет представлен в виде
+        дашбордов)
+      responses:
+        '200':
+          description: Запрос успешно обработан
+        '404':
+          description: Нет доступа
+components:
+  schemas:
+    DatabaseUpdateGames:
+      type: string
+      example: UPDATE statistics SET Games = Games + 1 WHERE Name = "Noble"
+    DatabaseUpdateWins:
+      type: string
+      example: UPDATE statistics SET Wins = Wins + 1 WHERE Name = "Noble"
+    DatabaseUpdateDefeats:
+      type: string
+      example: UPDATE statistics SET Defeats = Defeats + 1 WHERE Name = "Noble"
+    AdministrationAuthentication:
+      type: object
+      example:
+        login: admin
+        password: '********'
+    AdministrationStats:
+      type: string
+      example: На сайте будет представлен дашборд со статистикой
