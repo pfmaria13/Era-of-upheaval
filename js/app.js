@@ -35,17 +35,17 @@ btnRulesMain.addEventListener("click", () => {
 });
 
 btnPeasant.addEventListener("click", () => {
-    setTimeout(() => {mainChoice.style.display = "none"},700);
+
 });
 
 btnNoble.addEventListener("click", () => {
-    setTimeout(() => {mainChoice.style.display = "none"},700);
+    document.location='noble.html';
 });
 
 btnMerchant.addEventListener("click", () => {
-    setTimeout(() => {mainChoice.style.display = "none"},700);
+
 });
 
 btnWorker.addEventListener("click", () => {
-    setTimeout(() => {mainChoice.style.display = "none"},700);
+    document.location='worker.html';
 });
