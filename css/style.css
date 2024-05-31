@@ -155,6 +155,7 @@ body {
 
 .rules-bottom {
     display: flex;
+    justify-content: space-between;
 }
 
 .rules-play {
