@@ -6,23 +6,8 @@
 }
 
 @font-face {
-    font-family: Mont-bold;
-    src: url("../fonts/Mont-bold.ttf");
-}
-
-@font-face {
     font-family: Mont-Semibold;
     src: url("../fonts/MontSemiBold.ttf");
-}
-
-@font-face {
-    font-family: Mont-italic;
-    src: url("../fonts/MontBoldItalic.ttf");
-}
-
-@font-face {
-    font-family: BogartTrial;
-    src: url("../fonts/Bogart-Regular-trial.ttf");
 }
 
 @font-face {
@@ -118,6 +103,7 @@ body {
     filter: drop-shadow(0 0 30px rgba(45,29,56,0.2));
     border-radius: 24px;
     background-color: white;
+    font-size: 24px;
 }
 
 .choice:hover {
@@ -189,9 +175,17 @@ p {
     padding-top: 64px;
 }
 
-.page2-choice1, .page2-choice2 {
+.page2-choice1 {
     width: 557px;
     height: 188px;
+    text-align: left;
+    padding: 47px 48px 47px 48px;
+}
+.page2-choice2 {
+    width: 557px;
+    height: 188px;
+    text-align: left;
+    padding: 32px 48px 32px 48px;
 }
 
 .page2-choice2 {
@@ -230,12 +224,21 @@ p {
 .page4-buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: 24px;
 }
 
-.page4-choice1, .page4-choice2{
+.page4-choice1 {
     width: 557px;
     height: 498px;
-    margin-top: 24px;
+    text-align: left;
+    padding: 32px 48px 32px 48px;
+}
+
+.page4-choice2{
+    width: 557px;
+    height: 498px;
+    text-align: left;
+    padding: 110px 48px 110px 48px;
 }
 
 .page4-choice1 {
