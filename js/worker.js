@@ -9,8 +9,8 @@ let btnPage3Choice1 = document.querySelector(".button-page3-choice1");
 let btnPage3Choice2 = document.querySelector(".button-page3-choice2");
 let page4 = document.querySelector(".page4");
 
-let btnPage4Choice1 = document.querySelector(".page4-choice1");
-let btnPage4Choice2 = document.querySelector(".page4-choice2");
+let btnPage4Choice1 = document.querySelector(".button-page4-choice1");
+let btnPage4Choice2 = document.querySelector(".button-page4-choice1");
 let page5Choice1 = document.querySelector(".page5-choice1");
 let page5Choice2 = document.querySelector(".page5-choice2");
 
