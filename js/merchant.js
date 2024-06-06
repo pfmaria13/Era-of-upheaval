@@ -28,6 +28,42 @@ let btnPage7Choice1 = document.querySelector(".button-page7-choice1");
 let btnPage7Choice2 = document.querySelector(".button-page7-choice2");
 let btnPage7Choice3 = document.querySelector(".button-page7-choice3");
 let page8 = document.querySelector(".page8");
+let btnPage8Choice1 = document.querySelector(".button-page8-choice1");
+let btnPage8Choice2 = document.querySelector(".button-page8-choice2");
+let page9Choice1 = document.querySelector(".page9-choice1");
+let page9Choice2 = document.querySelector(".page9-choice2");
+let btnPage9Choice1 = document.querySelector(".button-page9-choice1");
+let btnPage9Choice2 = document.querySelector(".button-page9-choice2");
+let page10 = document.querySelector(".page10");
+let btnPage10Choice1 = document.querySelector(".button-page10-choice1");
+let btnPage10Choice2 = document.querySelector(".button-page10-choice2");
+let page11Choice1 = document.querySelector(".page11-choice1");
+let page11Choice2 = document.querySelector(".page11-choice2");
+let btnPage11Choice1 = document.querySelector(".button-page11-choice1");
+let btnPage11Choice2 = document.querySelector(".button-page11-choice2");
+let page12 = document.querySelector(".page12");
+let btnPage12Choice1 =  document.querySelector(".button-page12-choice1");
+let btnPage12Choice2 =  document.querySelector(".button-page12-choice2");
+let btnPage12Choice3 =  document.querySelector(".button-page12-choice3");
+let page13 = document.querySelector(".page13");
+let btnPage13 = document.querySelector(".button-page13");
+let page14 = document.querySelector(".page14");
+let btnPage14Choice1 =  document.querySelector(".button-page14-choice1");
+let btnPage14Choice2 =  document.querySelector(".button-page14-choice2");
+let page15Choice1 = document.querySelector(".page15-choice1");
+let page15Choice2 = document.querySelector(".page15-choice2");
+let page16 = document.querySelector(".page16");
+let btnPage16Choice1 = document.querySelector(".button-page16-choice1");
+let btnPage16Choice2 = document.querySelector(".button-page16-choice2");
+let btnPage16Choice3 = document.querySelector(".button-page16-choice3");
+let page17Choice1 = document.querySelector(".page17-choice1");
+let page17Choice2 = document.querySelector(".page17-choice2");
+let page17Choice3 = document.querySelector(".page17-choice3");
+let page18 = document.querySelector(".page18");
+let btnPage17Choice1 = document.querySelector(".button-page17-choice1");
+let btnPage17Choice2 = document.querySelector(".button-page17-choice2");
+let btnPage17Choice3 = document.querySelector(".button-page17-choice3");
+
 
 let li1 = document.querySelector('.li1');
 let li2 = document.querySelector('.li2');
@@ -173,4 +209,159 @@ btnPage7Choice3.addEventListener("click", () => {
     Change_bar(li4, 'is-active', ' is-complete');
     Change_bar(li5, 'in-progress', ' is-active');
     li6.className += ' in-progress';
+});
+
+btnPage8Choice1.addEventListener("click", () => {
+    page9Choice1.style.display = "flex";
+    page9Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page8.style.display = "none"},700);
+});
+
+btnPage8Choice2.addEventListener("click", () => {
+    page9Choice2.style.display = "flex";
+    page9Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page8.style.display = "none"},700);
+});
+
+btnPage9Choice1.addEventListener("click", () => {
+    preface.style.display = "flex";
+    preface.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page9Choice1.style.display = "none"},700);
+
+    li6.classList.remove('in-progress');
+    li5.classList.remove('is-active');
+    li4.classList.remove('is-complete');
+    li3.classList.remove('is-complete');
+    Change_bar(li2, 'is-complete', ' in-progress');
+    Change_bar(li1, 'is-complete', ' is-active');
+});
+
+btnPage9Choice2.addEventListener("click", () => {
+    page10.style.display = "flex";
+    page10.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page9Choice2.style.display = "none"},700);
+    Change_bar(li5, 'is-active', ' is-complete');
+    Change_bar(li6, 'in-progress', ' is-active');
+    li7.className += ' in-progress';
+});
+
+btnPage10Choice1.addEventListener("click", () => {
+    page11Choice1.style.display = "flex";
+    page11Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page10.style.display = "none"},700);
+});
+
+btnPage10Choice2.addEventListener("click", () => {
+    page11Choice2.style.display = "flex";
+    page11Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page10.style.display = "none"},700);
+});
+
+btnPage11Choice1.addEventListener("click", () => {
+    page12.style.display = "flex";
+    page12.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page11Choice1.style.display = "none"},700);
+    Change_bar(li6, 'is-active', ' is-complete');
+    Change_bar(li7, 'in-progress', ' is-active');
+    li8.className += ' in-progress';
+});
+
+btnPage11Choice2.addEventListener("click", () => {
+    page12.style.display = "flex";
+    page12.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page11Choice2.style.display = "none"},700);
+    Change_bar(li6, 'is-active', ' is-complete');
+    Change_bar(li7, 'in-progress', ' is-active');
+    li8.className += ' in-progress';
+});
+
+function ChoicesPage12() {
+    page13.style.display = "flex";
+    page13.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page11Choice2.style.display = "none"},700);
+}
+
+btnPage12Choice1.addEventListener("click", ChoicesPage12);
+btnPage12Choice2.addEventListener("click", ChoicesPage12);
+btnPage12Choice3.addEventListener("click", ChoicesPage12);
+
+btnPage13.addEventListener("click", () => {
+    page14.style.display = "flex";
+    page14.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page13.style.display = "none"},700);
+    Change_bar(li7, 'is-active', ' is-complete');
+    Change_bar(li8, 'in-progress', ' is-active');
+    li9.className += ' in-progress';
+});
+
+btnPage14Choice1.addEventListener("click", () => {
+    page15Choice1.style.display = "flex";
+    page15Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page14.style.display = "none"},700);
+});
+
+btnPage14Choice2.addEventListener("click", () => {
+    page15Choice2.style.display = "flex";
+    page15Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page14.style.display = "none"},700);
+});
+
+page15Choice1.addEventListener("click", () => {
+    page16.style.display = "flex";
+    page16.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page15Choice1.style.display = "none"},700);
+    Change_bar(li8, 'is-active', ' is-complete');
+    Change_bar(li9, 'in-progress', ' is-active');
+    li10.className += ' in-progress';
+});
+
+page15Choice2.addEventListener("click", () => {
+    page16.style.display = "flex";
+    page16.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page15Choice2.style.display = "none"},700);
+    Change_bar(li8, 'is-active', ' is-complete');
+    Change_bar(li9, 'in-progress', ' is-active');
+    li10.className += ' in-progress';
+});
+
+btnPage16Choice1.addEventListener("click", () => {
+    page17Choice1.style.display = "flex";
+    page17Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page16.style.display = "none"},700);
+});
+
+btnPage16Choice2.addEventListener("click", () => {
+    page17Choice2.style.display = "flex";
+    page17Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page16.style.display = "none"},700);
+});
+
+btnPage16Choice3.addEventListener("click", () => {
+    page17Choice3.style.display = "flex";
+    page17Choice3.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page16.style.display = "none"},700);
+});
+
+btnPage17Choice1.addEventListener("click", () => {
+    page18.style.display = "flex";
+    page18.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page17Choice1.style.display = "none"},700);
+    Change_bar(li9, 'is-active', ' is-complete');
+    Change_bar(li10, 'in-progress', ' is-active');
+});
+
+btnPage17Choice2.addEventListener("click", () => {
+    page18.style.display = "flex";
+    page18.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page17Choice2.style.display = "none"},700);
+    Change_bar(li9, 'is-active', ' is-complete');
+    Change_bar(li10, 'in-progress', ' is-active');
+});
+
+btnPage17Choice3.addEventListener("click", () => {
+    page18.style.display = "flex";
+    page18.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page17Choice3.style.display = "none"},700);
+    Change_bar(li9, 'is-active', ' is-complete');
+    Change_bar(li10, 'in-progress', ' is-active');
 });
