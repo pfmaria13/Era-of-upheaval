@@ -6,4 +6,6 @@ if (isset($_POST['action']) && $_POST['action'] == 'update') {
     $db->exec($query);
 
     echo "Данные обновлены.";
+
+    $db->close();
 }
