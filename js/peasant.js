@@ -21,6 +21,40 @@ let page3Choice3 = document.querySelector(".page3-choice3");
 let btnPage3Choice1 = document.querySelector(".button-page3-choice1");
 let btnPage3Choice2 = document.querySelector(".button-page3-choice2");
 let btnPage3Choice3 = document.querySelector(".button-page3-choice3");
+let page4 = document.querySelector(".page4");
+let btnPage4Choice1 = document.querySelector(".button-page4-choice1");
+let btnPage4Choice2 = document.querySelector(".button-page4-choice2");
+let page5Choice1 = document.querySelector(".page5-choice1");
+let page5Choice2 = document.querySelector(".page5-choice2");
+let btnPage5Choice1 = document.querySelector(".button-page5-choice1");
+let btnPage5Choice2 = document.querySelector(".button-page5-choice2");
+let page6 = document.querySelector(".page6");
+let btnPage6Choice1 = document.querySelector(".button-page6-choice1");
+let btnPage6Choice2 = document.querySelector(".button-page6-choice2");
+let page7Choice1 = document.querySelector(".page7-choice1");
+let page7Choice2 = document.querySelector(".page7-choice2");
+let btnPage7Choice1 = document.querySelector(".button-page7-choice1");
+let btnPage7Choice2 = document.querySelector(".button-page7-choice2");
+let page8 = document.querySelector(".page8");
+let btnPage8Choice1 = document.querySelector(".button-page8-choice1");
+let btnPage8Choice2 = document.querySelector(".button-page8-choice2");
+let page9Choice1 = document.querySelector(".page9-choice1");
+let page9Choice2 = document.querySelector(".page9-choice2");
+let btnPage9Choice1 = document.querySelector(".button-page9-choice1");
+let btnPage9Choice2 = document.querySelector(".button-page9-choice2");
+let page10 = document.querySelector(".page10");
+let btnPage10Choice1 = document.querySelector(".button-page10-choice1");
+let btnPage10Choice2 = document.querySelector(".button-page10-choice2");
+let page11Choice1 = document.querySelector(".page11-choice1");
+let page11Choice2 = document.querySelector(".page11-choice2");
+let btnPage11Choice1 = document.querySelector(".button-page11-choice1");
+let btnPage11Choice2 = document.querySelector(".button-page11-choice2");
+let page12 = document.querySelector(".page12");
+let btnPage12Choice1 = document.querySelector(".button-page12-choice1");
+let btnPage12Choice2 = document.querySelector(".button-page12-choice2");
+let page13Choice1 = document.querySelector(".page13-choice1");
+let page13Choice2 = document.querySelector(".page13-choice2");
+
 
 function Change_bar(li, lastClass, newClass) {
     li.className += newClass;
@@ -60,3 +94,55 @@ btnPage3Choice3.addEventListener("click", () => {
     Change_bar(li2, 'is-active', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
 });
+
+NextPageWithBar(btnPage3Choice1, page4, page3Choice1, li2, li3, li4);
+NextPageWithBar(btnPage3Choice2, page4, page3Choice2, li2, li3, li4);
+
+NextPage(btnPage4Choice1, page5Choice1, page4);
+NextPage(btnPage4Choice2, page5Choice2, page4)
+
+NextPageWithBar(btnPage5Choice1, page6, page5Choice1, li3, li4, li5);
+NextPageWithBar(btnPage5Choice2, page6, page5Choice2, li3, li4, li5);
+
+NextPage(btnPage6Choice1, page7Choice1, page6);
+NextPage(btnPage6Choice2, page7Choice2, page6);
+
+NextPageWithBar(btnPage7Choice1, page8, page7Choice1, li4, li5, li6);
+NextPageWithBar(btnPage7Choice2, page8, page7Choice2, li4, li5, li6);
+
+NextPage(btnPage8Choice1, page9Choice1, page8);
+NextPage(btnPage8Choice2, page9Choice2, page8);
+
+NextPageWithBar(btnPage9Choice1, page10, page9Choice1, li5, li6, li7);
+
+btnPage9Choice2.addEventListener("click", () => {
+    preface.style.display = "flex";
+    preface.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page9Choice2.style.display = "none"},700);
+    li6.classList.remove('in-progress');
+    li5.classList.remove('is-active');
+    li4.classList.remove('is-complete');
+    li3.classList.remove('is-complete');
+    Change_bar(li2, 'is-complete', ' in-progress');
+    Change_bar(li1, 'is-complete', ' is-active');
+});
+NextPage(btnPage10Choice1, page11Choice1, page10);
+NextPage(btnPage10Choice2, page11Choice2, page10);
+
+NextPageWithBar(btnPage11Choice1, page12, page11Choice1, li6, li7, li8);
+
+btnPage11Choice2.addEventListener("click", () => {
+    preface.style.display = "flex";
+    preface.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page11Choice2.style.display = "none"},700);
+    li7.classList.remove('in-progress');
+    li6.classList.remove('is-active');
+    li5.classList.remove('is-complete');
+    li4.classList.remove('is-complete');
+    li3.classList.remove('is-complete');
+    Change_bar(li2, 'is-complete', ' in-progress');
+    Change_bar(li1, 'is-complete', ' is-active');
+});
+
+NextPage(btnPage12Choice1, page13Choice1, page12);
+NextPage(btnPage12Choice2, page13Choice2, page12);
