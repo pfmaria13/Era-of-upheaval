@@ -54,6 +54,31 @@ let btnPage12Choice1 = document.querySelector(".button-page12-choice1");
 let btnPage12Choice2 = document.querySelector(".button-page12-choice2");
 let page13Choice1 = document.querySelector(".page13-choice1");
 let page13Choice2 = document.querySelector(".page13-choice2");
+let btnPage13Choice1 = document.querySelector(".button-page13-choice1");
+let btnPage13Choice2 = document.querySelector(".button-page13-choice2");
+let page14 = document.querySelector(".page14");
+let btnPage14Choice1 = document.querySelector(".button-page14-choice1");
+let btnPage14Choice2 = document.querySelector(".button-page14-choice2");
+let btnPage14Choice3 = document.querySelector(".button-page14-choice3");
+let page15Choice1 = document.querySelector(".page15-choice1");
+let page15Choice2 = document.querySelector(".page15-choice2");
+let page15Choice3 = document.querySelector(".page15-choice3");
+let btnPage15Choice1 = document.querySelector(".button-page15-choice1");
+let btnPage15Choice2 = document.querySelector(".button-page15-choice2");
+let btnPage15Choice3 = document.querySelector(".button-page15-choice3");
+let page16 = document.querySelector(".page16");
+let btnPage16Choice1 = document.querySelector(".button-page16-choice1");
+let btnPage16Choice2 = document.querySelector(".button-page16-choice2");
+let page17Choice1 = document.querySelector(".page17-choice1");
+let page17Choice2 = document.querySelector(".page17-choice2");
+let btnPage17Choice1 = document.querySelector(".button-page17-choice1");
+let btnPage17Choice2 = document.querySelector(".button-page17-choice2");
+let page18 = document.querySelector(".page18");
+let btnPage18Choice1 = document.querySelector(".more-lit");
+let btnPage18Choice2 = document.querySelector(".play-again-button");
+let moreLit = document.querySelector(".more-lit-page");
+
+
 
 
 function Change_bar(li, lastClass, newClass) {
@@ -146,3 +171,61 @@ btnPage11Choice2.addEventListener("click", () => {
 
 NextPage(btnPage12Choice1, page13Choice1, page12);
 NextPage(btnPage12Choice2, page13Choice2, page12);
+
+NextPageWithBar(btnPage13Choice1, page14, page13Choice1, li7, li8, li9);
+
+btnPage13Choice2.addEventListener("click", () => {
+    preface.style.display = "flex";
+    preface.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page13Choice2.style.display = "none"},700);
+    li8.classList.remove('in-progress');
+    li7.classList.remove('is-active');
+    li6.classList.remove('is-complete');
+    li5.classList.remove('is-complete');
+    li4.classList.remove('is-complete');
+    li3.classList.remove('is-complete');
+    Change_bar(li2, 'is-complete', ' in-progress');
+    Change_bar(li1, 'is-complete', ' is-active');
+});
+
+NextPage(btnPage14Choice1, page15Choice1, page14);
+NextPage(btnPage14Choice2, page15Choice2, page14);
+NextPage(btnPage14Choice3, page15Choice3, page14);
+
+NextPageWithBar(btnPage15Choice1, page16, page15Choice1, li8, li9, li10);
+NextPageWithBar(btnPage15Choice2, page16, page15Choice2, li8, li9, li10);
+NextPageWithBar(btnPage15Choice3, page16, page15Choice3, li8, li9, li10);
+
+
+NextPage(btnPage16Choice1, page17Choice1, page16);
+NextPage(btnPage16Choice2, page17Choice2, page16);
+
+btnPage17Choice1.addEventListener("click", () => {
+    preface.style.display = "flex";
+    preface.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page17Choice1.style.display = "none"},700);
+    li10.classList.remove('in-progress');
+    li9.classList.remove('is-active');
+    li8.classList.remove('is-complete');
+    li7.classList.remove('is-complete');
+    li6.classList.remove('is-complete');
+    li5.classList.remove('is-complete');
+    li4.classList.remove('is-complete');
+    li3.classList.remove('is-complete');
+    Change_bar(li2, 'is-complete', ' in-progress');
+    Change_bar(li1, 'is-complete', ' is-active');
+});
+
+btnPage17Choice2.addEventListener("click", () => {
+    page18.style.display = "flex";
+    page18.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page17Choice2.style.display = "none"},700);
+    Change_bar(li9, 'is-active', ' is-complete')
+    Change_bar(li10, 'in-progress', ' is-active');
+});
+
+btnPage18Choice1.addEventListener("click", () => {
+    moreLit.style.display = "flex";
+    moreLit.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page18.style.display = "none"},700);
+});
