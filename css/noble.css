@@ -56,6 +56,7 @@ p {
     justify-content: space-between;
     position: sticky; !important;
     top: 0;
+    z-index: 10;
 }
 
 .logo {
@@ -567,7 +568,7 @@ p {
     padding: 150px 40px 120px 0;
 }
 
-.page11-text, .page3-text3-choice2, .page11-text, .page12-text, .page15-choice2-text2, .page17-choice1-text2 {
+.page11-text, .page3-text3-choice2, .page11-text, .page12-text, .page15-choice2-text2, .page17-choice1-text2, .page13-text {
     width: 672px;
 }
 
@@ -584,7 +585,6 @@ p {
 }
 
 .page11-choice2 {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 150px 88px 35px 0;
@@ -607,9 +607,7 @@ p {
 }
 
 .page11-choice3 {
-    display: none;
-    flex-direction: column;
-    padding: 150px 40px 80px 155px;
+    padding: 150px 40px 80px 0;
 }
 
 .page11-text3 {
@@ -632,9 +630,9 @@ p {
 }
 
 .page12 {
-    display: none;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 150px 100px 100px 155px;
+    padding: 150px 100px 100px 0;
 }
 
 .page12-left {
@@ -645,25 +643,16 @@ p {
 .page12-choice1 {
     margin-top: 120px;
     margin-bottom: 48px;
-    width: 557px;
     height: 95px;
-    text-align: left;
-    padding-left: 48px;
 }
 
 .page12-choice2 {
     margin-bottom: 48px;
-    width: 557px;
     height: 95px;
-    text-align: left;
-    padding-left: 48px;
 }
 
 .page12-choice3 {
-    width: 557px;
     height: 95px;
-    text-align: left;
-    padding-left: 48px;
 }
 
 .page12-buttons {
@@ -678,14 +667,11 @@ p {
 }
 
 .page13-choice1 {
-    display: none;
-    flex-direction: column;
-    padding: 150px 0 120px 155px;
+    padding: 150px 0 120px 0;
 }
 
-.page13-text {
-    position: absolute;
-    width: 672px;
+.page13-choice1-img {
+    margin-top: -10px;
 }
 
 .page13-bottom {
@@ -695,13 +681,11 @@ p {
 }
 
 .button-page13 {
-    margin-left: 130px;
+    margin: 230px 0 0 130px;
 }
 
 .page13-choice2 {
-    display: none;
-    flex-direction: column;
-    padding: 150px 0 120px 155px;
+    padding: 150px 0 120px;
 }
 
 .button-page13-choice2 {
@@ -709,17 +693,13 @@ p {
 }
 
 .page13-choice3 {
-    display: none;
-    flex-direction: column;
-    padding: 150px 0 120px 155px;
-}
-
-.page13-bottom3 {
-    padding-top: 120px;
+    display: flex;
+    padding: 150px 0 120px;
 }
 
 .button-page13-choice3 {
     margin-top: 190px;
+    margin-left: 139px;
 }
 
 .page14 {
