@@ -8,9 +8,8 @@ let page3Choice2 = document.querySelector(".page3-choice2");
 let btnPage3Choice1 = document.querySelector(".button-page3-choice1");
 let btnPage3Choice2 = document.querySelector(".button-page3-choice2");
 let page4 = document.querySelector(".page4");
-
-let btnPage4Choice1 = document.querySelector(".button-page4-choice1");
-let btnPage4Choice2 = document.querySelector(".button-page4-choice1");
+let btnPage4Choice1 = document.querySelector(".page4-choice1");
+let btnPage4Choice2 = document.querySelector(".page4-choice2");
 let page5Choice1 = document.querySelector(".page5-choice1");
 let page5Choice2 = document.querySelector(".page5-choice2");
 
@@ -59,6 +58,8 @@ let page17Choice2 = document.querySelector(".page17-choice2");
 let btnPage17Choice1 = document.querySelector(".button-page17-choice1");
 let btnPage17Choice2 = document.querySelector(".button-page17-choice2");
 let page18 = document.querySelector(".page18");
+let btnPage18Choice1 = document.querySelector(".more-lit");
+let moreLit = document.querySelector(".more-lit-page");
 
 
 let li1 = document.querySelector('.li1');
@@ -77,60 +78,35 @@ function Change_bar(li, lastClass, newClass) {
     li.classList.remove(lastClass);
 }
 
-btnPage1.addEventListener("click", () => {
-    page2.style.display = "flex";
-    page2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {preface.style.display = "none"},700);
-    Change_bar(li1, 'is-active', ' is-complete')
-    Change_bar(li2, 'in-progress', ' is-active');
-    li3.className += ' in-progress'
-});
+function NextPage (btn, nextPage, previousPage) {
+    btn.addEventListener("click", () => {
+        nextPage.style.display = "flex";
+        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
+        setTimeout(() => {previousPage.style.display = "none"},700);
+    });
+}
 
-btnPage2Choice1.addEventListener("click", () => {
-    page3Choice1.style.display = "flex";
-    page3Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page2.style.display = "none"},700);
-});
+function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
+    btn.addEventListener("click", () => {
+        nextPage.style.display = "flex";
+        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
+        setTimeout(() => {previousPage.style.display = "none"},700);
+        Change_bar(li1, 'is-active', ' is-complete')
+        Change_bar(li2, 'in-progress', ' is-active');
+        li3.className += ' in-progress'
+    });
+}
 
-btnPage2Choice2.addEventListener("click", () => {
-    page3Choice2.style.display = "flex";
-    page3Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page2.style.display = "none"},700);
-});
+NextPageWithBar(btnPage1, page2, preface, li1, li2, li3)
 
-btnPage4Choice1.addEventListener("click", () => {
-    page5Choice1.style.display = "flex";
-    page5Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page4.style.display = "none"},700);
-});
-btnPage3Choice1.addEventListener("click", () => {
-    page4.style.display = "flex";
-    page4.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page3Choice1.style.display = "none"},700);
-    Change_bar(li2, 'is-active', ' is-complete')
-    Change_bar(li3, 'in-progress', ' is-active');
-    li4.className += ' in-progress'
-});
+NextPage(btnPage2Choice1, page3Choice1, page2);
+NextPage(btnPage2Choice2, page3Choice2, page2);
 
-btnPage3Choice2.addEventListener("click", () => {
-    page4.style.display = "flex";
-    page4.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page3Choice2.style.display = "none"},700);
-    Change_bar(li2, 'is-active', ' is-complete')
-    Change_bar(li3, 'in-progress', ' is-active');
-    li4.className += ' in-progress'
-});
+NextPageWithBar(btnPage3Choice1, page4, page3Choice1, li2, li3, li4);
+NextPageWithBar(btnPage3Choice2, page4, page3Choice2, li2, li3, li4);
 
-btnPage4Choice1.addEventListener("click", () => {
-    page5Choice1.style.display = "flex";
-    page5Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page4.style.display = "none"},700);
-});
-btnPage4Choice2.addEventListener("click", () => {
-    page5Choice2.style.display = "flex";
-    page5Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page4.style.display = "none"},700);
-});
+NextPage(btnPage4Choice1, page5Choice1, page4);
+NextPage(btnPage4Choice2, page5Choice2, page4);
 
 btnPage5Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
@@ -142,35 +118,12 @@ btnPage5Choice1.addEventListener("click", () => {
     Change_bar(li1, 'is-complete', ' is-active');
 });
 
-btnPage5Choice2.addEventListener("click", () => {
-    page6.style.display = "flex";
-    page6.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page5Choice2.style.display = "none"},700);
-    Change_bar(li3, 'is-active', ' is-complete')
-    Change_bar(li4, 'in-progress', ' is-active');
-    li5.className += ' in-progress'
-});
+NextPageWithBar(btnPage5Choice2, page6, page5Choice2, li3, li4, li5);
 
-btnPage6Choice1.addEventListener("click", () => {
-    page7Choice1.style.display = "flex";
-    page7Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page6.style.display = "none"},700);
-});
+NextPage(btnPage6Choice1, page7Choice1, page6);
+NextPage(btnPage6Choice2, page7Choice2, page6);
 
-btnPage6Choice2.addEventListener("click", () => {
-    page7Choice2.style.display = "flex";
-    page7Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page6.style.display = "none"},700);
-});
-
-btnPage7Choice1.addEventListener("click", () => {
-    page8.style.display = "flex";
-    page8.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page7Choice1.style.display = "none"},700);
-    Change_bar(li4, 'is-active', ' is-complete')
-    Change_bar(li5, 'in-progress', ' is-active');
-    li6.className += ' in-progress'
-});
+NextPageWithBar(btnPage7Choice1, page8, page7Choice1, li4, li5, li6);
 btnPage7Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
     preface.scrollIntoView({ block: "center", behavior: "smooth" });
@@ -182,27 +135,10 @@ btnPage7Choice2.addEventListener("click", () => {
     Change_bar(li1, 'is-complete', ' is-active')
 });
 
-btnPage8Choice1.addEventListener("click", () => {
-    page9Choice1.style.display = "flex";
-    page9Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page8.style.display = "none"},700);
-});
+NextPage(btnPage8Choice1, page9Choice1, page8);
+NextPage(btnPage8Choice2, page9Choice2, page8);
 
-btnPage8Choice2.addEventListener("click", () => {
-    page9Choice2.style.display = "flex";
-    page9Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page8.style.display = "none"},700);
-});
-
-btnPage9Choice1.addEventListener("click", () => {
-    page10.style.display = "flex";
-    page10.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page9Choice1.style.display = "none"},700);
-    Change_bar(li5, 'is-active', ' is-complete')
-    Change_bar(li6, 'in-progress', ' is-active');
-    li7.className += ' in-progress'
-});
-
+NextPageWithBar(btnPage9Choice1, page10, page9Choice1, li5, li6, li7);
 btnPage9Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
     preface.scrollIntoView({ block: "center", behavior: "smooth" });
@@ -215,27 +151,10 @@ btnPage9Choice2.addEventListener("click", () => {
     Change_bar(li1, 'is-complete', ' is-active');
 });
 
-btnPage10Choice1.addEventListener("click", () => {
-    page11Choice1.style.display = "flex";
-    page11Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page10.style.display = "none"},700);
-});
+NextPage(btnPage10Choice1, page11Choice1, page10);
+NextPage(btnPage10Choice2, page11Choice2, page10);
 
-btnPage10Choice2.addEventListener("click", () => {
-    page11Choice2.style.display = "flex";
-    page11Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page10.style.display = "none"},700);
-});
-
-btnPage11Choice1.addEventListener("click", () => {
-    page12.style.display = "flex";
-    page12.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page11Choice1.style.display = "none"},700);
-    Change_bar(li6, 'is-active', ' is-complete')
-    Change_bar(li7, 'in-progress', ' is-active');
-    li8.className += ' in-progress'
-});
-
+NextPageWithBar(btnPage11Choice1, page12, page11Choice1, li6, li7, li8);
 btnPage11Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
     preface.scrollIntoView({ block: "center", behavior: "smooth" });
@@ -249,17 +168,8 @@ btnPage11Choice2.addEventListener("click", () => {
     Change_bar(li1, 'is-complete', ' is-active');
 });
 
-btnPage12Choice1.addEventListener("click", () => {
-    page13Choice1.style.display = "flex";
-    page13Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page12.style.display = "none"},700);
-});
-
-btnPage12Choice2.addEventListener("click", () => {
-    page13Choice2.style.display = "flex";
-    page13Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page12.style.display = "none"},700);
-});
+NextPage(btnPage12Choice1, page13Choice1, page12);
+NextPage(btnPage12Choice2, page13Choice2, page12);
 
 btnPage13Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
@@ -274,37 +184,12 @@ btnPage13Choice1.addEventListener("click", () => {
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
 });
+NextPageWithBar(btnPage13Choice2, page14, page13Choice1, li7, li8, li9);
 
-btnPage13Choice2.addEventListener("click", () => {
-    page14.style.display = "flex";
-    page14.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page13Choice1.style.display = "none"},700);
-    Change_bar(li7, 'is-active', ' is-complete')
-    Change_bar(li8, 'in-progress', ' is-active');
-    li9.className += ' in-progress'
-});
+NextPage(btnPage14Choice1, page15Choice1, page14);
+NextPage(btnPage14Choice2, page15Choice2, page14);
 
-btnPage14Choice1.addEventListener("click", () => {
-    page15Choice1.style.display = "flex";
-    page15Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page14.style.display = "none"},700);
-});
-
-btnPage14Choice2.addEventListener("click", () => {
-    page15Choice2.style.display = "flex";
-    page15Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page14.style.display = "none"},700);
-});
-
-btnPage15Choice1.addEventListener("click", () => {
-    page16.style.display = "flex";
-    page16.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page15Choice1.style.display = "none"},700);
-    Change_bar(li8, 'is-active', ' is-complete')
-    Change_bar(li9, 'in-progress', ' is-active');
-    li10.className += ' in-progress'
-});
-
+NextPageWithBar(btnPage15Choice1, page16, page15Choice1, li8, li9, li10);
 btnPage15Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
     preface.scrollIntoView({ block: "center", behavior: "smooth" });
@@ -320,22 +205,14 @@ btnPage15Choice2.addEventListener("click", () => {
     Change_bar(li1, 'is-complete', ' is-active');
 });
 
-btnPage16Choice1.addEventListener("click", () => {
-    page17Choice1.style.display = "flex";
-    page17Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page16.style.display = "none"},700);
-});
+NextPage(btnPage16Choice1, page17Choice1, page16);
+NextPage(btnPage16Choice2, page17Choice2, page16);
 
-btnPage16Choice2.addEventListener("click", () => {
-    page17Choice2.style.display = "flex";
-    page17Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page16.style.display = "none"},700);
-});
 
 btnPage17Choice1.addEventListener("click", () => {
     page18.style.display = "flex";
     page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page15Choice1.style.display = "none"},700);
+    setTimeout(() => {page17Choice1.style.display = "none"},700);
     Change_bar(li9, 'is-active', ' is-complete')
     Change_bar(li10, 'in-progress', ' is-active');
 });
@@ -346,5 +223,11 @@ btnPage17Choice2.addEventListener("click", () => {
     setTimeout(() => {page17Choice2.style.display = "none"},700);
     Change_bar(li9, 'is-active', ' is-complete')
     Change_bar(li10, 'in-progress', ' is-active');
+});
+
+btnPage18Choice1.addEventListener("click", () => {
+    moreLit.style.display = "flex";
+    moreLit.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {page18.style.display = "none"},700);
 });
 
