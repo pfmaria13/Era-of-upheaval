@@ -9,31 +9,24 @@ let btnPeasant = document.querySelector(".peasant");
 let btnNoble = document.querySelector(".noble");
 let btnMerchant = document.querySelector(".merchant");
 let btnWorker = document.querySelector(".worker");
+let pageTeam = document.querySelector(".page-team");
+let btnPage1Team = document.querySelector(".page1-team");
+let btnPageToMain = document.querySelector(".main-btn-team");
 
-btnMainPlay.addEventListener("click", () => {
-    mainChoice.style.display = "flex";
-    mainChoice.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {mainPage.style.display = "none"},700);
-});
+function NextPage (btn, nextPage, previousPage) {
+    btn.addEventListener("click", () => {
+        nextPage.style.display = "flex";
+        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
+        setTimeout(() => {previousPage.style.display = "none"},600);
+    });
+}
 
-btnMainRules.addEventListener("click", () => {
-    rules.style.display = "flex";
-    rules.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {mainPage.style.display = "none"},700);
-});
-
-btnRulesPlay.addEventListener("click", () => {
-    mainChoice.style.display = "flex";
-    mainChoice.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {rules.style.display = "none"},700);
-});
-
-btnRulesMain.addEventListener("click", () => {
-    mainPage.style.display = "flex";
-    mainPage.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {rules.style.display = "none"},700);
-});
-
+NextPage(btnMainPlay, mainChoice, mainPage);
+NextPage(btnMainRules, rules, mainPage);
+NextPage(btnRulesPlay, mainChoice, rules);
+NextPage(btnRulesMain, mainPage, rules);
+NextPage(btnPage1Team, pageTeam, mainPage);
+NextPage(btnPageToMain, mainPage, pageTeam);
 btnPeasant.addEventListener("click", () => {
     $.ajax({
         type: 'POST',

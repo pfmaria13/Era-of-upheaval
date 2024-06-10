@@ -97,9 +97,9 @@ function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
         nextPage.style.display = "flex";
         nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
         setTimeout(() => {previousPage.style.display = "none"},600);
-        Change_bar(li1, 'is-active', ' is-complete')
+        Change_bar(li1, 'is-active', ' is-complete');
         Change_bar(li2, 'in-progress', ' is-active');
-        li3.className += ' in-progress'
+        li3.className += ' in-progress';
     });
 }
 

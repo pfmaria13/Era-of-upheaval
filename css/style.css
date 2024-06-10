@@ -43,9 +43,10 @@ body {
 
 
 .site-header {
-    background: white;
+    background: white; !important;
     display: flex;
     top: 0;
+    z-index: 10;
 }
 
 .logo {
@@ -76,7 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 38px 0 40px;
-    margin-bottom: 150px;
+    /*margin-bottom: 150px;*/
 }
 
 .main-page1-text1 {
@@ -139,7 +140,7 @@ body {
     transition: 0.7s;
 }
 
-.page1-team:hover, .main-page1-rules:hover {
+.page1-team:hover, .main-page1-rules:hover{
     background-color: #2D1D38;
     color: white;
 }
@@ -194,16 +195,33 @@ body {
     height: 57px;
     color: white;
     font-size: 32px;
-    background-image: url("../img/main-page1-play.png");
+    background-color: #2D1D38;
+    border-radius: 8px;
+    transition: 0.7s;
+    border: 3px solid #2D1D38;
 }
 
-.rules-main {
+.rules-play:hover {
+    background-color: white;
+    color: #2D1D38;
+}
+
+.rules-main, .main-btn-team {
+    border: 3px solid #2D1D38;
     width: 258px;
     height: 57px;
     color: #2D1D38;
-    font-size: 32px;
+    font-size: 28px;
     margin-left: 64px;
-    background-image: url("../img/rules-main.png");
+    background-color: white;
+    font-family: Mont-Semibold;
+    border-radius: 8px;
+    transition: 0.7s;
+}
+
+.rules-main:hover, .main-btn-team:hover {
+    color: white;
+    background-color: #2D1D38;
 }
 
 .rules-btn {
@@ -219,6 +237,7 @@ body {
     display: none;
     flex-direction: column;
     padding: 40px 40px 86px 40px;
+    margin-top: 50px;
 }
 
 .main-choice-text1 {
@@ -266,3 +285,67 @@ body {
     background-image: url("../img/worker.png");
     filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
 }
+
+.page-team {
+    display: none;
+    flex-direction: column;
+    padding: 40px 36px 136px 40px;
+}
+
+.page-team-text1 {
+    font-family: Mont-Heavy;
+    font-size: 32px;
+    padding: 40px 0 20px;
+}
+
+.main-btn-team {
+    margin-top: 57px;
+}
+
+.site-header-team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-row1 {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+
+}
+
+.team-text2, .team-text2, .team-text2 {
+    font-family: Mont-bold;
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+.team-historian-photo, .team3-photo, .team2-photo {
+    display: flex;
+    column-gap: 20px;
+}
+
+.historian-text1, .team2-text1, .team3-text1 {
+    font-family: BogartTrialBold;
+    font-size: 20px;
+    width: 164px;
+}
+
+.historian-text2, .team2-text2, .team3-text2 {
+    font-family: Mont;
+    font-size: 14px;
+    width: 164px;
+}
+
+.team3 {
+    padding-top: 66px;
+}
+
+.historian-img, .team2-img, .team3-img {
+    padding-bottom: 8px;
+}
+
+.team2 {
+    padding-top: 101px;
+}
+

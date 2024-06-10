@@ -38,17 +38,16 @@
 body {
     background-color: white;
     font-family: Mont;
-    background-image: url("../img/merchant/page1-back.png");
-    background-position: bottom;
-}
-
-.merchant {
-    padding: 120px 0 0 155px;
 }
 
 .page {
     display: none;
     flex-direction: column;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 88vh;
+    width: 100vw;
+    background-size: 100% auto;
 }
 
 .site-header {
@@ -58,6 +57,7 @@ body {
     justify-content: space-between;
     position: sticky; !important;
     top: 0;
+    z-index: 10;
 }
 
 .logo {
@@ -160,11 +160,44 @@ p {
     padding-bottom: 8px;
 }
 
+.progress-bar {
+    z-index: 2;
+}
 .preface {
+    /*position: relative;*/
     display: flex;
     flex-direction: column;
-    padding-bottom: 184px;
+    padding-bottom: 1px;
+    padding-top: 120px;
+    padding-left: 155px;
+    background-image: url("../img/merchant/page1-back.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 88vh;
+    background-size: 100%;
 }
+
+/*.page1-back {*/
+/*    position: absolute;*/
+/*    padding-top: 7%;*/
+/*    opacity: 1;*/
+/*    transition: opacity 3s ease;*/
+/*}*/
+
+/*.active {*/
+/*    animation: show 3s 1;*/
+/*    animation-fill-mode: forwards;*/
+/*    animation-delay: 2s;*/
+/*}*/
+
+/*@keyframes show {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*}*/
 
 .preface-heading {
     font-size: 32px;
@@ -182,7 +215,8 @@ p {
 }
 
 .page2 {
-    padding: 155px 0 122px 0;
+    padding: 150px 0 122px 150px;
+    background-image: url("../img/merchant/page2-back.png");
 }
 
 .page2-bottom {
@@ -215,7 +249,8 @@ p {
 }
 
 .page3-choice1 {
-    padding: 155px 40px 35px 0;
+    padding: 155px 40px 78px 150px;
+    background-image: url("../img/merchant/page3-choice1-back.png");
 }
 
 .page3-choice1-bottom {
@@ -233,12 +268,14 @@ p {
 }
 
 .page3-choice1-img {
+    margin-top: -50px;
     width: 758px;
     height: 625px;
 }
 
 .page3-choice2 {
-    padding: 155px 40px 71px 0;
+    background-image: url("../img/merchant/page3-choice2-back.png");
+    padding: 155px 40px 71px 150px;
 }
 
 .page3-choice2-bottom {
@@ -253,7 +290,8 @@ p {
 }
 
 .page3-choice3 {
-    padding: 155px 40px 59px 0;
+    background-image: url("../img/merchant/page3-choice2-back.png");
+    padding: 155px 40px 59px 150px;
 }
 
 .page3-choice3-text2 {
@@ -271,7 +309,8 @@ p {
 }
 
 .page4 {
-    padding: 155px 115px 66px 0;
+    background-image: url("../img/merchant/page4-back.png");
+    padding: 155px 115px 66px 150px;
 }
 
 .page4-bottom {
@@ -308,7 +347,8 @@ p {
 }
 
 .page5-choice1 {
-    padding: 250px 0 76px 0;
+    background-image: url("../img/merchant/page3-choice1-back.png");
+    padding: 250px 0 76px 150px;
 }
 
 .page5-choice1-bottom {
@@ -335,7 +375,8 @@ p {
 }
 
 .page5-choice2 {
-    padding-top: 155px;
+    background-image: url("../img/merchant/page3-choice2-back.png");
+    padding: 155px 0 0 150px;
 }
 
 .page5-choice2-bottom {
@@ -349,7 +390,8 @@ p {
 }
 
 .page6 {
-    padding: 155px 20px 152px 0;
+    background-image: url("../img/merchant/page6-back.png");
+    padding: 155px 20px 152px 150px;
 }
 
 .page6-bottom {
@@ -369,7 +411,19 @@ p {
 }
 
 .page7-choice1, .page7-choice2, .page7-choice3 {
-    padding: 155px 40px 170px 0;
+    padding: 155px 40px 170px 150px;
+}
+
+.page7-choice1 {
+    background-image: url("../img/merchant/page7-choice1-back.png");
+}
+
+.page7-choice2 {
+    background-image: url("../img/merchant/page7-choice2-back.png");
+}
+
+.page7-choice3 {
+    background-image: url("../img/merchant/page7-choice3-back.png");
 }
 
 .page7-choice1-text {
@@ -399,7 +453,8 @@ p {
 }
 
 .page8 {
-    padding: 155px 0 152px 0;
+    background-image: url("../img/merchant/page8-back.png");
+    padding: 155px 0 152px 150px;
 }
 
 .page8-bottom {
@@ -429,7 +484,8 @@ p {
 }
 
 .page9-choice1 {
-    padding: 255px 155px 29px 0;
+    background-image: url("../img/merchant/page9-choice1-back.png");
+    padding: 155px 155px 29px 150px;
 }
 
 .page9-choice1-text2 {
@@ -458,7 +514,8 @@ p {
 }
 
 .page9-choice2 {
-    padding: 155px 0 80px 0;
+    background-image: url("../img/merchant/page9-choice2-back.png");
+    padding: 155px 0 80px 150px;
 }
 
 .page9-choice2-bottom {
@@ -484,7 +541,8 @@ p {
 }
 
 .page10 {
-    padding: 155px 0 179px 0;
+    background-image: url("../img/merchant/page10-back.png");
+    padding: 155px 0 179px 150px;
 }
 
 .page10-bottom {
@@ -514,8 +572,9 @@ p {
 }
 
 .page11-choice1 {
+    background-image: url("../img/merchant/page11-choice1-back.png");
     flex-direction: row;
-    padding: 155px 150px 140px 0;
+    padding: 155px 150px 140px 150px;
 }
 
 .page11-choice1-text {
@@ -527,7 +586,8 @@ p {
 }
 
 .page11-choice2 {
-    padding: 155px 31px 172px 0;
+    background-image: url("../img/merchant/page11-choice2-back.png");
+    padding: 155px 31px 172px 150px;
 }
 
 .page11-choice2-bottom {
@@ -545,9 +605,10 @@ p {
 }
 
 .page12 {
+    background-image: url("../img/merchant/page12-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 100px 100px 0;
+    padding: 155px 100px 100px 150px;
 }
 
 .page12-text {
@@ -571,7 +632,8 @@ p {
 }
 
 .page13 {
-    padding: 155px 0 70px 0;
+    background-image: url("../img/merchant/page13-choice1-back.png");
+    padding: 155px 0 70px 150px;
 }
 
 .page13-text {
@@ -590,7 +652,8 @@ p {
 }
 
 .page14 {
-    padding: 155px 40px 70px 0;
+    background-image: url("../img/merchant/page14-back.png");
+    padding: 155px 40px 70px 150px;
 }
 
 .page14-bottom {
@@ -629,9 +692,10 @@ p {
 }
 
 .page15-choice1, .page15-choice2 {
+    background-image: url("../img/merchant/page15-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 72px 40px 0;
+    padding: 155px 72px 40px 150px;
 }
 
 .page15-left {
@@ -649,7 +713,8 @@ p {
 }
 
 .page16 {
-    padding: 155px 155px 113px 0;
+    background-image: url("../img/merchant/page16-back.png");
+    padding: 155px 155px 113px 150px;
 }
 
 .page16-text2 {
@@ -674,7 +739,8 @@ p {
 }
 
 .page17-choice1 {
-    padding: 155px 0 100px 0;
+    background-image: url("../img/merchant/page17-choice1-back.png");
+    padding: 155px 0 100px 150px;
 }
 
 .page17-choice1-bottom {
@@ -689,7 +755,15 @@ p {
 .page17-choice2, .page17-choice3 {
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 40px 72px 0;
+    padding: 155px 40px 72px 150px;
+}
+
+.page17-choice2 {
+    background-image: url("../img/merchant/page17-choice2-back.png");
+}
+
+.page17-choice3 {
+    background-image: url("../img/merchant/page17-choice3-back.png");
 }
 
 .page17-text {
@@ -706,7 +780,8 @@ p {
 }
 
 .page18 {
-    padding: 155px 0 288px 0;
+    background-image: url("../img/merchant/page18-back.png");
+    padding: 155px 0 288px 150px;
 }
 
 .page18-buttons {
@@ -720,6 +795,7 @@ p {
 }
 
 .more-lit {
+    padding-left: 150px;
     margin-top: 19px;
     position: relative;
     display: flex;

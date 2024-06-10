@@ -43,6 +43,12 @@ body {
 .page {
     display: none;
     flex-direction: column;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 88vh;
+    width: 100vw;
+    background-size: 100% auto;
+    margin-top: 30px;
 }
 
 .you-lose {
@@ -51,9 +57,9 @@ body {
     width: 421px;
 }
 
-.peasant {
-    padding: 120px 0 0 155px;
-}
+/*.peasant {*/
+/*    padding: 120px 0 0 155px;*/
+/*}*/
 
 .site-header {
     background: white; !important;
@@ -167,7 +173,8 @@ p {
 
 .preface {
     display: flex;
-    padding: 0 155px 184px 0;
+    padding: 120px 155px 184px 155px;
+    background-image: url("../img/peasant/page1-back.png");
 }
 
 .preface-text, .page14-text, .page17-choice1-text {
@@ -185,7 +192,8 @@ p {
 }
 
 .page2 {
-    padding: 155px 155px 37px 0;
+    padding: 120px 155px 37px 155px;
+    background-image: url("../img/peasant/page2-back.png");
 }
 
 .page2-text {
@@ -203,7 +211,8 @@ p {
 }
 
 .page3-choice1 {
-    padding: 220px 40px 78px 0;
+    padding: 120px 40px 0 155px;
+    background-image: url("../img/peasant/page3-choice1-back.png");
 }
 
 .page3-choice1-bottom {
@@ -220,7 +229,8 @@ p {
 }
 
 .page3-choice2 {
-    padding: 155px 40px 71px 0;
+    padding: 120px 40px 0 155px;
+    background-image: url("../img/peasant/page3-choice2-back.png");
 }
 
 .page3-choice2-bottom {
@@ -229,34 +239,42 @@ p {
 }
 
 .button-page3-choice2 {
-    margin: 376px 0 0 120px;
+    margin: 376px 0 0 70px;
 }
 
 .page3-choice3 {
-    padding: 155px 40px 59px 0;
+    padding: 120px 40px 0 155px;
+    background-image: url("../img/peasant/page3-choice2-back.png");
 }
 
 .page3-choice3-text {
     width: 680px;
 }
 
+.page3-choice3-text2 {
+    padding-top: 50px;
+}
+
 .page3-choice3-bottom {
     display: flex;
     justify-content: space-between;
-    padding-top: 90px;
 }
 
 .page3-choice3-text1 {
-    padding: 271px 0 40px 0;
+    padding: 350px 0 40px 0;
 }
 
+.page3-choice3-img {
+    margin-top: -100px;
+}
 
 .button-page3-choice3 {
     margin-left: 60px;
 }
 
 .page4 {
-    padding: 155px 56px 42px 0;
+    padding: 155px 56px 42px 155px;
+    background-image: url("../img/peasant/page4-back.png");
 }
 
 .page4-text {
@@ -279,7 +297,8 @@ p {
 }
 
 .page5-choice1 {
-    padding: 155px 0 76px 0;
+    padding: 155px 0 76px 155px;
+    background-image: url("../img/peasant/page5-choice1-back.png");
 }
 
 .page5-text, .page13-choice2-text {
@@ -297,10 +316,13 @@ p {
 
 .page5-choice2 {
     padding-top: 155px;
+    padding-left: 155px;
+    background-image: url("../img/peasant/page5-chocie2-back.png");
 }
 
 .page6 {
-    padding: 155px 40px 101px 0;
+    background-image: url("../img/peasant/page6-back.png");
+    padding: 155px 40px 101px 155px;
 }
 
 .page6-text {
@@ -322,7 +344,8 @@ p {
 }
 
 .page7-choice1 {
-    padding: 155px 40px 192px 0;
+    background-image: url("../img/peasant/page7-choice1-back.png");
+    padding: 155px 40px 192px 155px;
 }
 
 .page7-choice1-bottom {
@@ -347,7 +370,8 @@ p {
 }
 
 .page7-choice2 {
-    padding: 155px 40px 117px 0;
+    background-image: url("../img/peasant/page7-choice2-back.png");
+    padding: 155px 40px 117px 155px;
 }
 
 .page7-choice2-text2 {
@@ -365,7 +389,8 @@ p {
 }
 
 .page8 {
-    padding: 155px 83px 64px 0;
+    background-image: url("../img/peasant/page8-back.png");
+    padding: 155px 83px 64px 155px;
 }
 
 .page8-bottom {
@@ -382,7 +407,8 @@ p {
 }
 
 .page9-choice1 {
-    padding: 155px 0 80px 0;
+    background-image: url("../img/peasant/page9-choice1-back.png");
+    padding: 155px 0 80px 155px;
 }
 
 .page9-choice1-text {
@@ -400,7 +426,8 @@ p {
 }
 
 .page9-choice2 {
-    padding: 155px 155px 59px 0;
+    background-image: url("../img/peasant/page9-choice2-back.png");
+    padding: 155px 155px 59px 155px;
 }
 
 .page9-choice2-text2, .page11-choice2-text, .page12-text, .page16-text2 {
@@ -425,7 +452,8 @@ p {
 }
 
 .page10 {
-    padding: 155px 40px 48px 0;
+    background-image: url("../img/peasant/page10-back.png");
+    padding: 155px 40px 48px 155px;
 }
 
 .page10-bottom {
@@ -439,7 +467,8 @@ p {
 }
 
 .page11-choice1 {
-    padding: 155px 40px 120px;
+    background-image: url("../img/peasant/page11-choice1-back.png");
+    padding: 155px 40px 120px 155px;
 }
 
 .page11-choice1-bottom {
@@ -452,13 +481,15 @@ p {
 }
 
 .page11-choice2 {
+    background-image: url("../img/peasant/page11-choice2-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 88px 35px;
+    padding: 130px 88px 35px 155px;
+    margin-top: 30px;
 }
 
 .page11-choice2-left {
-    padding-top: 131px;
+    padding-top: 10px;
 }
 
 .page11-choice2-text2 {
@@ -470,9 +501,10 @@ p {
 }
 
 .page12 {
+    background-image: url("../img/peasant/page12-back.png");
     justify-content: space-between;
     flex-direction: row;
-    padding: 155px 100px 70px 0;
+    padding: 155px 100px 70px 155px;
 }
 
 .page12-img {
@@ -482,7 +514,8 @@ p {
 }
 
 .page13-choice1 {
-    padding: 155px 0 120px;
+    background-image: url("../img/peasant/page13-choice1-back.png");
+    padding: 155px 0 120px 155px;
 }
 
 .page13-choice1-bottom {
@@ -499,7 +532,8 @@ p {
 }
 
 .page13-choice2 {
-    padding: 155px 0 120px;
+    background-image: url("../img/peasant/page13-choice2-back.png");
+    padding: 155px 0 120px 155px;
 }
 
 .page13-choice2-bottom {
@@ -517,7 +551,8 @@ p {
 }
 
 .page14 {
-    padding: 155px 40px 56px 0;
+    background-image: url("../img/peasant/page14-back.png");
+    padding: 155px 40px 56px 155px;
 }
 
 .page14-bottom {
@@ -541,9 +576,10 @@ p {
 }
 
 .page15-choice1, .page15-choice2, .page15-choice3 {
+    background-image: url("../img/peasant/page15-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 72px 40px 0;
+    padding: 155px 72px 40px 155px;
 }
 
 .page15-text {
@@ -571,7 +607,8 @@ p {
 }
 
 .page16 {
-    padding: 155px 155px 83px 0;
+    background-image: url("../img/peasant/page16-back.png");
+    padding: 155px 155px 83px 155px;
 }
 
 .button-page16-choice1 {
@@ -579,7 +616,8 @@ p {
 }
 
 .page17-choice1 {
-    padding: 155px 0 100px;
+    background-image: url("../img/peasant/page17-choice1-back.png");
+    padding: 155px 0 100px 155px;
 }
 
 .page17-choice1-text2 {
@@ -591,9 +629,10 @@ p {
 }
 
 .page17-choice2 {
-    display: none;
+    background-image: url("../img/peasant/page17-choice2-back.png");
+    flex-direction: row;
     justify-content: space-between;
-    padding: 155px 40px 72px 0;
+    padding: 155px 40px 72px 155px;
 }
 
 .page17-choice2-left {
@@ -652,7 +691,8 @@ p {
 }
 
 .page18 {
-    padding: 155px 155px 288px 0;
+    background-image: url("../img/peasant/page18-back.png");
+    padding: 155px 155px 288px 155px;
 }
 
 .page18-buttons {
