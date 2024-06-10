@@ -115,7 +115,7 @@ p {
 
 .preface {
     margin-top: -60px;
-    padding: 0 0 184px 0;
+    padding: 0 0 30px 0;
     display: flex;
     column-gap: 50px;
 }
@@ -135,7 +135,6 @@ p {
 
 .preface-text {
     line-height: 30.67px;
-    padding-bottom: 8px;
 }
 
 .preface-text-last {
@@ -189,7 +188,6 @@ p {
 }
 
 .page2-text {
-    padding-bottom: 8px;
     width: 682px;
 }
 
@@ -253,7 +251,6 @@ p {
 
 .page3-text2-choice2 {
     width: 672px;
-    padding-bottom: 8px;
 }
 
 
@@ -391,16 +388,7 @@ p {
 
 .page7-choice2-content {
     display: flex;
-}
-
-.page7-choice2-left {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.page7-choice2-text {
-    padding-bottom: 8px;
+    justify-content: space-between;
 }
 
 .page7-choice2-text1, .page10-text1, .page8-text1 {
@@ -410,7 +398,7 @@ p {
 .page7-choice2-img {
     width: 951px;
     height: 571px;
-    padding-top: 68px;
+    margin-top: 68px;
 }
 
 .page7-choice2-text2 {
@@ -466,27 +454,17 @@ p {
 
 .page8-choice1 {
     margin-top: 60px;
-    width: 557px;
     height: 95px;
-    text-align: left;
-    padding-left: 48px;
 }
 
 .page8-choice2 {
     margin-top: 48px;
-    width: 557px;
     height: 95px;
-    text-indent: 20px;
-    text-align: left;
-    padding-left: 48px;
 }
 
 .page8-choice3 {
     margin-top: 48px;
-    width: 557px;
     height: 95px;
-    text-align: left;
-    padding-left: 48px;
 }
 
 .page8-buttons {
@@ -568,7 +546,7 @@ p {
     padding: 150px 40px 120px 0;
 }
 
-.page11-text, .page3-text3-choice2, .page11-text, .page12-text, .page15-choice2-text2, .page17-choice1-text2, .page13-text {
+.page11-text, .page3-text3-choice2, .page11-text, .page12-text, .page15-choice2-text2, .page17-choice1-text2 {
     width: 672px;
 }
 
@@ -611,7 +589,6 @@ p {
 }
 
 .page11-text3 {
-    padding-bottom: 8px;
     width: 786px;
 }
 
@@ -693,8 +670,11 @@ p {
 }
 
 .page13-choice3 {
-    display: flex;
     padding: 150px 0 120px;
+}
+
+.page13-text {
+    padding-right: 613px;
 }
 
 .button-page13-choice3 {
@@ -703,9 +683,7 @@ p {
 }
 
 .page14 {
-    display: none;
-    flex-direction: column;
-    padding: 150px 40px 56px 155px;
+    padding: 150px 40px 56px 0;
 }
 
 .page14-top {
@@ -713,8 +691,7 @@ p {
 }
 
 .page14-text {
-    padding-bottom: 8px;
-    width: 786px;
+    padding-right: 510px;
 }
 
 .page14-bottom {
@@ -730,25 +707,16 @@ p {
 }
 
 .page14-choice1 {
-    margin-top: 200px;
-    margin-bottom: 48px;
-    width: 557px;
     height: 95px;
-    text-align: left;
-    padding-left: 48px;
 }
 
 .page14-choice2 {
-    width: 557px;
     height: 126px;
     margin-top: 48px;
-    text-align: left;
-    padding-left: 48px;
 }
 
 .page15-choice1 {
-    display: none;
-    padding: 150px 72px 40px 155px;
+    padding: 150px 72px 40px 0;
 }
 
 .page15-choice1-bottom {
@@ -763,7 +731,6 @@ p {
 }
 
 .page15-choice1-text {
-    padding-bottom: 8px;
     width: 673px;
 }
 
@@ -777,9 +744,7 @@ p {
 }
 
 .page15-choice2 {
-    display: none;
-    flex-direction: column;
-    padding: 150px 0 120px 155px;
+    padding: 150px 0 120px 0;
 }
 
 .page15-choice2-left {
@@ -798,10 +763,6 @@ p {
     position: absolute;
 }
 
-.page15-choice2-text {
-    padding-bottom: 8px;
-}
-
 .page15-choice2-text1 {
     width: 901px;
 }
@@ -812,9 +773,7 @@ p {
 }
 
 .page16 {
-    display: none;
-    flex-direction: column;
-    padding: 150px 139px 143px 155px;
+    padding: 150px 139px 143px 0;
 }
 
 .page16-bottom {
@@ -825,28 +784,16 @@ p {
 }
 
 .page16-choice1 {
-    width: 557px;
     height: 281px;
-    margin-right: 90px;
-    text-align: left;
-    padding: 32px 48px 32px 48px;
 }
 
 .page16-choice2 {
-    width: 557px;
     height: 281px;
-    text-align: left;
-    padding: 63px 48px 63px 48px;
-}
-
-.page16-text {
-    padding-bottom: 8px;
+    padding: 63px 48px 63px;
 }
 
 .page17-choice1 {
-    display: none;
-    flex-direction: column;
-    padding: 150px 0 100px 155px;
+    padding: 155px 0 100px;
 }
 
 .page17-choice1-texts {
@@ -868,7 +815,7 @@ p {
 }
 
 .page17-choice1-img {
-    padding-left: 700px;
+    padding: 100px 0 0 520px;
 }
 
 .button-page17-choice1 {
@@ -877,14 +824,13 @@ p {
 }
 
 .page17-choice2 {
-    display: none;
-    padding: 150px 0 100px 155px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 150px 40px 70px 0;
 }
 
 .page17-choice2-text {
-    padding-bottom: 8px;
     width: 672px;
-    padding-right: 62px;
 }
 
 .button-page17-choice2 {
@@ -944,9 +890,7 @@ p {
 }
 
 .page18 {
-    display: none;
-    flex-direction: column;
-    padding: 155px 155px 288px 155px;
+    padding: 155px 155px 288px 0;
 }
 
 .page18-bottom {
@@ -954,6 +898,58 @@ p {
     display: flex;
 }
 
-.page18-text {
+.more-lit-page {
+    position: fixed;
+    top: 50px;
+    left: 155px;
+    height: 764px;
+    display: none;
+    margin: 155px 75px 65px 0;
+    filter: drop-shadow(0 0 20px rgba(45,29,56,0.2));
+    border-radius: 24px;
+    background-color: white;
+    width: 1210px;
+    font-size: 24px;
+    text-align: left;
+    padding: 32px 45px 32px 45px;
+}
+
+.more-lit-li {
+    list-style: inside; !important;
     padding-bottom: 8px;
+}
+
+.more-lit-li::marker {
+    font-size: 20px;
+}
+
+.more-let-btn {
+    border-radius: 24px;
+    width: 22px;
+    height: 22px;
+    text-align: right;
+    background-image: url("../img/more-lit.png");
+    transition: 0.7s;
+}
+
+.more-let-btn:hover {
+    background-image: url("../img/noble/more-lit-hover.png");
+}
+
+.more-lit-li1, .more-lit-ul1 {
+    width: 1070px;
+}
+
+.more-lit-li1 {
+    list-style: inside; !important;
+    padding-bottom: 8px;
+}
+
+.more-lit-li1::marker {
+    font-size: 20px;
+}
+
+.more-lit-page-top {
+    display: flex;
+    justify-content: space-between;
 }

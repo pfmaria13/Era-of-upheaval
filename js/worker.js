@@ -60,6 +60,7 @@ let btnPage17Choice2 = document.querySelector(".button-page17-choice2");
 let page18 = document.querySelector(".page18");
 let btnPage18Choice1 = document.querySelector(".more-lit");
 let moreLit = document.querySelector(".more-lit-page");
+let btnMoreLit = document.querySelector(".more-let-btn");
 
 
 let li1 = document.querySelector('.li1');
@@ -82,7 +83,7 @@ function NextPage (btn, nextPage, previousPage) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
         nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},700);
+        setTimeout(() => {previousPage.style.display = "none"},600);
     });
 }
 
@@ -90,7 +91,7 @@ function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
         nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},700);
+        setTimeout(() => {previousPage.style.display = "none"},600);
         Change_bar(li1, 'is-active', ' is-complete')
         Change_bar(li2, 'in-progress', ' is-active');
         li3.className += ' in-progress'
@@ -227,7 +228,9 @@ btnPage17Choice2.addEventListener("click", () => {
 
 btnPage18Choice1.addEventListener("click", () => {
     moreLit.style.display = "flex";
-    moreLit.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page18.style.display = "none"},700);
+});
+
+btnMoreLit.addEventListener("click", () => {
+    moreLit.style.display = "none";
 });
 

@@ -59,7 +59,6 @@ body {
     padding-left: 16px;
     font-family: BogartTrialBold;
     font-weight: bold;
-
     height: 68px;
 }
 
@@ -75,8 +74,9 @@ body {
 
 .main-page1 {
     display: flex;
+    justify-content: space-between;
     padding: 0 38px 0 40px;
-    height: 1024px;
+    margin-bottom: 150px;
 }
 
 .main-page1-text1 {
@@ -96,7 +96,6 @@ body {
 }
 
 .main-page1-text3 {
-    position: absolute;
     padding-top: 360px;
     font-family: BogartTrialBold;
     font-size: 40px;
@@ -106,24 +105,56 @@ body {
 .main-page1-img {
     position: absolute;
     right: 0;
+    max-height: 100%;
+    top: 0;
 }
 
 .main-page1-play {
-    margin-left: 229px;
+    margin-left: 303px;
     width: 180px;
     height: 57px;
     color: white;
     font-size: 32px;
-    background-image: url("../img/main-page1-play.png");
+    margin-top: 48px;
+    border-radius: 8px;
+    background-color: #2D1D38;
+    border: 3px solid #2D1D38;
+    transition: 0.7s;
+}
+
+.main-page1-play:hover {
+    border: 3px solid #2D1D38;
+    background-color: white;
+    color: #2D1D38;
+}
+
+.page1-team, .main-page1-rules {
+    border: 3px solid #2D1D38;
+    background-color: white;
+    color: #2D1D38;
+    height: 52px;
+    font-size: 28px;
+    font-family: Mont-Semibold;
+    border-radius: 8px;
+    transition: 0.7s;
+}
+
+.page1-team:hover, .main-page1-rules:hover {
+    background-color: #2D1D38;
+    color: white;
+}
+
+.page1-team {
+    width: 326px;
 }
 
 .main-page1-rules {
-    margin-left: 64px;
-    width: 212px;
-    height: 57px;
-    color: #2D1D38;
-    font-size: 32px;
-    background-image: url("../img/main-page1-rules.png");
+    width: 193px;
+    margin-right: 64px;
+}
+
+.main-page1-bottom  {
+    padding-top: 257px;
 }
 
 .main-page1-btn {
@@ -133,7 +164,7 @@ body {
 .rules {
     display: none;
     flex-direction: column;
-    padding: 40px 40px 40px 40px;
+    padding: 40px;
 }
 
 .rules-text1 {

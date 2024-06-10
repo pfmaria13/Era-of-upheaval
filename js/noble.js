@@ -70,6 +70,9 @@ let btnPage16Choice2 = document.querySelector(".page16-choice2");
 let btnPage17Choice1 = document.querySelector(".button-page17-choice1");
 let btnPage17Choice2 = document.querySelector(".button-page17-choice2");
 let page18 = document.querySelector(".page18");
+let btnMoreLit = document.querySelector(".more-lit");
+let moreLit = document.querySelector(".more-lit-page");
+let moreLitBtn = document.querySelector(".more-let-btn");
 
 let li1 = document.querySelector('.li1');
 let li2 = document.querySelector('.li2');
@@ -91,7 +94,7 @@ function NextPage (btn, nextPage, previousPage) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
         nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},700);
+        setTimeout(() => {previousPage.style.display = "none"},600);
     });
 }
 
@@ -99,7 +102,7 @@ function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
         nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},700);
+        setTimeout(() => {previousPage.style.display = "none"},600);
         Change_bar(li1, 'is-active', ' is-complete')
         Change_bar(li2, 'in-progress', ' is-active');
         li3.className += ' in-progress'
@@ -121,7 +124,7 @@ btnPage7PA.addEventListener("click", () => {
 btnPage9Choice3.addEventListener("click", () => {
     preface.style.display = "flex";
     preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page9Choice3.style.display = "none"},700);
+    setTimeout(() => {page9Choice3.style.display = "none"},900);
     li6.classList.remove('in-progress');
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
@@ -214,4 +217,12 @@ btnPage17Choice2.addEventListener("click", () => {
     setTimeout(() => {page17Choice2.style.display = "none"},700);
     Change_bar(li9, 'is-active', ' is-complete')
     Change_bar(li10, 'in-progress', ' is-active');
+});
+
+btnMoreLit.addEventListener("click", () => {
+    moreLit.style.display = "flex";
+});
+
+moreLitBtn.addEventListener("click", () => {
+    moreLit.style.display = "none";
 });

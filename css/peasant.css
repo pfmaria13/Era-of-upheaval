@@ -661,7 +661,19 @@ p {
 }
 
 .more-lit-page {
-    padding: 155px 75px 65px 0;
+    position: fixed;
+    top: 50px;
+    left: 155px;
+    height: 764px;
+    display: none;
+    margin: 155px 75px 65px 0;
+    filter: drop-shadow(0 0 20px rgba(45,29,56,0.2));
+    border-radius: 24px;
+    background-color: white;
+    width: 1210px;
+    font-size: 24px;
+    text-align: left;
+    padding: 32px 45px 32px 45px;
 }
 
 .more-lit-li {
@@ -669,16 +681,38 @@ p {
     padding-bottom: 8px;
 }
 
-.more-lit-ul {
-    filter: drop-shadow(0 0 20px rgba(45,29,56,0.2));
-    border-radius: 24px;
-    background-color: white;
-    width: 1210px;
-    font-size: 24px;
-    text-align: left;
-    padding: 32px 40px 32px 40px;
-}
-
 .more-lit-li::marker {
     font-size: 20px;
 }
+
+.more-let-btn {
+    border-radius: 24px;
+    width: 22px;
+    height: 22px;
+    text-align: right;
+    background-image: url("../img/more-lit.png");
+    transition: 0.7s;
+}
+
+.more-let-btn:hover {
+    background-image: url("../img/peasant/more-lit-hover.png");
+}
+
+.more-lit-li1, .more-lit-ul1 {
+    width: 1070px;
+}
+
+.more-lit-li1 {
+    list-style: inside; !important;
+    padding-bottom: 8px;
+}
+
+.more-lit-li1::marker {
+    font-size: 20px;
+}
+
+.more-lit-page-top {
+    display: flex;
+    justify-content: space-between;
+}
+

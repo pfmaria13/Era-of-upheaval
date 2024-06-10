@@ -63,6 +63,9 @@ let page18 = document.querySelector(".page18");
 let btnPage17Choice1 = document.querySelector(".button-page17-choice1");
 let btnPage17Choice2 = document.querySelector(".button-page17-choice2");
 let btnPage17Choice3 = document.querySelector(".button-page17-choice3");
+let btnPage18Choice1 = document.querySelector(".more-lit");
+let moreLit = document.querySelector(".more-lit-page");
+let btnMoreLit = document.querySelector(".more-let-btn");
 
 
 let li1 = document.querySelector('.li1');
@@ -81,70 +84,81 @@ function Change_bar(li, lastClass, newClass) {
     li.classList.remove(lastClass);
 }
 
-btnPreface.addEventListener("click", () => {
-    page2.style.display = "flex";
-    page2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {preface.style.display = "none"},700);
-    Change_bar(li1, 'is-active', ' is-complete')
-    Change_bar(li2, 'in-progress', ' is-active');
-    li3.className += ' in-progress'
+function NextPage (btn, nextPage, previousPage) {
+    btn.addEventListener("click", () => {
+        nextPage.style.display = "flex";
+        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
+        setTimeout(() => {previousPage.style.display = "none"},600);
+    });
+}
+
+function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
+    btn.addEventListener("click", () => {
+        nextPage.style.display = "flex";
+        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
+        setTimeout(() => {previousPage.style.display = "none"},600);
+        Change_bar(li1, 'is-active', ' is-complete')
+        Change_bar(li2, 'in-progress', ' is-active');
+        li3.className += ' in-progress'
+    });
+}
+
+NextPageWithBar(btnPreface, page2, preface, li1, li2, li3);
+
+NextPage(btnPage2Choice1, page3Choice1, page2);
+NextPage(btnPage2Choice2, page3Choice2, page2);
+NextPage(btnPage2Choice3, page3Choice3, page2);
+
+NextPageWithBar(btnPage3Choice1, page4, page3Choice1, li2, li3, li4);
+NextPageWithBar(btnPage3Choice2, page4, page3Choice2, li2, li3, li4);
+NextPageWithBar(btnPage3Choice3, page4, page3Choice3, li2, li3, li4);
+
+NextPage(btnPage4Choice1, page5Choice1, page4);
+NextPage(btnPage4Choice2, page5Choice2, page4);
+
+NextPageWithBar(btnPage5Choice2, page6, page5Choice2, li3, li4, li5);
+
+NextPage(btnPage6Choice1, page7Choice1, page6);
+NextPage(btnPage6Choice2, page7Choice2, page6);
+NextPage(btnPage6Choice3, page7Choice3, page6);
+
+NextPageWithBar(btnPage7Choice1, page8, page7Choice1, li4, li5, li6);
+NextPageWithBar(btnPage7Choice2, page8, page7Choice2, li4, li5, li6);
+NextPageWithBar(btnPage7Choice3, page8, page7Choice3, li4, li5, li6);
+
+NextPage(btnPage8Choice1, page9Choice1, page8);
+NextPage(btnPage8Choice2, page9Choice2, page8);
+
+NextPageWithBar(btnPage9Choice2, page10, page9Choice2, li5, li6, li7);
+
+NextPage(btnPage10Choice1, page11Choice1, page10);
+NextPage(btnPage10Choice2, page11Choice2, page10);
+
+NextPageWithBar(btnPage11Choice1, page12, page11Choice1, li6, li7, li8);
+NextPageWithBar(btnPage11Choice2, page12, page11Choice2, li6, li7, li8);
+
+NextPage(btnPage12Choice1, page13, page11Choice2);
+NextPage(btnPage12Choice2, page13, page11Choice2);
+NextPage(btnPage12Choice3, page13, page11Choice2);
+
+NextPageWithBar(btnPage13, page14, page13, li7, li8, li9);
+
+NextPage(btnPage14Choice1, page15Choice1, page14);
+NextPage(btnPage14Choice2, page15Choice2, page14);
+
+NextPageWithBar(page15Choice1, page16, page15Choice1, li8, li9, li10);
+NextPageWithBar(page15Choice2, page16, page15Choice2, li8, li9, li10);
+
+NextPage(btnPage16Choice1, page17Choice1, page16);
+NextPage(btnPage16Choice2, page17Choice2, page16);
+NextPage(btnPage16Choice3, page17Choice3, page16);
+
+btnPage18Choice1.addEventListener("click", () => {
+    moreLit.style.display = "flex";
 });
 
-btnPage2Choice1.addEventListener("click", () => {
-    page3Choice1.style.display = "flex";
-    page3Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page2.style.display = "none"},700);
-});
-
-btnPage2Choice2.addEventListener("click", () => {
-    page3Choice2.style.display = "flex";
-    page3Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page2.style.display = "none"},700);
-});
-
-btnPage2Choice3.addEventListener("click", () => {
-    page3Choice3.style.display = "flex";
-    page3Choice3.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page2.style.display = "none"},700);
-});
-
-btnPage3Choice1.addEventListener("click", () => {
-    page4.style.display = "flex";
-    page4.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page3Choice1.style.display = "none"},700);
-    Change_bar(li2, 'is-active', ' is-complete')
-    Change_bar(li3, 'in-progress', ' is-active');
-    li4.className += ' in-progress'
-});
-
-btnPage3Choice2.addEventListener("click", () => {
-    page4.style.display = "flex";
-    page4.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page3Choice2.style.display = "none"},700);
-    Change_bar(li2, 'is-active', ' is-complete');
-    Change_bar(li3, 'in-progress', ' is-active');
-    li4.className += ' in-progress';
-});
-
-btnPage3Choice3.addEventListener("click", () => {
-    page4.style.display = "flex";
-    page4.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page3Choice3.style.display = "none"},700);
-    Change_bar(li2, 'is-active', ' is-complete');
-    Change_bar(li3, 'in-progress', ' is-active');
-    li4.className += ' in-progress';
-});
-
-btnPage4Choice1.addEventListener("click", () => {
-    page5Choice1.style.display = "flex";
-    page5Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page4.style.display = "none"},700);
-});
-
-btnPage4Choice2.addEventListener("click", () => {
-    page5Choice2.style.display = "flex";
-    page5Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page4.style.display = "none"},700);
+btnMoreLit.addEventListener("click", () => {
+    moreLit.style.display = "none";
 });
 
 btnPage5Choice1.addEventListener("click", () => {
@@ -157,189 +171,16 @@ btnPage5Choice1.addEventListener("click", () => {
     Change_bar(li1, 'is-complete', ' is-active');
 });
 
-btnPage5Choice2.addEventListener("click", () => {
-    page6.style.display = "flex";
-    page6.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page5Choice2.style.display = "none"},700);
-    Change_bar(li3, 'is-active', ' is-complete');
-    Change_bar(li4, 'in-progress', ' is-active');
-    li5.className += ' in-progress';
-});
-
-btnPage6Choice1.addEventListener("click", () => {
-    page7Choice1.style.display = "flex";
-    page7Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page6.style.display = "none"},700);
-});
-
-btnPage6Choice2.addEventListener("click", () => {
-    page7Choice2.style.display = "flex";
-    page7Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page6.style.display = "none"},700);
-});
-
-btnPage6Choice3.addEventListener("click", () => {
-    page7Choice3.style.display = "flex";
-    page7Choice3.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page6.style.display = "none"},700);
-});
-
-btnPage7Choice1.addEventListener("click", () => {
-    page8.style.display = "flex";
-    page8.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page7Choice1.style.display = "none"},700);
-    Change_bar(li4, 'is-active', ' is-complete');
-    Change_bar(li5, 'in-progress', ' is-active');
-    li6.className += ' in-progress';
-});
-
-btnPage7Choice2.addEventListener("click", () => {
-    page8.style.display = "flex";
-    page8.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page7Choice2.style.display = "none"},700);
-    Change_bar(li4, 'is-active', ' is-complete');
-    Change_bar(li5, 'in-progress', ' is-active');
-    li6.className += ' in-progress';
-});
-
-btnPage7Choice3.addEventListener("click", () => {
-    page8.style.display = "flex";
-    page8.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page7Choice3.style.display = "none"},700);
-    Change_bar(li4, 'is-active', ' is-complete');
-    Change_bar(li5, 'in-progress', ' is-active');
-    li6.className += ' in-progress';
-});
-
-btnPage8Choice1.addEventListener("click", () => {
-    page9Choice1.style.display = "flex";
-    page9Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page8.style.display = "none"},700);
-});
-
-btnPage8Choice2.addEventListener("click", () => {
-    page9Choice2.style.display = "flex";
-    page9Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page8.style.display = "none"},700);
-});
-
 btnPage9Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
     preface.scrollIntoView({ block: "center", behavior: "smooth" });
     setTimeout(() => {page9Choice1.style.display = "none"},700);
-
     li6.classList.remove('in-progress');
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
-});
-
-btnPage9Choice2.addEventListener("click", () => {
-    page10.style.display = "flex";
-    page10.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page9Choice2.style.display = "none"},700);
-    Change_bar(li5, 'is-active', ' is-complete');
-    Change_bar(li6, 'in-progress', ' is-active');
-    li7.className += ' in-progress';
-});
-
-btnPage10Choice1.addEventListener("click", () => {
-    page11Choice1.style.display = "flex";
-    page11Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page10.style.display = "none"},700);
-});
-
-btnPage10Choice2.addEventListener("click", () => {
-    page11Choice2.style.display = "flex";
-    page11Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page10.style.display = "none"},700);
-});
-
-btnPage11Choice1.addEventListener("click", () => {
-    page12.style.display = "flex";
-    page12.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page11Choice1.style.display = "none"},700);
-    Change_bar(li6, 'is-active', ' is-complete');
-    Change_bar(li7, 'in-progress', ' is-active');
-    li8.className += ' in-progress';
-});
-
-btnPage11Choice2.addEventListener("click", () => {
-    page12.style.display = "flex";
-    page12.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page11Choice2.style.display = "none"},700);
-    Change_bar(li6, 'is-active', ' is-complete');
-    Change_bar(li7, 'in-progress', ' is-active');
-    li8.className += ' in-progress';
-});
-
-function ChoicesPage12() {
-    page13.style.display = "flex";
-    page13.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page11Choice2.style.display = "none"},700);
-}
-
-btnPage12Choice1.addEventListener("click", ChoicesPage12);
-btnPage12Choice2.addEventListener("click", ChoicesPage12);
-btnPage12Choice3.addEventListener("click", ChoicesPage12);
-
-btnPage13.addEventListener("click", () => {
-    page14.style.display = "flex";
-    page14.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page13.style.display = "none"},700);
-    Change_bar(li7, 'is-active', ' is-complete');
-    Change_bar(li8, 'in-progress', ' is-active');
-    li9.className += ' in-progress';
-});
-
-btnPage14Choice1.addEventListener("click", () => {
-    page15Choice1.style.display = "flex";
-    page15Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page14.style.display = "none"},700);
-});
-
-btnPage14Choice2.addEventListener("click", () => {
-    page15Choice2.style.display = "flex";
-    page15Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page14.style.display = "none"},700);
-});
-
-page15Choice1.addEventListener("click", () => {
-    page16.style.display = "flex";
-    page16.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page15Choice1.style.display = "none"},700);
-    Change_bar(li8, 'is-active', ' is-complete');
-    Change_bar(li9, 'in-progress', ' is-active');
-    li10.className += ' in-progress';
-});
-
-page15Choice2.addEventListener("click", () => {
-    page16.style.display = "flex";
-    page16.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page15Choice2.style.display = "none"},700);
-    Change_bar(li8, 'is-active', ' is-complete');
-    Change_bar(li9, 'in-progress', ' is-active');
-    li10.className += ' in-progress';
-});
-
-btnPage16Choice1.addEventListener("click", () => {
-    page17Choice1.style.display = "flex";
-    page17Choice1.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page16.style.display = "none"},700);
-});
-
-btnPage16Choice2.addEventListener("click", () => {
-    page17Choice2.style.display = "flex";
-    page17Choice2.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page16.style.display = "none"},700);
-});
-
-btnPage16Choice3.addEventListener("click", () => {
-    page17Choice3.style.display = "flex";
-    page17Choice3.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page16.style.display = "none"},700);
 });
 
 btnPage17Choice1.addEventListener("click", () => {
