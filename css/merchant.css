@@ -215,7 +215,7 @@ p {
 }
 
 .page2 {
-    padding: 150px 0 122px 150px;
+    padding: 120px 0 122px 150px;
     background-image: url("../img/merchant/page2-back.png");
 }
 
@@ -242,6 +242,11 @@ p {
     margin-top: 48px;
 }
 
+.page2-left {
+    display: flex;
+    flex-direction: column;
+}
+
 .page2-img {
     width: 704px;
     height: 393px;
@@ -249,7 +254,7 @@ p {
 }
 
 .page3-choice1 {
-    padding: 155px 40px 78px 150px;
+    padding: 125px 40px 78px 150px;
     background-image: url("../img/merchant/page3-choice1-back.png");
 }
 
@@ -275,7 +280,7 @@ p {
 
 .page3-choice2 {
     background-image: url("../img/merchant/page3-choice2-back.png");
-    padding: 155px 40px 71px 150px;
+    padding: 125px 40px 71px 150px;
 }
 
 .page3-choice2-bottom {
@@ -291,7 +296,7 @@ p {
 
 .page3-choice3 {
     background-image: url("../img/merchant/page3-choice2-back.png");
-    padding: 155px 40px 59px 150px;
+    padding: 125px 40px 59px 150px;
 }
 
 .page3-choice3-text2 {
@@ -310,7 +315,7 @@ p {
 
 .page4 {
     background-image: url("../img/merchant/page4-back.png");
-    padding: 155px 115px 66px 150px;
+    padding: 125px 115px 66px 150px;
 }
 
 .page4-bottom {
@@ -348,7 +353,7 @@ p {
 
 .page5-choice1 {
     background-image: url("../img/merchant/page3-choice1-back.png");
-    padding: 250px 0 76px 150px;
+    padding: 120px 0 76px 150px;
 }
 
 .page5-choice1-bottom {
@@ -376,7 +381,7 @@ p {
 
 .page5-choice2 {
     background-image: url("../img/merchant/page3-choice2-back.png");
-    padding: 155px 0 0 150px;
+    padding: 125px 0 0 150px;
 }
 
 .page5-choice2-bottom {
@@ -391,13 +396,18 @@ p {
 
 .page6 {
     background-image: url("../img/merchant/page6-back.png");
-    padding: 155px 20px 152px 150px;
+    padding: 115px 20px 152px 150px;
 }
 
 .page6-bottom {
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
+}
+
+.page6-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .page6-text {
@@ -411,7 +421,7 @@ p {
 }
 
 .page7-choice1, .page7-choice2, .page7-choice3 {
-    padding: 155px 40px 170px 150px;
+    padding: 125px 40px 170px 150px;
 }
 
 .page7-choice1 {
@@ -454,7 +464,7 @@ p {
 
 .page8 {
     background-image: url("../img/merchant/page8-back.png");
-    padding: 155px 0 152px 150px;
+    padding: 125px 0 152px 150px;
 }
 
 .page8-bottom {
@@ -485,7 +495,7 @@ p {
 
 .page9-choice1 {
     background-image: url("../img/merchant/page9-choice1-back.png");
-    padding: 155px 155px 29px 150px;
+    padding: 125px 155px 29px 150px;
 }
 
 .page9-choice1-text2 {
@@ -515,7 +525,7 @@ p {
 
 .page9-choice2 {
     background-image: url("../img/merchant/page9-choice2-back.png");
-    padding: 155px 0 80px 150px;
+    padding: 125px 0 80px 150px;
 }
 
 .page9-choice2-bottom {
@@ -542,7 +552,7 @@ p {
 
 .page10 {
     background-image: url("../img/merchant/page10-back.png");
-    padding: 155px 0 179px 150px;
+    padding: 125px 0 179px 150px;
 }
 
 .page10-bottom {
@@ -574,7 +584,8 @@ p {
 .page11-choice1 {
     background-image: url("../img/merchant/page11-choice1-back.png");
     flex-direction: row;
-    padding: 155px 150px 140px 150px;
+    justify-content: space-between;
+    padding: 125px 150px 140px 150px;
 }
 
 .page11-choice1-text {
@@ -587,7 +598,7 @@ p {
 
 .page11-choice2 {
     background-image: url("../img/merchant/page11-choice2-back.png");
-    padding: 155px 31px 172px 150px;
+    padding: 125px 31px 172px 150px;
 }
 
 .page11-choice2-bottom {
@@ -608,11 +619,16 @@ p {
     background-image: url("../img/merchant/page12-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 100px 100px 150px;
+    padding: 115px 100px 100px 150px;
 }
 
 .page12-text {
     width: 672px;
+}
+
+.page12-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .button-page12-choice1 {
@@ -633,7 +649,7 @@ p {
 
 .page13 {
     background-image: url("../img/merchant/page13-choice1-back.png");
-    padding: 155px 0 70px 150px;
+    padding: 135px 0 70px 150px;
 }
 
 .page13-text {
@@ -653,7 +669,7 @@ p {
 
 .page14 {
     background-image: url("../img/merchant/page14-back.png");
-    padding: 155px 40px 70px 150px;
+    padding: 115px 40px 70px 150px;
 }
 
 .page14-bottom {
@@ -695,7 +711,7 @@ p {
     background-image: url("../img/merchant/page15-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 72px 40px 150px;
+    padding: 60px 72px 40px 150px;
 }
 
 .page15-left {
@@ -714,7 +730,7 @@ p {
 
 .page16 {
     background-image: url("../img/merchant/page16-back.png");
-    padding: 155px 155px 113px 150px;
+    padding: 125px 155px 113px 150px;
 }
 
 .page16-text2 {
@@ -740,7 +756,7 @@ p {
 
 .page17-choice1 {
     background-image: url("../img/merchant/page17-choice1-back.png");
-    padding: 155px 0 100px 150px;
+    padding: 125px 0 100px 150px;
 }
 
 .page17-choice1-bottom {
@@ -755,7 +771,7 @@ p {
 .page17-choice2, .page17-choice3 {
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 40px 72px 150px;
+    padding: 80px 40px 72px 150px;
 }
 
 .page17-choice2 {

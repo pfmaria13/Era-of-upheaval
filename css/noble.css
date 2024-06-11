@@ -43,10 +43,11 @@ p {
 .page {
     display: none;
     flex-direction: column;
-}
-
-.noble {
-    padding: 120px 0 0 155px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 88vh;
+    width: 100vw;
+    background-size: 100% auto;
 }
 
 .site-header {
@@ -105,17 +106,10 @@ p {
     color: white;
 }
 
-.preface-bar {
-    position: fixed;
-    top: 0;
-    width: 64px;
-    height: 808px;
-    margin: 173px 0 0 40px;
-}
-
 .preface {
-    margin-top: -60px;
-    padding: 0 0 30px 0;
+    display: flex;
+    background-image: url("../img/noble/page1-back.png");
+    padding: 50px 0 30px 155px;
     display: flex;
     column-gap: 50px;
 }
@@ -177,8 +171,10 @@ p {
 }
 
 .page2 {
+    background-image: url("../img/noble/page2-back.png");
     flex-direction: row;
-    padding: 155px 40px 100px 0;
+    justify-content: space-between;
+    padding: 20px 40px 100px 155px;
     display: none;
     column-gap: 50px;
 }
@@ -189,6 +185,11 @@ p {
 
 .page2-text {
     width: 682px;
+}
+
+.page2-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .button-page2-choice1 {
@@ -212,8 +213,9 @@ p {
 }
 
 .page3-choice1 {
+    background-image: url("../img/noble/page3-choice1-back.png");
     column-gap: 50px;
-    padding: 155px 0 60px;
+    padding: 60px 0 60px 155px;
 }
 
 .row-page3 {
@@ -241,7 +243,8 @@ p {
 }
 
 .page3-choice2 {
-    padding: 155px 40px 78px 0;
+    background-image: url("../img/noble/page3-choice2-back.png");
+    padding: 70px 40px 78px 155px;
     column-gap: 50px;
 }
 
@@ -253,13 +256,14 @@ p {
     width: 672px;
 }
 
-
 .page4 {
-    padding: 155px 40px 113px 0;
+    background-image: url("../img/noble/page4-back.png");
+    padding: 120px 40px 113px 155px;
 }
 
 .page4-bottom-content {
     display: flex;
+    justify-content: space-between;
 }
 
 .choice {
@@ -282,6 +286,8 @@ p {
 
 .page4-choices {
     padding-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 .page4-choice1, .page4-choice2 {
@@ -302,7 +308,8 @@ p {
 }
 
 .page5-choice1-2 {
-    padding: 150px 40px 78px 0;
+    background-image: url("../img/noble/page5-choice1-back.png");
+    padding: 150px 40px 78px 155px;
 }
 
 .page5-bottom {
@@ -322,13 +329,15 @@ p {
 }
 
 .page5-choice3 {
-    padding: 250px 0 78px;
+    background-image: url("../img/noble/page5-choice2-back.png");
+    padding: 120px 0 78px 155px;
 }
 
 .page6 {
+    background-image: url("../img/noble/page6-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 100px 40px 0;
+    padding: 40px 100px 40px 155px;
 }
 
 .page6-img {
@@ -358,9 +367,10 @@ p {
 }
 
 .page7-choice1 {
+    background-image: url("../img/noble/page7-choice1-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 0 18.5px 0;
+    padding: 20px 0 18.5px 155px;
 }
 
 .page7-choice13-text {
@@ -383,7 +393,8 @@ p {
 }
 
 .page7-choice2 {
-    padding: 155px 0 78px 0;
+    background-image: url("../img/noble/page7-choice2-back.png");
+    padding: 125px 0 78px 155px;
 }
 
 .page7-choice2-content {
@@ -429,9 +440,10 @@ p {
 }
 
 .page7-choice3 {
+    background-image: url("../img/noble/page7-choice3-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 150px 112px 40px 0;
+    padding: 10px 112px 40px 155px;
 }
 
 .page7-choice3-img {
@@ -440,7 +452,8 @@ p {
 }
 
 .page8 {
-    padding: 150px 83px 64px 0;
+    background-image: url("../img/noble/page8-back.png");
+    padding: 120px 83px 64px 155px;
 }
 
 .page8-content {
@@ -479,7 +492,8 @@ p {
 }
 
 .page9-choice1 {
-    padding: 150px 0 64px 0;
+    background-image: url("../img/noble/page9-choice1-back.png");
+    padding: 120px 0 64px 155px;
 }
 
 .page9-bottom {
@@ -501,7 +515,8 @@ p {
 }
 
 .page9-choice2 {
-    padding: 150px 0 80px 0;
+    background-image: url("../img/noble/page9-choice2-back.png");
+    padding: 120px 0 80px 155px;
 }
 
 .page9-choice2-text {
@@ -509,7 +524,8 @@ p {
 }
 
 .page9-choice3 {
-    padding: 150px 41px 88px 0;
+    background-image: url("../img/noble/page9-choice3-back.png");
+    padding: 120px 41px 88px 155px;
 }
 
 .page9-choice3-bottom {
@@ -530,11 +546,17 @@ p {
 }
 
 .page10 {
-    padding: 150px 40px 48px 0;
+    background-image: url("../img/noble/page10-back.png");
+    padding: 120px 40px 48px 155px;
 }
 
 .page10-row {
     display: flex;
+}
+
+.page10-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .page10-choice1, .page10-choice2, .page10-choice3 {
@@ -543,7 +565,8 @@ p {
 }
 
 .page11-choice1 {
-    padding: 150px 40px 120px 0;
+    background-image: url("../img/noble/page11-choice1-back.png");
+    padding: 150px 40px 120px 155px;
 }
 
 .page11-text, .page3-text3-choice2, .page11-text, .page12-text, .page15-choice2-text2, .page17-choice1-text2 {
@@ -563,9 +586,10 @@ p {
 }
 
 .page11-choice2 {
+    background-image: url("../img/noble/page11-choice2-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 150px 88px 35px 0;
+    padding: 10px 88px 35px 155px;
 }
 
 .page11-left {
@@ -585,7 +609,8 @@ p {
 }
 
 .page11-choice3 {
-    padding: 150px 40px 80px 0;
+    background-image: url("../img/noble/page11-choice3-back.png");
+    padding: 150px 40px 80px 155px;
 }
 
 .page11-text3 {
@@ -607,9 +632,10 @@ p {
 }
 
 .page12 {
+    background-image: url("../img/noble/page12-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 150px 100px 100px 0;
+    padding: 150px 100px 100px 155px;
 }
 
 .page12-left {
@@ -638,13 +664,14 @@ p {
 }
 
 .page12-img {
-    padding-top: 30px;
+    margin-top: 30px;
     width: 412px;
     height: 623px;
 }
 
 .page13-choice1 {
-    padding: 150px 0 120px 0;
+    background-image: url("../img/noble/page13-choice1-back.png");
+    padding: 120px 0 120px 155px;
 }
 
 .page13-choice1-img {
@@ -662,7 +689,8 @@ p {
 }
 
 .page13-choice2 {
-    padding: 150px 0 120px;
+    background-image: url("../img/noble/page13-choice2-back.png");
+    padding: 120px 0 120px 155px;
 }
 
 .button-page13-choice2 {
@@ -670,7 +698,8 @@ p {
 }
 
 .page13-choice3 {
-    padding: 150px 0 120px;
+    background-image: url("../img/noble/page13-choice3-back.png");
+    padding: 120px 0 120px 155px;
 }
 
 .page13-text {
@@ -683,7 +712,8 @@ p {
 }
 
 .page14 {
-    padding: 150px 40px 56px 0;
+    background-image: url("../img/noble/page14-back.png");
+    padding: 120px 40px 56px 155px;
 }
 
 .page14-top {
@@ -698,12 +728,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 60px;
 }
 
 .page14-choices {
     display: flex;
     flex-direction: column;
+
 }
 
 .page14-choice1 {
@@ -716,7 +747,8 @@ p {
 }
 
 .page15-choice1 {
-    padding: 150px 72px 40px 0;
+    background-image: url("../img/noble/page15-choice1-back.png");
+    padding: 10px 72px 40px 155px;
 }
 
 .page15-choice1-bottom {
@@ -744,7 +776,8 @@ p {
 }
 
 .page15-choice2 {
-    padding: 150px 0 120px 0;
+    background-image: url("../img/noble/page15-choice2-back.png");
+    padding: 150px 0 120px 155px;
 }
 
 .page15-choice2-left {
@@ -773,7 +806,8 @@ p {
 }
 
 .page16 {
-    padding: 150px 139px 143px 0;
+    background-image: url("../img/noble/page16-back.png");
+    padding: 120px 139px 143px 155px;
 }
 
 .page16-bottom {
@@ -793,7 +827,8 @@ p {
 }
 
 .page17-choice1 {
-    padding: 155px 0 100px;
+    background-image: url("../img/noble/page17-choice1-back.png");
+    padding: 120px 0 100px 155px;
 }
 
 .page17-choice1-texts {
@@ -824,9 +859,10 @@ p {
 }
 
 .page17-choice2 {
+    background-image: url("../img/noble/page17-choice2-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 150px 40px 70px 0;
+    padding: 70px 40px 70px 155px;
 }
 
 .page17-choice2-text {
@@ -890,7 +926,8 @@ p {
 }
 
 .page18 {
-    padding: 155px 155px 288px 0;
+    background-image: url("../img/noble/page18-back.png");
+    padding: 155px 155px 288px 155px;
 }
 
 .page18-bottom {

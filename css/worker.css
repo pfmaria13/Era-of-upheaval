@@ -52,6 +52,11 @@ body {
 .page {
     display: none;
     flex-direction: column;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100vw;
+    background-size: 100% auto;
 }
 
 .header-text-up {
@@ -120,12 +125,14 @@ body {
 }
 
 .preface {
+    background-image: url("../img/worker/page1-back.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
     display: flex;
-    padding-bottom: 114px;
-}
-
-.worker {
-    padding: 120px 0 0 155px;
+    padding: 120px 0 114px 155px;
+    height: 90vh;
+    width: 100vw;
+    background-size: 100% auto;
 }
 
 p {
@@ -146,7 +153,6 @@ p {
 .button-next {
     display: flex;
     justify-content: center;
-    /*position: relative;*/
     width: 171px;
     height: 57px;
     background-color: #986CCF;
@@ -168,8 +174,8 @@ p {
 }
 
 .page2 {
-    padding-top: 155px;
-    padding-bottom: 256px;
+    background-image: url("../img/worker/page2-back.png");
+    padding: 155px 0 256px 155px;
 }
 
 .page2-buttons {
@@ -191,9 +197,10 @@ p {
 }
 
 .page3-choice1 {
+    background-image: url("../img/worker/page3-choice1-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 40px 180px 0;
+    padding: 155px 40px 180px 155px;
 }
 
 .page3-left {
@@ -208,13 +215,15 @@ p {
 }
 
 .page3-choice2 {
+    background-image: url("../img/worker/page3-choice2-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 40px 180px 0;
+    padding: 155px 40px 180px 155px;
 }
 
 .page4 {
-    padding: 220px 139px 100px 0;
+    background-image: url("../img/worker/page4-back.png");
+    padding: 120px 139px 100px 155px;
 }
 
 .page4-buttons {
@@ -248,7 +257,12 @@ p {
     padding: 109px 48px 109px 48px;
 }
 .page5-choice1, .page5-choice2 {
-    padding: 155px 0 116px 0;
+    background-image: url("../img/worker/page5-choice1-back.png");
+    padding: 155px 0 116px 155px;
+}
+
+.page5-choice2 {
+    background-image: url("../img/worker/page5-choice2-back.png");
 }
 
 .page5-bottom {
@@ -281,7 +295,8 @@ p {
 }
 
 .page6 {
-    padding: 155px 139px 170px 0;
+    background-image: url("../img/worker/page6-back.png");
+    padding: 155px 139px 170px 155px;
 }
 
 .page6-text {
@@ -299,7 +314,15 @@ p {
 }
 
 .page7-choice1, .page7-choice2 {
-    padding: 155px 0 158px 0;
+    padding: 155px 0 158px 155px;
+}
+
+.page7-choice1 {
+    background-image: url("../img/worker/page7-choice1-back.png");
+}
+
+.page7-choice2 {
+    background-image: url("../img/worker/page7-choice2-back.png");
 }
 
 .page7-bottom {
@@ -344,7 +367,8 @@ p {
 }
 
 .page8 {
-    padding: 155px 0 155px 0;
+    background-image: url("../img/worker/page8-back.png");
+    padding: 155px 0 155px 155px;
 }
 
 .page8-text1 {
@@ -376,7 +400,8 @@ p {
 }
 
 .page9-choice1{
-    padding: 155px 40px 138px 0;
+    background-image: url("../img/worker/page9-choice1-back.png");
+    padding: 155px 40px 138px 155px;
 }
 
 .page9-text1-choice1 {
@@ -396,7 +421,8 @@ p {
 }
 
 .page9-choice2{
-    padding: 155px 0 156px 0;
+    background-image: url("../img/worker/page9-choice2-back.png");
+    padding: 155px 0 156px 155px;
 }
 
 .page9-text1-choice2 {
@@ -414,7 +440,8 @@ p {
 }
 
 .page10 {
-    padding: 155px 0 140px 0;
+    background-image: url("../img/worker/page10-back.png");
+    padding: 120px 0 140px 155px;
 }
 
 .page10-bottom {
@@ -430,7 +457,7 @@ p {
 }
 
 .page10-text1 {
-    padding-top: 150px;
+    padding-top: 20px;
     width: 1130px;
 }
 
@@ -444,7 +471,8 @@ p {
 }
 
 .page11-choice1 {
-    padding: 155px 40px 100px 0;
+    background-image: url("../img/worker/page11-choice1-back.png");
+    padding: 155px 40px 100px 155px;
 }
 
 .page11-text1-choice1 {
@@ -462,7 +490,8 @@ p {
 }
 
 .page11-choice2 {
-    padding: 155px 96px 181px 0;
+    background-image: url("../img/worker/page11-choice2-back.png");
+    padding: 155px 96px 181px 155px;
 }
 
 .page11-text3 {
@@ -477,7 +506,8 @@ p {
 }
 
 .page12 {
-    padding: 155px 40px 178px 0;
+    background-image: url("../img/worker/page12-back.png");
+    padding: 155px 40px 178px 155px;
 }
 
 .page12-buttons {
@@ -510,7 +540,8 @@ p {
 }
 
 .page13-choice1 {
-    padding: 155px 40px 192px 0;
+    background-image: url("../img/worker/page13-choice1-back.png");
+    padding: 155px 40px 192px 155px;
 }
 
 .page13-text1-choice2 {
@@ -548,7 +579,8 @@ p {
 }
 
 .page13-choice2 {
-    padding: 200px 85px 155px 0;
+    background-image: url("../img/worker/page13-choice2-back.png");
+    padding: 100px 85px 155px 155px;
 }
 
 .page13-bottom {
@@ -566,7 +598,8 @@ p {
 }
 
 .page14 {
-    padding: 155px 139px 170px 0;
+    background-image: url("../img/worker/page14-back.png");
+    padding: 155px 139px 170px 155px;
 }
 
 .page14-buttons {
@@ -585,7 +618,8 @@ p {
 }
 
 .page15-choice1 {
-    padding: 155px 0 188px 0;
+    background-image: url("../img/worker/page15-choice1-back.png");
+    padding: 155px 0 188px 155px;
 }
 
 .page15-choice1-bottom, .page15-bottom {
@@ -599,7 +633,8 @@ p {
 }
 
 .page15-choice2 {
-    padding: 155px 0 126px 0;
+    background-image: url("../img/worker/page15-choice2-back.png");
+    padding: 155px 0 126px 155px;
 }
 
 .page15-text3 {
@@ -618,8 +653,8 @@ p {
 }
 
 .page16 {
-
-    padding: 155px 40px 78px 0;
+    background-image: url("../img/worker/page16-back.png");
+    padding: 155px 40px 78px 155px;
 }
 
 .page16-bottom {
@@ -653,7 +688,8 @@ p {
 }
 
 .page17-choice1 {
-    padding: 155px 40px 124px 0;
+    background-image: url("../img/worker/page17-choice1-back.png");
+    padding: 155px 40px 124px 155px;
 }
 
 .page17-choice1-bottom {
@@ -676,7 +712,8 @@ p {
 }
 
 .page17-choice2 {
-    padding: 155px 40px 110px 0;
+    background-image: url("../img/worker/page17-choice2-back.png");
+    padding: 155px 40px 110px 155px;
 }
 
 .page17-choice2-text1 {
@@ -694,7 +731,8 @@ p {
 }
 
 .page18 {
-    padding: 155px 155px 288px 0;
+    background-image: url("../img/worker/page18-back.png");
+    padding: 155px 155px 288px 155px;
 }
 
 .page18-buttons {
@@ -750,6 +788,7 @@ p {
 }
 
 .more-lit-page {
+    padding-left: 155px;
     position: fixed;
     top: 50px;
     left: 155px;

@@ -273,12 +273,17 @@ p {
 }
 
 .page4 {
-    padding: 155px 56px 42px 155px;
+    padding: 135px 56px 42px 155px;
     background-image: url("../img/peasant/page4-back.png");
 }
 
 .page4-text {
     width: 1229px;
+}
+
+.page4-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .page4-bottom {
@@ -322,11 +327,16 @@ p {
 
 .page6 {
     background-image: url("../img/peasant/page6-back.png");
-    padding: 155px 40px 101px 155px;
+    padding: 130px 40px 101px 155px;
 }
 
 .page6-text {
     width: 786px;
+}
+
+.page6-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .page6-bottom {
@@ -402,6 +412,11 @@ p {
     width: 700px;
 }
 
+.page8-left {
+    display: flex;
+    flex-direction: column;
+}
+
 .button-page8-choice1, .button-page12-choice1 {
     margin: 60px 0 48px 0
 }
@@ -456,6 +471,11 @@ p {
     padding: 155px 40px 48px 155px;
 }
 
+.page10-left {
+    display: flex;
+    flex-direction: column;
+}
+
 .page10-bottom {
     display: flex;
     justify-content: space-between;
@@ -504,7 +524,12 @@ p {
     background-image: url("../img/peasant/page12-back.png");
     justify-content: space-between;
     flex-direction: row;
-    padding: 155px 100px 70px 155px;
+    padding: 125px 100px 70px 155px;
+}
+
+.page12-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .page12-img {
@@ -533,7 +558,7 @@ p {
 
 .page13-choice2 {
     background-image: url("../img/peasant/page13-choice2-back.png");
-    padding: 155px 0 120px 155px;
+    padding: 135px 0 120px 155px;
 }
 
 .page13-choice2-bottom {
@@ -552,7 +577,12 @@ p {
 
 .page14 {
     background-image: url("../img/peasant/page14-back.png");
-    padding: 155px 40px 56px 155px;
+    padding: 135px 40px 56px 155px;
+}
+
+.page14-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .page14-bottom {
@@ -579,7 +609,7 @@ p {
     background-image: url("../img/peasant/page15-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 72px 40px 155px;
+    padding: 50px 72px 40px 155px;
 }
 
 .page15-text {
@@ -608,9 +638,13 @@ p {
 
 .page16 {
     background-image: url("../img/peasant/page16-back.png");
-    padding: 155px 155px 83px 155px;
+    padding: 135px 155px 83px 155px;
 }
 
+.page16-bottom {
+    display: flex;
+    flex-direction: column;
+}
 .button-page16-choice1 {
     margin: 28px 0 32px;
 }
@@ -632,7 +666,7 @@ p {
     background-image: url("../img/peasant/page17-choice2-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 40px 72px 155px;
+    padding: 105px 40px 72px 155px;
 }
 
 .page17-choice2-left {

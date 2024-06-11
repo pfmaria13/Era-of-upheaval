@@ -20,13 +20,14 @@ function NextPage (btn, nextPage, previousPage) {
         setTimeout(() => {previousPage.style.display = "none"},600);
     });
 }
-
 NextPage(btnMainPlay, mainChoice, mainPage);
 NextPage(btnMainRules, rules, mainPage);
 NextPage(btnRulesPlay, mainChoice, rules);
 NextPage(btnRulesMain, mainPage, rules);
 NextPage(btnPage1Team, pageTeam, mainPage);
 NextPage(btnPageToMain, mainPage, pageTeam);
+
+
 btnPeasant.addEventListener("click", () => {
     $.ajax({
         type: 'POST',
@@ -39,7 +40,6 @@ btnPeasant.addEventListener("click", () => {
             console.log('Ошибка при обновлении данных');
         }
     })
-
     document.location='peasant.html';
 });
 
@@ -55,7 +55,6 @@ btnNoble.addEventListener("click", () => {
             console.log('Ошибка при обновлении данных');
         }
     })
-
     document.location='noble.html';
 });
 
@@ -71,7 +70,6 @@ btnMerchant.addEventListener("click", () => {
             console.log('Ошибка при обновлении данных');
         }
     })
-
     document.location='merchant.html';
 });
 
@@ -87,6 +85,5 @@ btnWorker.addEventListener("click", () => {
             console.log('Ошибка при обновлении данных');
         }
     })
-
     document.location='worker.html';
 });

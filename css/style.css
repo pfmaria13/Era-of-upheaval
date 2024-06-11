@@ -77,7 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 38px 0 40px;
-    /*margin-bottom: 150px;*/
+    background-image: url("../img/page1-back.png");
 }
 
 .main-page1-text1 {
@@ -166,6 +166,7 @@ body {
     display: none;
     flex-direction: column;
     padding: 40px;
+    background-image: url("../img/page2-back.png");
 }
 
 .rules-text1 {
@@ -237,7 +238,8 @@ body {
     display: none;
     flex-direction: column;
     padding: 40px 40px 86px 40px;
-    margin-top: 50px;
+    margin-top: 60px;
+    background-image: url("../img/page3-back.png");
 }
 
 .main-choice-text1 {
@@ -290,6 +292,7 @@ body {
     display: none;
     flex-direction: column;
     padding: 40px 36px 136px 40px;
+    background-image: url("../img/page4-back.png");
 }
 
 .page-team-text1 {
@@ -349,3 +352,10 @@ body {
     padding-top: 101px;
 }
 
+.page {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% auto;
+}
