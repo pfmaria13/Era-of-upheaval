@@ -192,11 +192,12 @@ p {
 }
 
 .page2 {
-    padding: 120px 155px 37px 155px;
+    padding: 0 155px 37px 155px;
     background-image: url("../img/peasant/page2-back.png");
 }
 
 .page2-text {
+    padding-top: 11%;
     width: 672px;
     padding-bottom: 60px;
 }
@@ -211,8 +212,12 @@ p {
 }
 
 .page3-choice1 {
-    padding: 120px 40px 0 155px;
+    padding: 0 40px 0 155px;
     background-image: url("../img/peasant/page3-choice1-back.png");
+}
+
+.page3-choice1-text1 {
+    padding-top: 90px;
 }
 
 .page3-choice1-bottom {
@@ -229,8 +234,12 @@ p {
 }
 
 .page3-choice2 {
-    padding: 120px 40px 0 155px;
+    padding: 0 40px 0 155px;
     background-image: url("../img/peasant/page3-choice2-back.png");
+}
+
+.page3-choice2-text {
+    padding-top: 120px;
 }
 
 .page3-choice2-bottom {
@@ -243,7 +252,7 @@ p {
 }
 
 .page3-choice3 {
-    padding: 120px 40px 0 155px;
+    padding: 0 40px 0 155px;
     background-image: url("../img/peasant/page3-choice2-back.png");
 }
 
@@ -252,7 +261,7 @@ p {
 }
 
 .page3-choice3-text2 {
-    padding-top: 50px;
+    padding-top: 120px;
 }
 
 .page3-choice3-bottom {
@@ -273,10 +282,13 @@ p {
 }
 
 .page4 {
-    padding: 135px 56px 42px 155px;
+    padding: 0 56px 42px 155px;
     background-image: url("../img/peasant/page4-back.png");
 }
 
+.page4-text2 {
+    padding-top: 135px;
+}
 .page4-text {
     width: 1229px;
 }
@@ -790,3 +802,56 @@ p {
     justify-content: space-between;
 }
 
+@media screen and (max-height: 1040px) {
+    .page2-text {
+        padding-top: 90px;
+    }
+
+    .page3-choice1-text1 {
+        padding-top: 120px;
+    }
+
+    .page3-choice1-img {
+        margin: 70px -40px 0 0 ;
+        width: 800px;
+    }
+
+    .page3-choice2-img {
+        width: 68%;
+    }
+
+    .page4-img {
+        width: 33%;
+    }
+
+    .page4-text2 {
+        padding-top: 120px;
+    }
+
+    .page5-choice2 {
+        padding-top: 120px;
+    }
+
+    .page9-choice2-img {
+        width: 26%;
+    }
+
+    .page10 {
+        padding-top: 110px;
+    }
+
+    .page14 {
+        padding-top: 105px;
+    }
+
+    .more-lit-page {
+        height: 750px;
+    }
+}
+
+@media screen and (max-height: 975px) {
+    p {
+        font-size: 23px;
+    }
+    /*до 791*/
+}
