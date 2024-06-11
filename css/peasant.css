@@ -299,7 +299,7 @@ p {
 }
 
 .page4-bottom {
-    padding-top: 24px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     padding-right: 83px;
@@ -361,8 +361,8 @@ p {
     padding-top: 54px;
 }
 
-.button-page6-choice2 {
-    margin-top: 48px;
+.button-page6-choice1 {
+    margin-bottom: 48px;
 }
 
 .page7-choice1 {
@@ -536,7 +536,7 @@ p {
     background-image: url("../img/peasant/page12-back.png");
     justify-content: space-between;
     flex-direction: row;
-    padding: 125px 100px 70px 155px;
+    padding: 100px 100px 70px 155px;
 }
 
 .page12-left {
@@ -609,11 +609,12 @@ p {
 
 .button-page14-choice1 {
     margin-top: 24px;
+    margin-bottom: 48px;
     width: 671px;
 }
 
 .button-page14-choice2, .button-page14-choice3 {
-    margin-top: 48px;
+    margin-bottom: 48px;
     width: 671px;
 }
 
@@ -641,7 +642,8 @@ p {
 }
 
 .page15-text2 {
-    margin: 171px 0 0 98px;
+    padding-top: 171px;
+    margin-left: 98px;
 }
 
 .button-page15-choice3 {
@@ -806,52 +808,137 @@ p {
     .page2-text {
         padding-top: 90px;
     }
-
     .page3-choice1-text1 {
         padding-top: 120px;
     }
-
     .page3-choice1-img {
         margin: 70px -40px 0 0 ;
         width: 800px;
     }
-
     .page3-choice2-img {
         width: 68%;
     }
-
     .page4-img {
         width: 33%;
     }
-
     .page4-text2 {
         padding-top: 120px;
     }
-
     .page5-choice2 {
         padding-top: 120px;
     }
-
     .page9-choice2-img {
         width: 26%;
     }
-
     .page10 {
         padding-top: 110px;
     }
-
     .page14 {
         padding-top: 105px;
     }
-
     .more-lit-page {
         height: 750px;
     }
 }
 
 @media screen and (max-height: 975px) {
-    p {
-        font-size: 23px;
-    }
     /*до 791*/
+    .page {
+        height: 88vh;
+    }
+    p, .more-lit-page {
+        font-size: 22px;
+    }
+    .more-lit-page {
+        margin-top: 110px;
+        height: 610px;
+    }
+    .more-lit-li {
+        padding-bottom: 2px;
+    }
+    .preface {
+        padding: 110px 150px 0 150px
+    }
+    .button-page1 {
+        margin-top: 230px;
+    }
+    .choice {
+        font-size: 22px;
+        padding: 20px 48px;
+        margin-bottom: 20px;
+    }
+    .page2 {
+        padding: 20px 155px 37px 155px;
+    }
+    .page2-text {
+        padding-bottom: 40px;
+    }
+    .page3-choice1-text1, .page3-choice2-text, .page15-text2, .page3-choice3-text2 {
+        padding-top: 90px;
+    }
+    .page3-choice1-img, .page5-choice2-img, .page5-choice1-img, .page9-choice1-img{
+        width: 700px;
+        margin-top: -10px;
+    }
+    .page3-choice2-img, .page7-choice1-img{
+        width: 700px;
+        margin-top: -60px;
+    }
+    .page3-choice3-text1, .page13-choice2-text2 {
+        padding-top: 250px;
+    }
+    .page3-choice3-img {
+        width: 700px;
+        margin-top: -120px;
+    }
+    .page4-text2 {
+        padding-top: 70px;
+    }
+    .page4-img {
+        margin-top: -60px;
+        scale: 0.88;
+    }
+    .page4 {
+        padding-bottom: 0;
+    }
+    .page5-choice1, .page5-choice2 {
+        padding: 90px 0 0 155px;
+    }
+     .page6, .page7-choice1, .page7-choice2, .page8, .page9-choice1, .page9-choice2, .page10, .page11-choice1,
+    .page11-choice2, .page12, .page13-choice1, .page13-choice2, .page14, .page16, .page17-choice1, .page17-choice2, .page18 {
+        padding-top: 90px;
+        padding-bottom: 0;
+    }
+    .page6-img {
+        margin-top: -70px;
+    }
+    .button-page8-choice1 {
+        margin-bottom: 60px;
+        padding: 32px;
+    }
+    .page8-img {
+        width: 300px;
+    }
+    .page15-choice1, .page15-choice2, .page15-choice3 {
+        padding-top: 0;
+    }
+    .page9-choice2-img {
+        height: 500px;
+    }
+    .page10-img, .page14-img {
+        width: 440px;
+    }
+    .page12-img{
+        height: 600px;
+    }
+    .page15-img {
+        height: 650px;
+        margin-top: 40px;
+    }
+    .page13-choice1-img, .page13-choice2-img {
+        width: 700px;
+    }
+    .page17-choice1-img {
+        width: 650px;
+    }
 }
