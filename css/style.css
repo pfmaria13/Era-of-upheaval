@@ -253,7 +253,7 @@ body {
 .main-choice {
     display: none;
     flex-direction: column;
-    padding: 40px 40px 86px 40px;
+    padding: 0 40px 86px 40px;
     margin-top: 60px;
     background-image: url("../img/page3-back.png");
 }
