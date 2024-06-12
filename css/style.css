@@ -40,13 +40,29 @@ body {
     font-family: Mont;
 }
 
-
-
 .site-header {
-    background: white; !important;
     display: flex;
     top: 0;
     z-index: 10;
+    scale: 1.1;
+    padding: 0 60px;
+}
+
+.site-header-team {
+    display: flex;
+    top: 0;
+    z-index: 10;
+    justify-content: space-between;
+    scale: 1.1;
+    padding: 0 90px;
+}
+
+.site-header-choice {
+    display: flex;
+    top: 0;
+    z-index: 10;
+    scale: 1.1;
+    padding: 0 90px;
 }
 
 .logo {
@@ -106,7 +122,7 @@ body {
 .main-page1-img {
     position: absolute;
     right: 0;
-    max-height: 100%;
+    height: 100%;
     top: 0;
 }
 
@@ -165,7 +181,7 @@ body {
 .rules {
     display: none;
     flex-direction: column;
-    padding: 40px;
+    padding: 0 40px 40px 40px;
     background-image: url("../img/page2-back.png");
 }
 
@@ -226,7 +242,7 @@ body {
 }
 
 .rules-btn {
-    margin-top: 60px;
+    margin-top: 90px;
     display: flex;
 }
 
@@ -243,14 +259,14 @@ body {
 }
 
 .main-choice-text1 {
-    width: 1004px;
-    font-size: 24px;
+    width: 1680px;
+    font-size: 26px;
     padding: 72px 20px 16px 20px;
 }
 
 .main-choice-text2 {
-    width: 1004px;
-    font-size: 24px;
+    width: 1680px;
+    font-size: 26px;
     padding: 0 20px 0 20px;
 }
 
@@ -291,7 +307,7 @@ body {
 .page-team {
     display: none;
     flex-direction: column;
-    padding: 40px 36px 136px 40px;
+    padding: 0 36px 136px 40px;
     background-image: url("../img/page4-back.png");
 }
 
@@ -302,19 +318,13 @@ body {
 }
 
 .main-btn-team {
-    margin-top: 57px;
-}
-
-.site-header-team {
-    display: flex;
-    justify-content: space-between;
+    margin: 57px 30px 0 0 ;
 }
 
 .page-row1 {
     display: flex;
     justify-content: center;
     column-gap: 10%;
-
 }
 
 .team-text2, .team-text2, .team-text2 {
@@ -325,7 +335,7 @@ body {
 
 .team-historian-photo, .team3-photo, .team2-photo {
     display: flex;
-    column-gap: 20px;
+    column-gap: 60px;
 }
 
 .historian-text1, .team2-text1, .team3-text1 {
@@ -358,4 +368,166 @@ body {
     height: 100vh;
     width: 100vw;
     background-size: 100% auto;
+}
+
+@media screen and (max-width: 2200px) {
+    .main-page1-text1, .main-page1-text2, .main-page1-text3, .main-page1-bottom {
+        padding-left: 100px;
+        scale: 1.15;
+    }
+    .main-page1-bottom {
+        padding-top: 200px;
+    }
+    .main-page1-text2 {
+        padding-left: 115px;
+    }
+    .main-page1-text3 {
+        padding-left: 95px;
+    }
+    .main-page1-img {
+        padding-right: 100px;
+    }
+    .main-page1-play {
+        scale: 1.15;
+        margin: 100px 0 0 430px;
+    }
+    .rules-text2, .rules-text3 {
+        font-size: 26px;
+        width: 1690px ;
+    }
+    .rules-text1 {
+        font-size: 34px;
+    }
+    .rules {
+        padding-left: 100px;
+    }
+    .rules-btn {
+        scale: 1.1;
+        margin-left: 30px;
+    }
+    .rules-img {
+        padding-right: 150px;
+    }
+
+}
+@media screen and (max-width: 1800px) {
+    .main-page1-img {
+        padding-right: 50px;
+    }
+    .main-page1-text1, .main-page1-text2, .main-page1-text3, .main-page1-bottom {
+        padding-left: 50px;
+        scale: 1;
+    }
+    .rules-text2, .rules-text3 {
+        font-size: 26px;
+        width: 1400px ;
+    }
+    .rules {
+        padding-left: 40px;
+    }
+    .rules-img {
+        padding-right: 50px;
+    }
+    .rules-btn {
+        scale: 1;
+        margin-left: 0;
+    }
+    .team-historian-photo, .team3-photo, .team2-photo {
+        column-gap: 40px;
+    }
+    .site-header {
+        scale: 1;
+        padding: 0 20px;
+    }
+    .main-choice-text1, .main-choice-text2 {
+        font-size: 24px;
+        width: 1350px;
+    }
+    .site-header-choice {
+        scale: 1;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .main-page1-text1, .main-page1-text2, .main-page1-text3, .main-page1-bottom {
+        scale: 1;
+        padding-left: 0;
+    }
+    .rules-text1 {
+        font-size: 32px;
+    }
+    .rules-text2, .rules-text3 {
+        font-size: 24px;
+        width: 1200px ;
+    }
+    .main-page1-img {
+        padding-right: 0;
+    }
+    .team-historian-photo, .team3-photo, .team2-photo {
+        column-gap: 20px;
+    }
+    .main-choice-text1, .main-choice-text2 {
+        width: 1004px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .main-page1-play {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-height: 980px) {
+    /*min = 850*/
+    .main-page1-bottom {
+        padding-top: 160px;
+    }
+    .main-page1-text1 {
+        padding-top: 177px;
+    }
+    .main-page1-text2 {
+        padding-top: 215px;
+    }
+    .main-page1-text3 {
+        padding-top: 280px;
+    }
+    .rules-img {
+        width: 900px;
+        margin-top: -30px;
+    }
+    .page-row1 {
+        scale: 0.95;
+    }
+    .team3 {
+        padding-top: 20px;
+    }
+    .page-team-text1 {
+        padding: 20px 0 10px 0;
+    }
+    .main-choices {
+        scale: 0.92;
+        padding-top: 0;
+    }
+    .main-choice-text1, .main-choice-text2 {
+        width: 1404px;
+    }
+    .main-choice-text1 {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    .main-page1-bottom {
+        padding-top: 110px;
+    }
+    .main-page1-play {
+        margin-top: 50px;
+    }
+    .rules-img {
+        display: none;
+    }
+    .main-choices {
+        scale: 0.75;
+        margin-top: -60px;
+        padding-top: 20px;
+    }
 }

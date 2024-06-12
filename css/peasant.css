@@ -804,6 +804,10 @@ p {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 2000px) {
+
+}
+
 @media screen and (max-height: 1040px) {
     .page2-text {
         padding-top: 90px;
