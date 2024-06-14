@@ -60,7 +60,7 @@ body {
 .dictionary-word {
     color: #9FC625;
     transition: .75s;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .dictionary-word:hover {
@@ -79,7 +79,7 @@ body {
     text-align: left;
     padding: 20px 30px;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     z-index: 10;
 }
 
@@ -88,9 +88,9 @@ body {
     z-index: 10;
     display: flex;
     padding: 40px 40px 0 40px;
-    justify-content: space-between;
     position: sticky; !important;
     top: 0;
+    width: 100%;
 }
 
 .logo {
@@ -99,7 +99,7 @@ body {
 }
 
 .header-text {
-    margin-right: 38%;
+    margin-left: 30px;
     padding-top: 9px;
     font-family: BogartTrialBold;
     font-weight: bold;
@@ -118,20 +118,21 @@ body {
 }
 
 .play-again {
-    margin-top: 19px;
+    margin-top: 15px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 216px;
-    height: 47px;
+    width: 240px;
+    height: 56px;
     background-color: white;
-    font-size: 24px;
+    font-size: 26px;
     border: 3px solid #9FC625;
     border-radius: 8px;
     color: #9FC625;
     font-family: Mont-Semibold;
     transition: 0.7s;
+    margin-left: auto;
 }
 
 .play-again:hover {
@@ -159,7 +160,7 @@ body {
     border-radius: 24px;
     background-color: white;
     width: 557px;
-    font-size: 24px;
+    font-size: 26px;
     text-align: left;
     padding: 32px 48px 32px 48px;
 }
@@ -171,7 +172,6 @@ body {
 .button-next {
     display: flex;
     justify-content: center;
-    /*position: relative;*/
     width: 171px;
     height: 57px;
     background-color: #9FC625;
@@ -181,6 +181,7 @@ body {
     font-size: 32px;
     font-family: Mont-Semibold;
     padding-top: 8px;
+    scale: 1.2;
 }
 
 .button-next:hover {
@@ -189,7 +190,7 @@ body {
 
 p {
     width: 1130px;
-    font-size: 24px;
+    font-size: 26px;
     padding-bottom: 8px;
 }
 
@@ -199,18 +200,18 @@ p {
     background-image: url("../img/peasant/page1-back.png");
 }
 
-.preface-text, .page14-text, .page17-choice1-text {
-    width: 1016px;
+.preface-text {
+    width: 1700px;
 }
 
 .preface-heading {
     font-family: Mont-Heavy;
-    font-size: 32px;
+    font-size: 34px;
     padding-bottom: 16px;
 }
 
 .button-page1 {
-    margin: 256px 0 0 500px;
+    margin: 256px 0 0 700px;
 }
 
 .page2 {
@@ -219,8 +220,12 @@ p {
 }
 
 .page2-text {
-    width: 672px;
-    padding-bottom: 20px;
+    width: 1700px;
+    padding-bottom: 53px;
+}
+
+.button-page2 {
+    margin-left: 200px;
 }
 
 .button-page2-choice1, .button-page2-choice2, .button-page2-choice3 {
@@ -233,7 +238,7 @@ p {
 }
 
 .page3-choice1 {
-    padding: 0 40px 0 155px;
+    padding: 60px 40px 0 155px;
     background-image: url("../img/peasant/page3-choice1-back.png");
 }
 
@@ -246,12 +251,15 @@ p {
     justify-content: space-between;
 }
 
+.page3-choice1-img {
+    margin-right: 50px;
+}
 .page3-choice1-text2 {
-    width: 442px;
+    width: 742px;
 }
 
 .button-page3-choice1 {
-    margin: 243px 0 0 82px;
+    margin: 243px 0 0 282px;
 }
 
 .page3-choice2 {
@@ -278,7 +286,7 @@ p {
 }
 
 .page3-choice3-text {
-    width: 680px;
+    width: 1000px;
 }
 
 .page3-choice3-text2 {
@@ -291,11 +299,12 @@ p {
 }
 
 .page3-choice3-text1 {
-    padding: 350px 0 40px 0;
+    padding: 300px 0 40px 0;
 }
 
 .page3-choice3-img {
-    margin-top: -100px;
+    scale: 1.2;
+    margin: -100px 46px 0 0;
 }
 
 .button-page3-choice3 {
@@ -311,7 +320,7 @@ p {
     padding-top: 135px;
 }
 .page4-text {
-    width: 1229px;
+    width: 1600px;
 }
 
 .page4-left {
@@ -320,9 +329,9 @@ p {
 }
 
 .page4-bottom {
-    padding-top: 30px;
+    padding-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-right: 83px;
 }
 
@@ -335,12 +344,16 @@ p {
 }
 
 .page5-choice1 {
-    padding: 155px 0 76px 155px;
+    padding: 155px 0 0 155px;
     background-image: url("../img/peasant/page5-choice1-back.png");
 }
 
-.page5-text, .page13-choice2-text {
+.page13-choice2-text {
     width: 900px;
+}
+
+.page5-text {
+    width: 1650px;
 }
 
 .page5-bottom {
@@ -349,7 +362,7 @@ p {
 }
 
 .button-page5-choice1, .button-page5-choice2 {
-    margin: 344px 0 0 130px;
+    margin: 344px 0 0 250px;
 }
 
 .page5-choice2 {
@@ -358,13 +371,23 @@ p {
     background-image: url("../img/peasant/page5-chocie2-back.png");
 }
 
+.page5-choice1-img {
+    margin: 50px 100px 0 0;
+    scale: 0.95;
+}
+
+.page5-choice2-img {
+    scale: 1;
+    margin: 60px 150px 0 0;
+}
+
 .page6 {
     background-image: url("../img/peasant/page6-back.png");
     padding: 130px 40px 101px 155px;
 }
 
 .page6-text {
-    width: 786px;
+    width: 1600px;
 }
 
 .page6-left {
@@ -373,13 +396,15 @@ p {
 }
 
 .page6-bottom {
+    margin-top: 60px;
     display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
+    justify-content: space-around;
+    column-gap: 30px;
 }
 
 .page6-img {
-    padding-top: 54px;
+    margin-bottom: 30px;
+    scale: 1.15;
 }
 
 .button-page6-choice1 {
@@ -388,7 +413,7 @@ p {
 
 .page7-choice1 {
     background-image: url("../img/peasant/page7-choice1-back.png");
-    padding: 155px 40px 192px 155px;
+    padding: 155px 40px 50px 155px;
 }
 
 .page7-choice1-bottom {
@@ -396,7 +421,7 @@ p {
     justify-content: space-between;
 }
 
-.page7-choice1-text1, .page11-choice1-text, .page13-choice1-text, .page17-choice2-text {
+.page7-choice1-text1, .page11-choice1-text, .page13-choice1-text{
     width: 672px;
 }
 
@@ -405,7 +430,8 @@ p {
 }
 
 .page7-choice1-img {
-    padding-top: 48px;
+    scale: 1.3;
+    margin-right: 120px;
 }
 
 .button-page7-choice1 {
@@ -421,6 +447,11 @@ p {
     width: 557px;
 }
 
+.page7-choice2-img {
+    scale: 1.3;
+    margin: -50px 100px 0 0;
+}
+
 .page7-choice2-bottom {
     display: flex;
     justify-content: space-between;
@@ -428,12 +459,17 @@ p {
 }
 
 .button-page7-choice2 {
-    margin: 267px 0 0 138px
+    margin: 267px 0 0 220px
 }
 
 .page8 {
     background-image: url("../img/peasant/page8-back.png");
     padding: 155px 83px 64px 155px;
+}
+
+.page8-img {
+    scale: 1.35;
+    margin: -25px 60px 0 0;
 }
 
 .page8-bottom {
@@ -443,7 +479,7 @@ p {
 
 .page8-text2 {
     width: 700px;
-    padding-bottom: 68px;
+    padding-bottom: 95px;
 }
 
 .page8-left {
@@ -455,9 +491,8 @@ p {
     position: relative;
 }
 
-
-.button-page8-choice1, .button-page12-choice1 {
-    margin: 0 0 48px 0
+.button-page8-choice1, .button-page8-choice2 {
+    margin: 0 0 48px 100px;
 }
 
 .page9-choice1 {
@@ -466,7 +501,15 @@ p {
 }
 
 .page9-choice1-text {
-    width: 1016px;
+    width: 1600px;
+}
+
+.page9-choice1-img {
+    scale: 1.2;
+}
+
+.button-page9-choice1 {
+    margin: 285px 0 0 300px;
 }
 
 .page9-choice1-bottom {
@@ -475,16 +518,12 @@ p {
     padding-top: 58px;
 }
 
-.button-page9-choice1 {
-    margin: 285px 0 0 135px;
-}
-
 .page9-choice2 {
     background-image: url("../img/peasant/page9-choice2-back.png");
     padding: 155px 155px 59px 155px;
 }
 
-.page9-choice2-text2, .page11-choice2-text, .page12-text, .page16-text2 {
+.page9-choice2-text2{
     width: 672px;
 }
 
@@ -495,29 +534,36 @@ p {
 
 .page9-choice2-text3 {
     padding-top: 163px;
+    margin-left: 200px;
 }
 
 .page9-choice2-img {
-    padding-right: 90px;
+    margin: -100px 60px 0 90px;
+    scale: 1.3;
 }
 
 .button-page9-choice2 {
-    margin: 44px 0 0 55px;
+    margin: 44px 0 0 255px;
 }
 
 .page10 {
     background-image: url("../img/peasant/page10-back.png");
-    padding: 155px 40px 48px 155px;
+    padding: 120px 10px 40px 155px;
+}
+
+.page10-text1, .page10-text2 {
+    width: 1600px;
 }
 
 .page10-left {
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 
 .page10-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .button-page10-choice1, .button-page10-choice2 {
@@ -536,7 +582,12 @@ p {
 }
 
 .button-page11-choice1 {
-    margin: 336px 0 0 150px;
+    margin: 336px 0 0 250px;
+}
+
+.page11-choice1-img {
+    scale: 1.4;
+    margin: -70px 130px 0 0;
 }
 
 .page11-choice2 {
@@ -552,11 +603,15 @@ p {
 }
 
 .page11-choice2-text2 {
-    margin: 145px 0 0 76px
+    margin: 145px 0 0 276px
 }
 
 .button-page11-choice2 {
-    margin: 44px 0 0 131px
+    margin: 44px 0 0 331px
+}
+
+.page11-choice2-text {
+    width: 1200px;
 }
 
 .page12 {
@@ -572,8 +627,16 @@ p {
 }
 
 .page12-img {
-    width: 412px;
-    height: 711px;
+    scale: 1.18;
+}
+
+.page12-text {
+    width: 1070px;
+}
+
+.button-page12-choice1, .button-page12-choice2 {
+    width: 700px;
+    margin: 48px 0 0 200px;
 }
 
 .page13-choice1 {
@@ -587,11 +650,12 @@ p {
 }
 
 .page13-choice1-img {
-    margin-top: -80px;
+    margin-top: -100px;
+    scale: 1.4;
 }
 
 .button-page13-choice1 {
-    margin: 305px 0 0 134px;
+    margin: 305px 0 0 234px;
 }
 
 .page13-choice2 {
@@ -607,10 +671,15 @@ p {
 
 .page13-choice2-text2 {
     padding-top: 273px;
+    margin-left: 100px;
 }
 
 .button-page13-choice2 {
-    margin: 44px 0 0 49px;
+    margin: 44px 0 0 149px;
+}
+
+.page13-choice2-img {
+    scale: 1.3;
 }
 
 .page14 {
@@ -620,9 +689,12 @@ p {
 
 .page14-left {
     position: relative;
-
     display: flex;
     flex-direction: column;
+}
+
+.page14-text {
+    width: 1016px;
 }
 
 .page14-bottom {
@@ -631,19 +703,19 @@ p {
 }
 
 .page14-img {
-    margin-top: -60px;
+    margin: -100px 50px 0 0;
     padding-left: 25px;
+    scale: 1;
+}
+
+.button-page14-choice1, .button-page14-choice2, .button-page14-choice3 {
+    width: 671px;
+    font-size: 24px !important;
+    margin: 0 0 48px 200px;
 }
 
 .button-page14-choice1 {
     margin-top: 24px;
-    margin-bottom: 48px;
-    width: 671px;
-}
-
-.button-page14-choice2, .button-page14-choice3 {
-    margin-bottom: 48px;
-    width: 671px;
 }
 
 .page15-choice1, .page15-choice2, .page15-choice3 {
@@ -654,7 +726,7 @@ p {
 }
 
 .page15-text {
-    width: 673px;
+    width: 1250px;
 }
 
 .page15-left {
@@ -662,33 +734,41 @@ p {
 }
 
 .button-page15-choice1 {
-    margin: 306px 0 0 251px;
+    margin: 306px 0 0 451px;
 }
 
 .button-page15-choice2 {
-    margin: 283px 0 0 251px;
+    margin: 283px 0 0 451px;
 }
 
 .page15-text2 {
     padding-top: 171px;
-    margin-left: 98px;
+    margin-left: 298px;
 }
 
 .button-page15-choice3 {
-    margin: 36px 0 0 153px;
+    margin: 36px 0 0 353px;
 }
 
 .page16 {
     background-image: url("../img/peasant/page16-back.png");
-    padding: 135px 155px 83px 155px;
+    padding: 100px 155px 83px 155px;
 }
 
 .page16-bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    column-gap: 30px;
 }
-.button-page16-choice1 {
-    margin: 28px 0 32px;
+.button-page16-choice1, .button-page16-choice2 {
+    height: 300px;
+}
+
+.page16-text1, .page16-text2, .page17-choice1-text {
+    width: 1600px;
 }
 
 .page17-choice1 {
@@ -698,6 +778,10 @@ p {
 
 .page17-choice1-text2 {
     margin: 332px 0 44px 87px;
+}
+
+.page17-choice1-img {
+    scale: 1.3;
 }
 
 .button-page17-choice1 {
@@ -715,13 +799,15 @@ p {
     padding-top: 58px;
 }
 
+.page17-choice2-text {
+    width: 1100px;
+}
 .button-page17-choice2 {
-    margin: 213px 0 0 251px;
+    margin: 213px 0 0 451px;
 }
 
 .more-lit {
-    margin-left: 231px;
-    margin-right: 60px;
+    margin-right: 8%;
 }
 
 .more-lit {
@@ -738,6 +824,7 @@ p {
     color: white;
     font-family: Mont-Semibold;
     transition: 0.7s;
+    scale: 1.1;
 }
 
 .more-lit:hover {
@@ -759,6 +846,8 @@ p {
     color: #9FC625;
     font-family: Mont-Semibold;
     transition: 0.7s;
+    scale: 1.1;
+
 }
 
 .play-again-button:hover {
@@ -771,8 +860,14 @@ p {
     padding: 155px 155px 288px 155px;
 }
 
+.page18-text {
+    width: 100%;
+}
+
 .page18-buttons {
     display: flex;
+    justify-content: center;
+    column-gap: 30px;
     padding-top: 152px;
 }
 
@@ -832,15 +927,17 @@ p {
     justify-content: space-between;
 }
 .word-serednyak {
-    top: 389px;
-    left: 130px;
+    left: 880px;
 }
 
 .word-irbit-btn {
+    display: none;
     position: absolute;
-    left: 474px;
-    top: 358px;
+    left: 693px;
+    font-size: 26px;
+    top: 364px;
 }
+
 .word-irbit {
     top: 36px;
     left: -60px;
@@ -861,13 +958,10 @@ p {
     left: 500px;
 }
 .word-revol1 {
-    left: 180px;
-}
-.word-preobraz {
-    left: 650px;
+    left: 400px;
 }
 .word-obsch-btn {
-    left: 281px;
+    left: 400px;
     top: 33px;
     position: absolute;
 }
@@ -876,17 +970,19 @@ p {
     left: -120px;
 }
 .word-kulak {
-    left: 650px;
+    left: 960px;
 }
 .word-selskoy-btn {
     position: absolute;
-    left: 468px;
-    top: 86px;
+    left: 661px;
+    top: 85.5px;
+    font-size: 24px;
 }
 .word-cerkvi-btn {
     position: absolute;
-    left: 50px;
+    left: 248px;
     top: 117px;
+    font-size: 24px;
 }
 .word-cerkvi, .word-selskoy {
     width: 400px;
@@ -896,17 +992,235 @@ p {
     left: -30px;
 }
 .word-voyna {
-    left: 530px;
+    left: 560px;
 }
 .word-revol {
-    left: 800px;
+    left: 350px;
 }
 .word-nap {
     width: 400px;
-    left: 430px;
+    left: 150px;
 }
-@media screen and (max-width: 2000px) {
 
+@media screen and (max-width: 1850px) {
+    p {
+        font-size: 24px;
+    }
+    .preface-text {
+        width: 1016px;
+    }
+    .button-page1 {
+        margin-left: 500px;
+    }
+    .word-serednyak {
+        left: 130px;
+    }
+    .preface-heading {
+        font-size: 32px;
+    }
+    .page3-choice1-text2 {
+        width: 442px;
+    }
+    .button-page3-choice1 {
+        margin: 243px 0 0 82px;
+    }
+    .page3-choice1 {
+        padding-top: 0;
+    }
+    .button-next {
+        scale: 1;
+    }
+    .dictionary-word-popup {
+        font-size: 20px;
+    }
+    .page3-choice3-img {
+        scale: 1;
+        margin: -100px -45px 0 0;
+    }
+    .page3-choice3-text1 {
+        padding-top: 350px;
+    }
+    .page4-text {
+        width: 1229px;
+    }
+    .page4-bottom {
+        padding-top: 30px;
+    }
+    .button-page5-choice1, .button-page5-choice2 {
+        margin-left: 100px;
+    }
+    .page6-text {
+        width: 786px;
+    }
+    .page5-choice1-img {
+        margin-left: 30px;
+    }
+    .page5-choice2-img {
+        margin: 60px 50px 0 0;
+    }
+    .page5-text {
+        width: 900px;
+    }
+    .page7-choice2-img {
+        scale: 1;
+        margin: 0;
+    }
+    .page8-img {
+        scale: 1;
+        margin-right: 60px;
+        margin-top: 0;
+    }
+    .page8-text2 {
+        padding-bottom: 68px;
+    }
+    .button-page8-choice1, .button-page8-choice2 {
+        margin-left: 0;
+    }
+    .word-obsch-btn {
+        left: 300px;
+        top: 31px;
+    }
+    .page9-choice1-img, .page7-choice1-img {
+        scale: 1;
+    }
+    .button-page9-choice1 {
+        margin: 285px 0 0 130px;
+    }
+    .word-revol1 {
+        left: 180px;
+    }
+    .word-preobraz {
+        left: 650px;
+    }
+    .word-kulak {
+        left: 650px;
+    }
+    .page9-choice2-img {
+        scale: 1;
+        margin: 0;
+    }
+    .page9-choice2-text3 {
+        margin: 0;
+    }
+    .button-page9-choice2 {
+        margin-left: 55px;
+    }
+    .page11-choice1-img {
+        scale: 1.2;
+    }
+    .button-page11-choice1 {
+        margin-left: 150px;
+    }
+    .page10-text1, .page10-text2, .page9-choice1-text {
+        width: 1016px;
+    }
+    .page9-choice2-text, .page3-choice3-text, .page11-choice2-text, .page12-text, .page15-text, .page17-choice2-text {
+        width: 672px;
+    }
+    .page10 {
+        padding-top: 70px;
+    }
+    .page11-choice2-text2 {
+        margin-left: 76px;
+    }
+    .button-page11-choice2 {
+        margin-left: 131px;
+    }
+    .page12-img {
+        scale: 1;
+    }
+    .button-page12-choice1, .button-page12-choice2 {
+        margin: 48px 0 0 100px;
+        width: 571px;
+    }
+    .button-page13-choice1 {
+        margin: 305px 0 0 234px;
+    }
+    .page13-choice1-img {
+        scale: 1.1;
+    }
+    .page13-choice2-text2 {
+        margin-left: 0;
+    }
+    .button-page13-choice2 {
+        margin: 44px 0 0 49px;
+    }
+    .page13-choice2-img {
+        scale: 1.1;
+    }
+    .button-page14-choice1, .button-page14-choice2, .button-page14-choice3 {
+        margin-left: 0;
+    }
+    .word-selskoy-btn {
+        left: 461px;
+    }
+    .word-cerkvi-btn {
+        left: 48px;
+    }
+    .button-page15-choice2, .button-page15-choice1, .page15-text2 {
+        margin-left: 51px;
+    }
+    .button-page15-choice3 {
+        margin-left: 98px;
+    }
+    .page17-choice1-text {
+        width: 1016px;
+    }
+    .word-voyna {
+        left: 560px;
+    }
+    .word-revol {
+        left: 800px;
+    }
+    .button-page17-choice2 {
+        margin: 213px 0 0 251px;
+    }
+    .word-nap {
+        width: 400px;
+        left: 430px;
+    }
+    .more-lit, .play-again-button {
+        scale: 1;
+    }
+    .more-lit {
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .button-page2 {
+        margin-left: 0;
+    }
+    .word-irbit-btn {
+        left: 496px;
+        top: 359px;
+    }
+    .page6-img {
+        margin: 30px 0 0 0;
+        scale: 1;
+    }
+    .page7-choice1-img {
+        margin: 30px 0 0 0;
+    }
+    .button-page7-choice2 {
+        margin-left: 138px;
+    }
+    .page11-choice1-img {
+        scale: 1;
+        margin: 0;
+    }
+    .button-page12-choice1, .button-page12-choice2 {
+        margin: 48px 0 0 0;
+    }
+    .page13-choice2-img {
+        scale: 1;
+    }
+    .page16-text1, .page16-text2 {
+        width: 1016px;
+    }
+    .page17-choice1-img {
+        scale: 1;
+    }
 }
 
 @media screen and (max-height: 1040px) {
@@ -914,14 +1228,15 @@ p {
         padding-top: 120px;
     }
     .page3-choice1-img {
-        margin: 70px -40px 0 0 ;
+        margin: 50px 40px 0 0 ;
         width: 800px;
     }
     .page3-choice2-img {
         width: 68%;
     }
     .page4-img {
-        width: 33%;
+        width: 26%;
+        padding-top: 0;
     }
     .page4-text2 {
         padding-top: 120px;
@@ -930,18 +1245,20 @@ p {
         padding-top: 120px;
     }
     .page9-choice2-img {
-        width: 26%;
+        scale: 1;
     }
     .page10 {
-        padding-top: 110px;
+        padding-top: 70px;
     }
     .page14 {
-        padding-top: 105px;
+        padding-top: 70px;
     }
     .more-lit-page {
         height: 750px;
     }
+
 }
+
 
 @media screen and (max-height: 975px) {
     /*до 791*/
@@ -984,13 +1301,21 @@ p {
     .page3-choice1-text1, .page3-choice2-text, .page15-text2, .page3-choice3-text2 {
         padding-top: 90px;
     }
-    .page3-choice1-img, .page5-choice2-img, .page5-choice1-img, .page9-choice1-img{
+    .page3-choice1-img, .page5-choice2-img, .page9-choice1-img{
         width: 700px;
         margin-top: -10px;
     }
-    .page3-choice2-img, .page7-choice1-img{
+    .page5-choice1-img {
+        width: 700px;
+        margin-top: -40px;
+        margin-right: 0;
+    }
+    .page3-choice2-img{
         width: 700px;
         margin-top: -60px;
+    }
+    .page7-choice1-img{
+        margin-top: 40px;
     }
     .page3-choice3-text1, .page13-choice2-text2 {
         padding-top: 250px;
@@ -1012,7 +1337,7 @@ p {
     .page5-choice1, .page5-choice2 {
         padding: 90px 0 0 155px;
     }
-     .page6, .page7-choice1, .page7-choice2, .page8, .page9-choice1, .page9-choice2, .page10, .page11-choice1,
+     .page6, .page7-choice1, .page7-choice2, .page8, .page9-choice1, .page9-choice2, .page11-choice1,
     .page11-choice2, .page12, .page13-choice1, .page13-choice2, .page14, .page16, .page17-choice1, .page17-choice2, .page18 {
         padding-top: 90px;
         padding-bottom: 0;
@@ -1031,10 +1356,19 @@ p {
         padding-top: 0;
     }
     .page9-choice2-img {
+        scale: 1;
         height: 500px;
+        width: 200px;
+        margin: -30px 0 0 0
     }
-    .page10-img, .page14-img {
+    .page10 {
+        padding: 50px 0 0 150px;
+    }
+    .page14-img {
         width: 440px;
+    }
+    .page10-img {
+        height: 400px;
     }
     .page12-img{
         height: 600px;
@@ -1050,7 +1384,9 @@ p {
         width: 650px;
     }
     .word-irbit-btn {
-        top: 328px;
+        top: 334px;
+        left: 675px;
+        font-size: 24px;
     }
     .word-irbit {
         font-size: 22px;
@@ -1060,8 +1396,9 @@ p {
         top: 275px;
     }
     .word-obsch-btn {
-        left: 245px;
+        left: 248px;
         top: 32px;
+        font-size: 22px;
         position: absolute;
     }
     .button-page14-choice1, .button-page14-choice2 {
@@ -1071,4 +1408,54 @@ p {
     .page14-img {
         margin-top: 0;
     }
+    .button-page1 {
+        margin-top: 150px;
+    }
+    .page7-choice2-img {
+        scale: 0.8;
+        margin-top: -50px;
+    }
+    .page3-choice3-img {
+        margin-top: -270px;
+    }
+    .page11-choice1-img {
+        scale: 0.85;
+        margin-top: -70px;
+    }
+    .page11-choice2-img {
+        margin-top: -60px;
+    }
+    .button-page16-choice1, .button-page16-choice2 {
+        height: 250px;
+    }
+    .page16-bottom {
+        padding-top: 50px;
+    }
+    .page10-left {
+        padding-bottom: 0;
+    }
+    .button-page10-choice2, .button-page10-choice1 {
+        font-size: 20px;
+        width: 600px;
+        margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1850px) {
+        .word-obsch-btn {
+            left: 347px;
+            top: 32px;
+            font-size: 22px;
+        }
+    }
+    @media screen and (max-width: 1750px) {
+        .word-irbit-btn {
+            left: 473px;
+            top: 330px;
+        }
+    }
+}
+@media screen and (max-height: 850px) {
+ .page14 {
+     padding-top: 50px;
+     font-size: 18px;
+ }
 }

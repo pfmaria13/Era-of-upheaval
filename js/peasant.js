@@ -104,7 +104,18 @@ function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
     });
 }
 
-NextPageWithBar(btnPreface, page2, preface, li1, li2, li3);
+// NextPageWithBar(btnPreface, page2, preface, li1, li2, li3);
+btnPreface.addEventListener("click", () => {
+    page2.style.display = "flex";
+    page2.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {
+        preface.style.display = "none";
+        document.querySelector(".word-irbit-btn").style.display = "flex";
+    },500);
+    Change_bar(li1, 'is-active', ' is-complete')
+    Change_bar(li2, 'in-progress', ' is-active');
+    li3.className += ' in-progress'
+});
 
 NextPage(btnPage2Choice1, page3Choice1, page2);
 NextPage(btnPage2Choice2, page3Choice2, page2);
