@@ -38,6 +38,7 @@
 body {
     background-color: white;
     font-family: Mont;
+    color: #2D1D38;
 }
 
 .site-header {
@@ -295,6 +296,7 @@ body {
     height: 475px;
     background-image: url("../img/merchant.png");
     filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
+    border-radius: 20px;
 }
 
 .worker {
@@ -302,6 +304,7 @@ body {
     height: 475px;
     background-image: url("../img/worker.png");
     filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
+    border-radius: 20px;
 }
 
 .page-team {

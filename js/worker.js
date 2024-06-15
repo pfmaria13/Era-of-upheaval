@@ -185,7 +185,7 @@ btnPage13Choice1.addEventListener("click", () => {
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
 });
-NextPageWithBar(btnPage13Choice2, page14, page13Choice1, li7, li8, li9);
+NextPageWithBar(btnPage13Choice2, page14, page13Choice2, li7, li8, li9);
 
 NextPage(btnPage14Choice1, page15Choice1, page14);
 NextPage(btnPage14Choice2, page15Choice2, page14);
