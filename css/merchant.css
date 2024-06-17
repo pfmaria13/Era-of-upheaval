@@ -204,7 +204,7 @@ p {
 }
 .preface {
     /*position: relative;*/
-    display: none;
+    display: flex;
     flex-direction: column;
     padding-bottom: 1px;
     padding-top: 120px;
@@ -945,7 +945,6 @@ img { pointer-events: none; }
 }
 
 .page18 {
-    display: flex;
     background-image: url("../img/merchant/page18-back.png");
     padding: 155px 0 288px 150px;
 }
