@@ -14,6 +14,42 @@ if (!$_SESSION['admin']) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Админ-панель</title>
     <script src="https://cdn.canvasjs.com/ga/canvasjs.min.js" defer></script>
+    <style>
+        .chart {
+            width: 500px;
+            height: 370px;
+        }
+
+        .container1 {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container2 {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 640px) {
+            .chart {
+                width: 400px;
+                height: 180px;
+            }
+
+            .container1 {
+                flex-wrap: wrap;
+            }
+
+            .container2 {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
 <body>
 <?php
 $db = new SQLite3('../db/main.db');
@@ -139,15 +175,15 @@ $db->close();
         chart6.render();
     }
 </script>
-<section style="display: flex;">
-    <div id="chartContainer1" style="height: 370px; width: 500px;"></div>
-    <div id="chartContainer2" style="height: 370px; width: 500px;"></div>
-    <div id="chartContainer3" style="height: 370px; width: 500px;"></div>
+<section class="container1">
+    <div class="chart" id="chartContainer1"></div>
+    <div class="chart" id="chartContainer2"></div>
+    <div class="chart" id="chartContainer3"></div>
 </section>
-<section style="display: flex;">
-    <div id="chartContainer4" style="height: 370px; width: 500px;"></div>
-    <div id="chartContainer5" style="height: 370px; width: 500px;"></div>
-    <div id="chartContainer6" style="height: 370px; width: 500px;"></div>
+<section class="container2">
+    <div class="chart" id="chartContainer4"></div>
+    <div class="chart" id="chartContainer5"></div>
+    <div class="chart" id="chartContainer6"></div>
 </section>
 </body>
 </html>
