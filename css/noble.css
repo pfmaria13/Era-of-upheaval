@@ -69,7 +69,6 @@ p {
     margin-left: 30px;
     padding-top: 9px;
     font-family: BogartTrialBold;
-    font-weight: bold;
     width: 496px;
     height: 68px;
 }
@@ -100,7 +99,16 @@ p {
     font-family: Mont-Semibold;
     transition: 0.7s;
     margin-left: auto;
+}
 
+.play-again_mobile {
+    display: none;
+    position: absolute;
+    background-image: url("../img/noble/replay_mobile.png");
+    width: 36px;
+    height: 34px;
+    margin-top: 19px;
+    right: 40px;
 }
 
 .play-again:hover {
@@ -161,6 +169,13 @@ p {
     font-family: Mont-Semibold;
     padding-top: 8px
 }
+
+/*.button-next_mobile {*/
+/*    display: none;*/
+/*    background-image: url("../img/noble/next_mobile.png");*/
+/*    width: 36px;*/
+/*    height: 32px;*/
+/*}*/
 
 .button-next:hover {
     background-color: #482CB5;
@@ -2022,3 +2037,125 @@ p {
     }
 }
 img { pointer-events: none; }
+
+@media screen and (max-height: 500px) {
+    .logo {
+        width: 39px;
+        height: 39px;
+        margin-top: 16px;
+        scale: unset;
+    }
+
+    .site-header {
+        position: relative;
+        padding: 0 0 0 40px;
+    }
+
+    .header-text {
+        width: 217px;
+        height: 28px;
+        margin-left: 8px;
+        padding-top: 18px;
+    }
+
+    .header-text-up {
+        font-size: 14px;
+        line-height: unset;
+        height: 18px;
+    }
+
+    .header-text-bottom {
+        font-size: 10px;
+        line-height: unset;
+    }
+
+    .play-again {
+        display: none;
+    }
+
+    .play-again_mobile {
+        display: unset;
+    }
+
+    .preface {
+        padding: 8px 0 0 40px;
+    }
+
+    .preface-heading {
+        font-size: 12px;
+        line-height: unset;
+    }
+
+    .preface-text {
+        font-size: 10px;
+        line-height: unset;
+        padding-bottom: 2px;
+    }
+
+    .dictionary-word {
+        font-size: 10px !important;
+    }
+
+    .preface-text-last {
+        font-size: 10px;
+        line-height: unset;
+        padding-bottom: 0;
+    }
+
+    .preface-bold {
+        font-size: 9px;
+        padding-left: 16px;
+        line-height: 12px;
+    }
+
+    p {
+        padding-bottom: unset;
+    }
+
+    .button-next {
+        margin-top: unset;
+        display: unset;
+        justify-content: unset;
+        position: unset;
+        width: 36px;
+        height: 32px;
+        background-color: unset;
+        border-radius: unset;
+        transition: unset;
+        color: transparent;
+        font-size: unset;
+        font-family: unset;
+        padding-top: unset;
+        background-image: url("../img/noble/next_mobile.png");
+        text-indent: -9999em;
+        text-transform: uppercase;
+    }
+
+    main {
+        position: relative !important;
+    }
+
+    .progress-bar {
+        transform: rotate(0deg) !important;
+        position: absolute !important;
+        top: 280px !important;
+        left: 41px !important;
+        margin: 0 !important;
+        width: 458px !important;
+    }
+
+    .progress-bar li {
+        bottom: 0 !important;
+        right: 0 !important;
+    }
+
+    .button-next-div {
+        position: relative;
+    }
+
+    .button-next {
+        position: absolute;
+        left: 492px;
+        top: -10px;
+    }
+}
