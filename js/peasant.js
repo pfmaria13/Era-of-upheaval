@@ -79,25 +79,28 @@ let moreLit = document.querySelector(".more-lit-page");
 let btnMoreLit = document.querySelector(".more-let-btn");
 
 
-
 function Change_bar(li, lastClass, newClass) {
     li.className += newClass;
     li.classList.remove(lastClass);
 }
 
-function NextPage (btn, nextPage, previousPage) {
+function NextPage(btn, nextPage, previousPage) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},600);
+        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        setTimeout(() => {
+            previousPage.style.display = "none"
+        }, 600);
     });
 }
 
-function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
+function NextPageWithBar(btn, nextPage, previousPage, li1, li2, li3) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},600);
+        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        setTimeout(() => {
+            previousPage.style.display = "none"
+        }, 600);
         Change_bar(li1, 'is-active', ' is-complete')
         Change_bar(li2, 'in-progress', ' is-active');
         li3.className += ' in-progress'
@@ -107,11 +110,11 @@ function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
 // NextPageWithBar(btnPreface, page2, preface, li1, li2, li3);
 btnPreface.addEventListener("click", () => {
     page2.style.display = "flex";
-    page2.scrollIntoView({ block: "center", behavior: "smooth" });
+    page2.scrollIntoView({block: "center", behavior: "smooth"});
     setTimeout(() => {
         preface.style.display = "none";
         document.querySelector(".word-irbit-btn").style.display = "flex";
-    },500);
+    }, 500);
     Change_bar(li1, 'is-active', ' is-complete')
     Change_bar(li2, 'in-progress', ' is-active');
     li3.className += ' in-progress'
@@ -121,13 +124,40 @@ NextPage(btnPage2Choice1, page3Choice1, page2);
 NextPage(btnPage2Choice2, page3Choice2, page2);
 NextPage(btnPage2Choice3, page3Choice3, page2);
 
+btnPage2Choice3.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
+
 btnPage3Choice3.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page3Choice3.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page3Choice3.style.display = "none"
+    }, 700);
     li3.classList.remove('in-progress');
     Change_bar(li2, 'is-active', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 NextPageWithBar(btnPage3Choice1, page4, page3Choice1, li2, li3, li4);
@@ -148,28 +178,71 @@ NextPageWithBar(btnPage7Choice2, page8, page7Choice2, li4, li5, li6);
 NextPage(btnPage8Choice1, page9Choice1, page8);
 NextPage(btnPage8Choice2, page9Choice2, page8);
 
+btnPage8Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
+
 NextPageWithBar(btnPage9Choice1, page10, page9Choice1, li5, li6, li7);
 
 btnPage9Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page9Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page9Choice2.style.display = "none"
+    }, 700);
     li6.classList.remove('in-progress');
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 NextPage(btnPage10Choice1, page11Choice1, page10);
 NextPage(btnPage10Choice2, page11Choice2, page10);
+
+btnPage10Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 
 NextPageWithBar(btnPage11Choice1, page12, page11Choice1, li6, li7, li8);
 
 btnPage11Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page11Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page11Choice2.style.display = "none"
+    }, 700);
     li7.classList.remove('in-progress');
     li6.classList.remove('is-active');
     li5.classList.remove('is-complete');
@@ -177,17 +250,44 @@ btnPage11Choice2.addEventListener("click", () => {
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 NextPage(btnPage12Choice1, page13Choice1, page12);
 NextPage(btnPage12Choice2, page13Choice2, page12);
 
+btnPage12Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
+
 NextPageWithBar(btnPage13Choice1, page14, page13Choice1, li7, li8, li9);
 
 btnPage13Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page13Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page13Choice2.style.display = "none"
+    }, 700);
     li8.classList.remove('in-progress');
     li7.classList.remove('is-active');
     li6.classList.remove('is-complete');
@@ -196,24 +296,76 @@ btnPage13Choice2.addEventListener("click", () => {
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 NextPage(btnPage14Choice1, page15Choice1, page14);
 NextPage(btnPage14Choice2, page15Choice2, page14);
 NextPage(btnPage14Choice3, page15Choice3, page14);
 
+btnPage14Choice3.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
+
 NextPageWithBar(btnPage15Choice1, page16, page15Choice1, li8, li9, li10);
 NextPageWithBar(btnPage15Choice2, page16, page15Choice2, li8, li9, li10);
 NextPageWithBar(btnPage15Choice3, page16, page15Choice3, li8, li9, li10);
-
+btnPage15Choice3.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 
 NextPage(btnPage16Choice1, page17Choice1, page16);
+btnPage16Choice1.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 NextPage(btnPage16Choice2, page17Choice2, page16);
 
 btnPage17Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice1.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice1.style.display = "none"
+    }, 700);
     li10.classList.remove('in-progress');
     li9.classList.remove('is-active');
     li8.classList.remove('is-complete');
@@ -228,10 +380,24 @@ btnPage17Choice1.addEventListener("click", () => {
 
 btnPage17Choice2.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice2.style.display = "none"},700);
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice2.style.display = "none"
+    }, 700);
     Change_bar(li9, 'is-active', ' is-complete')
     Change_bar(li10, 'in-progress', ' is-active');
+
+    $.ajax({
+        type: 'POST',
+        url: '../db/peasant_stats.php',
+        data: {action: 'win'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage18Choice1.addEventListener("click", () => {

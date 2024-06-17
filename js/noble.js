@@ -90,19 +90,23 @@ function Change_bar(li, lastClass, newClass) {
     li.classList.remove(lastClass);
 }
 
-function NextPage (btn, nextPage, previousPage) {
+function NextPage(btn, nextPage, previousPage) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},600);
+        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        setTimeout(() => {
+            previousPage.style.display = "none"
+        }, 600);
     });
 }
 
-function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
+function NextPageWithBar(btn, nextPage, previousPage, li1, li2, li3) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},600);
+        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        setTimeout(() => {
+            previousPage.style.display = "none"
+        }, 600);
         Change_bar(li1, 'is-active', ' is-complete')
         Change_bar(li2, 'in-progress', ' is-active');
         li3.className += ' in-progress'
@@ -112,31 +116,59 @@ function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
 
 btnPage7PA.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page7Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page7Choice2.style.display = "none"
+    }, 700);
     li5.classList.remove('in-progress');
     li4.classList.remove('is-active');
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active')
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage9Choice3.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page9Choice3.style.display = "none"},900);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page9Choice3.style.display = "none"
+    }, 900);
     li6.classList.remove('in-progress');
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
-    Change_bar(li1, 'is-complete', ' is-active')
+    Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage15Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page15Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page15Choice2.style.display = "none"
+    }, 700);
     li9.classList.remove('in-progress');
     li8.classList.remove('is-active');
     li7.classList.remove('is-complete');
@@ -146,6 +178,17 @@ btnPage15Choice2.addEventListener("click", () => {
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active')
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 
@@ -166,6 +209,19 @@ NextPageWithBar(btnPage52, page6, page5Choice3, li3, li4, li5);
 
 NextPage(btnPage6Choice1, page7Choice1, page6);
 NextPage(btnPage6Choice2, page7Choice2, page6);
+btnPage6Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 NextPage(btnPage6Choice3, page7Choice3, page6);
 
 NextPageWithBar(btnPage7Choice1, page8, page7Choice1, li4, li5, li6);
@@ -174,6 +230,19 @@ NextPageWithBar(btnPage7Choice3, page8, page7Choice3, li4, li5, li6);
 NextPage(btnPage8Choice1, page9Choice1, page8);
 NextPage(btnPage8Choice2, page9Choice2, page8);
 NextPage(btnPage8Choice3, page9Choice3, page8);
+btnPage8Choice3.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 
 NextPageWithBar(btnPage9Choice1, page10, page9Choice1, li5, li6, li7);
 NextPageWithBar(btnPage9Choice2, page10, page9Choice2, li5, li6, li7);
@@ -196,6 +265,19 @@ NextPageWithBar(btnPage13Choice3, page14, page13Choice3, li7, li8, li9);
 
 NextPage(btnPage14Choice1, page15Choice1, page14);
 NextPage(btnPage14Choice2, page15Choice2, page14);
+btnPage14Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 
 NextPageWithBar(btnPage15Choice1, page16, page15Choice1, li8, li9, li10);
 
@@ -205,18 +287,44 @@ NextPage(btnPage16Choice2, page17Choice2, page16);
 
 btnPage17Choice1.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice1.style.display = "none"},700);
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice1.style.display = "none"
+    }, 700);
     Change_bar(li9, 'is-active', ' is-complete')
     Change_bar(li10, 'in-progress', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: {action: 'win'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage17Choice2.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice2.style.display = "none"},700);
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice2.style.display = "none"
+    }, 700);
     Change_bar(li9, 'is-active', ' is-complete')
     Change_bar(li10, 'in-progress', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/noble_stats.php',
+        data: {action: 'win'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnMoreLit.addEventListener("click", () => {
