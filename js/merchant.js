@@ -167,9 +167,9 @@ NextPage(btnPage10Choice2, page11Choice2, page10);
 NextPageWithBar(btnPage11Choice1, page12, page11Choice1, li6, li7, li8);
 NextPageWithBar(btnPage11Choice2, page12, page11Choice2, li6, li7, li8);
 
-NextPage(btnPage12Choice1, page13, page11Choice2);
-NextPage(btnPage12Choice2, page13, page11Choice2);
-NextPage(btnPage12Choice3, page13, page11Choice2);
+NextPage(btnPage12Choice1, page13, page12);
+NextPage(btnPage12Choice2, page13, page12);
+NextPage(btnPage12Choice3, page13, page12);
 
 NextPageWithBar(btnPage13, page14, page13, li7, li8, li9);
 

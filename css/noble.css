@@ -100,7 +100,6 @@ p {
     font-family: Mont-Semibold;
     transition: 0.7s;
     margin-left: auto;
-
 }
 
 .play-again:hover {
@@ -111,7 +110,7 @@ p {
 .preface {
     display: flex;
     background-image: url("../img/noble/page1-back.png");
-    padding: 70px 0 0 155px;
+    padding: 90px 0 0 155px;
     column-gap: 50px;
 }
 
@@ -1272,20 +1271,16 @@ p {
     }
 }
 
-@media screen and (max-width: 1750px) {
-
-}
-
 @media screen and (max-height: 1040px) {
     .preface {
         padding-top: 90px;
         font-size: 22px;
     }
     .button-page1 {
-        margin-top: 0px;
+        margin-top: 10px;
     }
     .preface .dictionary-word {
-        font-size: 22px;
+        font-size: 24px;
     }
     .page3-choice1-img {
         margin-top: 20px;
@@ -1323,7 +1318,7 @@ p {
         padding-bottom: 8px;
     }
     .preface {
-        padding-top: 60px;
+        padding-top: 90px;
     }
     .preface-heading {
         font-size: 30px;
@@ -1378,13 +1373,13 @@ p {
         margin-top: -60px;
     }
     .word-skver {
-        top: 90px;
+        top: 93px;
     }
     .word-sad {
-        top: 215px
+        top: 218px
     }
     .word-shtol {
-        top: 340px;
+        top: 343px;
     }
     .page7-choice2-img {
         margin-top: 10px;
@@ -1398,7 +1393,7 @@ p {
         height: 550px;
     }
     .page8 {
-        padding-top: 60px;
+        padding-top: 90px;
     }
     .page8-choice1, .page8-choice2, .page8-choice3 {
         margin-top: 30px;
@@ -1469,6 +1464,7 @@ p {
         font-size: 22px;
         padding: 10px 40px;
     }
+
     .dictionary-word {
         font-size: 22px;
     }
@@ -1476,7 +1472,7 @@ p {
         font-size: 21px;
     }
     .preface {
-        padding-top: 40px;
+        padding-top: 70px;
         font-size: 21px;
     }
     .preface .dictionary-word {
@@ -1530,12 +1526,12 @@ p {
         margin-top: 150px;
     }
     .page6-left {
-        padding-top: 30px;
+        padding-top: 60px;
     }
     .page6-img {
         scale: 1;
         height: 550px;
-        margin-top: 0;
+        margin-top: 20px;
     }
     .page6 {
         padding-bottom: 0;
@@ -1545,12 +1541,15 @@ p {
     }
     .word-skver {
         top: 64px;
+        left: 62px;
     }
     .word-sad {
-        top: 190px
+        top: 190px;
+        left: 62px;
     }
     .word-shtol {
         top: 318px;
+        left: 62px;
     }
     .page7-choice2-img {
         margin-top: 30px;
@@ -1640,22 +1639,20 @@ p {
         top: 361px;
         left: 40px;
     }
-    .page14 {
-        padding-top: 50px;
-    }
+
     .page15-choice2-img {
         width: 500px;
         margin-top: -60px;
     }
     .page16 {
-        padding-top: 60px;
+        padding-top: 80px;
     }
     .page16-bottom {
         margin-top: 30px;
     }
     .word-tov-btn {
-        right: 360px;
-        top: 631px;
+        right: 359px;
+        top: 652px;
     }
     @media screen and (min-width: 1850px) {
         .word-tov-btn {
@@ -1677,12 +1674,27 @@ p {
     .more-lit, .play-again-button {
         scale: 0.8;
     }
+    .preface-text {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    .preface-heading {
+        font-size: 28px;
+        padding-bottom: 5px;
+    }
+    .page15-choice1-img {
+        height: 600px;
+        margin-top: 50px;
+    }
 }
 @media screen and (max-height: 780px) {
     .choice {
         font-size: 20px;
         padding: 15px 48px;
         height: 80px;
+    }
+    .page8 {
+        padding-top: 60px;
     }
     .page11-choice1-img {
         width: 400px;
@@ -1702,6 +1714,10 @@ p {
         top: 323px;
         left: 47px;
     }
+    .page15-choice1-img {
+        height: 500px;
+        margin-top: 50px;
+    }
     .page14-img {
         height: 450px;
     }
@@ -1716,6 +1732,9 @@ p {
         right: 411px;
         top: 615px;
     }
+    .page14 {
+        padding-top: 50px;
+    }
     @media screen and (min-width: 1850px) {
         .word-tov-btn {
             right: 511px;
@@ -1729,7 +1748,12 @@ p {
     .page16 {
         padding-bottom: 0;
     }
-
+    .page6-left {
+        padding-top: 30px;
+    }
+    .preface {
+        padding-top: 30px;
+    }
 }
 
 @media screen and (max-height: 750px) {
@@ -1763,22 +1787,18 @@ p {
         top: 235px;
     }
     .site-header {
-        background: white;
-    !important;
+        background: white; !important;
         z-index: 10;
         display: flex;
         padding: 20px 40px 0 40px;
-        position: sticky;
-    !important;
+        position: sticky; !important;
         top: 0;
         width: 100%;
     }
-
     .header-text-up {
         font-size: 28px;
         padding-bottom: 0;
     }
-
     .header-text-bottom {
         font-size: 22px;
         padding-bottom: 0;
@@ -1918,6 +1938,9 @@ p {
         margin-top: -40px;
         width: 600px;
         height: 400px;
+    }
+    .preface {
+        padding-top: 30px;
     }
 
     .you-lose {

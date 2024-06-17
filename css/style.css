@@ -66,10 +66,24 @@ body {
     padding: 0 90px;
 }
 
+.header {
+    margin: 40px 0 0 0;
+}
+
 .logo {
     width: 85px;
     height: 85px;
     margin: 40px 0 0 0;
+}
+
+.logo2 {
+    width: 85px;
+    height: 85px;
+    margin-right: 300px;
+}
+
+.logo1 {
+    scale: 1.2;
 }
 
 .header-text {
@@ -385,7 +399,7 @@ body {
         padding-left: 115px;
     }
     .main-page1-text3 {
-        padding-left: 95px;
+        padding-left: 125px;
     }
     .main-page1-img {
         padding-right: 100px;
@@ -410,6 +424,9 @@ body {
     }
     .rules-img {
         padding-right: 150px;
+    }
+    .logo2 {
+        margin-right: 500px;
     }
 
 }
@@ -450,7 +467,11 @@ body {
         scale: 1;
         padding: 0 20px;
     }
+    .logo2 {
+        margin-right: 420px;
+    }
 }
+
 @media screen and (max-width: 1600px) {
     .main-page1-text1, .main-page1-text2, .main-page1-text3, .main-page1-bottom {
         scale: 1;
@@ -472,10 +493,19 @@ body {
     .main-choice-text1, .main-choice-text2 {
         width: 1004px;
     }
+    .logo2 {
+        margin-right: 310px;
+    }
+    .logo1 {
+        scale: 1;
+    }
 }
 @media screen and (max-width: 1400px) {
     .main-page1-play {
         margin-left: 300px;
+    }
+    .logo2 {
+        margin-right: 250px;
     }
 }
 

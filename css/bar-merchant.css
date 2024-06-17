@@ -12,6 +12,7 @@
     height: 64px;
     width: 808px;
     position: fixed;
+    margin-top: 30px;
 }
 
 .progress-bar li {
@@ -125,12 +126,96 @@
     transform: scale(1.3);
 }
 
-.progress-bar .is-complete:last-child:before {
-    background: linear-gradient(to right, #DE643B, #2D1D38);
-    border-color: #DE643B;
-    transform: scale(1.3);
-}
-
 .progress-bar .has-changes {
     opacity: 1 !important;
 }
+
+@media screen and (max-height: 1040px) {
+    .progress-bar {
+        height: 64px;
+        width: 750px;
+        position: fixed;
+        margin-left: 28px;
+        margin-top: -5px;
+    }
+}
+
+@media screen and (max-height: 975px) {
+    .progress-bar {
+        height: 64px;
+        width: 670px;
+        position: fixed;
+        margin-left: 65px;
+        margin-top: -50px;
+    }
+    .progress-bar li:first-child {
+        flex: 58px;
+    }
+
+    .progress-bar li:last-child {
+        text-align: right;
+        flex: 15px;
+    }
+
+    .progress-bar .in-progress:not(:first-child):after {
+        left: -52px;
+    }
+    .progress-bar .is-active:not(:first-child):after {
+        left: -60px;
+    }
+}
+
+@media screen and (max-height: 888px) {
+    .progress-bar {
+        height: 64px;
+        width: 580px;
+        position: fixed;
+        margin-left: 115px;
+        margin-top: -110px;
+    }
+
+    .progress-bar li:first-child {
+        flex: 87px;
+    }
+
+    .progress-bar li:last-child {
+        text-align: right;
+        flex: 34px;
+    }
+    .progress-bar li {
+        height: 4px;
+        flex: 89px;
+    }
+    .progress-bar .in-progress:not(:first-child):after {
+        left: -43px;
+        /*width: 100%;*/
+    }
+    .progress-bar .is-active:not(:first-child):after {
+        left: -42px;
+    }
+}
+
+@media screen and (max-height: 788px) {
+    .progress-bar {
+        height: 64px;
+        width: 500px;
+        position: fixed;
+        margin-left: 155px;
+        margin-top: -175px;
+    }
+
+    .progress-bar li:before {
+        border: 7px solid #2D1D38;
+        bottom: -9px;
+    }
+}
+@media screen and (max-height: 640px) {
+    .progress-bar {
+        height: 64px;
+        width: 400px;
+        position: fixed;
+        margin-left: 210px;
+        margin-top: -235px;
+    }
+}
+
