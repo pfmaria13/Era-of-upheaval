@@ -201,7 +201,7 @@ p {
 }
 
 .preface-text {
-    width: 1700px;
+    width: 1600px;
 }
 
 .preface-heading {
@@ -238,7 +238,7 @@ p {
 }
 
 .page3-choice1 {
-    padding: 60px 40px 0 155px;
+    padding: 80px 40px 0 155px;
     background-image: url("../img/peasant/page3-choice1-back.png");
 }
 
@@ -874,17 +874,18 @@ p {
 .more-lit-page {
     position: fixed;
     top: 50px;
-    left: 155px;
-    height: 764px;
+    left: 150px;
+    height: 77vh;
     display: none;
     margin: 155px 75px 65px 0;
     filter: drop-shadow(0 0 20px rgba(45,29,56,0.2));
     border-radius: 24px;
     background-color: white;
-    width: 1210px;
-    font-size: 24px;
+    width: 88vw;
+    font-size: 26px;
     text-align: left;
-    padding: 32px 45px 32px 45px;
+    padding: 60px 60px;
+    /*padding: 32px 45px 32px 45px;*/
 }
 
 .more-lit-li {
@@ -926,9 +927,9 @@ p {
     display: flex;
     justify-content: space-between;
 }
-.word-serednyak {
-    left: 880px;
-}
+/*.word-serednyak {*/
+/*    left: 880px;*/
+/*}*/
 
 .word-irbit-btn {
     display: none;
@@ -997,6 +998,9 @@ p {
     width: 400px;
     left: 150px;
 }
+.word-irb {
+    top: -5px;
+}
 
 @media screen and (max-width: 1850px) {
     p {
@@ -1008,9 +1012,9 @@ p {
     .button-page1 {
         margin-left: 500px;
     }
-    .word-serednyak {
-        left: 130px;
-    }
+    /*.word-serednyak {*/
+    /*    left: 130px;*/
+    /*}*/
     .preface-heading {
         font-size: 32px;
     }
@@ -1181,6 +1185,12 @@ p {
     .more-lit {
         margin-right: 3%;
     }
+    .more-lit-page {
+        height: 70vh;
+        width: 83vw;
+        font-size: 24px;
+        padding: 32px 45px 32px 45px;
+    }
 }
 
 @media screen and (max-width: 1750px) {
@@ -1250,7 +1260,9 @@ p {
         padding-top: 70px;
     }
     .more-lit-page {
-        height: 750px;
+        font-size: 22px;
+        margin-top: 100px;
+        height: 80vh;
     }
 
 }
@@ -1478,13 +1490,10 @@ img { pointer-events: none; }
     .dictionary-word {
         font-size: 22px;
     }
-    @media screen and (min-width: 1750px) {
-        .word-irbit-btn {
-            left: 650px;
-            top: 307px;
-        }
+    .more-lit-page {
+        font-size: 20px;
+        height: 77vh;
     }
-
 }
 @media screen and (max-height: 750px) {
     p, .dictionary-word {
@@ -1535,10 +1544,9 @@ img { pointer-events: none; }
     .button-page2-choice1, .button-page2-choice2, .button-page2-choice3 {
         font-size: 20px;
     }
-    @media screen and (min-width: 1750px) {
-        .word-irbit-btn {
-            left: 629px;
-            top: 235px;
-        }
+    .more-lit-page {
+        font-size: 18px;
+        margin-top: 80px;
+        height: 75vh;
     }
 }
