@@ -6,157 +6,196 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" href="favicon.svg">
     <script defer src="js/app.js"></script>
     <script defer src="libs/jquery/http_ajax.googleapis.com_ajax_libs_jquery_3.5.1_jquery.js"></script>
-    <title>Document</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/swiper.js"></script>
+    <title>Человек в эпоху потрясений</title>
 </head>
 <!--<header class="site-header">-->
 <!--    <img src="img/logo.png" alt="Логотип" class="logo">-->
 <!--</header>-->
 <body>
-    <div class="main-page1 page">
-        <div class="main-page1-left">
-            <img src="img/logo.png" alt="Логотип" class="logo">
-            <p class="main-page1-text1">исторический интерактивный квест</p>
-            <p class="main-page1-text2">Человек в эпоху потрясений:</p>
-            <p class="main-page1-text3">Урал на рубеже XIX-XX веков</p>
-            <button class="main-page1-play">Играть</button>
-            <div class="main-page1-bottom">
-                <button class="main-page1-rules">Правила</button>
-                <button class="page1-team">Команда проекта</button>
-            </div>
-        </div>
-        <img src="img/main-page1-img.png" alt="" class="main-page1-img">
-    </div>
-    <div class="rules page">
-        <header class="site-header">
-                <img src="img/logo.png" alt="Логотип" class="logo">
-                <div class="header-text">
-                    <p class="header-text-up"> Человек в эпоху потрясений:</p>
-                    <p class="header-text-bottom">Урал на рубеже XIX-XX веков</p>
-                </div>
-        </header>
-        <p class="rules-text1">Правила</p>
-        <p class="rules-text2">В рамках данного квеста Вам предстоит выбрать персонажа, вместе с которым Вы пройдете непростой и тернистый путь, на котором Вас будут ждать как громкие победы, так и, возможно, тяжелые поражения. </p>
-        <p class="rules-text3">В течение игры каждый ход Вам будет предлагаться выбор из трех или двух вариантов ответа, от которого будет зависеть судьба Вашего героя. Будьте внимательны: некоторые варианты ответа могут привести Вас к гибели или к бесславному окончанию игрового путешествия, выбирайте с умом!</p>
-        <div class="rules-bottom">
-            <div class="rules-btn">
-                <button class="rules-play">Играть</button>
-                <button class="rules-main">На главную</button>
-            </div>
-            <img src="img/rules-img.png" alt="" class="rules-img">
+<div class="main-page1 page">
+    <div class="main-page1-left">
+        <img src="img/logo.png" alt="Логотип" class="logo">
+        <p class="main-page1-text1">исторический интерактивный квест</p>
+        <p class="main-page1-text2">Человек в эпоху потрясений:</p>
+        <p class="main-page1-text3">Урал на рубеже XIX-XX веков</p>
+        <button class="main-page1-play">Играть</button>
+        <div class="main-page1-bottom">
+            <button class="main-page1-rules">Правила</button>
+            <button class="page1-team">Команда проекта</button>
         </div>
     </div>
-    <div class="page-team page">
-        <header class="site-header-team">
-            <div class="site-header">
-                <img src="img/logo.png" alt="Логотип" class="logo">
-                <div class="header-text">
-                    <p class="header-text-up"> Человек в эпоху потрясений:</p>
-                    <p class="header-text-bottom">Урал на рубеже XIX-XX веков</p>
-                </div>
-            </div>
-            <button class="main-btn-team">На главную</button>
-        </header>
-        <div class="page-row1">
-            <div class="team1-team3">
-                <p class="page-team-text1">Команда проекта</p>
-                <div class="team1">
-                    <p class="team-text2">Команда историков</p>
-                    <div class="team-historian-photo">
-                        <div class="historian1">
-                            <img src="img/photo/historian1.png" alt="" class="historian-img">
-                            <p class="historian-text1">Кадошникова Дарья</p>
-                            <p class="historian-text2">тимлид команды историков</p>
-                        </div>
-                        <div class="historian2">
-                            <img src="img/photo/historian2.png" alt="" class="historian-img">
-                            <p class="historian-text1">Кушков Илья</p>
-                            <p class="historian-text2">контент-мейкер</p>
-                        </div>
-                        <div class="historian3">
-                            <img src="img/photo/historian3.png" alt="" class="historian-img">
-                            <p class="historian-text1">Степанов Артём</p>
-                            <p class="historian-text2">контент-мейкер</p>
-                        </div>
-                        <div class="historian4">
-                            <img src="img/photo/historian4.png" alt="" class="historian-img">
-                            <p class="historian-text1">Чирва Александр</p>
-                            <p class="historian-text2">аналитик</p>
-                        </div>
-                        <div class="historian5">
-                            <img src="img/photo/historian5.png" alt="" class="historian-img">
-                            <p class="historian-text1">Звездин Алексей</p>
-                            <p class="historian-text2">контент-мейкер</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="team3">
-                    <p class="team-text2">Команда разработчиков</p>
-                    <div class="team3-photo">
-                        <div class="developer1">
-                            <img src="img/photo/developer1.png" alt="" class="team3-img">
-                            <p class="team3-text1">Бирюкова Александра</p>
-                            <p class="team3-text2">тимлид команды</p>
-                        </div>
-                        <div class="developer2">
-                            <img src="img/photo/developer2.png" alt="" class="team3-img">
-                            <p class="team3-text1">Мироненко Виктория</p>
-                            <p class="team3-text2">дизайнер</p>
-                        </div>
-                        <div class="developer3">
-                            <img src="img/photo/developer3.png" alt="" class="team3-img">
-                            <p class="team3-text1">Виханова Марина</p>
-                            <p class="team3-text2">дизайнер</p>
-                        </div>
-                        <div class="developer2">
-                            <img src="img/photo/developer4.png" alt="" class="team3-img">
-                            <p class="team3-text1">Иванов Даниил</p>
-                            <p class="team3-text2">разработчик</p>
-                        </div>
-                        <div class="developer2">
-                            <img src="img/photo/developer5.png" alt="" class="team3-img">
-                            <p class="team3-text1">Пряничникова Мария</p>
-                            <p class="team3-text2">разработчик</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="team2">
-                <p class="team-text2">Кураторы проекта</p>
-                <div class="team2-photo">
-                    <div class="person1">
-                        <img src="img/photo/person1.png" alt="" class="team2-img">
-                        <p class="team2-text1">Рябов Сергей</p>
-                        <p class="team2-text2">куратор проекта</p>
-                    </div>
-                    <div class="person2">
-                        <img src="img/photo/person2.png" alt="" class="team2-img">
-                        <p class="team2-text1">Худякова Елена</p>
-                        <p class="team2-text2">куратор СОКМ</p>
-                    </div>
-                </div>
-            </div>
+    <img src="img/main-page1-img.png" alt="" class="main-page1-img">
+</div>
+<div class="rules page">
+    <header class="site-header">
+        <img src="img/logo.png" alt="Логотип" class="logo">
+        <div class="header-text">
+            <p class="header-text-up"> Человек в эпоху потрясений:</p>
+            <p class="header-text-bottom">Урал на рубеже XIX-XX веков</p>
         </div>
-
+    </header>
+    <p class="rules-text1">Правила</p>
+    <p class="rules-text2">В рамках данного квеста Вам предстоит выбрать персонажа, вместе с которым Вы пройдете
+        непростой и тернистый путь, на котором Вас будут ждать как громкие победы, так и, возможно, тяжелые
+        поражения. </p>
+    <p class="rules-text3">В течение игры каждый ход Вам будет предлагаться выбор из трех или двух вариантов ответа, от
+        которого будет зависеть судьба Вашего героя. Будьте внимательны: некоторые варианты ответа могут привести Вас к
+        гибели или к бесславному окончанию игрового путешествия, выбирайте с умом!</p>
+    <div class="rules-bottom">
+        <div class="rules-btn">
+            <button class="rules-play">Играть</button>
+            <button class="rules-main">На главную</button>
+        </div>
+        <img src="img/rules-img.png" alt="" class="rules-img">
     </div>
-    <div class="main-choice page">
-        <header class="site-header-choice">
+</div>
+<div class="page-team page">
+    <header class="site-header-team">
+        <div class="site-header">
             <img src="img/logo.png" alt="Логотип" class="logo">
             <div class="header-text">
                 <p class="header-text-up"> Человек в эпоху потрясений:</p>
                 <p class="header-text-bottom">Урал на рубеже XIX-XX веков</p>
             </div>
-        </header>
-        <p class="main-choice-text1">Период конца XIX – начала XX века ознаменовался как новыми трудностями, так и новыми возможностями. Представители сословий Российской империи по-разному воспринимали эпохальные изменения, происходящие в стране
-            и мире.</p>
-        <p class="main-choice-text2">Глобальные трансформации затронули буквально всех царских подданных: крестьян, рабочих, мещан и дворян…</p>
-        <div class="main-choices">
-            <button class="peasant"></button>
-            <button class="noble"></button>
-            <button class="merchant"></button>
-            <button class="worker"></button>
+        </div>
+        <button class="main-btn-team">На главную</button>
+    </header>
+    <div class="page-row1">
+        <div class="team1-team3">
+            <p class="page-team-text1">Команда проекта</p>
+            <div class="team1">
+                <p class="team-text2">Команда историков</p>
+                <div class="team-historian-photo">
+                    <div class="historian1">
+                        <img src="img/photo/historian1.png" alt="" class="historian-img">
+                        <p class="historian-text1">Кадошникова Дарья</p>
+                        <p class="historian-text2">тимлид команды историков</p>
+                    </div>
+                    <div class="historian2">
+                        <img src="img/photo/historian2.png" alt="" class="historian-img">
+                        <p class="historian-text1">Кушков Илья</p>
+                        <p class="historian-text2">контент-мейкер</p>
+                    </div>
+                    <div class="historian3">
+                        <img src="img/photo/historian3.png" alt="" class="historian-img">
+                        <p class="historian-text1">Степанов Артём</p>
+                        <p class="historian-text2">контент-мейкер</p>
+                    </div>
+                    <div class="historian4">
+                        <img src="img/photo/historian4.png" alt="" class="historian-img">
+                        <p class="historian-text1">Чирва Александр</p>
+                        <p class="historian-text2">аналитик</p>
+                    </div>
+                    <div class="historian5">
+                        <img src="img/photo/historian5.png" alt="" class="historian-img">
+                        <p class="historian-text1">Звездин Алексей</p>
+                        <p class="historian-text2">контент-мейкер</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team3">
+                <p class="team-text2">Команда разработчиков</p>
+                <div class="team3-photo">
+                    <div class="developer1">
+                        <img src="img/photo/developer1.png" alt="" class="team3-img">
+                        <p class="team3-text1">Бирюкова Александра</p>
+                        <p class="team3-text2">тимлид команды</p>
+                    </div>
+                    <div class="developer2">
+                        <img src="img/photo/developer2.png" alt="" class="team3-img">
+                        <p class="team3-text1">Мироненко Виктория</p>
+                        <p class="team3-text2">дизайнер</p>
+                    </div>
+                    <div class="developer3">
+                        <img src="img/photo/developer3.png" alt="" class="team3-img">
+                        <p class="team3-text1">Виханова Марина</p>
+                        <p class="team3-text2">дизайнер</p>
+                    </div>
+                    <div class="developer2">
+                        <img src="img/photo/developer4.png" alt="" class="team3-img">
+                        <p class="team3-text1">Иванов Даниил</p>
+                        <p class="team3-text2">разработчик</p>
+                    </div>
+                    <div class="developer2">
+                        <img src="img/photo/developer5.png" alt="" class="team3-img">
+                        <p class="team3-text1">Пряничникова Мария</p>
+                        <p class="team3-text2">разработчик</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team2">
+            <p class="team-text2">Кураторы проекта</p>
+            <div class="team2-photo">
+                <div class="person1">
+                    <img src="img/photo/person1.png" alt="" class="team2-img">
+                    <p class="team2-text1">Рябов Сергей</p>
+                    <p class="team2-text2">куратор проекта</p>
+                </div>
+                <div class="person2">
+                    <img src="img/photo/person2.png" alt="" class="team2-img">
+                    <p class="team2-text1">Худякова Елена</p>
+                    <p class="team2-text2">куратор СОКМ</p>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="page-row1-mobile">
+        <p class="page-team-text1">Команда проекта</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/photo/historian1-mobile.png" alt="">
+                    <img src="img/photo/historian2-mobile.png" alt="">
+                    <img src="img/photo/historian3-mobile.png" alt="">
+                    <img src="img/photo/historian4-mobile.png" alt="">
+                    <img src="img/photo/historian5-mobile.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/developer1.png" alt="" style="width: 100px; height: 100px;">
+                    <img src="img/photo/developer2.png" alt="" style="width: 100px; height: 100px;">
+                    <img src="img/photo/developer3.png" alt="" style="width: 100px; height: 100px;">
+                    <img src="img/photo/developer4.png" alt="" style="width: 100px; height: 100px;">
+                    <img src="img/photo/developer5.png" alt="" style="width: 100px; height: 100px;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/person1.png" alt="" style="width: 100px; height: 100px;">
+                    <img src="img/photo/person2.png" alt="" style="width: 100px; height: 100px;">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</div>
+<div class="main-choice page">
+    <header class="site-header-choice">
+        <img src="img/logo.png" alt="Логотип" class="logo">
+        <div class="header-text">
+            <p class="header-text-up"> Человек в эпоху потрясений:</p>
+            <p class="header-text-bottom">Урал на рубеже XIX-XX веков</p>
+        </div>
+    </header>
+    <p class="main-choice-text1">Период конца XIX – начала XX века ознаменовался как новыми трудностями, так и новыми
+        возможностями. Представители сословий Российской империи по-разному воспринимали эпохальные изменения,
+        происходящие в стране
+        и мире.</p>
+    <p class="main-choice-text2">Глобальные трансформации затронули буквально всех царских подданных: крестьян, рабочих,
+        мещан и дворян…</p>
+    <div class="main-choices">
+        <button class="peasant"></button>
+        <button class="noble"></button>
+        <button class="merchant"></button>
+        <button class="worker"></button>
+    </div>
+</div>
 </body>
 </html>

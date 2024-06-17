@@ -42,14 +42,14 @@ let page11Choice2 = document.querySelector(".page11-choice2");
 let btnPage11Choice1 = document.querySelector(".button-page11-choice1");
 let btnPage11Choice2 = document.querySelector(".button-page11-choice2");
 let page12 = document.querySelector(".page12");
-let btnPage12Choice1 =  document.querySelector(".button-page12-choice1");
-let btnPage12Choice2 =  document.querySelector(".button-page12-choice2");
-let btnPage12Choice3 =  document.querySelector(".button-page12-choice3");
+let btnPage12Choice1 = document.querySelector(".button-page12-choice1");
+let btnPage12Choice2 = document.querySelector(".button-page12-choice2");
+let btnPage12Choice3 = document.querySelector(".button-page12-choice3");
 let page13 = document.querySelector(".page13");
 let btnPage13 = document.querySelector(".button-page13");
 let page14 = document.querySelector(".page14");
-let btnPage14Choice1 =  document.querySelector(".button-page14-choice1");
-let btnPage14Choice2 =  document.querySelector(".button-page14-choice2");
+let btnPage14Choice1 = document.querySelector(".button-page14-choice1");
+let btnPage14Choice2 = document.querySelector(".button-page14-choice2");
 let page15Choice1 = document.querySelector(".page15-choice1");
 let page15Choice2 = document.querySelector(".page15-choice2");
 let page16 = document.querySelector(".page16");
@@ -84,19 +84,23 @@ function Change_bar(li, lastClass, newClass) {
     li.classList.remove(lastClass);
 }
 
-function NextPage (btn, nextPage, previousPage) {
+function NextPage(btn, nextPage, previousPage) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},600);
+        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        setTimeout(() => {
+            previousPage.style.display = "none"
+        }, 600);
     });
 }
 
-function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
+function NextPageWithBar(btn, nextPage, previousPage, li1, li2, li3) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},600);
+        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        setTimeout(() => {
+            previousPage.style.display = "none"
+        }, 600);
         Change_bar(li1, 'is-active', ' is-complete');
         Change_bar(li2, 'in-progress', ' is-active');
         li3.className += ' in-progress';
@@ -114,6 +118,19 @@ NextPageWithBar(btnPage3Choice2, page4, page3Choice2, li2, li3, li4);
 NextPageWithBar(btnPage3Choice3, page4, page3Choice3, li2, li3, li4);
 
 NextPage(btnPage4Choice1, page5Choice1, page4);
+btnPage4Choice1.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/merchant_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 NextPage(btnPage4Choice2, page5Choice2, page4);
 
 NextPageWithBar(btnPage5Choice2, page6, page5Choice2, li3, li4, li5);
@@ -127,6 +144,19 @@ NextPageWithBar(btnPage7Choice2, page8, page7Choice2, li4, li5, li6);
 NextPageWithBar(btnPage7Choice3, page8, page7Choice3, li4, li5, li6);
 
 NextPage(btnPage8Choice1, page9Choice1, page8);
+btnPage8Choice1.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/merchant_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 NextPage(btnPage8Choice2, page9Choice2, page8);
 
 NextPageWithBar(btnPage9Choice2, page10, page9Choice2, li5, li6, li7);
@@ -163,46 +193,111 @@ btnMoreLit.addEventListener("click", () => {
 
 btnPage5Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page5Choice1.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page5Choice1.style.display = "none"
+    }, 700);
     li4.classList.remove('in-progress');
     li3.classList.remove('is-active');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/merchant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage9Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page9Choice1.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page9Choice1.style.display = "none"
+    }, 700);
     li6.classList.remove('in-progress');
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/merchant_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage17Choice1.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice1.style.display = "none"},700);
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice1.style.display = "none"
+    }, 700);
     Change_bar(li9, 'is-active', ' is-complete');
     Change_bar(li10, 'in-progress', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/merchant_stats.php',
+        data: {action: 'win'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage17Choice2.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice2.style.display = "none"},700);
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice2.style.display = "none"
+    }, 700);
     Change_bar(li9, 'is-active', ' is-complete');
     Change_bar(li10, 'in-progress', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/merchant_stats.php',
+        data: {action: 'win'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage17Choice3.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice3.style.display = "none"},700);
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice3.style.display = "none"
+    }, 700);
     Change_bar(li9, 'is-active', ' is-complete');
     Change_bar(li10, 'in-progress', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/merchant_stats.php',
+        data: {action: 'win'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });

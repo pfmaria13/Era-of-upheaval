@@ -531,3 +531,198 @@ body {
         padding-top: 20px;
     }
 }
+
+.page-row1-mobile {
+    display: none;
+}
+
+@media screen and (max-height: 500px) {
+    .logo {
+        width: 39px;
+        height: 39px;
+        margin-top: 16px;
+    }
+
+    .main-page1-text1 {
+        font-size: 18px;
+        padding-top: 66px;
+    }
+
+    .main-page1-text2 {
+        font-size: 26px;
+        padding-top: 86px;
+    }
+
+    .main-page1-text3 {
+        font-size: 20px;
+        padding-top: 116px;
+    }
+
+    .main-page1-play {
+        width: 106px;
+        height: 28px;
+        font-size: 16px;
+        margin-left: 130px;
+        margin-top: 12px;
+    }
+
+    .main-page1-rules {
+        width: 122px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .page1-team {
+        width: 198px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .main-page1-bottom {
+        padding-top: 74px;
+    }
+
+    .main-page1-img {
+
+    }
+
+    .header-text-up {
+        font-size: 14px;
+        line-height: unset;
+    }
+
+    .header-text-bottom {
+        font-size: 10px;
+        line-height: unset;
+    }
+
+    .site-header {
+        width: 264px;
+        height: 39px;
+        padding: 0;
+    }
+
+    .header-text {
+        padding-top: 18px;
+        padding-left: 8px;
+        width: 225px;
+        height: 68px;
+    }
+
+    .rules-text1 {
+        padding-top: 30px;
+        padding-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .rules-text2 {
+        width: 560px;
+        height: 26px;
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+
+    .rules-text3 {
+        width: 352px;
+        height: 65px;
+        font-size: 10px;
+    }
+
+    .rules-play {
+        width: 106px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .rules-main {
+        width: 145px;
+        height: 28px;
+        font-size: 16px;
+        margin-left: 32px;
+    }
+
+    .rules-btn {
+        margin-top: 40px;
+    }
+
+    .rules-img {
+        display: unset;
+        width: 280px;
+        height: 190px;
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    .site-header-team {
+        padding: 0;
+        scale: unset;
+    }
+
+    .main-btn-team {
+        width: 133px;
+        height: 26px;
+        font-size: 14px;
+        margin-top: 23px;
+    }
+    
+    .page-row1-mobile {
+        display: block;
+    }
+    
+    .page-row1 {
+        display: none;
+    }
+
+    .page-team-text1 {
+        font-size: 14px;
+        padding: 20px 0 0;
+    }
+
+    .swiper {
+        width: 560px !important;
+        height: 166px !important;
+    }
+
+    .swiper-slide {
+        text-align: center !important;
+        font-size: 18px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+
+    /*.swiper-slide img {*/
+    /*    display: block;*/
+    /*    width: 100%;*/
+    /*    height: 100%;*/
+    /*    object-fit: cover;*/
+    /*}*/
+
+    .swiper {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .swiper-button-next {
+        background-image: url("../img/swiper-next-button.png") !important;
+        width: 23px !important;
+        height: 24px !important;
+    }
+
+    .swiper-button-prev {
+        background-image: url("../img/swiper-prev-button.png") !important;
+        width: 23px !important;
+        height: 24px !important;
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        content: "" !important;
+    }
+
+    :root {
+        --swiper-navigation-size: 25px !important;
+        --swiper-theme-color: #5F44C9 !important;
+        --swiper-pagination-bullet-inactive-color: #A699AF !important;
+    }
+}

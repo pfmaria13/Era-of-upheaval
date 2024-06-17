@@ -79,19 +79,23 @@ function Change_bar(li, lastClass, newClass) {
     li.classList.remove(lastClass);
 }
 
-function NextPage (btn, nextPage, previousPage) {
+function NextPage(btn, nextPage, previousPage) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},600);
+        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        setTimeout(() => {
+            previousPage.style.display = "none"
+        }, 600);
     });
 }
 
-function NextPageWithBar (btn, nextPage, previousPage, li1, li2, li3) {
+function NextPageWithBar(btn, nextPage, previousPage, li1, li2, li3) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({ block: "center", behavior: "smooth" });
-        setTimeout(() => {previousPage.style.display = "none"},600);
+        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        setTimeout(() => {
+            previousPage.style.display = "none"
+        }, 600);
         Change_bar(li1, 'is-active', ' is-complete')
         Change_bar(li2, 'in-progress', ' is-active');
         li3.className += ' in-progress'
@@ -107,59 +111,152 @@ NextPageWithBar(btnPage3Choice1, page4, page3Choice1, li2, li3, li4);
 NextPageWithBar(btnPage3Choice2, page4, page3Choice2, li2, li3, li4);
 
 NextPage(btnPage4Choice1, page5Choice1, page4);
+btnPage4Choice1.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 NextPage(btnPage4Choice2, page5Choice2, page4);
 
 btnPage5Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page5Choice1.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page5Choice1.style.display = "none"
+    }, 700);
     li4.classList.remove('in-progress');
     li3.classList.remove('is-active');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 NextPageWithBar(btnPage5Choice2, page6, page5Choice2, li3, li4, li5);
 
 NextPage(btnPage6Choice1, page7Choice1, page6);
 NextPage(btnPage6Choice2, page7Choice2, page6);
+btnPage6Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 
 NextPageWithBar(btnPage7Choice1, page8, page7Choice1, li4, li5, li6);
 btnPage7Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page7Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page7Choice2.style.display = "none"
+    }, 700);
     li5.classList.remove('in-progress')
     li4.classList.remove('is-active');
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
-    Change_bar(li1, 'is-complete', ' is-active')
+    Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 NextPage(btnPage8Choice1, page9Choice1, page8);
 NextPage(btnPage8Choice2, page9Choice2, page8);
+btnPage8Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 
 NextPageWithBar(btnPage9Choice1, page10, page9Choice1, li5, li6, li7);
 btnPage9Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page9Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page9Choice2.style.display = "none"
+    }, 700);
     li6.classList.remove('in-progress')
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 NextPage(btnPage10Choice1, page11Choice1, page10);
 NextPage(btnPage10Choice2, page11Choice2, page10);
+btnPage10Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 
 NextPageWithBar(btnPage11Choice1, page12, page11Choice1, li6, li7, li8);
 btnPage11Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page11Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page11Choice2.style.display = "none"
+    }, 700);
     li7.classList.remove('in-progress');
     li6.classList.remove('is-active');
     li5.classList.remove('is-complete');
@@ -167,15 +264,41 @@ btnPage11Choice2.addEventListener("click", () => {
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 NextPage(btnPage12Choice1, page13Choice1, page12);
+btnPage12Choice1.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 NextPage(btnPage12Choice2, page13Choice2, page12);
 
 btnPage13Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page13Choice1.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page13Choice1.style.display = "none"
+    }, 700);
     li8.classList.remove('in-progress');
     li7.classList.remove('is-active');
     li6.classList.remove('is-complete');
@@ -184,17 +307,43 @@ btnPage13Choice1.addEventListener("click", () => {
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 NextPageWithBar(btnPage13Choice2, page14, page13Choice1, li7, li8, li9);
 
 NextPage(btnPage14Choice1, page15Choice1, page14);
 NextPage(btnPage14Choice2, page15Choice2, page14);
+btnPage14Choice2.addEventListener("click", () => {
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: {action: 'defeat'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
+});
 
 NextPageWithBar(btnPage15Choice1, page16, page15Choice1, li8, li9, li10);
 btnPage15Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page15Choice2.style.display = "none"},700);
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page15Choice2.style.display = "none"
+    }, 700);
     li9.classList.remove('in-progress');
     li8.classList.remove('is-active');
     li7.classList.remove('is-complete');
@@ -204,6 +353,17 @@ btnPage15Choice2.addEventListener("click", () => {
     li3.classList.remove('is-complete');
     Change_bar(li2, 'is-complete', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: { action: 'update' },
+        success: function(response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function() {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 NextPage(btnPage16Choice1, page17Choice1, page16);
@@ -212,18 +372,44 @@ NextPage(btnPage16Choice2, page17Choice2, page16);
 
 btnPage17Choice1.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice1.style.display = "none"},700);
-    Change_bar(li9, 'is-active', ' is-complete')
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice1.style.display = "none"
+    }, 700);
+    Change_bar(li9, 'is-active', ' is-complete');
     Change_bar(li10, 'in-progress', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: {action: 'win'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage17Choice2.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({ block: "center", behavior: "smooth" });
-    setTimeout(() => {page17Choice2.style.display = "none"},700);
-    Change_bar(li9, 'is-active', ' is-complete')
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice2.style.display = "none"
+    }, 700);
+    Change_bar(li9, 'is-active', ' is-complete');
     Change_bar(li10, 'in-progress', ' is-active');
+    $.ajax({
+        type: 'POST',
+        url: '../db/worker_stats.php',
+        data: {action: 'win'},
+        success: function (response) {
+            console.log('Данные обновлены: ' + response);
+        },
+        error: function () {
+            console.log('Ошибка при обновлении данных');
+        }
+    })
 });
 
 btnPage18Choice1.addEventListener("click", () => {
