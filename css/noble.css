@@ -69,7 +69,6 @@ p {
     margin-left: 30px;
     padding-top: 9px;
     font-family: BogartTrialBold;
-    font-weight: bold;
     width: 496px;
     height: 68px;
 }
@@ -102,6 +101,16 @@ p {
     margin-left: auto;
 }
 
+.play-again_mobile {
+    display: none;
+    position: absolute;
+    background-image: url("../img/noble/replay_mobile.png");
+    width: 36px;
+    height: 34px;
+    margin-top: 19px;
+    right: 40px;
+}
+
 .play-again:hover {
     background-color: #5F44C9;
     color: white;
@@ -110,7 +119,7 @@ p {
 .preface {
     display: flex;
     background-image: url("../img/noble/page1-back.png");
-    padding: 90px 0 0 155px;
+    padding: 70px 0 0 155px;
     column-gap: 50px;
 }
 
@@ -160,6 +169,13 @@ p {
     font-family: Mont-Semibold;
     padding-top: 8px
 }
+
+/*.button-next_mobile {*/
+/*    display: none;*/
+/*    background-image: url("../img/noble/next_mobile.png");*/
+/*    width: 36px;*/
+/*    height: 32px;*/
+/*}*/
 
 .button-next:hover {
     background-color: #482CB5;
@@ -1271,16 +1287,20 @@ p {
     }
 }
 
+@media screen and (max-width: 1750px) {
+
+}
+
 @media screen and (max-height: 1040px) {
     .preface {
         padding-top: 90px;
         font-size: 22px;
     }
     .button-page1 {
-        margin-top: 10px;
+        margin-top: 0px;
     }
     .preface .dictionary-word {
-        font-size: 24px;
+        font-size: 22px;
     }
     .page3-choice1-img {
         margin-top: 20px;
@@ -1318,7 +1338,7 @@ p {
         padding-bottom: 8px;
     }
     .preface {
-        padding-top: 90px;
+        padding-top: 60px;
     }
     .preface-heading {
         font-size: 30px;
@@ -1373,13 +1393,13 @@ p {
         margin-top: -60px;
     }
     .word-skver {
-        top: 93px;
+        top: 90px;
     }
     .word-sad {
-        top: 218px
+        top: 215px
     }
     .word-shtol {
-        top: 343px;
+        top: 340px;
     }
     .page7-choice2-img {
         margin-top: 10px;
@@ -1393,7 +1413,7 @@ p {
         height: 550px;
     }
     .page8 {
-        padding-top: 90px;
+        padding-top: 60px;
     }
     .page8-choice1, .page8-choice2, .page8-choice3 {
         margin-top: 30px;
@@ -1464,7 +1484,6 @@ p {
         font-size: 22px;
         padding: 10px 40px;
     }
-
     .dictionary-word {
         font-size: 22px;
     }
@@ -1472,7 +1491,7 @@ p {
         font-size: 21px;
     }
     .preface {
-        padding-top: 70px;
+        padding-top: 40px;
         font-size: 21px;
     }
     .preface .dictionary-word {
@@ -1526,12 +1545,12 @@ p {
         margin-top: 150px;
     }
     .page6-left {
-        padding-top: 60px;
+        padding-top: 30px;
     }
     .page6-img {
         scale: 1;
         height: 550px;
-        margin-top: 20px;
+        margin-top: 0;
     }
     .page6 {
         padding-bottom: 0;
@@ -1541,15 +1560,12 @@ p {
     }
     .word-skver {
         top: 64px;
-        left: 62px;
     }
     .word-sad {
-        top: 190px;
-        left: 62px;
+        top: 190px
     }
     .word-shtol {
         top: 318px;
-        left: 62px;
     }
     .page7-choice2-img {
         margin-top: 30px;
@@ -1639,20 +1655,22 @@ p {
         top: 361px;
         left: 40px;
     }
-
+    .page14 {
+        padding-top: 50px;
+    }
     .page15-choice2-img {
         width: 500px;
         margin-top: -60px;
     }
     .page16 {
-        padding-top: 80px;
+        padding-top: 60px;
     }
     .page16-bottom {
         margin-top: 30px;
     }
     .word-tov-btn {
-        right: 359px;
-        top: 652px;
+        right: 360px;
+        top: 631px;
     }
     @media screen and (min-width: 1850px) {
         .word-tov-btn {
@@ -1674,27 +1692,12 @@ p {
     .more-lit, .play-again-button {
         scale: 0.8;
     }
-    .preface-text {
-        font-size: 20px;
-        padding-bottom: 5px;
-    }
-    .preface-heading {
-        font-size: 28px;
-        padding-bottom: 5px;
-    }
-    .page15-choice1-img {
-        height: 600px;
-        margin-top: 50px;
-    }
 }
 @media screen and (max-height: 780px) {
     .choice {
         font-size: 20px;
         padding: 15px 48px;
         height: 80px;
-    }
-    .page8 {
-        padding-top: 60px;
     }
     .page11-choice1-img {
         width: 400px;
@@ -1714,10 +1717,6 @@ p {
         top: 323px;
         left: 47px;
     }
-    .page15-choice1-img {
-        height: 500px;
-        margin-top: 50px;
-    }
     .page14-img {
         height: 450px;
     }
@@ -1732,9 +1731,6 @@ p {
         right: 411px;
         top: 615px;
     }
-    .page14 {
-        padding-top: 50px;
-    }
     @media screen and (min-width: 1850px) {
         .word-tov-btn {
             right: 511px;
@@ -1748,12 +1744,7 @@ p {
     .page16 {
         padding-bottom: 0;
     }
-    .page6-left {
-        padding-top: 30px;
-    }
-    .preface {
-        padding-top: 30px;
-    }
+
 }
 
 @media screen and (max-height: 750px) {
@@ -1787,11 +1778,13 @@ p {
         top: 235px;
     }
     .site-header {
-        background: white; !important;
+        background: white;
+    !important;
         z-index: 10;
         display: flex;
         padding: 20px 40px 0 40px;
-        position: sticky; !important;
+        position: sticky;
+    !important;
         top: 0;
         width: 100%;
     }
@@ -1941,9 +1934,6 @@ p {
         width: 600px;
         height: 400px;
     }
-    .preface {
-        padding-top: 30px;
-    }
 
     .you-lose {
         font-size: 24px;
@@ -2047,3 +2037,125 @@ p {
     }
 }
 img { pointer-events: none; }
+
+@media screen and (max-height: 500px) {
+    .logo {
+        width: 39px;
+        height: 39px;
+        margin-top: 16px;
+        scale: unset;
+    }
+
+    .site-header {
+        position: relative;
+        padding: 0 0 0 40px;
+    }
+
+    .header-text {
+        width: 217px;
+        height: 28px;
+        margin-left: 8px;
+        padding-top: 18px;
+    }
+
+    .header-text-up {
+        font-size: 14px;
+        line-height: unset;
+        height: 18px;
+    }
+
+    .header-text-bottom {
+        font-size: 10px;
+        line-height: unset;
+    }
+
+    .play-again {
+        display: none;
+    }
+
+    .play-again_mobile {
+        display: unset;
+    }
+
+    .preface {
+        padding: 8px 0 0 40px;
+    }
+
+    .preface-heading {
+        font-size: 12px;
+        line-height: unset;
+    }
+
+    .preface-text {
+        font-size: 10px;
+        line-height: unset;
+        padding-bottom: 2px;
+    }
+
+    .dictionary-word {
+        font-size: 10px !important;
+    }
+
+    .preface-text-last {
+        font-size: 10px;
+        line-height: unset;
+        padding-bottom: 0;
+    }
+
+    .preface-bold {
+        font-size: 9px;
+        padding-left: 16px;
+        line-height: 12px;
+    }
+
+    p {
+        padding-bottom: unset;
+    }
+
+    .button-next {
+        margin-top: unset;
+        display: unset;
+        justify-content: unset;
+        position: unset;
+        width: 36px;
+        height: 32px;
+        background-color: unset;
+        border-radius: unset;
+        transition: unset;
+        color: transparent;
+        font-size: unset;
+        font-family: unset;
+        padding-top: unset;
+        background-image: url("../img/noble/next_mobile.png");
+        text-indent: -9999em;
+        text-transform: uppercase;
+    }
+
+    main {
+        position: relative !important;
+    }
+
+    .progress-bar {
+        transform: rotate(0deg) !important;
+        position: absolute !important;
+        top: 280px !important;
+        left: 41px !important;
+        margin: 0 !important;
+        width: 458px !important;
+    }
+
+    .progress-bar li {
+        bottom: 0 !important;
+        right: 0 !important;
+    }
+
+    .button-next-div {
+        position: relative;
+    }
+
+    .button-next {
+        position: absolute;
+        left: 492px;
+        top: -10px;
+    }
+}
