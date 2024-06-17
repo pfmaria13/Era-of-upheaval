@@ -201,6 +201,8 @@ p {
     background-color: #895EBE;
 }
 
+img { pointer-events: none; }
+
 .button-page1 {
     margin-top: 256px;
     margin-left: 46%;

@@ -12,6 +12,7 @@
     height: 64px;
     width: 808px;
     position: fixed;
+    margin-top: 30px;
 }
 
 .progress-bar li {
@@ -200,7 +201,7 @@
         width: 500px;
         position: fixed;
         margin-left: 155px;
-        margin-top: -140px;
+        margin-top: -175px;
     }
 
     .progress-bar li:before {
@@ -208,3 +209,13 @@
         bottom: -9px;
     }
 }
+@media screen and (max-height: 640px) {
+    .progress-bar {
+        height: 64px;
+        width: 400px;
+        position: fixed;
+        margin-left: 210px;
+        margin-top: -235px;
+    }
+}
+

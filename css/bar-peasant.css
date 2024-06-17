@@ -170,7 +170,7 @@
         width: 580px;
         position: fixed;
         margin-left: 115px;
-        margin-top: -140px;
+        margin-top: -135px;
     }
 
     .progress-bar li:first-child {
@@ -200,11 +200,20 @@
         width: 500px;
         position: fixed;
         margin-left: 155px;
-        margin-top: -170px;
+        margin-top: -175px;
     }
 
     .progress-bar li:before {
         border: 7px solid #2D1D38;
         bottom: -9px;
+    }
+}
+@media screen and (max-height: 640px) {
+    .progress-bar {
+        height: 64px;
+        width: 400px;
+        position: fixed;
+        margin-left: 210px;
+        margin-top: -235px;
     }
 }

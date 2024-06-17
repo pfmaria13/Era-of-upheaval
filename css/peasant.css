@@ -935,7 +935,7 @@ p {
     position: absolute;
     left: 693px;
     font-size: 26px;
-    top: 364px;
+    top: 360px;
 }
 
 .word-irbit {
@@ -1021,7 +1021,7 @@ p {
         margin: 243px 0 0 82px;
     }
     .page3-choice1 {
-        padding-top: 0;
+        padding-top: 60px;
     }
     .button-next {
         scale: 1;
@@ -1189,7 +1189,7 @@ p {
     }
     .word-irbit-btn {
         left: 496px;
-        top: 359px;
+        top: 360px;
     }
     .page6-img {
         margin: 30px 0 0 0;
@@ -1436,26 +1436,109 @@ p {
         width: 600px;
         margin-bottom: 10px;
     }
-    @media screen and (min-width: 1850px) {
+    .word-irbit-btn {
+        left: 475px;
+        top: 330px;
+    }
+
+    @media screen and (max-width: 1850px) {
         .word-obsch-btn {
             left: 347px;
             top: 32px;
             font-size: 22px;
         }
     }
-    @media screen and (max-width: 1750px) {
+    @media screen and (min-width: 1750px) {
         .word-irbit-btn {
-            left: 473px;
+            left: 673px;
             top: 330px;
         }
     }
+
 }
+img { pointer-events: none; }
 @media screen and (max-height: 850px) {
      .page14 {
          padding-top: 50px;
          font-size: 18px;
      }
+    .choice {
+        font-size: 22px;
+    }
+    .page2-text {
+        padding-bottom: 30px;
+    }
     .preface {
         padding: 60px 150px 0 150px;
+    }
+    .word-irbit-btn {
+        left: 450px;
+        top: 308px;
+    }
+    .dictionary-word {
+        font-size: 22px;
+    }
+    @media screen and (min-width: 1750px) {
+        .word-irbit-btn {
+            left: 650px;
+            top: 307px;
+        }
+    }
+
+}
+@media screen and (max-height: 750px) {
+    p, .dictionary-word {
+        font-size: 20px;
+    }
+    .choice {
+        font-size: 20px;
+    }
+    .word-irbit-btn {
+        left: 429px;
+        top: 235px;
+    }
+    .site-header {
+        background: white; !important;
+        z-index: 10;
+        display: flex;
+        padding: 20px 40px 0 40px;
+        position: sticky; !important;
+        top: 0;
+        width: 100%;
+    }
+    .header-text-up {
+        font-size: 28px;
+        padding-bottom: 0;
+    }
+    .header-text-bottom {
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+    .logo, .button-next, .play-again {
+        scale: 0.8;
+    }
+    .page {
+        margin-top: 0;
+    }
+    .preface-bar {
+        margin-top: 10px;
+    }
+    .preface-heading {
+        font-size: 30px;
+    }
+    .button-page1 {
+        margin-top: 70px;
+    }
+    .page2-text {
+        padding-bottom: 10px;
+    }
+    .button-page2-choice1, .button-page2-choice2, .button-page2-choice3 {
+        font-size: 20px;
+    }
+    @media screen and (min-width: 1750px) {
+        .word-irbit-btn {
+            left: 629px;
+            top: 235px;
+        }
     }
 }
