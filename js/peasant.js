@@ -329,8 +329,22 @@ btnPage14Choice3.addEventListener("click", () => {
 
 NextPageWithBar(btnPage15Choice1, page16, page15Choice1, li8, li9, li10);
 NextPageWithBar(btnPage15Choice2, page16, page15Choice2, li8, li9, li10);
-NextPageWithBar(btnPage15Choice3, page16, page15Choice3, li8, li9, li10);
+
 btnPage15Choice3.addEventListener("click", () => {
+    preface.style.display = "flex";
+    preface.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page15Choice3.style.display = "none"
+    }, 700);
+    li9.classList.remove('in-progress');
+    li8.classList.remove('is-active');
+    li7.classList.remove('is-complete');
+    li6.classList.remove('is-complete');
+    li5.classList.remove('is-complete');
+    li4.classList.remove('is-complete');
+    li3.classList.remove('is-complete');
+    Change_bar(li2, 'is-complete', ' in-progress');
+    Change_bar(li1, 'is-complete', ' is-active');
     $.ajax({
         type: 'POST',
         url: '../db/peasant_stats.php',

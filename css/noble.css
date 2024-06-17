@@ -1795,10 +1795,12 @@ p {
         top: 0;
         width: 100%;
     }
+
     .header-text-up {
         font-size: 28px;
         padding-bottom: 0;
     }
+
     .header-text-bottom {
         font-size: 22px;
         padding-bottom: 0;

@@ -39,6 +39,7 @@ body {
     background-color: white;
     font-family: Mont;
     color: #2D1D38;
+    overflow: hidden;
 }
 
 .site-header {

@@ -21,11 +21,27 @@ function NextPage (btn, nextPage, previousPage) {
     });
 }
 NextPage(btnMainPlay, mainChoice, mainPage);
-NextPage(btnMainRules, rules, mainPage);
 NextPage(btnRulesPlay, mainChoice, rules);
-NextPage(btnRulesMain, mainPage, rules);
-NextPage(btnPage1Team, pageTeam, mainPage);
-NextPage(btnPageToMain, mainPage, pageTeam);
+
+btnRulesMain.addEventListener("click", () => {
+    mainPage.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {rules.style.display = "none"},600);
+})
+
+btnPageToMain.addEventListener("click", () => {
+    mainPage.scrollIntoView({ block: "center", behavior: "smooth" });
+    setTimeout(() => {pageTeam.style.display = "none"},600);
+})
+
+btnMainRules.addEventListener("click", () => {
+    rules.style.display = "flex";
+    rules.scrollIntoView({ block: "center", behavior: "smooth" });
+})
+
+btnPage1Team.addEventListener("click", () => {
+    pageTeam.style.display = "flex";
+    pageTeam.scrollIntoView({ block: "center", behavior: "smooth" });
+})
 
 
 btnPeasant.addEventListener("click", () => {
