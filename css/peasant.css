@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Mont-bold;
-    src: url("../fonts/Mont-bold.ttf");
+    src: url("../fonts/mont-Bold.ttf");
 }
 
 @font-face {
@@ -944,10 +944,6 @@ p {
     z-index: 9;
     width: 500px;
 }
-.word-bosyak {
-    left: 650px;
-    top: 310px;
-}
 .word-boy {
     left: 350px;
 }
@@ -1417,6 +1413,7 @@ p {
     }
     .page3-choice3-img {
         margin-top: -270px;
+        margin-right: -10px;
     }
     .page11-choice1-img {
         scale: 0.85;
@@ -1454,8 +1451,11 @@ p {
     }
 }
 @media screen and (max-height: 850px) {
- .page14 {
-     padding-top: 50px;
-     font-size: 18px;
- }
+     .page14 {
+         padding-top: 50px;
+         font-size: 18px;
+     }
+    .preface {
+        padding: 60px 150px 0 150px;
+    }
 }

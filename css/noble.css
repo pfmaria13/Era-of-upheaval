@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Mont-bold;
-    src: url("../fonts/Mont-Bold.ttf");
+    src: url("../fonts/mont-Bold.ttf");
 }
 
 @font-face {
@@ -45,7 +45,7 @@ p {
     flex-direction: column;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 88vh;
+    height: 89vh;
     width: 100vw;
     background-size: 100% auto;
 }
@@ -109,7 +109,7 @@ p {
 .preface {
     display: flex;
     background-image: url("../img/noble/page1-back.png");
-    padding: 50px 0 30px 155px;
+    padding: 70px 0 0 155px;
     display: flex;
     column-gap: 50px;
 }
@@ -145,6 +145,8 @@ p {
     padding-left: 32px;
 }
 
+
+
 .button-next {
     margin-top: 25px;
     display: flex;
@@ -169,6 +171,7 @@ p {
     display: flex;
     justify-content: center;
 }
+
 
 .page2 {
     background-image: url("../img/noble/page2-back.png");
