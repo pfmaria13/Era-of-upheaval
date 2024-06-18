@@ -3,7 +3,7 @@ $login = $_POST['username'];
 (string)$pass = $_POST['password'];
 $db = new SQLite3('../db/main.db');
 $hashedPassword = $db->query('SELECT password FROM admin');
-echo gettype($hashedPassword);
+$db->close();
 if ($login == 'sokmMain' && password_verify($pass, $hashedPassword)) {
     session_start();
     $_SESSION['admin'] = true;
