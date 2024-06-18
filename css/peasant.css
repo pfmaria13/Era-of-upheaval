@@ -726,7 +726,7 @@ p {
 }
 
 .page15-text {
-    width: 1250px;
+    width: 1150px;
 }
 
 .page15-left {
@@ -927,83 +927,13 @@ p {
     display: flex;
     justify-content: space-between;
 }
-/*.word-serednyak {*/
-/*    left: 880px;*/
-/*}*/
-
-.word-irbit-btn {
-    display: none;
-    position: absolute;
-    left: 693px;
-    font-size: 26px;
-    top: 360px;
-}
-
-.word-irbit {
-    top: 36px;
-    left: -60px;
-    z-index: 9;
-    width: 500px;
-}
-.word-boy {
-    left: 350px;
-}
-.word-volost {
-    left: 850px;
-}
-.word-neurogay {
-    left: 500px;
-}
-.word-revol1 {
-    left: 400px;
-}
-.word-obsch-btn {
-    left: 400px;
-    top: 33px;
-    position: absolute;
-}
-.word-obsch {
-    width: 400px;
-    left: -120px;
-}
 .word-kulak {
-    left: 960px;
-}
-.word-selskoy-btn {
-    position: absolute;
-    left: 661px;
-    top: 85.5px;
-    font-size: 24px;
-}
-.word-cerkvi-btn {
-    position: absolute;
-    left: 248px;
-    top: 117px;
-    font-size: 24px;
-}
-.word-cerkvi, .word-selskoy {
-    width: 400px;
-    left: -150px
-}
-.word-cerkvi {
-    left: -30px;
-}
-.word-voyna {
-    left: 560px;
-}
-.word-revol {
-    left: 350px;
-}
-.word-nap {
-    width: 400px;
-    left: 150px;
-}
-.word-irb {
-    top: -5px;
+    right: 70px;
+    top: 350px;
 }
 
 @media screen and (max-width: 1850px) {
-    p {
+    p, .dictionary-word {
         font-size: 24px;
     }
     .preface-text {
@@ -1012,9 +942,6 @@ p {
     .button-page1 {
         margin-left: 500px;
     }
-    /*.word-serednyak {*/
-    /*    left: 130px;*/
-    /*}*/
     .preface-heading {
         font-size: 32px;
     }
@@ -1075,10 +1002,6 @@ p {
     }
     .button-page8-choice1, .button-page8-choice2 {
         margin-left: 0;
-    }
-    .word-obsch-btn {
-        left: 300px;
-        top: 31px;
     }
     .page9-choice1-img, .page7-choice1-img {
         scale: 1;
@@ -1191,6 +1114,10 @@ p {
         font-size: 24px;
         padding: 32px 45px 32px 45px;
     }
+    .word-kulak {
+        right: unset;
+        top: unset;
+    }
 }
 
 @media screen and (max-width: 1750px) {
@@ -1273,7 +1200,6 @@ p {
     .page {
         height: 88vh;
     }
-    /*p, */
     .more-lit-page {
         font-size: 22px;
     }
@@ -1403,12 +1329,6 @@ p {
     .word-bosyak {
         top: 275px;
     }
-    .word-obsch-btn {
-        left: 248px;
-        top: 32px;
-        font-size: 22px;
-        position: absolute;
-    }
     .button-page14-choice1, .button-page14-choice2 {
         font-size: 24px;
         padding: 32px 48px;
@@ -1452,21 +1372,6 @@ p {
         left: 475px;
         top: 330px;
     }
-
-    @media screen and (max-width: 1850px) {
-        .word-obsch-btn {
-            left: 347px;
-            top: 32px;
-            font-size: 22px;
-        }
-    }
-    @media screen and (min-width: 1750px) {
-        .word-irbit-btn {
-            left: 673px;
-            top: 330px;
-        }
-    }
-
 }
 img { pointer-events: none; }
 @media screen and (max-height: 850px) {
