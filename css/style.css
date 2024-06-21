@@ -565,9 +565,37 @@ body {
     }
 }
 
+@media screen and (max-height: 760px) {
+    .main-page1-text1 {
+        padding-top: 110px;
+    }
+    .main-page1-text2 {
+        padding-top: 147px;
+    }
+    .main-page1-text3 {
+        padding-top: 217px;
+    }
+    .main-choice-text1, .main-choice-text2 {
+        font-size: 21px;
+    }
+    .main-choice-text1 {
+        padding-top: 25px;
+    }
+    .rules-text1 {
+        padding: 50px 0 8px 0;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    .main-choice-text1, .main-choice-text2 {
+        width: 1200px;
+    }
+}
+
 .page-row1-mobile {
     display: none;
 }
+
 
 @media screen and (max-height: 500px) {
     .logo {
