@@ -39,6 +39,7 @@ body {
 p {
     font-size: 26px;
     padding-bottom: 8px;
+    margin-bottom: 0 !important;
 }
 
 .page {
@@ -160,7 +161,7 @@ p {
     justify-content: center;
     position: relative;
     width: 171px;
-    height: 57px;
+    height: 63px;
     background-color: #5F44C9;
     border-radius: 8px;
     transition: 0.7s;
@@ -299,10 +300,11 @@ p {
     filter: drop-shadow(0 0 30px rgba(45,29,56,0.2));
     background-color: white;
     width: 557px;
-    height: 157px;
+    /*height: 157px;*/
     text-align: left;
     padding: 32px 48px 32px 48px;
     border-radius: 24px;
+    font-size: 26px;
 }
 
 .choice:hover {
@@ -1122,18 +1124,20 @@ p {
     color: white;
     font-size: 24px;
     z-index: 10;
+    /*transform: translateX(-50%);*/
 }
 .word-domna {
     font-family: Mont;
 }
 .word-skver {
-    top: 90px;
-    left: 71px;
-    position: absolute;
+    /*top: 90px;*/
+    /*left: 71px;*/
 }
 .word-skver-popup {
     width: 700px;
     max-width: 700px;
+    position: absolute;
+    z-index: 99;
 }
 .word-sad {
     position: absolute;
@@ -1180,8 +1184,49 @@ p {
     font-size: 24px;
 }
 
+.custom-class {
+    --bs-tooltip-bg: #6C6174 !important;
+    --bs-tooltip-color: #fff !important;
+    --bs-tooltip-padding-x: 25px !important;
+    --bs-tooltip-padding-y: 20px !important;
+}
+
+.tooltip-inner {
+    max-width: 750px !important;
+    /*width: 750px !important;*/
+    font-size: 26px;
+}
+
+.tooltip.show {
+    opacity: 1 !important;
+}
+
+.btn-secondary {
+    --bs-btn-color: #5F44C9 !important;
+    --bs-btn-bg: #fff !important;
+    --bs-btn-border-color: #fff !important; !important;
+    --bs-btn-hover-color: #482CB5 !important;
+    --bs-btn-hover-bg: #fff !important;
+    --bs-btn-hover-border-color: #fff !important;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145 !important;
+    --bs-btn-active-color: #5F44C9 !important;
+    --bs-btn-active-bg: #fff !important;
+    --bs-btn-active-border-color: #fff !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #5F44C9 !important;
+    --bs-btn-disabled-bg: #fff !important;
+    --bs-btn-disabled-border-color: #fff !important;
+    --bs-btn-font-size: 24px !important;
+    vertical-align: unset !important;
+    --bs-btn-padding-x: 0 !important;
+    --bs-btn-padding-y: 0 !important;
+}
+
 @media screen and (max-width: 1850px) {
-    p {
+    p, .choice {
+        font-size: 24px;
+    }
+    .tooltip-inner {
         font-size: 24px;
     }
     .word-ip-btn {
@@ -1287,10 +1332,6 @@ p {
     }
 }
 
-@media screen and (max-width: 1750px) {
-
-}
-
 @media screen and (max-height: 1040px) {
     .preface {
         padding-top: 90px;
@@ -1333,6 +1374,13 @@ p {
 }
 
 @media screen and (max-height: 975px) {
+    .custom-class {
+        --bs-tooltip-padding-x: 25px !important;
+        --bs-tooltip-padding-y: 15px !important;
+    }
+    .tooltip-inner {
+        font-size: 22px;
+    }
     .preface-text, .preface-bold {
         line-height: 27px;
         padding-bottom: 8px;
@@ -1753,7 +1801,7 @@ p {
         padding: 15px 48px;
         height: 80px;
     }
-    .progress-bar {
+    .progress_bar {
         margin-top: 0;
     }
     .page7-choice2-img {
@@ -1928,6 +1976,22 @@ p {
         font-size: 18px;
     }
 }
+@media screen and (max-width: 2250px) {
+    .button-page1 {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1750px) {
+    .button-page1 {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .button-page1 {
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-height: 645px) {
     .page7-choice2-img {
         margin-top: -40px;
@@ -2135,7 +2199,7 @@ img { pointer-events: none; }
         position: relative !important;
     }
 
-    .progress-bar {
+    .progress_bar {
         transform: rotate(0deg) !important;
         position: absolute !important;
         top: 280px !important;
@@ -2144,7 +2208,7 @@ img { pointer-events: none; }
         width: 458px !important;
     }
 
-    .progress-bar li {
+    .progress_bar li {
         bottom: 0 !important;
         right: 0 !important;
     }
@@ -2159,3 +2223,6 @@ img { pointer-events: none; }
         top: -10px;
     }
 }
+
+
+

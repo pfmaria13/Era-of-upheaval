@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bar.css">
     <script defer src="js/noble.js"></script>
     <script defer src="libs/jquery/http_ajax.googleapis.com_ajax_libs_jquery_3.5.1_jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="site-header">
@@ -22,7 +24,7 @@
     <button class="play-again_mobile" onclick="document.location='index.html'"></button>
 </header>
 <main>
-    <ol class="progress-bar">
+    <ol class="progress_bar">
         <li class="li1 is-active"><span></span></li>
         <li class="li2 in-progress"><span></span></li>
         <li class="li3"><span></span></li>
@@ -38,11 +40,16 @@
         <div class="preface page">
             <div class="preface-content">
                 <p class="preface-heading">Предисловие</p>
-                <p class="preface-text">На дворе – последнее десятилетие XIX столетия. Дворянин Иван Александрович Райский живет в <button class="dictionary-word">Петербурге,<div class="dictionary-word-popup word-piter">Дворяне предпочитали жить в столице или за границей. Лишь изредка они приезжали в свои уральские имения, ведя дела через управляющих</div></button> лишь изредка навещая свое уральское поместье и завод, в то время как дела ведет старый управляющий, нанятый еще при отце Ивана Александровича.</p>
+                <p class="preface-text">На дворе – последнее десятилетие XIX столетия. Дворянин Иван Александрович Райский живет в
+                    <span type="button" class="btn btn-secondary" data-bs-custom-class="custom-class" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Дворяне предпочитали жить в столице или за границей. Лишь изредка они приезжали в свои уральские имения, ведя дела через управляющих">
+                        Петербурге,</span>
                 <p class="preface-text">Завод приносил неплохой доход, которого хватало на то, чтобы снимать дом в столице
                     и вести светскую жизнь, однако со временем дела на заводе стали идти все хуже, оборудование устарело, а доходы стали сокращаться.</p>
                 <p class="preface-text-last">Февральским днем Иван Александрович получает письмо от управляющего Иннокентия, в котором тот пишет:</p>
-                <p class="preface-bold">“Милостивый государь, Ваше Благородие, доношу Вашей милости, что дела на заводе Вашем идут благополучно. Недавно вышла из строя <button class="dictionary-word">домна<div class="dictionary-word-popup word-domna">Домна - большая металлургическая вертикально расположенная печь шахтного типа для выплавки чугуна и ферросплавов из железорудного сырья.</div></button>, пока пытались починить завод простаивал, но к Рождеству все починили, возобновили работу.
+                <p class="preface-bold">“Милостивый государь, Ваше Благородие, доношу Вашей милости, что дела на заводе Вашем идут благополучно. Недавно вышла из строя
+                    <span type="button" class="btn btn-secondary" data-bs-custom-class="custom-class" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Домна - большая металлургическая вертикально расположенная печь шахтного типа для выплавки чугуна и ферросплавов из железорудного сырья.">
+                        домна</span>
+                    , пока пытались починить завод простаивал, но к Рождеству все починили, возобновили работу.
                     Но пока завод стоял пришлось и рабочих по домам распустить, и зарплату не выдавали, ну и трое не вернулись в итоге. Но это не беда, все равно жалованье собирались сокращать, а так не придется, только остальным побольше поработать надобно. Они, впрочем, не жалуются, рады служить твоей барской милости.</p>
                 <p class="preface-bold">Желаю Вам здоровья и всех благ. Собираетесь ли вы приехать в этом году? Может быть, мастера какого столичного с собой привезли бы, чтоб оборудование проверил, а то, глядишь, снова простои будут.</p>
                 <p class="preface-bold">С наилучшими пожеланиями, преданный Вам, Иннокентий”. </p>
@@ -90,19 +97,23 @@
         </div>
         <div class="page4 page">
             <p class="page4-text">Ивану Александровичу, отвыкшему от уральских мест, надо бы освоиться в городе, вспомнив родные места. Он решает прогуляться по Екатеринбургу, посмотрев на то, как изменился
-                <span class="dictionary-word">уездный центр<span class="dictionary-word-popup">На момент конца XIX – начала XX века Екатеринбург являлся уездным центром в составе Пермской губернии.</span></span>
+                <span type="button" class="btn btn-secondary" data-bs-custom-class="custom-class" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="На момент конца XIX – начала XX века Екатеринбург являлся уездным центром в составе Пермской губернии.">
+                        уездный центр</span>
                 за время его отсутствия. </p>
             <p class="page4-text">Куда же ему пойти?</p>
+
             <div class="page4-bottom-content">
                 <div class="page4-choices">
-                    <button class="page4-choice1 choice">В
-                        <button class="dictionary-word word-skver">Нуровский сквер<div class="dictionary-word-popup word-skver-popup"> Нуровский сквер - совсем небольшой по размеру, но уютный и чистый, сквер представлял собой приятное место для прогулок. Здесь росли тополя, липы, березы и жимолость. Вдоль аллей стояли скамейки. В конце XIX столетия сквер арендовал садовод Ф. И. Дитрих, который построил здесь деревянную лавку, где можно было купить цветы и саженцы.</div></button>
-                    </button>
+                    <button class="page4-choice1 choice">
+                        В <span type="button" class="btn btn-secondary" data-bs-custom-class="custom-class" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Нуровский сквер - совсем небольшой по размеру, но уютный и чистый, сквер представлял собой приятное место для прогулок. Здесь росли тополя, липы, березы и жимолость. Вдоль аллей стояли скамейки. В конце XIX столетия сквер арендовал садовод Ф. И. Дитрих, который построил здесь деревянную лавку, где можно было купить цветы и саженцы.">
+                        Нуровский сквер</span>
+                        </button>
                     <button class="page4-choice2 choice">В
-                        <button class="dictionary-word word-sad">Харитоновский сад<div class="dictionary-word-popup word-sad-popup">На рубеже XIX–XX веков многие горожане любили прогуляться в Харитоновском саду. С 1888 года этот сад, принадлежавший владельцам Кыштымского горного округа, арендовал казанский мещанин В. В. Семенов. Каждый мог найти здесь зрелище по вкусу: концерты оркестров, выступления куплетистов и рассказчиков, акробатические номера, представления гастролеров из Китая и Турции и даже выставки восковых фигур.</div></button>
+                        <span type="button" class="btn btn-secondary" data-bs-custom-class="custom-class" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="На рубеже XIX–XX веков многие горожане любили прогуляться в Харитоновском саду. С 1888 года этот сад, принадлежавший владельцам Кыштымского горного округа, арендовал казанский мещанин В. В. Семенов. Каждый мог найти здесь зрелище по вкусу: концерты оркестров, выступления куплетистов и рассказчиков, акробатические номера, представления гастролеров из Китая и Турции и даже выставки восковых фигур.">
+                        Харитоновский сад</span>
                     </button>
-                    <button class="page4-choice3 choice">В &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp, чтобы взять<br>велосипед напрокат и проехаться<br>по большей части города
-                        <button class="dictionary-word word-shtol">магазин Штроля<div class="dictionary-word-popup word-shtol-popup">В конце XIX века екатеринбуржцы пересели на велосипеды. В городе появилось общество велосипедистов-любителей и велодром. Но магазинов, где можно было приобрести «железное чудо», в городе было немного. Самый знаменитый из них находился на Покровском проспекте (ныне – ул. К. Либкнехта, 2) и принадлежал Рихарду Штролю.</div></button>
+                    <button class="page4-choice3 choice">В <span type="button" class="btn btn-secondary" data-bs-custom-class="custom-class" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="В конце XIX века екатеринбуржцы пересели на велосипеды. В городе появилось общество велосипедистов-любителей и велодром. Но магазинов, где можно было приобрести «железное чудо», в городе было немного. Самый знаменитый из них находился на Покровском проспекте (ныне – ул. К. Либкнехта, 2) и принадлежал Рихарду Штролю.">
+                        магазин Штроля</span>, чтобы взять велосипед напрокат и проехаться по большей части города
                     </button>
                 </div>
                 <img src="img/noble/page4-img.png" alt="" class="page4-img">
