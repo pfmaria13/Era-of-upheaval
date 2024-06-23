@@ -1338,7 +1338,7 @@ p {
         font-size: 22px;
     }
     .button-page1 {
-        margin-top: 0px;
+        margin-top: 0;
     }
     .preface .dictionary-word {
         font-size: 22px;
@@ -1416,7 +1416,6 @@ p {
     }
     .page4-img {
         margin: 0;
-        /*margin-right: 60px;*/
     }
 
     @media screen and (min-width: 1850px) {

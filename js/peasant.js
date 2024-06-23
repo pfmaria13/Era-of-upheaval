@@ -421,3 +421,6 @@ btnPage18Choice1.addEventListener("click", () => {
 btnMoreLit.addEventListener("click", () => {
     moreLit.style.display = "none";
 });
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));

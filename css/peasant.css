@@ -37,7 +37,8 @@
 
 body {
     background-color: white;
-    font-family: Mont;
+    font-family: Mont !important;
+    line-height: unset;
 }
 
 .page {
@@ -55,6 +56,10 @@ body {
     font-family: Mont-Semibold;
     font-size: 28px;
     width: 421px;
+}
+
+button {
+    line-height: unset !important;
 }
 
 .dictionary-word {
@@ -173,7 +178,7 @@ body {
     display: flex;
     justify-content: center;
     width: 171px;
-    height: 57px;
+    height: 62px;
     background-color: #9FC625;
     border-radius: 8px;
     transition: 0.7s;
@@ -191,7 +196,8 @@ body {
 p {
     width: 1130px;
     font-size: 26px;
-    padding-bottom: 8px;
+    padding-bottom: 8px !important;
+    margin: 0 !important;
 }
 
 .preface {
@@ -202,12 +208,14 @@ p {
 
 .preface-text {
     width: 1600px;
+    z-index: 10;
+    position: relative;
 }
 
 .preface-heading {
     font-family: Mont-Heavy;
     font-size: 34px;
-    padding-bottom: 16px;
+    padding-bottom: 16px !important;
 }
 
 .button-page1 {
@@ -221,7 +229,7 @@ p {
 
 .page2-text {
     width: 1700px;
-    padding-bottom: 53px;
+    padding-bottom: 53px !important;
 }
 
 .button-page2 {
@@ -243,7 +251,7 @@ p {
 }
 
 .page3-choice1-text1 {
-    padding-top: 90px;
+    padding-top: 90px !important;
 }
 
 .page3-choice1-bottom {
@@ -268,7 +276,7 @@ p {
 }
 
 .page3-choice2-text {
-    padding-top: 120px;
+    padding-top: 120px !important;
 }
 
 .page3-choice2-bottom {
@@ -289,8 +297,11 @@ p {
     width: 1000px;
 }
 
+.page3-choice2-img {
+    margin-top: -60px;
+}
 .page3-choice3-text2 {
-    padding-top: 120px;
+    padding-top: 120px !important;
 }
 
 .page3-choice3-bottom {
@@ -299,7 +310,7 @@ p {
 }
 
 .page3-choice3-text1 {
-    padding: 300px 0 40px 0;
+    padding: 300px 0 40px 0 !important;
 }
 
 .page3-choice3-img {
@@ -317,7 +328,7 @@ p {
 }
 
 .page4-text2 {
-    padding-top: 135px;
+    padding-top: 135px !important;
 }
 .page4-text {
     width: 1600px;
@@ -479,7 +490,7 @@ p {
 
 .page8-text2 {
     width: 700px;
-    padding-bottom: 95px;
+    padding-bottom: 95px !important;
 }
 
 .page8-left {
@@ -523,7 +534,7 @@ p {
     padding: 155px 155px 59px 155px;
 }
 
-.page9-choice2-text2{
+.page9-choice2-text2 {
     width: 672px;
 }
 
@@ -533,8 +544,8 @@ p {
 }
 
 .page9-choice2-text3 {
-    padding-top: 163px;
-    margin-left: 200px;
+    padding-top: 163px !important;
+    margin-left: 200px !important;
 }
 
 .page9-choice2-img {
@@ -603,11 +614,11 @@ p {
 }
 
 .page11-choice2-text2 {
-    margin: 145px 0 0 276px
+    margin: 145px 0 0 276px !important;
 }
 
 .button-page11-choice2 {
-    margin: 44px 0 0 331px
+    margin: 44px 0 0 331px;
 }
 
 .page11-choice2-text {
@@ -670,8 +681,8 @@ p {
 }
 
 .page13-choice2-text2 {
-    padding-top: 273px;
-    margin-left: 100px;
+    padding-top: 273px !important;
+    margin-left: 100px !important;
 }
 
 .button-page13-choice2 {
@@ -742,8 +753,8 @@ p {
 }
 
 .page15-text2 {
-    padding-top: 171px;
-    margin-left: 298px;
+    padding-top: 171px !important;
+    margin-left: 298px !important;
 }
 
 .button-page15-choice3 {
@@ -777,7 +788,7 @@ p {
 }
 
 .page17-choice1-text2 {
-    margin: 332px 0 44px 87px;
+    margin: 332px 0 44px 87px !important;
 }
 
 .page17-choice1-img {
@@ -932,8 +943,52 @@ p {
     top: 350px;
 }
 
+.custom-class {
+    --bs-tooltip-bg: #6C6174 !important;
+    --bs-tooltip-color: #fff !important;
+    --bs-tooltip-padding-x: 25px !important;
+    --bs-tooltip-padding-y: 20px !important;
+}
+
+.tooltip-inner {
+    max-width: 750px !important;
+    /*width: 750px !important;*/
+    font-size: 26px;
+}
+
+.tooltip.show {
+    opacity: 1 !important;
+}
+
+.btn-secondary {
+    --bs-btn-color: #9FC625 !important;
+    --bs-btn-bg: #fff !important;
+    --bs-btn-border-color: #fff !important; !important;
+    --bs-btn-hover-color: #93B91E !important;
+    --bs-btn-hover-bg: #fff !important;
+    --bs-btn-hover-border-color: #fff !important;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145 !important;
+    --bs-btn-active-color: #9FC625 !important;
+    --bs-btn-active-bg: #fff !important;
+    --bs-btn-active-border-color: #fff !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #9FC625 !important;
+    --bs-btn-disabled-bg: #fff !important;
+    --bs-btn-disabled-border-color: #fff !important;
+    --bs-btn-font-size: 26px !important;
+    vertical-align: unset !important;
+    --bs-btn-padding-x: 0 !important;
+    --bs-btn-padding-y: 0 !important;
+}
+
 @media screen and (max-width: 1850px) {
-    p, .dictionary-word {
+    p, .dictionary-word, .choice {
+        font-size: 24px;
+    }
+    .btn-secondary {
+        --bs-btn-font-size: 24px !important;
+    }
+    .tooltip-inner {
         font-size: 24px;
     }
     .preface-text {
@@ -1044,7 +1099,7 @@ p {
         padding-top: 70px;
     }
     .page11-choice2-text2 {
-        margin-left: 76px;
+        margin-left: 76px !important;
     }
     .button-page11-choice2 {
         margin-left: 131px;
@@ -1074,26 +1129,14 @@ p {
     .button-page14-choice1, .button-page14-choice2, .button-page14-choice3 {
         margin-left: 0;
     }
-    .word-selskoy-btn {
-        left: 461px;
-    }
-    .word-cerkvi-btn {
-        left: 48px;
-    }
     .button-page15-choice2, .button-page15-choice1, .page15-text2 {
-        margin-left: 51px;
+        margin-left: 51px !important;
     }
     .button-page15-choice3 {
         margin-left: 98px;
     }
     .page17-choice1-text {
         width: 1016px;
-    }
-    .word-voyna {
-        left: 560px;
-    }
-    .word-revol {
-        left: 800px;
     }
     .button-page17-choice2 {
         margin: 213px 0 0 251px;
@@ -1114,19 +1157,11 @@ p {
         font-size: 24px;
         padding: 32px 45px 32px 45px;
     }
-    .word-kulak {
-        right: unset;
-        top: unset;
-    }
 }
 
 @media screen and (max-width: 1750px) {
     .button-page2 {
         margin-left: 0;
-    }
-    .word-irbit-btn {
-        left: 496px;
-        top: 360px;
     }
     .page6-img {
         margin: 30px 0 0 0;
@@ -1154,11 +1189,14 @@ p {
     .page17-choice1-img {
         scale: 1;
     }
+    .page3-choice2-img {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-height: 1040px) {
     .page3-choice1-text1 {
-        padding-top: 120px;
+        padding-top: 120px !important;
     }
     .page3-choice1-img {
         margin: 50px 40px 0 0 ;
@@ -1172,7 +1210,7 @@ p {
         padding-top: 0;
     }
     .page4-text2 {
-        padding-top: 120px;
+        padding-top: 120px !important;
     }
     .page5-choice2 {
         padding-top: 120px;
@@ -1199,6 +1237,13 @@ p {
     /*до 791*/
     .page {
         height: 88vh;
+    }
+    .custom-class {
+        --bs-tooltip-padding-x: 25px !important;
+        --bs-tooltip-padding-y: 15px !important;
+    }
+    .tooltip-inner {
+        font-size: 22px;
     }
     .more-lit-page {
         font-size: 22px;
@@ -1230,10 +1275,11 @@ p {
         padding: 0 155px 0 155px;
     }
     .page2-text {
-        padding-top: 60px;
+        padding-top: 60px !important;
+        padding-bottom: 30px !important;
     }
     .page3-choice1-text1, .page3-choice2-text, .page15-text2, .page3-choice3-text2 {
-        padding-top: 90px;
+        padding-top: 90px !important;
     }
     .page3-choice1-img, .page5-choice2-img, .page9-choice1-img{
         width: 700px;
@@ -1246,20 +1292,19 @@ p {
     }
     .page3-choice2-img{
         width: 700px;
-        margin-top: -60px;
     }
     .page7-choice1-img{
         margin-top: 40px;
     }
     .page3-choice3-text1, .page13-choice2-text2 {
-        padding-top: 250px;
+        padding-top: 250px !important;
     }
     .page3-choice3-img {
         width: 700px;
         margin-top: -120px;
     }
     .page4-text2 {
-        padding-top: 70px;
+        padding-top: 70px !important;
     }
     .page4-img {
         margin-top: -60px;
@@ -1317,18 +1362,6 @@ p {
     .page17-choice1-img {
         width: 650px;
     }
-    .word-irbit-btn {
-        top: 334px;
-        left: 675px;
-        font-size: 24px;
-    }
-    .word-irbit {
-        font-size: 22px;
-        top: 37px;
-    }
-    .word-bosyak {
-        top: 275px;
-    }
     .button-page14-choice1, .button-page14-choice2 {
         font-size: 24px;
         padding: 32px 48px;
@@ -1368,10 +1401,6 @@ p {
         width: 600px;
         margin-bottom: 10px;
     }
-    .word-irbit-btn {
-        left: 475px;
-        top: 330px;
-    }
 }
 img { pointer-events: none; }
 @media screen and (max-height: 850px) {
@@ -1382,15 +1411,15 @@ img { pointer-events: none; }
     .choice {
         font-size: 22px;
     }
+    .btn-secondary-choice {
+        --bs-btn-font-size: 22px !important;
+    }
     .page2-text {
-        padding-bottom: 30px;
+        padding-bottom: 30px !important;
+        /*padding-top: 30px;*/
     }
     .preface {
         padding: 60px 150px 0 150px;
-    }
-    .word-irbit-btn {
-        left: 450px;
-        top: 308px;
     }
     .dictionary-word {
         font-size: 22px;
@@ -1422,34 +1451,42 @@ img { pointer-events: none; }
     .page14-img {
         margin-top: -40px;
     }
+    .button-page2-choice1, .button-page2-choice2, .button-page2-choice3 {
+        padding: 23px 48px;
+    }
+    .page3-choice2-img {
+        width: 600px;
+    }
+    .button-page3-choice2 {
+        margin-top: 250px;
+    }
 }
 @media screen and (max-height: 750px) {
     p, .dictionary-word {
         font-size: 20px;
     }
+    .btn-secondary {
+        --bs-btn-font-size: 20px !important;
+    }
     .choice {
         font-size: 20px;
-    }
-    .word-irbit-btn {
-        left: 429px;
-        top: 235px;
     }
     .site-header {
         background: white; !important;
         z-index: 10;
         display: flex;
-        padding: 20px 40px 0 40px;
+        padding: 20px 40px 0 40px !important;
         position: sticky; !important;
         top: 0;
         width: 100%;
     }
     .header-text-up {
         font-size: 28px;
-        padding-bottom: 0;
+        padding-bottom: 0 !important;
     }
     .header-text-bottom {
         font-size: 22px;
-        padding-bottom: 0;
+        padding-bottom: 0 !important;
     }
     .logo, .button-next, .play-again {
         scale: 0.8;
@@ -1467,7 +1504,7 @@ img { pointer-events: none; }
         margin-top: 70px;
     }
     .page2-text {
-        padding-bottom: 10px;
+        padding-bottom: 10px !important;
     }
     .button-page2-choice1, .button-page2-choice2, .button-page2-choice3 {
         font-size: 20px;
@@ -1480,5 +1517,16 @@ img { pointer-events: none; }
     .page14 {
         margin-top: 50px;
     }
+    .page3-choice1-img {
+        width: 600px;
+    }
+    .button-page3-choice1 {
+        margin-top: 130px;
+    }
+}
 
+@media screen and (max-height: 645px) {
+    .page3-choice1-img {
+        width: 450px;
+    }
 }
