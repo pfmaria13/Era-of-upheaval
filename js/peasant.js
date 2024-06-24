@@ -87,7 +87,7 @@ function Change_bar(li, lastClass, newClass) {
 function NextPage(btn, nextPage, previousPage) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        nextPage.scrollIntoView({block: "start", behavior: "smooth"});
         setTimeout(() => {
             previousPage.style.display = "none"
         }, 600);

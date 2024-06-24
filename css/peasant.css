@@ -194,14 +194,14 @@ button {
 }
 
 p {
-    width: 1130px;
+    /*width: 1130px;*/
     font-size: 26px;
     padding-bottom: 8px !important;
     margin: 0 !important;
 }
 
 .preface {
-    display: flex;
+    display: none;
     padding: 120px 155px 184px 155px;
     background-image: url("../img/peasant/page1-back.png");
 }
@@ -331,7 +331,7 @@ p {
     padding-top: 135px !important;
 }
 .page4-text {
-    width: 1600px;
+    padding-right: 5vw;
 }
 
 .page4-left {
@@ -343,7 +343,7 @@ p {
     padding-top: 60px;
     display: flex;
     justify-content: space-around;
-    padding-right: 83px;
+    column-gap: 30px;
 }
 
 .page4-img {
@@ -394,7 +394,7 @@ p {
 
 .page6 {
     background-image: url("../img/peasant/page6-back.png");
-    padding: 130px 40px 101px 155px;
+    padding: 100px 40px 101px 155px;
 }
 
 .page6-text {
@@ -474,6 +474,8 @@ p {
 }
 
 .page8 {
+    display: flex;
+
     background-image: url("../img/peasant/page8-back.png");
     padding: 155px 83px 64px 155px;
 }
@@ -1022,9 +1024,6 @@ p {
     .page3-choice3-text1 {
         padding-top: 350px;
     }
-    .page4-text {
-        width: 1229px;
-    }
     .page4-bottom {
         padding-top: 30px;
     }
@@ -1053,7 +1052,7 @@ p {
         margin-top: 0;
     }
     .page8-text2 {
-        padding-bottom: 68px;
+        padding-bottom: 68px !important;
     }
     .button-page8-choice1, .button-page8-choice2 {
         margin-left: 0;
@@ -1206,7 +1205,8 @@ p {
         width: 68%;
     }
     .page4-img {
-        width: 26%;
+        width: 600px;
+        height: 450px;
         padding-top: 0;
     }
     .page4-text2 {
@@ -1229,7 +1229,9 @@ p {
         margin-top: 100px;
         height: 80vh;
     }
-
+    .page5-choice1-img {
+        margin-top: 0;
+    }
 }
 
 
@@ -1280,6 +1282,7 @@ p {
     }
     .page3-choice1-text1, .page3-choice2-text, .page15-text2, .page3-choice3-text2 {
         padding-top: 90px !important;
+        padding-right: 10%;
     }
     .page3-choice1-img, .page5-choice2-img, .page9-choice1-img{
         width: 700px;
@@ -1291,7 +1294,7 @@ p {
         margin-right: 0;
     }
     .page3-choice2-img{
-        width: 700px;
+        width: 650px;
     }
     .page7-choice1-img{
         margin-top: 40px;
@@ -1307,8 +1310,8 @@ p {
         padding-top: 70px !important;
     }
     .page4-img {
-        margin-top: -60px;
-        scale: 0.88;
+        width: 500px;
+        height: 370px;
     }
     .page4 {
         padding-bottom: 0;
@@ -1373,8 +1376,8 @@ p {
         margin-top: 150px;
     }
     .page7-choice2-img {
-        scale: 0.8;
-        margin-top: -50px;
+        width: 650px;
+        margin-top: 0;
     }
     .page3-choice3-img {
         margin-top: -270px;
@@ -1401,9 +1404,15 @@ p {
         width: 600px;
         margin-bottom: 10px;
     }
+    .page8 {
+        padding-top: 70px;
+    }
 }
 img { pointer-events: none; }
 @media screen and (max-height: 850px) {
+    p {
+        font-size: 22px;
+    }
      .page14 {
          padding-top: 75px;
          font-size: 18px;
@@ -1431,7 +1440,7 @@ img { pointer-events: none; }
     .page5-choice1-img {
         width: 500px;
         margin-top: 40px;
-        margin-right: 0;
+        margin-right: 50px;
     }
     .button-page10-choice2, .button-page10-choice1 {
         font-size: 20px;
@@ -1455,10 +1464,74 @@ img { pointer-events: none; }
         padding: 23px 48px;
     }
     .page3-choice2-img {
-        width: 600px;
+        width: 550px;
     }
     .button-page3-choice2 {
         margin-top: 250px;
+    }
+    .page3-choice3-img {
+        height: 550px;
+        width: 600px;
+        margin-top: -170px;
+    }
+    .page3-choice3-text1 {
+        padding-top: 100px !important;
+    }
+    .button-play-again {
+        scale: 0.9;
+    }
+    .page6-img {
+        width: 460px;
+        height: 360px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .page6 {
+        padding-top: 40px;
+    }
+    .page7-choice1-img {
+        width: 600px;
+        height: 410px;
+    }
+    .button-page7-choice1, .button-page7-choice2 {
+        margin-top: 100px;
+    }
+    .page7-choice2-img {
+        width: 550px;
+    }
+    .page8 {
+        padding-top: 40px;
+    }
+    .button-page8-choice1 {
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-height: 775px) {
+    .page3-choice3-img {
+        height: 470px;
+        width: 500px;
+        margin-top: -190px;
+    }
+    .button-page5-choice1 {
+        margin-top: 150px;
+    }
+    .page5-choice2-img {
+        width: 590px;
+        padding-top: 20px;
+    }
+    .button-page5-choice2 {
+        margin-top: 150px;
+    }
+    .page6-bottom {
+        margin-top: 20px;
+    }
+    .page7-choice2-img {
+        width: 500px;
+        height: 300px;
+    }
+    .page8-img {
+        width: 250px;
     }
 }
 @media screen and (max-height: 750px) {
@@ -1523,10 +1596,86 @@ img { pointer-events: none; }
     .button-page3-choice1 {
         margin-top: 130px;
     }
+    .page3-choice2-img {
+        width: 480px;
+    }
+    .page4-text2 {
+        padding-top: 40px !important;
+    }
+    .button-page4-choice2 {
+        margin-top: 0;
+    }
+    .page4-text {
+        padding-bottom: 3px !important;
+    }
+    .page4-img {
+        width: 400px;
+        height: 300px;
+    }
+    .page6-img {
+        width: 400px;
+        height: 300px;
+    }
+    .page6 {
+        padding-top: 30px;
+    }
+    .page7-choice1-img {
+        width: 500px;
+        height: 350px;
+    }
+    .page7-choice1 {
+        padding-top: 60px;
+    }
+    .page7-choice2-img {
+        width: 400px;
+        height: 250px;
+    }
+    .page7-choice2-bottom {
+        padding-top: 0;
+    }
+    .page8 {
+        padding-top: 20px;
+    }
 }
 
 @media screen and (max-height: 645px) {
+    .choice, p {
+        font-size: 18px;
+    }
+    .btn-secondary {
+        --bs-btn-font-size: 18px !important;
+    }
     .page3-choice1-img {
         width: 450px;
+    }
+    .page3-choice2-img {
+        width: 400px;
+    }
+    .button-page3-choice2 {
+        margin-top: 150px;
+    }
+    .page3-choice3-text1 {
+        padding-top: 50px !important;
+    }
+    .page3-choice3-img {
+        height: 420px;
+        width: 400px;
+        margin-top: -190px;
+    }
+    .page5-choice1 {
+        padding-top: 60px;
+    }
+    .page5-choice1-img {
+        width: 430px;
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+    .page5-choice2-img {
+        width: 450px;
+        padding-top: 20px;
+    }
+    .page7-choice1-img {
+        width: 400px;
+        height: 300px;
     }
 }
