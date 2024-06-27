@@ -38,7 +38,8 @@
 body {
     background-color: white;
     font-family: Mont !important;
-    line-height: unset;
+    line-height: unset !important;
+    color: black !important;
 }
 
 .page {
@@ -201,7 +202,7 @@ p {
 }
 
 .preface {
-    display: none;
+    display: flex;
     padding: 120px 155px 184px 155px;
     background-image: url("../img/peasant/page1-back.png");
 }
@@ -696,10 +697,8 @@ p {
 }
 
 .page14 {
-    display: flex;
-
     background-image: url("../img/peasant/page14-back.png");
-    padding: 135px 40px 56px 155px;
+    padding: 100px 40px 0 155px;
 }
 
 .page14-left {
@@ -709,7 +708,7 @@ p {
 }
 
 .page14-text {
-    width: 1016px;
+    padding-right: 5vw;
 }
 
 .page14-bottom {
@@ -718,33 +717,44 @@ p {
 }
 
 .page14-img {
-    margin: -100px 50px 0 0;
-    padding-left: 25px;
-    scale: 1;
+    margin-bottom: 40px;
 }
 
-.button-page14-choice1, .button-page14-choice2, .button-page14-choice3 {
+.button-page14-choice1, .button-page14-choice2 {
     width: 671px;
     font-size: 24px;
     margin: 0 0 48px 200px;
+}
+
+.button-page14-choice3 {
+    width: 671px;
+    font-size: 24px;
+    margin: 0 0 0 200px;
 }
 
 .button-page14-choice1 {
     margin-top: 24px;
 }
 
-.page15-choice1, .page15-choice2, .page15-choice3 {
+.page15-choice1, .page15-choice2 {
     background-image: url("../img/peasant/page15-back.png");
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 72px 40px 155px;
+    padding: 50px 0 0 155px;
 }
 
-.page15-text {
-    width: 1150px;
+.page15-choice3 {
+    background-image: url("../img/peasant/page15-back.png");
+    padding: 50px 0 0 155px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page15-choice1-text {
+    padding-right: 20vw;
 }
 
 .page15-left {
+    display: flex;
+    flex-direction: column;
     padding-top: 86px;
 }
 
@@ -752,8 +762,25 @@ p {
     margin: 306px 0 0 451px;
 }
 
+.page15-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
 .button-page15-choice2 {
     margin: 283px 0 0 451px;
+}
+
+.page15-choice2-text {
+    padding-right: 35vw;
+}
+
+.page15-choice2-img {
+    margin-top: 40px;
+}
+
+.page15-choice3-img {
+    margin-bottom: 30px;
 }
 
 .page15-text2 {
@@ -765,24 +792,48 @@ p {
     margin: 36px 0 0 353px;
 }
 
+.page15-choice3-text {
+    padding-right: 9vw;
+}
+
 .page16 {
     background-image: url("../img/peasant/page16-back.png");
-    padding: 100px 155px 83px 155px;
+    padding: 100px 50px 0 155px;
 }
 
 .page16-bottom {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 80px;
+    padding-top: 32px;
     column-gap: 30px;
-}
-.button-page16-choice1, .button-page16-choice2 {
-    height: 300px;
+    align-items: center;
 }
 
-.page16-text1, .page16-text2, .page17-choice1-text {
+.page16-left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page16-img {
+    width: 629px;
+    height: 429px;
+    scale: 1.2;
+}
+
+.button-page16-choice1, .button-page16-choice2 {
+    width: 544px;
+}
+
+.button-page16-choice2 {
+    margin-top: 32px;
+}
+
+.page16-text1, .page16-text2 {
+    padding-right: 15vw;
+}
+
+.page17-choice1-text {
     width: 1600px;
 }
 
@@ -932,6 +983,11 @@ p {
 .more-lit-li1 {
     list-style: inside; !important;
     padding-bottom: 8px;
+}
+
+ul, li, ol {
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
 }
 
 .more-lit-li1::marker {
@@ -1120,13 +1176,14 @@ p {
         margin-left: 0;
     }
     .button-page15-choice2, .button-page15-choice1, .page15-text2 {
-        margin-left: 51px !important;
+        margin-left: 101px !important;
     }
     .button-page15-choice3 {
         margin-left: 98px;
     }
     .page17-choice1-text {
-        width: 1016px;
+        width: unset;
+        padding-right: 20vw;
     }
     .button-page17-choice2 {
         margin: 213px 0 0 251px;
@@ -1146,6 +1203,12 @@ p {
         width: 83vw;
         font-size: 24px;
         padding: 32px 45px 32px 45px;
+    }
+    .page16-bottom {
+        justify-content: space-between;
+    }
+    .page16-img {
+        scale: 1;
     }
 }
 
@@ -1171,9 +1234,6 @@ p {
     }
     .button-page12-choice1, .button-page12-choice2 {
         margin: 48px 0 0 0;
-    }
-    .page16-text1, .page16-text2 {
-        width: 1016px;
     }
     .page17-choice1-img {
         scale: 1;
@@ -1206,7 +1266,7 @@ p {
         padding-top: 120px;
     }
     .page14 {
-        padding-top: 70px;
+        padding-top: 60px;
     }
     .more-lit-page {
         font-size: 22px;
@@ -1231,6 +1291,17 @@ p {
     .button-page12-choice1, .button-page12-choice2 {
         margin-top: 20px;
     }
+    .page15-choice1-img {
+        width: 780px;
+        margin-top: -30px;
+    }
+    .page16 {
+        padding-top: 50px;
+    }
+    .page16-img {
+        scale: 1;
+    }
+
 }
 @media screen and (max-width: 1350px) {
     .button-page2-choice1, .button-page2-choice2, .button-page2-choice3 {
@@ -1283,7 +1354,7 @@ p {
         padding-top: 60px !important;
         padding-bottom: 30px !important;
     }
-    .page3-choice1-text1, .page3-choice2-text, .page15-text2, .page3-choice3-text2 {
+    .page3-choice1-text1, .page3-choice2-text, .page3-choice3-text2 {
         padding-top: 90px !important;
         padding-right: 10%;
     }
@@ -1326,7 +1397,7 @@ p {
         padding: 90px 0 0 155px;
     }
      .page6, .page7-choice1, .page7-choice2, .page8, .page9-choice1, .page9-choice2, .page11-choice1,
-    .page11-choice2, .page12, .page13-choice1, .page13-choice2, .page14, .page16, .page17-choice1, .page17-choice2, .page18 {
+    .page11-choice2, .page12, .page13-choice1, .page13-choice2, .page17-choice1, .page18 {
         padding-top: 90px;
         padding-bottom: 0;
     }
@@ -1346,9 +1417,6 @@ p {
     .page10 {
         padding-top: 100px
     }
-    .page14-img {
-        width: 440px;
-    }
     .page10-img {
         height: 400px;
     }
@@ -1358,10 +1426,6 @@ p {
     .page12-img{
         height: 600px;
     }
-    .page15-img {
-        height: 650px;
-        margin-top: 40px;
-    }
     .page13-choice2-img {
         width: 700px;
     }
@@ -1369,11 +1433,10 @@ p {
         width: 650px;
     }
     .button-page14-choice1, .button-page14-choice2 {
-        font-size: 24px;
-        padding: 32px 48px;
+        padding: 26px 48px;
     }
     .page14-img {
-        margin-top: 0;
+        height: 570px;
     }
     .button-page1 {
         margin-top: 150px;
@@ -1388,12 +1451,6 @@ p {
     }
     .page11-choice2-img {
         margin-top: -60px;
-    }
-    .button-page16-choice1, .button-page16-choice2 {
-        height: 250px;
-    }
-    .page16-bottom {
-        padding-top: 50px;
     }
     .page10-left {
         padding-bottom: 0;
@@ -1415,16 +1472,35 @@ p {
     .page13-choice2-text2 {
         padding-top: 200px !important;
     }
+    .page15-choice1-img {
+        width: 700px;
+        margin-top: -30px;
+    }
+    .page15-choice2-img {
+        width: 750px;
+    }
+    .page16 {
+        padding-top: 80px;
+    }
+    .button-page16-choice2 {
+        margin-top: 0;
+    }
+    .button-page16-choice1, .button-page16-choice2 {
+        padding: 25px 40px;
+    }
+    .page17-choice1-text2 {
+        margin-top: 200px !important;
+    }
+    .button-page17-choice2 {
+        margin-top: 100px;
+    }
 }
 img { pointer-events: none; }
 @media screen and (max-height: 850px) {
     p {
         font-size: 22px;
     }
-     .page14 {
-         padding-top: 75px;
-         font-size: 18px;
-     }
+
     .choice {
         font-size: 22px;
     }
@@ -1457,11 +1533,13 @@ img { pointer-events: none; }
     .page10 {
         margin-top: 0;
     }
-    .button-page14-choice1 {
-        margin-top: 20px;
+
+    .button-page14-choice1, .button-page14-choice2, .button-page14-choice3 {
+        padding: 26px 35px;
     }
     .page14-img {
-        margin-top: -40px;
+        margin-top: -20px;
+        height: 520px;
     }
     .button-page2-choice1, .button-page2-choice2, .button-page2-choice3 {
         padding: 23px 48px;
@@ -1539,6 +1617,28 @@ img { pointer-events: none; }
         width: 570px;
         height: 450px;
     }
+    .button-page14-choice1 {
+        margin-top: 10px;
+    }
+    .page15-choice1-img {
+        width: 600px;
+        margin-top: -30px;
+    }
+    .page15-choice2-img {
+        width: 650px;
+    }
+    .page15-text2 {
+        padding-top: 50px !important;
+    }
+    .page16-bottom {
+        padding-top: 20px;
+    }
+    .button-page16-choice1, .button-page16-choice2 {
+        font-size: 20px;
+    }
+    .page17-choice1-img {
+        width: 550px;
+    }
 }
 @media screen and (max-height: 775px) {
     .page3-choice3-img {
@@ -1576,6 +1676,19 @@ img { pointer-events: none; }
     }
     .page13-choice2-img {
         width: 560px;
+    }
+    .button-page15-choice1, .button-page15-choice2 {
+        margin-top: 200px;
+    }
+    .page15-choice2-img {
+        width: 550px;
+    }
+    .page16-img {
+        width: 500px;
+        height: 390px;
+    }
+    .page17-choice2 {
+        padding-top: 50px;
     }
 }
 @media screen and (max-height: 750px) {
@@ -1630,9 +1743,6 @@ img { pointer-events: none; }
         font-size: 18px;
         margin-top: 80px;
         height: 75vh;
-    }
-    .page14 {
-        margin-top: 50px;
     }
     .page3-choice1-img {
         width: 600px;
@@ -1700,7 +1810,37 @@ img { pointer-events: none; }
         width: 500px;
         height: 370px;
     }
-
+    .page14 {
+        padding-top: 40px;
+        font-size: 18px;
+    }
+    .button-page14-choice1, .button-page14-choice2, .button-page14-choice3 {
+        padding: 26px 35px;
+    }
+    .page14-img {
+        margin-top: -20px;
+        height: 470px;
+        margin-bottom: 0;
+    }
+    .page15-choice1-img {
+        width: 500px;
+    }
+    .page15-left {
+        padding-top: 60px;
+    }
+    .page16-img {
+        width: 470px;
+        height: 370px;
+    }
+    .page16 {
+        padding-top: 40px;
+    }
+    .page17-choice1-img {
+        width: 450px;
+    }
+    .page17-choice1-text2 {
+        margin-top: 100px !important;
+    }
 }
 
 @media screen and (max-height: 645px) {
@@ -1779,5 +1919,31 @@ img { pointer-events: none; }
     }
     .page13-choice2 {
         padding-top: 70px;
+    }
+    .page14-img {
+        margin-top: -20px;
+        height: 380px;
+    }
+    .button-page14-choice1, .button-page14-choice2, .button-page14-choice3 {
+        padding: 15px 25px;
+    }
+    .page15-choice1-img, .page15-choice2-img {
+        width: 400px;
+    }
+    .page16-img {
+        width: 400px;
+        height: 320px;
+    }
+    .page16 {
+        padding-top: 40px;
+    }
+    .page17-choice1 {
+        padding-top: 70px;
+    }
+    .page17-choice1-img {
+        width: 350px;
+    }
+    .page17-choice2 {
+        padding-top: 30px;
     }
 }

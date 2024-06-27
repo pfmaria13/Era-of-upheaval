@@ -716,7 +716,7 @@ img { pointer-events: none; }
     padding: 155px 0 188px 155px;
 }
 
-.page15-choice1-bottom, .page15-bottom {
+.page15-bottom, .page15-bottom {
     display: flex;
     justify-content: space-between;
 }
