@@ -41,9 +41,9 @@ let btnPage10Choice3 = document.querySelector(".page10-choice3");
 let page11Choice1 = document.querySelector(".page11-choice1");
 let page11Choice2 = document.querySelector(".page11-choice2");
 let page11Choice3 = document.querySelector(".page11-choice3");
-let btnPage11Choice1 = document.querySelector(".page11-choice1");
-let btnPage11Choice2 = document.querySelector(".page11-choice2");
-let btnPage11Choice3 = document.querySelector(".page11-choice3");
+let btnPage11Choice1 = document.querySelector(".button-page11-choice1");
+let btnPage11Choice2 = document.querySelector(".button-page11-choice2");
+let btnPage11Choice3 = document.querySelector(".button-page11-choice3");
 let page12 = document.querySelector(".page12");
 let btnPage12Choice1 = document.querySelector(".page12-choice1");
 let btnPage12Choice2 = document.querySelector(".page12-choice2");
@@ -51,9 +51,9 @@ let btnPage12Choice3 = document.querySelector(".page12-choice3");
 let page13Choice1 = document.querySelector(".page13-choice1");
 let page13Choice2 = document.querySelector(".page13-choice2");
 let page13Choice3 = document.querySelector(".page13-choice3");
-let btnPage13Choice1 = document.querySelector(".page13-choice1");
-let btnPage13Choice2 = document.querySelector(".page13-choice2");
-let btnPage13Choice3 = document.querySelector(".page13-choice3");
+let btnPage13Choice1 = document.querySelector(".button-page13-choice1");
+let btnPage13Choice2 = document.querySelector(".button-page13-choice2");
+let btnPage13Choice3 = document.querySelector(".button-page13-choice3");
 let page14 = document.querySelector(".page14");
 let btnPage9Choice3 = document.querySelector(".button-page9-choice3");
 let btnPage14Choice1 = document.querySelector(".page14-choice1");
@@ -116,10 +116,11 @@ function NextPageWithBar(btn, nextPage, previousPage, li1, li2, li3) {
 
 btnPage7PA.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page7Choice2.style.display = "none"
-    }, 700);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page7Choice2.style.display = "none"
+    // }, 700);
+    page7Choice2.style.display = "none";
     li5.classList.remove('in-progress');
     li4.classList.remove('is-active');
     li3.classList.remove('is-complete');
@@ -140,10 +141,11 @@ btnPage7PA.addEventListener("click", () => {
 
 btnPage9Choice3.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page9Choice3.style.display = "none"
-    }, 900);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page9Choice3.style.display = "none"
+    // }, 900);
+    page9Choice3.style.display = "none";
     li6.classList.remove('in-progress');
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
@@ -165,10 +167,11 @@ btnPage9Choice3.addEventListener("click", () => {
 
 btnPage15Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page15Choice2.style.display = "none"
-    }, 700);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page15Choice2.style.display = "none"
+    // }, 700);
+    page15Choice2.style.display = "none";
     li9.classList.remove('in-progress');
     li8.classList.remove('is-active');
     li7.classList.remove('is-complete');

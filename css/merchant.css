@@ -197,13 +197,13 @@ p {
     width: 1130px;
     font-size: 26px;
     padding-bottom: 8px;
+    margin-bottom: 0 !important;
 }
 
 .progress_bar {
     z-index: 2;
 }
 .preface {
-    /*position: relative;*/
     display: flex;
     flex-direction: column;
     padding-bottom: 1px;
@@ -1062,42 +1062,49 @@ img { pointer-events: none; }
     justify-content: space-between;
 }
 
-.word-iset-btn {
-    position: absolute;
-    top: 759px;
-    left: 445px;
+.custom-class {
+    --bs-tooltip-bg: #6C6174 !important;
+    --bs-tooltip-color: #fff !important;
+    --bs-tooltip-padding-x: 25px !important;
+    --bs-tooltip-padding-y: 20px !important;
 }
-.word-har {
-    max-width: 1200px;
+
+.tooltip-inner {
+    max-width: 750px !important;
+    /*width: 750px !important;*/
+    font-size: 26px;
 }
-.word-iset {
-    left: -70px;
-    width: 500px;
+
+.tooltip.show {
+    opacity: 1 !important;
 }
-.word-kung-btn {
-    position: absolute;
-    top: 30px;
-    left: 194px;
+
+.btn-secondary {
+    --bs-btn-color: #DE643B !important;
+    --bs-btn-bg: unset !important;
+    --bs-btn-border-color: unset !important; !important;
+    --bs-btn-hover-color: #CF5026 !important;
+    --bs-btn-hover-bg: unset !important;
+    --bs-btn-hover-border-color: #fff !important;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145 !important;
+    --bs-btn-active-color: #DE643B !important;
+    --bs-btn-active-bg: unset !important;
+    --bs-btn-active-border-color: unset !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #DE643B !important;
+    --bs-btn-disabled-bg: #fff !important;
+    --bs-btn-disabled-border-color: unset !important;
+    --bs-btn-font-size: 24px !important;
+    vertical-align: unset !important;
+    --bs-btn-padding-x: 0 !important;
+    --bs-btn-padding-y: 0 !important;
+    z-index: 10;
+    position: relative;
 }
-.word-tum-btn {
-    position: absolute;
-    top: 173px;
-    left: 194px;
-}
-.word-irb-btn {
-    position: absolute;
-    top: 316px;
-    left: 194px;
-}
-.word-obuh, .word-kur {
-    width: 800px;
-    top: -30px;
-    left: 50px;
-}
-.word-ipod {
-    width: 800px;
-    top: -220px;
-    left: 20px;
+
+ul, li, ol {
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
 }
 @media screen and (max-width: 1850px) {
     p, .choice {
@@ -1276,6 +1283,16 @@ img { pointer-events: none; }
     }
 }
 @media screen and (max-height: 975px) {
+    .custom-class {
+        --bs-tooltip-padding-x: 25px !important;
+        --bs-tooltip-padding-y: 15px !important;
+    }
+    .tooltip-inner {
+        font-size: 22px;
+    }
+    .choice {
+        padding: 25px 48px;
+    }
     .page2 {
         padding-top: 80px;
     }
@@ -1399,10 +1416,9 @@ img { pointer-events: none; }
     p, .dictionary-word {
         font-size: 22px;
     }
-    .dictionary-word-popup {
-        font-size: 20px;
+    .btn {
+        --bs-btn-font-size: 22px !important;
     }
-
     .button-page1 {
         margin-top: 100px;
     }
@@ -1592,8 +1608,11 @@ img { pointer-events: none; }
     }
 }
 @media screen and (max-height: 780px) {
-    p, .dictionary-word {
+    p {
         font-size: 20px;
+    }
+    .btn-secondary {
+        --bs-btn-font-size: 20px !important;
     }
     .choice {
         font-size: 20px;
@@ -1656,40 +1675,6 @@ img { pointer-events: none; }
     }
     .page4 {
         padding-top: 50px;
-    }
-    .word-iset-btn {
-        top: 519px;
-        left: 320px;
-    }
-    .word-kung-btn {
-        top: 27px;
-        left: 170px;
-    }
-    .word-tum-btn {
-        top: 126px;
-        left: 170px;
-    }
-    .word-irb-btn {
-        top: 226px;
-        left: 170px;
-    }
-    @media screen and (min-width: 1850px) {
-        .word-iset-btn {
-            top: 492px;
-            left: 321px;
-        }
-        .word-kung-btn {
-            top: 27px;
-            left: 170px;
-        }
-        .word-tum-btn {
-            top: 126px;
-            left: 170px;
-        }
-        .word-irb-btn {
-            top: 226px;
-            left: 170px;
-        }
     }
     .page5-choice1 {
         padding-top: 50px;
@@ -1812,12 +1797,6 @@ img { pointer-events: none; }
     .page16-img {
         width: 550px;
         height: 500px;
-    }
-    .word-ipod {
-        font-size: 18px;
-        width: 800px;
-        top: -160px;
-        left: 20px;
     }
     .page17-choice1-img {
         margin-top: 20px;

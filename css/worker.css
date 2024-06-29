@@ -170,6 +170,7 @@ body {
 p {
     font-size: 26px;
     padding-bottom: 8px;
+    margin-bottom: 0 !important;
 }
 
 .preface-heading {
@@ -962,6 +963,50 @@ img { pointer-events: none; }
 .more-lit-page-top {
     display: flex;
     justify-content: space-between;
+}
+.custom-class {
+    --bs-tooltip-bg: #6C6174 !important;
+    --bs-tooltip-color: #fff !important;
+    --bs-tooltip-padding-x: 25px !important;
+    --bs-tooltip-padding-y: 20px !important;
+}
+
+.tooltip-inner {
+    max-width: 750px !important;
+    /*width: 750px !important;*/
+    font-size: 26px;
+}
+
+.tooltip.show {
+    opacity: 1 !important;
+}
+
+.btn-secondary {
+    --bs-btn-color: #5F44C9 !important;
+    --bs-btn-bg: unset !important;
+    --bs-btn-border-color: unset !important; !important;
+    --bs-btn-hover-color: #482CB5 !important;
+    --bs-btn-hover-bg: unset !important;
+    --bs-btn-hover-border-color: #fff !important;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145 !important;
+    --bs-btn-active-color: #5F44C9 !important;
+    --bs-btn-active-bg: unset !important;
+    --bs-btn-active-border-color: unset !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #5F44C9 !important;
+    --bs-btn-disabled-bg: #fff !important;
+    --bs-btn-disabled-border-color: unset !important;
+    --bs-btn-font-size: 24px !important;
+    vertical-align: unset !important;
+    --bs-btn-padding-x: 0 !important;
+    --bs-btn-padding-y: 0 !important;
+    z-index: 10;
+    position: relative;
+}
+
+ul, li, ol {
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
 }
 @media screen and (max-width: 1850px) {
     p {

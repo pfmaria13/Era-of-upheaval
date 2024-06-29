@@ -113,7 +113,6 @@ btnPreface.addEventListener("click", () => {
     page2.scrollIntoView({block: "center", behavior: "smooth"});
     setTimeout(() => {
         preface.style.display = "none";
-        document.querySelector(".word-irbit-btn").style.display = "flex";
     }, 500);
     Change_bar(li1, 'is-active', ' is-complete')
     Change_bar(li2, 'in-progress', ' is-active');
@@ -140,10 +139,9 @@ btnPage2Choice3.addEventListener("click", () => {
 
 btnPage3Choice3.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page3Choice3.style.display = "none"
-    }, 700);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {page3Choice3.style.display = "none"}, 400);
+    page3Choice3.style.display = "none"
     li3.classList.remove('in-progress');
     Change_bar(li2, 'is-active', ' in-progress');
     Change_bar(li1, 'is-complete', ' is-active');
@@ -196,10 +194,11 @@ NextPageWithBar(btnPage9Choice1, page10, page9Choice1, li5, li6, li7);
 
 btnPage9Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page9Choice2.style.display = "none"
-    }, 700);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page9Choice2.style.display = "none"
+    // }, 700);
+    page9Choice2.style.display = "none"
     li6.classList.remove('in-progress');
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
@@ -239,10 +238,11 @@ NextPageWithBar(btnPage11Choice1, page12, page11Choice1, li6, li7, li8);
 
 btnPage11Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page11Choice2.style.display = "none"
-    }, 700);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page11Choice2.style.display = "none"
+    // }, 700);
+    page11Choice2.style.display = "none";
     li7.classList.remove('in-progress');
     li6.classList.remove('is-active');
     li5.classList.remove('is-complete');
@@ -284,10 +284,11 @@ NextPageWithBar(btnPage13Choice1, page14, page13Choice1, li7, li8, li9);
 
 btnPage13Choice2.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page13Choice2.style.display = "none"
-    }, 700);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page13Choice2.style.display = "none"
+    // }, 700);
+    page13Choice2.style.display = "none";
     li8.classList.remove('in-progress');
     li7.classList.remove('is-active');
     li6.classList.remove('is-complete');
@@ -332,10 +333,11 @@ NextPageWithBar(btnPage15Choice2, page16, page15Choice2, li8, li9, li10);
 
 btnPage15Choice3.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page15Choice3.style.display = "none"
-    }, 700);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page15Choice3.style.display = "none"
+    // }, 700);
+    page15Choice3.style.display = "none";
     li9.classList.remove('in-progress');
     li8.classList.remove('is-active');
     li7.classList.remove('is-complete');
@@ -376,10 +378,11 @@ NextPage(btnPage16Choice2, page17Choice2, page16);
 
 btnPage17Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page17Choice1.style.display = "none"
-    }, 700);
+    // preface.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page17Choice1.style.display = "none"
+    // }, 700);
+    page17Choice1.style.display = "none";
     li10.classList.remove('in-progress');
     li9.classList.remove('is-active');
     li8.classList.remove('is-complete');
@@ -394,10 +397,11 @@ btnPage17Choice1.addEventListener("click", () => {
 
 btnPage17Choice2.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page17Choice2.style.display = "none"
-    }, 700);
+    // page18.scrollIntoView({block: "center", behavior: "smooth"});
+    // setTimeout(() => {
+    //     page17Choice2.style.display = "none"
+    // }, 700);
+    page17Choice2.style.display = "none";
     Change_bar(li9, 'is-active', ' is-complete')
     Change_bar(li10, 'in-progress', ' is-active');
 

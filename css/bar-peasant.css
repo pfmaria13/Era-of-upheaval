@@ -12,6 +12,7 @@
     height: 64px;
     width: 808px;
     position: fixed;
+    /*z-index: -1;*/
 }
 
 .progress_bar li {

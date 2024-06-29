@@ -560,8 +560,21 @@ body {
     }
     .main-choices {
         scale: 0.75;
-        margin-top: -60px;
+        margin-top: -40px;
         padding-top: 20px;
+    }
+    .page-row1 {
+        scale: 0.8;
+        margin-top: -40px;
+    }
+    .site-header, .site-header-choice {
+        scale: 0.9;
+        padding: 0 20px;
+        margin: -20px 0 0 -50px;
+    }
+    .main-btn-team {
+        scale: 0.8;
+        margin-top: 37px;
     }
 }
 
@@ -579,10 +592,14 @@ body {
         font-size: 21px;
     }
     .main-choice-text1 {
-        padding-top: 25px;
+        padding-top: 40px;
     }
     .rules-text1 {
         padding: 50px 0 8px 0;
+    }
+    .page-row1 {
+        scale: 0.7;
+        margin-top: -90px;
     }
 }
 
