@@ -302,7 +302,11 @@ body {
     width: 300px;
     height: 475px;
     background-image: url("../img/noble.png");
-    filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
+    filter: drop-shadow(0 0 20px rgba(45,29,56,0.1));
+}
+
+.noble:hover, .merchant:hover, .peasant:hover, .worker:hover {
+    filter: drop-shadow(0 0 30px rgba(45,29,56,0.5));
 }
 
 .merchant {
@@ -848,6 +852,7 @@ body {
         background-image: url("../img/noble_mobile.png");
         filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
     }
+
 
     .merchant {
         width: 128px;

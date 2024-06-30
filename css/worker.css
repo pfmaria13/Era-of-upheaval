@@ -153,7 +153,7 @@ body {
 }
 
 .preface {
-    display: flex;
+    display: none;
     background-image: url("../img/worker/page1-back.png");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ body {
 }
 
 .preface-text {
-    width: 1600px;
+    padding-right: 7vw;
 }
 
 p {
@@ -258,6 +258,7 @@ img { pointer-events: none; }
 .page3-choice1-img {
     scale: 1.2;
     padding-right: 30px;
+    margin-bottom: 80px;
 }
 
 .page3-text {
@@ -268,7 +269,8 @@ img { pointer-events: none; }
     background-image: url("../img/worker/page3-choice2-back.png");
     flex-direction: row;
     justify-content: space-between;
-    padding: 155px 40px 180px 155px;
+    padding: 155px 40px 50px 155px;
+    column-gap: 30px;
 }
 
 .page4 {
@@ -283,7 +285,7 @@ img { pointer-events: none; }
 .page4-buttons {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 24px;
+    margin-top: 54px;
     column-gap: 40px;
 }
 
@@ -344,6 +346,7 @@ img { pointer-events: none; }
 
 .button-page5-choice1 {
     margin-left: 255px;
+    margin-top: 30px;
 }
 
 .page5-img-choice2 {
@@ -358,10 +361,6 @@ img { pointer-events: none; }
 .page6 {
     background-image: url("../img/worker/page6-back.png");
     padding: 155px 139px 170px 155px;
-}
-
-.page6-text {
-    width: 1650px;
 }
 
 .page6-buttons {
@@ -434,6 +433,8 @@ img { pointer-events: none; }
 }
 
 .page8 {
+    display: flex;
+
     background-image: url("../img/worker/page8-back.png");
     padding: 155px 0 155px 155px;
 }
@@ -443,7 +444,7 @@ img { pointer-events: none; }
 }
 
 .page8-text2 {
-    padding-right: 500px;
+    padding-right: 20vw;
 }
 
 .page8-bottom {
@@ -459,13 +460,12 @@ img { pointer-events: none; }
 .page8-img {
     position: absolute;
     right: 0;
-    scale: 1.45;
+    width: 900px;
     top: 450px;
 }
 
 .page8-choice1, .page8-choice2 {
     margin-top: 48px;
-    height: 126px;
 }
 
 .page9-choice1{
@@ -982,21 +982,21 @@ img { pointer-events: none; }
 }
 
 .btn-secondary {
-    --bs-btn-color: #5F44C9 !important;
+    --bs-btn-color: #986CCF !important;
     --bs-btn-bg: unset !important;
     --bs-btn-border-color: unset !important; !important;
-    --bs-btn-hover-color: #482CB5 !important;
+    --bs-btn-hover-color: #895EBE !important;
     --bs-btn-hover-bg: unset !important;
     --bs-btn-hover-border-color: #fff !important;
     --bs-btn-focus-shadow-rgb: 130, 138, 145 !important;
-    --bs-btn-active-color: #5F44C9 !important;
+    --bs-btn-active-color: #986CCF !important;
     --bs-btn-active-bg: unset !important;
     --bs-btn-active-border-color: unset !important;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
-    --bs-btn-disabled-color: #5F44C9 !important;
-    --bs-btn-disabled-bg: #fff !important;
+    --bs-btn-disabled-color: #986CCF !important;
+    --bs-btn-disabled-bg: unset !important;
     --bs-btn-disabled-border-color: unset !important;
-    --bs-btn-font-size: 24px !important;
+    --bs-btn-font-size: 26px !important;
     vertical-align: unset !important;
     --bs-btn-padding-x: 0 !important;
     --bs-btn-padding-y: 0 !important;
@@ -1012,8 +1012,8 @@ ul, li, ol {
     p {
         font-size: 24px;
     }
-    .preface-text {
-        width: 1016px;
+    .btn-secondary {
+        --bs-btn-font-size: 24px !important;
     }
     .choice {
         font-size: 24px;
@@ -1031,12 +1031,10 @@ ul, li, ol {
     .page3-choice1-text {
         padding-right: 30px;
     }
-
     .page4-choice1 {
         height: 498px;
         width: 571px;
     }
-
     .page4-choice2{
         height: 498px;
         width: 571px;
@@ -1057,9 +1055,6 @@ ul, li, ol {
     .button-page5-choice2 {
         margin-left: 200px;
     }
-    .page6-text {
-        width: 1030px;
-    }
     .page7-img, .page15-choice1-img {
         scale: 1;
         margin: 0;
@@ -1067,8 +1062,11 @@ ul, li, ol {
     .page8-left {
         padding: 20px 0 0 0;
     }
-    .page8-img, .page9-choice2-img, .page13-choice1-img {
+    .page9-choice2-img, .page13-choice1-img {
         scale: 1;
+    }
+    .page8-img {
+        width: 720px;
     }
     .page10-bottom {
         justify-content: space-between;
@@ -1115,8 +1113,23 @@ ul, li, ol {
     }
 }
 @media screen and (max-height: 1040px) {
+    .page4-choice1 {
+        height: 450px;
+        width: 700px;
+    }
+    .page4-buttons {
+        margin-top: 24px;
+    }
+    .page4-choice2{
+        height: 450px;
+        width: 571px;
+        padding: 1em 2em;
+    }
     .page6 {
         padding-top: 80px;
+    }
+    .page8-img {
+        width: 700px;
     }
     .page16 {
         padding-top: 100px;
@@ -1127,16 +1140,26 @@ ul, li, ol {
     }
 }
 @media screen and (max-height: 975px) {
+    .custom-class {
+        --bs-tooltip-padding-x: 25px !important;
+        --bs-tooltip-padding-y: 15px !important;
+    }
+    .choice {
+        padding: 27px 48px;
+    }
+    .tooltip-inner {
+        font-size: 20px;
+    }
     .button-page1 {
-        margin-top: 156px;
+        margin-top: 106px;
     }
     .page3-choice1 {
         padding-bottom: 40px;
     }
     .page4-choice1, .page4-choice2 {
-        /*font-size: 22px;*/
-        height: 400px;
-        padding: 20px 48px ;
+        height: 380px;
+        padding: 20px 48px;
+        font-size: 22px;
     }
     .page4-choice1 {
         width: 900px;
@@ -1149,7 +1172,7 @@ ul, li, ol {
         padding-top: 105px;
     }
     .page5-img {
-        scale: 0.9;
+        width: 700px;
     }
     .page5-img-choice2 {
         scale: 0.9;
@@ -1157,7 +1180,7 @@ ul, li, ol {
     }
 
     .page7-img {
-        scale: 0.9;
+        width: 800px;
     }
     .page7-choice1 {
         padding-top: 110px;
@@ -1169,8 +1192,7 @@ ul, li, ol {
         padding-top: 100px;
     }
     .page8-img {
-        scale: 0.9;
-        top: 340px
+        width: 600px;
     }
     .page8-choice1 {
         margin-top: 0;
@@ -1212,12 +1234,28 @@ ul, li, ol {
     }
 
 }
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 880px) {
     p {
         font-size: 22px;
     }
+    .choice {
+        font-size: 22px;
+        padding: 23px 48px;
+    }
+    .btn-secondary {
+        --bs-btn-font-size: 22px !important;
+    }
+    .you-lose {
+        font-size: 24px;
+    }
+    .button-play-again {
+        scale: 0.8;
+    }
     .page5-choice1 {
         padding-top: 125px;
+    }
+    .button-page5-choice2 {
+        margin-top: 130px;
     }
 
     .page13-choice2 {
@@ -1241,14 +1279,14 @@ ul, li, ol {
         padding: 95px 50px 0 155px ;
     }
     .page4-choice1, .page4-choice2 {
-        font-size: 22px;
-        height: 350px;
+        font-size: 20px;
+        height: 300px;
     }
     .page4-text, .word-krizis {
-        font-size: 22px;
+        font-size: 20px;
     }
     .page5-img {
-        margin-top: -80px;
+        width: 600px;
     }
     .page5-choice2, .page13-choice1 {
          padding-top: 100px;
@@ -1258,6 +1296,13 @@ ul, li, ol {
     }
     .page6 {
         padding-top: 90px;
+    }
+    .page7-img {
+        width: 700px;
+    }
+    .page8-img {
+        width: 550px;
+        margin-top: -50px;
     }
     .page9-choice1-img, .page9-choice2-img {
         scale: 0.8;
@@ -1308,13 +1353,143 @@ ul, li, ol {
         margin-top: 170px;
     }
 }
-.word-zavod {
-    left: 330px
+@media screen and (max-height: 780px) {
+    .choice {
+        font-size: 20px;
+        padding: 20px 48px;
+    }
+    .btn-secondary-choice {
+        --bs-btn-font-size: 20px !important;
+    }
+    .site-header {
+        background: white; !important;
+        z-index: 10;
+        display: flex;
+        padding: 20px 40px 0 40px;
+        position: sticky; !important;
+        top: 0;
+        width: 100%;
+    }
+    .header-text-up {
+        font-size: 28px;
+        padding-bottom: 0;
+    }
+    .header-text-bottom {
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+
+    .logo, .button-next, .play-again {
+        scale: 0.8;
+    }
+
+    .preface {
+        padding-top: 90px;
+    }
+    .page2 {
+        padding-top: 90px;
+    }
+    .page4 {
+        padding-top: 70px;
+    }
+    .page5-choice1 {
+        padding-top: 90px;
+    }
+    .page5-img {
+        width: 550px;
+    }
+    .page7-img {
+        width: 570px;
+        margin-right: 20px;
+    }
+    .button-page7-choice1 {
+        margin-top: 120px;
+    }
+    .page7-left {
+        padding-top: 50px;
+    }
+    .page7-choice2 {
+        padding-top: 80px;
+    }
+    .page8-img {
+        width: 450px;
+        margin-top: -100px;
+    }
+    .page8 {
+        padding-top: 70px;
+    }
 }
 
-.word-nadel {
-    left: 370px;
+@media screen and (max-height: 750px) {
+    p {
+        font-size: 20px;
+    }
+    .btn-secondary {
+        --bs-btn-font-size: 20px !important;
+    }
+    .page4 {
+        padding-top: 60px;
+    }
+    .page4-choice1, .page4-choice2 {
+        height: 270px;
+        font-size: 18px;
+    }
+
 }
-.word-krizis {
-    width: 400px;
+
+@media screen and (max-height: 640px) {
+    .preface {
+        padding-top: 60px;
+    }
+    .button-page1 {
+        margin-top: 10px;
+    }
+    .page2-buttons {
+        padding-top: 10px;
+    }
+    .page2 {
+        padding-top: 70px;
+    }
+    .page3-choice1, .page3-choice2 {
+        padding-top: 100px;
+    }
+    .page4 {
+        padding-top: 50px;
+    }
+    .page4-choice1, .page4-choice2 {
+        height: 250px;
+        font-size: 18px;
+    }
+    .page5-choice1 {
+        padding-top: 70px;
+    }
+    .page5-img {
+        width: 400px;
+    }
+    .page6-choice1, .page6-choice2, .page6-text {
+        font-size: 18px;
+    }
+    .btn-secondary-page6 {
+        --bs-btn-font-size: 18px !important;
+    }
+    .page6 {
+        padding-top: 60px;
+    }
+    .page7-choice1 {
+        padding-top: 80px;
+    }
+    .page7-img {
+        width: 500px;
+        height: 250px;
+        margin-top: -20px;
+    }
+    .page7-bottom {
+        padding-top: 0;
+    }
+    .page8-choice2 {
+        margin-top: 20px;
+    }
+    .page8-img {
+        width: 350px;
+    }
 }

@@ -12,7 +12,6 @@
     height: 64px;
     width: 808px;
     position: fixed;
-    z-index: -1;
 }
 
 .progress_bar li {
@@ -213,7 +212,7 @@ li.li9 .is-active {
         width: 500px;
         position: fixed;
         margin-left: 155px;
-        margin-top: -140px;
+        margin-top: -175px;
     }
 
     .progress_bar li:before {
@@ -222,5 +221,15 @@ li.li9 .is-active {
     }
     li.li9 .is-active {
         flex: 0;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .progress_bar {
+        height: 64px;
+        width: 400px;
+        position: fixed;
+        margin-left: 210px;
+        margin-top: -235px;
     }
 }

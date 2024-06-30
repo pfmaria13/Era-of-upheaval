@@ -37,7 +37,11 @@
 
 body {
     background-color: white;
-    font-family: Mont;
+    font-family: Mont !important;
+}
+
+:root {
+    --bs-body-line-height: unset !important;
 }
 
 .page {
@@ -65,10 +69,9 @@ body {
 }
 
 .header-text {
-    padding-left: 30px;
-    padding-top: 9px;
+    margin-left: 30px;
+    margin-top: 9px;
     font-family: BogartTrialBold;
-    font-weight: bold;
     width: 496px;
     height: 68px;
 }
@@ -96,7 +99,7 @@ body {
     border: 3px solid #DE643B;
     border-radius: 8px;
     color: #DE643B;
-    font-family: Mont-Semibold;
+    font-family: Mont-Semibold !important;
     transition: 0.7s;
     margin-left: auto;
     scale: 1.1;
@@ -115,7 +118,7 @@ body {
     transition: 0.7s;
     color: white;
     font-size: 32px;
-    font-family: Mont-Semibold;
+    font-family: Mont-Semibold !important;
 }
 
 .button-play-again:hover {
@@ -185,7 +188,7 @@ body {
     transition: 0.7s;
     color: white;
     font-size: 32px;
-    font-family: Mont-Semibold;
+    font-family: Mont-Semibold !important;
     padding-top: 8px;
 }
 
@@ -194,7 +197,6 @@ body {
 }
 
 p {
-    width: 1130px;
     font-size: 26px;
     padding-bottom: 8px;
     margin-bottom: 0 !important;
@@ -240,7 +242,7 @@ p {
 
 .preface-heading {
     font-size: 32px;
-    font-family: Mont-Heavy;
+    font-family: Mont-Heavy !important;
     padding-bottom: 16px;
 }
 
@@ -250,11 +252,11 @@ p {
 }
 
 .preface-text {
-    width: 1650px;
+    padding-right: 7vw;
 }
 
 .page2 {
-    padding: 120px 0 122px 150px;
+    padding: 120px 0 0 150px;
     background-image: url("../img/merchant/page2-back.png");
 }
 
@@ -274,12 +276,10 @@ p {
 }
 
 .page2-choice1 {
-    height: 126px;
     margin-top: 52px;
 }
 
 .page2-choice2 {
-    height: 95px;
     margin-top: 48px;
 }
 
@@ -328,7 +328,7 @@ p {
 
 .page3-choice2 {
     background-image: url("../img/merchant/page3-choice2-back.png");
-    padding: 125px 40px 71px 150px;
+    padding: 125px 40px 0 150px;
 }
 
 .page3-choice2-bottom {
@@ -357,7 +357,7 @@ p {
 }
 
 .page3-choice3-text1 {
-    width: 1700px;
+    padding-right: 5vw;
 }
 
 .page3-choice3-bottom {
@@ -372,7 +372,7 @@ p {
 
 .page4 {
     background-image: url("../img/merchant/page4-back.png");
-    padding: 125px 115px 66px 150px;
+    padding: 125px 115px 0 150px;
 }
 
 .page4-img {
@@ -384,6 +384,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding-bottom: 25px;
+    column-gap: 30px;
 }
 
 .page4-left {
@@ -393,7 +394,6 @@ p {
 
 .button-page4-choice1 {
     width: 557px;
-    height: 188px;
     margin-top: 45px;
     padding-left: 48px;
     padding-right: 48px;
@@ -403,7 +403,6 @@ p {
 .button-page4-choice2 {
     margin-top: 48px;
     width: 557px;
-    height: 250px;
     padding-left: 48px;
     padding-right: 48px;
     text-align: left;
@@ -442,7 +441,7 @@ p {
 .page5-choice1-text2 {
     width: 421px;
     font-size: 28px;
-    font-family: Mont-Semibold;
+    font-family: Mont-Semibold !important;
     padding: 200px 0 40px 0;
 }
 
@@ -459,6 +458,10 @@ p {
 
 .button-page5-choice2 {
     margin: 344px 0 0 130px
+}
+
+.page5-choice2-text {
+    padding-right: 10vw;
 }
 
 .page6 {
@@ -490,7 +493,6 @@ p {
 }
 .button-page6 {
     width: 557px;
-    height: 95px;
     margin-bottom: 48px;
 }
 
@@ -552,10 +554,15 @@ p {
     padding: 125px 0 152px 150px;
 }
 
+.page8-text {
+    padding-right: 7vw;
+}
+
 .page8-bottom {
     display: flex;
     justify-content: space-between;
     padding-top: 38px;
+    column-gap: 30px;
 }
 
 .page8-img {
@@ -571,16 +578,14 @@ p {
 
 .button-page8-choice1 {
     margin-top: 42px;
-    height: 250px;
     text-align: left;
-    padding: 0 48px 0 48px;
+    padding: 32px 48px 32px 48px;
 }
 
 .button-page8-choice2 {
-    height: 95px;
     margin-top: 48px;
     text-align: left;
-    padding: 0 48px 0 48px;
+    padding: 32px 48px 32px 48px;
 }
 
 .page9-choice1 {
@@ -604,7 +609,7 @@ p {
 
 .page9-choice1-text3 {
     width: 490px;
-    font-family: Mont-Semibold;
+    font-family: Mont-Semibold !important;
     font-size: 28px;
     padding: 194px 0 44px 51px;
 }
@@ -723,6 +728,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     padding: 115px 100px 100px 150px;
+    column-gap: 30px;
 }
 
 .page12-img {
@@ -736,7 +742,6 @@ p {
 }
 
 .button-page12-choice1 {
-    height: 126px;
     width: 557px;
     text-align: left;
     padding: 32px 48px 32px 48px;
@@ -744,7 +749,6 @@ p {
 }
 
 .button-page12-choice2, .button-page12-choice3 {
-    height: 95px;
     width: 557px;
     text-align: left;
     padding: 32px 48px 32px 48px;
@@ -781,6 +785,7 @@ p {
     padding-top: 60px;
     justify-content: space-between;
     align-items: center;
+    column-gap: 30px;
 }
 
 .page14-left {
@@ -789,7 +794,7 @@ p {
 }
 
 .page14-text1 {
-    width: 1600px;
+    padding-right: 3vw;
 }
 
 .page14-text2 {
@@ -838,7 +843,7 @@ p {
 
 .page16 {
     background-image: url("../img/merchant/page16-back.png");
-    padding: 100px 0 113px 150px;
+    padding: 100px 0 50px 150px;
 }
 
 .page16-text2 {
@@ -858,10 +863,14 @@ p {
 
 .page16-img {
     scale: 1.2;
-    margin-top: -200px;
+    margin-top: -150px;
     margin-right: 60px;
     padding-bottom: 70px;
     width: 651px;
+}
+
+.page16-text1 {
+    padding-right: 5vw;
 }
 
 .button-page16-choice1, .button-page16-choice3 {
@@ -871,7 +880,6 @@ p {
 }
 
 .button-page16-choice2 {
-    height: 95px;
     text-align: left;
     padding: 32px 41px 32px 41px;
     margin-bottom: 48px;
@@ -972,7 +980,7 @@ img { pointer-events: none; }
     font-size: 32px;
     border-radius: 12px;
     color: white;
-    font-family: Mont-Semibold;
+    font-family: Mont-Semibold !important;
     transition: 0.7s;
     scale: 1.1;
 }
@@ -995,7 +1003,7 @@ img { pointer-events: none; }
     border: 3px solid #DE643B;
     border-radius: 12px;
     color: #DE643B;
-    font-family: Mont-Semibold;
+    font-family: Mont-Semibold !important;
     transition: 0.7s;
     scale: 1.1;
 }
@@ -1094,7 +1102,7 @@ img { pointer-events: none; }
     --bs-btn-disabled-color: #DE643B !important;
     --bs-btn-disabled-bg: #fff !important;
     --bs-btn-disabled-border-color: unset !important;
-    --bs-btn-font-size: 24px !important;
+    --bs-btn-font-size: 26px !important;
     vertical-align: unset !important;
     --bs-btn-padding-x: 0 !important;
     --bs-btn-padding-y: 0 !important;
@@ -1110,8 +1118,8 @@ ul, li, ol {
     p, .choice {
         font-size: 24px;
     }
-    .preface-text {
-        width: 1016px;
+    .btn-secondary {
+        --bs-btn-font-size: 24px !important;
     }
     .dictionary-word {
         font-size: 24px;
@@ -1128,9 +1136,6 @@ ul, li, ol {
     }
     .page3-choice1-img, .page3-choice2-img, .page7-choice3-img, .page11-choice1-img {
         scale: 1;
-    }
-    .page3-choice3-text1 {
-        width: 1030px;
     }
     .page4-img, .page8-img, .page9-choice1-img {
         scale: 1;
@@ -1176,7 +1181,7 @@ ul, li, ol {
     .page13-text {
         width: 672px;
     }
-    .page14-text1, .page17-choice1-text {
+    .page17-choice1-text {
         width: 1016px;
     }
     .page14-text2 {
@@ -1229,6 +1234,9 @@ ul, li, ol {
     p, .choice, .dictionary-word {
         font-size: 24px;
     }
+    .btn-secondary {
+        --bs-btn-font-size: 24px !important;
+    }
     .page3-choice1-img, .page3-choice2-img, .page7-choice3-img, .page8-img, .page11-choice1-img {
         scale: 1;
     }
@@ -1263,7 +1271,7 @@ ul, li, ol {
     }
     .page9-choice1-img {
         scale: 1;
-        margin-top: -100px;
+        height: 650px;
     }
     .page9-choice2-img {
         margin-right: 0;
@@ -1288,10 +1296,10 @@ ul, li, ol {
         --bs-tooltip-padding-y: 15px !important;
     }
     .tooltip-inner {
-        font-size: 22px;
+        font-size: 20px;
     }
     .choice {
-        padding: 25px 48px;
+        padding: 27px 48px;
     }
     .page2 {
         padding-top: 80px;
@@ -1319,14 +1327,6 @@ ul, li, ol {
     .page4-img {
         height: 500px;
     }
-    .word-iset-btn {
-        top: 745px;
-    }
-    @media screen and (min-width: 1850px) {
-        .word-iset-btn {
-            top: 719px;
-        }
-    }
     .page5-choice1-img {
         width: 600px;
     }
@@ -1348,7 +1348,7 @@ ul, li, ol {
         padding-top: 80px;
     }
     .page9-choice1-img {
-        height: 450px;
+        height: 500px;
     }
     .page9-choice1-text3 {
         padding-top: 80px;
@@ -1364,7 +1364,7 @@ ul, li, ol {
     .page10-img {
         width: 550px;
     }
-    .page10-left, .page14-bottom {
+    .page14-bottom {
         padding-top: 10px;
     }
     .page11-choice1 {
@@ -1377,28 +1377,21 @@ ul, li, ol {
         width: 700px;
     }
     .page14 {
-        padding-top: 80px;
+        padding-top: 60px;
     }
-    .button-page14-choice1, .button-page14-choice2, .dictionary-word {
+    .button-page14-choice1, .button-page14-choice2 {
         font-size: 22px;
-        padding-top: 20px;
-
     }
-    .button-page14-choice1 {
-        height: 200px;
+    .btn-kuril, .btn-obuh {
+        --bs-btn-font-size: 22px !important;
     }
     .button-page14-choice2 {
-        height: 150px;
-    }
-    .word-obuh {
-        width: 800px;
-        top: -50px;
-        left: 50px;
+        margin-top: 30px;
     }
     .page16-img {
-        width: 650px;
-        height: 580px;
-        margin-top: -180px;
+        width: 570px;
+        height: 500px;
+        margin-top: -150px;
     }
     .button-page16-choice1, .button-page16-choice3, .button-page16-choice2 {
         margin-bottom: 20px;
@@ -1422,19 +1415,23 @@ ul, li, ol {
     .button-page1 {
         margin-top: 100px;
     }
-    .page2 {
-        padding-top: 80px;
+    .button-play-again {
+        scale: 0.8;
     }
     .page2-img {
         margin-top: 50px;
-        width: 650px;
+        width: 600px;
+        height: 360px;
     }
     .choice {
-        padding: 20px 48px;
+        padding: 23px 48px;
         font-size: 22px;
     }
     .page2-choice1, .page2-choice2, .page2-choice3 {
         margin-top: 20px;
+    }
+    .page2 {
+        padding-top: 60px;
     }
     .page3-choice1-img {
         height: 400px;
@@ -1453,45 +1450,11 @@ ul, li, ol {
     .page3-choice3 {
         padding-top: 80px;
     }
-    .button-page4-choice1 {
-        height: 150px;
+    .page4 {
+        padding-top: 90px;
     }
-    .button-page4-choice2 {
-        height: 200px;
-    }
-    .word-iset-btn {
-        top: 651px;
-        left: 334px;
-    }
-    .word-kung-btn {
-        top: 26px;
-        left: 183px;
-    }
-    .word-tum-btn {
-        top: 126px;
-        left: 183px;
-    }
-    .word-irb-btn {
-        top: 227px;
-        left: 184px;
-    }
-    @media screen and (min-width: 1850px) {
-        .word-iset-btn {
-            top: 623px;
-            left: 340px;
-        }
-        .word-kung-btn {
-            top: 27px;
-            left: 183px;
-        }
-        .word-tum-btn {
-            top: 127px;
-            left: 183px;
-        }
-        .word-irb-btn {
-            top: 227px;
-            left: 184px;
-        }
+    .page4-img {
+        height: 400px;
     }
     .page5-choice1, .page5-choice2 {
         padding-top: 90px;
@@ -1503,8 +1466,7 @@ ul, li, ol {
         margin-top: 200px;
     }
     .button-page6 {
-        height: 80px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .page7-img {
         width: 600px;
@@ -1525,13 +1487,13 @@ ul, li, ol {
         padding-top: 100px;
     }
     .page8 {
-        padding-top: 60px;
+        padding-top: 80px;
     }
     .page8-bottom {
         padding-top: 0;
     }
     .button-page8-choice1, .button-page8-choice2 {
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .page8-img {
         width: 550px;
@@ -1543,7 +1505,6 @@ ul, li, ol {
         padding-top: 90px;
     }
     .page9-choice1-img {
-        height: 500px;
         margin-top: 0;
     }
     .page9-choice2 {
@@ -1569,7 +1530,7 @@ ul, li, ol {
     }
     .page16 {
         padding-bottom: 0;
-        padding-top: 60px;
+        padding-top: 90px;
     }
     .page17-choice1-img {
         margin-top: 20px;
@@ -1606,16 +1567,16 @@ ul, li, ol {
     .page18 {
         padding-top: 90px;
     }
+    .page10-left {
+        padding-top: 30px;
+    }
 }
 @media screen and (max-height: 780px) {
-    p {
+    p, .choice {
         font-size: 20px;
     }
     .btn-secondary {
         --bs-btn-font-size: 20px !important;
-    }
-    .choice {
-        font-size: 20px;
     }
     .site-header {
         background: white; !important;
@@ -1641,34 +1602,18 @@ ul, li, ol {
     .preface {
         padding-top: 80px;
     }
-    .page2 {
-        padding-top: 30px;
-    }
+
     .page2-img {
         margin-top: 0;
-    }
-    .page2-choice1, .page2-choice2 {
-        height: 90px;
     }
     .page2-choice3 {
         height: 120px;
     }
-    .page3-choice2 {
-        padding-top: 60px;
-    }
     .page3-choice3-img {
-        width: 400px;
+        width: 470px;
     }
     .button-page3-choice3 {
         margin-top: 50px;
-    }
-    .button-page4-choice1 {
-        height: 130px;
-        margin-top: 20px;
-    }
-    .button-page4-choice2 {
-        height: 200px;
-        margin-top: 20px;
     }
     .page4-img {
         height: 400px;
@@ -1677,7 +1622,7 @@ ul, li, ol {
         padding-top: 50px;
     }
     .page5-choice1 {
-        padding-top: 50px;
+        padding-top: 70px;
     }
     .you-lose {
         font-size: 24px;
@@ -1689,13 +1634,19 @@ ul, li, ol {
         width: 500px;
     }
     .page6-bottom {
-        padding-top: 10px;
+        padding-top: 50px;
     }
     .page6 {
-        padding-top: 40px;
+        padding-top: 60px;
     }
     .page7-choice3-img {
         width: 500px;
+    }
+    .page9-choice1-img {
+        height: 420px;
+    }
+    .page10 {
+        padding-top: 70px;
     }
     .button-page11-choice2 {
         margin-top: 200px;
@@ -1706,25 +1657,38 @@ ul, li, ol {
     .page11-choice2 {
         padding-top: 90px;
     }
-    .page12 {
-        padding-top: 30px;
+    .page12-img {
+        height: 420px;
+        width: 240px;
     }
     .button-page12-choice2, .button-page12-choice3, .button-page12-choice1 {
-        margin-top: 20px;
+        margin-top: 30px;
     }
-    .page14 {
-        padding-top: 30px;
+    .button-page13 {
+        margin-top: 200px;
     }
     .page16-text2 {
         padding-bottom: 20px;
     }
     .page16 {
-        padding-top: 30px;
+        padding-top: 70px;
     }
 }
 @media screen and (max-height: 750px) {
-    .page {
-        height: 95vh;
+    /*.page {*/
+    /*    height: 95vh;*/
+    /*}*/
+    .choice {
+        padding: 15px 48px;
+    }
+    .button-page12-choice2, .button-page12-choice3, .button-page12-choice1 {
+        padding: 20px 48px;
+    }
+    .page2-choice1, .page2-choice2, .page2-choice3 {
+        width: 500px;
+    }
+    .page3-choice2 {
+        padding-top: 90px;
     }
     .button-page1 {
         margin-top: 50px;
@@ -1733,10 +1697,14 @@ ul, li, ol {
         margin-top: 50px;
     }
     .page3-choice1-img {
-        height: 300px;
+        margin-top: 30px;
+        height: 350px;
     }
     .page3-choice2-img {
         width: 400px;
+    }
+    .page3-choice1 {
+        padding-top: 70px;
     }
     .page5-choice2-img {
         width: 450px;
@@ -1749,23 +1717,15 @@ ul, li, ol {
         width: 500px;
         height: 350px;
         margin-right: 50px;
-        margin-top: 0;
-    }
-    .page8 {
-        padding-top: 40px;
     }
     .page9-choice1-img {
-        height: 450px;
-        margin-top: -40px;
+        margin-top: -20px;
     }
     .button-page9-choice2 {
         margin-top: 50px;
     }
     .page9-choice2-img {
         width: 500px;
-    }
-    .page10 {
-        padding-top: 50px;
     }
     .page10-img {
         width: 450px;
@@ -1780,16 +1740,8 @@ ul, li, ol {
     .page13 {
         padding-top: 80px;
     }
-    .button-page13 {
-        margin-top: 200px;
-    }
-    .button-page14-choice2, .button-page14-choice1 {
-        padding: 10px 48px;
-        height: 160px;
-    }
     .button-page14-choice2 {
         margin-top: 20px;
-        height: 140px;
     }
     .page14-img {
         width: 450px;
@@ -1825,9 +1777,41 @@ ul, li, ol {
     }
 }
 @media screen and (max-height: 645px) {
-
-    .preface {
-        padding-top: 30px;
+    .page2-img {
+        width: 500px;
+        height: 340px;
+    }
+    .page3-choice1 {
+        padding-top: 60px;
+    }
+    .page3-choice1-img {
+        height: 300px;
+        margin-top: 0;
+    }
+    .page3-choice1 {
+        padding-top: 40px;
+    }
+    .page3-choice3 {
+        padding-top: 70px;
+    }
+    .page3-choice3-img {
+        width: 300px;
+    }
+    .page4-img {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .page5-choice1-img {
+        width: 400px;
+        margin-top: -30px;
+    }
+    .button-page4-choice1, .button-page4-choice2 {
+        margin-top: 30px;
+    }
+    .page6-img {
+        width: 450px;
+        height: 250px;
+        margin-top: -10px;
     }
     .page7-img {
         width: 400px;
@@ -1841,17 +1825,41 @@ ul, li, ol {
     .page7-choice2-img {
         width: 400px;
     }
+    .page8 {
+        padding-top: 50px;
+    }
     .page7-choice3-img {
         width: 400px;
     }
     .page9-choice1-img {
-        height: 400px;
+        height: 370px;
+    }
+    .page9-choice1 {
+        padding-top: 60px;
+    }
+    .page9-choice2-img {
+        width: 400px;
+    }
+    .page10-img {
+        width: 400px;
+        height: 330px;
+        margin-top: -20px;
+    }
+    .page10 {
+        padding-top: 0;
     }
     .page11-choice1 {
         padding-top: 80px;
     }
     .page11-choice2-img {
         width: 400px;
+    }
+    .page12-img {
+        height: 350px;
+        width: 200px;
+    }
+    .page12 {
+        padding-top: 70px;
     }
     .page13-img {
         width: 500px;
@@ -1863,13 +1871,20 @@ ul, li, ol {
     .page13 {
         padding-top: 60px;
     }
+    .page14 {
+        padding-top: 50px;
+    }
     .button-page15-choice1, .button-page15-choice2 {
         margin-top: 170px;
     }
+    .page16-img {
+        width: 480px;
+        height: 420px;
+    }
     .page17-choice1-img {
         margin-top: 20px;
-        height: 300px;
-        width: 430px;
+        height: 270px;
+        width: 400px;
     }
     .button-page17-choice2, .button-page17-choice3 {
         margin-top: 50px;
@@ -1881,5 +1896,8 @@ ul, li, ol {
         width: 500px;
         height: 350px;
         margin-top: 40px;
+    }
+    .button-page17-choice1 {
+        margin-top: 150px;
     }
 }

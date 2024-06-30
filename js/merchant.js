@@ -193,10 +193,7 @@ btnMoreLit.addEventListener("click", () => {
 
 btnPage5Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page5Choice1.style.display = "none"
-    }, 700);
+    page5Choice1.style.display = "none";
     li4.classList.remove('in-progress');
     li3.classList.remove('is-active');
     Change_bar(li2, 'is-complete', ' in-progress');
@@ -216,10 +213,7 @@ btnPage5Choice1.addEventListener("click", () => {
 
 btnPage9Choice1.addEventListener("click", () => {
     preface.style.display = "flex";
-    preface.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page9Choice1.style.display = "none"
-    }, 700);
+    page9Choice1.style.display = "none";
     li6.classList.remove('in-progress');
     li5.classList.remove('is-active');
     li4.classList.remove('is-complete');
@@ -241,10 +235,7 @@ btnPage9Choice1.addEventListener("click", () => {
 
 btnPage17Choice1.addEventListener("click", () => {
     page18.style.display = "flex";
-    page18.scrollIntoView({block: "center", behavior: "smooth"});
-    setTimeout(() => {
-        page17Choice1.style.display = "none"
-    }, 700);
+    page17Choice1.style.display = "none";
     Change_bar(li9, 'is-active', ' is-complete');
     Change_bar(li10, 'in-progress', ' is-active');
     $.ajax({

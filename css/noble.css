@@ -41,6 +41,9 @@ p {
     padding-bottom: 8px;
     margin-bottom: 0 !important;
 }
+:root {
+    --bs-body-line-height: unset !important;
+}
 
 .page {
     display: none;
@@ -1117,7 +1120,7 @@ p {
     --bs-btn-disabled-color: #5F44C9 !important;
     --bs-btn-disabled-bg: #fff !important;
     --bs-btn-disabled-border-color: unset !important;
-    --bs-btn-font-size: 24px !important;
+    --bs-btn-font-size: 26px !important;
     vertical-align: unset !important;
     --bs-btn-padding-x: 0 !important;
     --bs-btn-padding-y: 0 !important;
@@ -1133,6 +1136,9 @@ ul, li, ol {
 @media screen and (max-width: 1850px) {
     p, .choice {
         font-size: 24px;
+    }
+    .btn-secondary {
+        --bs-btn-font-size: 24px !important;
     }
     .tooltip-inner {
         font-size: 24px;
@@ -1241,6 +1247,9 @@ ul, li, ol {
     .preface {
         padding-top: 90px;
         font-size: 22px;
+    }
+    .btn-secondary {
+        --bs-btn-font-size: 24px !important;
     }
     .button-page1 {
         margin-top: 0;
@@ -1632,6 +1641,9 @@ ul, li, ol {
         font-size: 20px;
         padding: 20px 40px;
     }
+    .btn-secondary-choice {
+        --bs-btn-font-size: 20px !important;
+    }
     .page11-choice1-img {
         width: 400px;
     }
@@ -1706,7 +1718,7 @@ ul, li, ol {
         height: 450px;
         margin-top: 0;
     }
-    p, .dictionary-word {
+    p {
         font-size: 20px;
     }
     .btn-secondary-piter, .btn-secondary-domna, .btn-secondary {
@@ -1717,8 +1729,7 @@ ul, li, ol {
         z-index: 10;
         display: flex;
         padding: 20px 40px 0 40px;
-        position: sticky;
-    !important;
+        position: sticky !important;
         top: 0;
         width: 100%;
     }
