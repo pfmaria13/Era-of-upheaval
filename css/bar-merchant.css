@@ -217,4 +217,9 @@
         margin-top: -235px;
     }
 }
+@media screen and (max-height: 500px) {
+    .progress_bar {
+
+    }
+}
 

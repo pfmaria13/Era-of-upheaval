@@ -66,32 +66,6 @@ button {
     line-height: unset !important;
 }
 
-.dictionary-word {
-    color: #9FC625;
-    transition: .75s;
-    font-size: 26px;
-}
-
-.dictionary-word:hover {
-    color: #93B91E;
-    .dictionary-word-popup {
-        visibility: unset;
-    }
-}
-
-.dictionary-word-popup {
-    visibility: hidden;
-    position: absolute;
-    border-radius: 7px;
-    background: #6C6174;
-    max-width: 500px;
-    text-align: left;
-    padding: 20px 30px;
-    color: white;
-    font-size: 24px;
-    z-index: 10;
-}
-
 .site-header {
     background: white; !important;
     z-index: 10;
@@ -1025,10 +999,10 @@ ul, li, ol {
 .btn-secondary {
     --bs-btn-color: #9FC625 !important;
     --bs-btn-bg: unset !important;
-    --bs-btn-border-color: #fff !important; !important;
+    --bs-btn-border-color: unset !important; !important;
     --bs-btn-hover-color: #93B91E !important;
     --bs-btn-hover-bg: unset !important;
-    --bs-btn-hover-border-color: #fff !important;
+    --bs-btn-hover-border-color: unset !important;
     --bs-btn-focus-shadow-rgb: 130, 138, 145 !important;
     --bs-btn-active-color: #9FC625 !important;
     --bs-btn-active-bg: unset !important;
