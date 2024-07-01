@@ -235,7 +235,10 @@ btnPage9Choice1.addEventListener("click", () => {
 
 btnPage17Choice1.addEventListener("click", () => {
     page18.style.display = "flex";
-    page17Choice1.style.display = "none";
+    page18.scrollIntoView({block: "center", behavior: "smooth"});
+    setTimeout(() => {
+        page17Choice1.style.display = "none";
+    }, 700);
     Change_bar(li9, 'is-active', ' is-complete');
     Change_bar(li10, 'in-progress', ' is-active');
     $.ajax({
