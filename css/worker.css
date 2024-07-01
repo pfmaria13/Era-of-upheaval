@@ -153,7 +153,7 @@ body {
 }
 
 .preface {
-    display: none;
+    display: flex;
     background-image: url("../img/worker/page1-back.png");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -433,8 +433,6 @@ img { pointer-events: none; }
 }
 
 .page8 {
-    display: flex;
-
     background-image: url("../img/worker/page8-back.png");
     padding: 155px 0 155px 155px;
 }
@@ -519,7 +517,7 @@ img { pointer-events: none; }
 
 .page10 {
     background-image: url("../img/worker/page10-back.png");
-    padding: 120px 0 140px 155px;
+    padding: 120px 0 80px 155px;
 }
 
 .page10-bottom {
@@ -543,13 +541,8 @@ img { pointer-events: none; }
     margin-bottom: -80px;
 }
 
-.page10-choice1 {
-    height: 281px;
-}
-
 .page10-choice2 {
     margin-top: 48px;
-    height: 157px;
 }
 
 .page11-choice1 {
@@ -666,6 +659,8 @@ img { pointer-events: none; }
 
 .page13-choice1-img {
     scale: 1.3;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 .button-page13-choice2, .button-page13-choice1 {
@@ -717,9 +712,10 @@ img { pointer-events: none; }
     padding: 155px 0 188px 155px;
 }
 
-.page15-bottom, .page15-bottom {
+.page15-bottom {
     display: flex;
     justify-content: space-between;
+    column-gap: 20px;
 }
 
 .page15-choice2-img {
@@ -744,6 +740,7 @@ img { pointer-events: none; }
 .page15-text3 {
     padding-top: 190px;
     font-size: 28px;
+    width: 430px;
     font-family: Mont-Semibold;
 }
 
@@ -776,11 +773,11 @@ img { pointer-events: none; }
 }
 
 .page16-text1 {
-    padding-right: 155px;
+    padding-right: 5vw;
 }
 
 .page16-text2 {
-    padding-right: 384px;
+    padding-right: 15vw;
 }
 
 .page16-choice1 {
@@ -909,20 +906,19 @@ img { pointer-events: none; }
 }
 
 .more-lit-page {
-    padding-left: 155px;
     position: fixed;
     top: 50px;
-    left: 155px;
-    height: 764px;
+    left: 150px;
+    height: 78vh;
     display: none;
     margin: 155px 75px 65px 0;
     filter: drop-shadow(0 0 20px rgba(45,29,56,0.2));
     border-radius: 24px;
     background-color: white;
-    width: 1210px;
-    font-size: 24px;
+    width: 88vw;
+    font-size: 26px;
     text-align: left;
-    padding: 32px 45px 32px 45px;
+    padding: 60px 60px;
 }
 
 .more-lit-li {
@@ -1018,6 +1014,10 @@ ul, li, ol {
     .choice {
         font-size: 24px;
     }
+    .more-lit-page {
+        font-size: 24px;
+        padding: 32px 45px 32px 45px;
+    }
     .page2 {
         padding-top: 120px;
     }
@@ -1072,7 +1072,7 @@ ul, li, ol {
         justify-content: space-between;
     }
     .page10-img {
-        scale: 1.1;
+        scale: 1;
         margin: 0 80px 0 0 ;
     }
     .page16-bottom {
@@ -1098,7 +1098,7 @@ ul, li, ol {
 }
 @media screen and (max-width: 1750px) {
     .page10-img {
-        scale: 1.1;
+        scale: 1;
         margin: 0;
     }
     .page11-choice2-img {
@@ -1137,6 +1137,11 @@ ul, li, ol {
     }
     .page17-choice2-img {
         margin-top: -100px;
+    }
+    .more-lit-page {
+        font-size: 22px;
+        margin-top: 100px;
+        height: 80vh;
     }
 }
 @media screen and (max-height: 975px) {
@@ -1204,10 +1209,12 @@ ul, li, ol {
         padding-top: 100px;
     }
     .page10 {
-        padding-top: 80px;
+        padding-top: 100px;
     }
     .page10-img {
-        scale: 0.8;
+        width: 550px;
+        height: 400px;
+        margin-top: 20px;
     }
     .page11-text3 {
         padding-top: 180px;
@@ -1215,22 +1222,26 @@ ul, li, ol {
     .page11-choice2-img {
         margin-top: -50px;
     }
+    .page13-choice1-img {
+        width: 600px;
+    }
     .page15-choice2-img {
-        scale: 0.8;
-        margin-top: -50px;
+        height: 350px;
+        width: 600px;
+        margin-top: 0;
     }
     .page16-text1, .page16-text2, .page16-text3, .word-vrem-btn, .word-otrek, .word-konf {
         font-size: 22px;
     }
     .page16-img {
-        margin-top: -50px;
+        margin-top: -10px;
     }
     .page17-choice1-img {
-        scale: 0.8;
-        margin: 0;
+        width: 680px;
+        margin-top: 20px;
     }
     .page17-choice2-img {
-        scale: 0.9;
+        width: 700px;
     }
 
 }
@@ -1248,7 +1259,7 @@ ul, li, ol {
     .you-lose {
         font-size: 24px;
     }
-    .button-play-again {
+    .button-play-again, .more-lit, .play-again-button {
         scale: 0.8;
     }
     .page5-choice1 {
@@ -1304,32 +1315,47 @@ ul, li, ol {
         width: 550px;
         margin-top: -50px;
     }
-    .page9-choice1-img, .page9-choice2-img {
-        scale: 0.8;
+    .page9-choice2-img {
+        width: 700px;
+    }
+    .page9-choice1-img {
+        width: 700px;
+    }
+    .page10 {
+        padding-top: 80px;
     }
     .page11-choice1-img {
-        scale: 0.8;
-        margin-top: -40px;
+        width: 650px;
+        margin-top: 20px;
     }
     .page11-choice2-img {
+        width: 600px;
         margin-top: -100px;
     }
     .page12 {
         padding: 100px 40px 0 155px;
     }
     .page12-buttons {
-        padding-top: 10px;
+        padding-top: 30px;
+    }
+    .page12-choice1, .page12-choice2 {
+        height: 290px;
     }
     .page13-choice2-img {
-        margin-top: -100px;
+        margin-top: -50px;
+        width: 600px;
+    }
+    .page15-choice1-img {
+        width: 700px;
+        margin-top: 40px;
     }
     .page16-choice1 {
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .page16-img {
-        width: 400px;
+        width: 490px;
+        margin-top: -40px;
         height: 300px;
-        margin-top: -50px;
     }
     .page16 {
         padding-top: 100px;
@@ -1339,18 +1365,32 @@ ul, li, ol {
         font-size: 22px;
         padding: 20px 35px;
     }
-    .page17-choice1-img {
-        margin-top: -30px;
-    }
     .page17-choice1 {
         padding-top: 110px;
     }
     .page17-choice2-img {
-        scale: 0.8;
-        margin-top: -150px;
+        width: 600px;
+        margin-top: 0;
+    }
+    .page17-choice2 {
+        padding-top: 110px;
     }
     .button-page17-choice2 {
         margin-top: 170px;
+    }
+    .page15-choice2 {
+        padding-top: 120px;
+    }
+    .page17-choice1-img {
+        width: 600px;
+        margin-top: 30px;
+    }
+    .more-lit-page {
+        font-size: 20px;
+        height: 77vh;
+    }
+    .more-lit-li1, .more-lit-li {
+        padding-bottom: 3px;
     }
 }
 @media screen and (max-height: 780px) {
@@ -1360,6 +1400,11 @@ ul, li, ol {
     }
     .btn-secondary-choice {
         --bs-btn-font-size: 20px !important;
+    }
+    .more-lit-page {
+        font-size: 16px;
+        margin-top: 80px;
+        height: 75vh;
     }
     .site-header {
         background: white; !important;
@@ -1418,6 +1463,114 @@ ul, li, ol {
     .page8 {
         padding-top: 70px;
     }
+    .page9-choice1-img {
+        margin-top: 20px;
+        width: 500px;
+    }
+    .page10 {
+        padding-top: 60px;
+    }
+    .page10-img {
+        width: 500px;
+        height: 350px;
+        margin-top: 0;
+    }
+    .page11-choice1-img {
+        width: 520px;
+    }
+    .button-page11-choice1 {
+        margin-top: 300px;
+    }
+    .page11-choice1 {
+        padding-top: 80px;
+    }
+    .page11-choice2 {
+        padding-top: 100px;
+    }
+    .page11-text3 {
+        padding-top: 100px;
+    }
+    .page12-choice1, .page12-choice2 {
+        height: 240px;
+    }
+    .page13-choice1-img {
+        width: 500px;
+        margin-top: 0;
+    }
+    .page13-text3 {
+        padding-top: 30px;
+    }
+    .page13-choice1 {
+        padding-top: 80px;
+    }
+    .button-page13-choice2 {
+        margin-top: 150px;
+    }
+    .page13-choice2-img {
+        width: 500px;
+    }
+    .page14-choice1, .page14-choice2 {
+        height: 250px;
+    }
+    .page14 {
+        padding-top: 70px;
+    }
+    .page14-buttons {
+        padding-top: 30px;
+    }
+    .page15-choice1-img {
+        width: 550px;
+        margin-top: 0;
+    }
+    .button-page15-choice1 {
+        margin-top: 200px;
+    }
+    .page15-choice2 {
+        padding-top: 80px;
+    }
+    .page15-choice2-img {
+        height: 300px;
+        width: 500px;
+    }
+    .page15-text3 {
+        padding-top: 100px;
+    }
+    .page16 {
+        padding-top: 80px;
+    }
+    .page16-choice1 {
+        margin-top: 10px;
+    }
+    .page16-img {
+        width: 400px;
+        height: 260px;
+        margin-top: -30px;
+    }
+    .page16-text1, .page16-text2, .page16-text3 {
+        font-size: 20px;
+    }
+    .btn-secondary-page16 {
+        --bs-btn-font-size: 20px;
+    }
+    .page17-choice1 {
+        padding-top: 70px;
+    }
+    .page17-choice1-img {
+        width: 500px;
+    }
+    .page17-choice2-img {
+        width: 500px;
+        margin-top: -30px;
+    }
+    .page17-choice2 {
+        padding-top: 80px;
+    }
+    .page18 {
+        padding-top: 100px;
+    }
+    .page18-buttons {
+        margin-top: 80px;
+    }
 }
 
 @media screen and (max-height: 750px) {
@@ -1434,11 +1587,14 @@ ul, li, ol {
         height: 270px;
         font-size: 18px;
     }
+    .page9-choice2-img {
+        width: 600px;
+    }
 
 }
 
 @media screen and (max-height: 640px) {
-    .preface {
+    .preface, .page6 {
         padding-top: 60px;
     }
     .button-page1 {
@@ -1446,9 +1602,6 @@ ul, li, ol {
     }
     .page2-buttons {
         padding-top: 10px;
-    }
-    .page2 {
-        padding-top: 70px;
     }
     .page3-choice1, .page3-choice2 {
         padding-top: 100px;
@@ -1460,9 +1613,6 @@ ul, li, ol {
         height: 250px;
         font-size: 18px;
     }
-    .page5-choice1 {
-        padding-top: 70px;
-    }
     .page5-img {
         width: 400px;
     }
@@ -1471,9 +1621,6 @@ ul, li, ol {
     }
     .btn-secondary-page6 {
         --bs-btn-font-size: 18px !important;
-    }
-    .page6 {
-        padding-top: 60px;
     }
     .page7-choice1 {
         padding-top: 80px;
@@ -1486,10 +1633,123 @@ ul, li, ol {
     .page7-bottom {
         padding-top: 0;
     }
-    .page8-choice2 {
+    .page8-choice2, .page10-choice2 {
         margin-top: 20px;
     }
     .page8-img {
         width: 350px;
+    }
+    .page9-choice1, .page9-choice2, .page5-choice1, .page2 {
+        padding-top: 70px;
+    }
+    .page9-choice1-img {
+        width: 400px;
+    }
+    .page9-choice2-img {
+        width: 500px;
+    }
+    .page10 {
+        padding-top: 40px;
+    }
+    .page10-img {
+        width: 450px;
+        height: 300px;
+    }
+    .page11-choice1-img {
+        width: 400px;
+        margin-top: 0;
+    }
+    .button-page11-choice1 {
+        margin-top: 200px;
+    }
+    .page11-text3 {
+        padding-top: 50px;
+    }
+    .page11-choice2-img {
+        width: 500px;
+    }
+    .page12-choice1, .page12-choice2 {
+        height: 200px;
+        font-size: 18px;
+    }
+    .page12 {
+        padding-top: 60px;
+    }
+    .page13-text3 {
+        padding-bottom: 10px;
+    }
+    .page13-choice1-img {
+        width: 400px;
+    }
+    .you-lose {
+        font-size: 22px;
+    }
+    .page13-choice1 {
+        padding-top: 60px;
+    }
+    .page13-choice2 {
+        padding-top: 70px;
+    }
+    .page13-choice2-img {
+        width: 400px;
+    }
+    .page14 {
+        padding-top: 50px;
+    }
+    .page14-choice1, .page14-choice2 {
+        height: 200px;
+        font-size: 18px;
+    }
+    .page15-choice1-img {
+        width: 430px;
+    }
+    .button-page15-choice1 {
+        margin-top: 150px;
+    }
+    .page15-choice1 {
+        padding-top: 80px;
+    }
+    .page15-text3 {
+        padding-top: 50px;
+    }
+    .page15-choice2-img {
+        height: 250px;
+        width: 450px;
+        margin-top: -50px;
+    }
+    .page16-choice2 {
+        margin-top: 20px;
+    }
+    .page16 {
+        padding-top: 60px;
+    }
+    .page16-img {
+        display: none;
+    }
+    .page16-left {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    .page16-choice1, .page16-choice2 {
+        height: 100px;
+        margin-top: 30px;
+    }
+    .button-page17-choice1 {
+        margin-top: 105px;
+    }
+    .page17-choice1-img {
+        width: 400px;
+    }
+    .button-page17-choice2 {
+        margin-top: 130px;
+    }
+    .page17-choice2-img {
+        width: 400px;
+    }
+    .page18 {
+        padding-top: 50px;
+    }
+    .page18-buttons {
+        margin-top: 50px;
     }
 }

@@ -174,7 +174,7 @@ li.li9 .is-active {
     }
 }
 
-@media screen and (max-height: 888px) {
+@media screen and (max-height: 880px) {
     .progress_bar {
         height: 64px;
         width: 580px;
@@ -206,7 +206,7 @@ li.li9 .is-active {
     }
 }
 
-@media screen and (max-height: 788px) {
+@media screen and (max-height: 780px) {
     .progress_bar {
         height: 64px;
         width: 500px;

@@ -274,13 +274,13 @@ body {
 }
 
 .main-choice-text1 {
-    width: 1680px;
+    margin-right: 10vw;
     font-size: 26px;
     padding: 72px 20px 16px 20px;
 }
 
 .main-choice-text2 {
-    width: 1680px;
+    margin-right: 10vw;
     font-size: 26px;
     padding: 0 20px 0 20px;
 }
@@ -288,7 +288,7 @@ body {
 .main-choices {
     display: flex;
     justify-content: space-between;
-    padding: 64px 20px 0 20px;
+    padding: 64px 180px 0 180px;
 }
 
 .peasant {
@@ -465,7 +465,6 @@ body {
     }
     .main-choice-text1, .main-choice-text2 {
         font-size: 24px;
-        width: 1350px;
     }
     .site-header-choice {
         scale: 1;
@@ -473,6 +472,9 @@ body {
     }
     .logo2 {
         margin-right: 290px;
+    }
+    .main-choices {
+        padding: 64px 40px 0 40px;
     }
 }
 
@@ -493,9 +495,6 @@ body {
     }
     .team-historian-photo, .team3-photo, .team2-photo {
         column-gap: 20px;
-    }
-    .main-choice-text1, .main-choice-text2 {
-        width: 1004px;
     }
     .logo2 {
         margin-right: 210px;
@@ -544,9 +543,6 @@ body {
         scale: 0.92;
         padding-top: 0;
     }
-    .main-choice-text1, .main-choice-text2 {
-        width: 1404px;
-    }
     .main-choice-text1 {
         padding-top: 40px;
     }
@@ -593,7 +589,7 @@ body {
         padding-top: 217px;
     }
     .main-choice-text1, .main-choice-text2 {
-        font-size: 21px;
+        font-size: 18px;
     }
     .main-choice-text1 {
         padding-top: 40px;
@@ -608,9 +604,6 @@ body {
 }
 
 @media screen and (max-width: 1420px) {
-    .main-choice-text1, .main-choice-text2 {
-        width: 1200px;
-    }
 }
 
 .page-row1-mobile {
@@ -834,8 +827,6 @@ body {
 
     .main-choice-text2 {
         font-size: 10px;
-        width: 416px;
-        height: 26px;
         padding: 4px 0 0;
     }
 
