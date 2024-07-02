@@ -140,43 +140,8 @@ body {
 .choice:hover {
     filter: drop-shadow(0 0 30px rgba(45,29,56, 0.5));
 }
-
-
-.dictionary-word {
-    color: #DE643B;
-    transition: .75s;
-    font-size: 26px;
-}
-
-.dictionary-word:hover {
-    color: #CF5026;
-    .dictionary-word-popup {
-        visibility: unset;
-    }
-}
-
-.dictionary-word-popup {
-    visibility: hidden;
-    position: absolute;
-    border-radius: 7px;
-    background: #6C6174;
-    max-width: 800px;
-    text-align: left;
-    padding: 20px 30px;
-    color: white;
-    font-size: 24px;
-    z-index: 11;
-}
-
-.word-teatr {
-    left: 40px;
-    top: 90px;
-}
-
-.word-flyki {
-    width: 800px;
-    top: -60px;
-    left: 50px;
+.play-again-mobil {
+   display: none;
 }
 .button-next {
     display: flex;
@@ -431,11 +396,14 @@ p {
 .page5-choice1-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .page5-choice1-text {
     width: 900px;
+}
+
+.button-page5-choice1 {
+    margin-left: 55px;
 }
 
 .page5-choice1-text2 {
@@ -1570,6 +1538,9 @@ ul, li, ol {
     .page10-left {
         padding-top: 30px;
     }
+    .play-again-button, .more-lit {
+        scale: 0.8;
+    }
 }
 @media screen and (max-height: 780px) {
     p, .choice {
@@ -1579,7 +1550,6 @@ ul, li, ol {
         --bs-btn-font-size: 20px !important;
     }
     .site-header {
-        background: white; !important;
         z-index: 10;
         display: flex;
         padding: 20px 40px 0 40px;
@@ -1899,5 +1869,307 @@ ul, li, ol {
     }
     .button-page17-choice1 {
         margin-top: 150px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    p {
+        font-size: 10px;
+        padding-bottom: 2px;
+        width: 93.5vw !important;
+    }
+    .tooltip-inner {
+        font-size: 10px !important;
+    }
+    .choice {
+        font-size: 10px;
+        padding: 16px;
+        border-radius: 12px;
+        margin-top: 8px;
+        width: 272px;
+    }
+
+    .btn-secondary {
+        --bs-btn-font-size: 10px !important;
+    }
+    .page {
+        height: 89vh;
+        width: 100vw;
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+    .site-header {
+        z-index: 10;
+        display: flex;
+        padding: 16px 40px 0 40px;
+        position: sticky; !important;
+        top: 0;
+        width: 100%;
+        background-color: unset;
+    }
+    .header-text {
+        margin-left: 15px;
+        margin-top: 5px;
+        height: unset;
+        width: 300px;
+    }
+    .header-text-up {
+        font-size: 28px;
+        padding-bottom: 0;
+        width: 300px !important;
+    }
+    .header-text-bottom {
+        font-size: 22px;
+        padding-bottom: 0;
+        margin-top: -5px;
+        width: 300px !important;
+    }
+
+    .logo {
+        scale: 1;
+        width: 39px;
+        height: 39px;
+    }
+    .header-text-up {
+        font-size: 14px;
+        line-height: unset;
+    }
+    .header-text-bottom {
+        font-size: 10px;
+        line-height: unset;
+    }
+    .play-again {
+        display: none;
+    }
+    .play-again-mobil {
+        display: flex;
+        width: 36px;
+        height: 34px;
+        margin-top: 3px;
+        transition: 0.7s;
+        margin-left: auto;
+        background-image: url("../img/merchant/btn-play-again-mobil.png");
+    }
+    .play-again-mobil:hover {
+        background-image: url("../img/merchant/btn-play-again-mobil-hover.png");
+    }
+    .button-play-again {
+        scale: 1;
+        width: 155px;
+        height: 28px;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-left: 59px;
+    }
+    .you-lose {
+        font-size: 12px;
+    }
+    .preface {
+        display: none;
+        height: 89vh;
+        width: 100vw;
+        padding: 40px 40px 40px 40px;
+        background-image: url("../img/merchant/page1-mob-back.png");
+    }
+    .preface-heading {
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+    .preface-text {
+        width: 600px;
+    }
+    .button-next {
+        text-indent: -9999em;
+        background-image: url(../img/merchant/btn-next-mobil.png);
+        background-color: unset;
+        width: 36px;
+        height: 32px;
+        position: fixed;
+        bottom: 15px;
+        left: 540px;
+        scale: 1;
+        margin: 0;
+    }
+    .button-next:hover {
+        background-image: url(../img/merchant/btn-next-mobil-hover.png);
+        background-color: unset;
+    }
+    .page2-choice3 {
+        height: unset;
+    }
+    .page2-img {
+        width: 290px;
+        height: 170px;
+    }
+    .page2 {
+        background-image: url("../img/merchant/page2-back-mob.png");
+    }
+    .page2-text {
+        width: 93.5vw;
+        padding-right: 300px;
+    }
+    .page3-choice1 {
+        background-image: url("../img/merchant/page3-choice1-mob-back.png");
+    }
+    .page3-text1, .page3-choice1-text2 {
+        padding-right: 48vw;
+        width: 93.5vw;
+    }
+    .page3-choice1-img {
+        width: 300px;
+        height: 200px;
+        margin-top: -80px;
+        margin-left: -300px;
+    }
+    .page3-choice2 {
+        background-image: url("../img/merchant/page3-choice2-mob-back.png");
+    }
+    .page3-choice2-img {
+        width: 290px;
+        height: 200px;
+        margin: -120px 0 0 300px;
+    }
+    .page3-choice2-text {
+        padding-right: 52vw;
+    }
+    .page3-choice3 {
+        padding-top: 30px;
+        background-image: url("../img/merchant/page3-choice3-mob-back.png");
+    }
+    .page3-choice3-text1 {
+        padding-right: 37vw;
+    }
+    .page3-choice3-text2 {
+        padding-right: 51vw;
+    }
+    .page3-choice3-img {
+        width: 250px;
+        height: 160px;
+        margin: -55px 0 0 340px;
+    }
+    .merchant {
+        display: flex;
+        flex-direction: row;
+    }
+    .page4 {
+        padding-top: 30px;
+        background-image: url("../img/merchant/page4-mob-back.png");
+    }
+    .page4-text {
+        padding-right: 38vw;
+    }
+    .page4-img {
+        height: 200px;
+        margin: -40px -40px 0 0;
+    }
+    .page5-choice1 {
+        background-image: url("../img/merchant/page5-choice1-mob-back.png");
+    }
+    .page5-choice1-text2 {
+        padding: 30px 0 24px 0;
+    }
+    .page5-choice1-text, .page5-choice2-text {
+        padding-right: 60vw;
+    }
+    .page5-choice1-bottom {
+        padding-top: 0;
+    }
+    .page5-choice1-img {
+        width: 350px;
+        margin-top: -130px;
+        margin-left: -350px;
+    }
+    .page5-choice2 {
+        background-image: url("../img/merchant/page5-choice2-mob-back.png");
+    }
+    .page5-choice2-img {
+        width: 380px;
+        height: 257px;
+        margin: -135px 0 0 200px;
+    }
+    .page6 {
+        padding-top: 30px;
+        background-image: url("../img/merchant/page6-mob-back.png");
+    }
+    .page6-text {
+        padding-right: 27vw;
+    }
+    .page6-bottom {
+        padding-top: 0;
+    }
+    .button-page6 {
+        margin-bottom: 0;
+    }
+    .page6-img {
+        width: 240px;
+        height: 150px;
+        scale: 1;
+        margin-top: 10px;
+    }
+    .page7-choice1 {
+        background-image: url("../img/merchant/page7-choice1-mob-back.png");
+    }
+    .page7-choice1-text, .page7-choice2-text {
+        padding-right: 49vw;
+    }
+    .page7-img, .page7-choice2-img {
+        width: 326px;
+        scale: 1;
+    }
+    .page7-img {
+        margin-left: 300px;
+        margin-top: -60px;
+    }
+    .page7-choice2-img {
+        margin-left: 250px;
+        margin-top: -95px;
+    }
+    .page7-choice2 {
+        background-image: url("../img/merchant/page7-choice2-mob-back.png");
+    }
+    .page7-choice3 {
+        background-image: url("../img/merchant/page7-choice3-mob-back.png");
+    }
+    .page7-choice3-img {
+        width: 310px;
+        margin: -60px 0 0 270px;
+    }
+    .page7-choice3-text {
+        padding-right: 55vw;
+    }
+    .page8 {
+        background-image: url("../img/merchant/page8-mob-back.png");
+    }
+    .page8-text {
+        padding-right: 38vw;
+    }
+    .page8-img {
+        width: 275px;
+        height: 168px;
+        margin-top: -10px;
+    }
+    .page9-choice1 {
+        background-image: url("../img/merchant/page9-choice1-mob-back.png");
+    }
+    .page9-choice1-text1, .page9-choice1-text2 {
+        padding-right: 45vw;
+    }
+    .page9-choice1-text3 {
+        padding: 15px 0 24px 0;
+    }
+    .page9-choice1-img {
+        height: 276px;
+        margin: -105px 0 0 -220px;
+    }
+    .page9-choice2 {
+        display: flex;
+        background-image: url("../img/merchant/page9-choice2-mob-back.png");
+    }
+    .page9-choice2-text1, .page9-choice2-text2 {
+        padding-right: 49vw;
+    }
+    .page9-choice2-img {
+        width: 323px;
+        margin: -100px 0 0 290px;
     }
 }

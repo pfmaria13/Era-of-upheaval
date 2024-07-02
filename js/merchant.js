@@ -97,10 +97,10 @@ function NextPage(btn, nextPage, previousPage) {
 function NextPageWithBar(btn, nextPage, previousPage, li1, li2, li3) {
     btn.addEventListener("click", () => {
         nextPage.style.display = "flex";
-        nextPage.scrollIntoView({block: "center", behavior: "smooth"});
+        nextPage.scrollIntoView({block: "start", behavior: "smooth"});
         setTimeout(() => {
             previousPage.style.display = "none"
-        }, 600);
+        }, 400);
         Change_bar(li1, 'is-active', ' is-complete');
         Change_bar(li2, 'in-progress', ' is-active');
         li3.className += ' in-progress';

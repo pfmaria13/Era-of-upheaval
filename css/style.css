@@ -612,7 +612,7 @@ body {
 
 
 @media screen and (max-height: 500px) {
-    .logo {
+    .logo2, .logo {
         width: 39px;
         height: 39px;
         margin-top: 16px;

@@ -1455,6 +1455,27 @@ ul, li, ol {
         font-size: 22px;
         padding: 25px 40px;
     }
+    .site-header {
+        background: white; !important;
+        z-index: 10;
+        display: flex;
+        padding: 20px 40px 0 40px;
+        position: sticky; !important;
+        top: 0;
+        width: 100%;
+    }
+    .header-text-up {
+        font-size: 28px;
+        padding-bottom: 0;
+    }
+    .header-text-bottom {
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+
+    .logo, .button-next, .play-again {
+        scale: 0.8;
+    }
     .btn {
         --bs-btn-font-size: 22px !important;
     }
