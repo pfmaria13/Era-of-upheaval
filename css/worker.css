@@ -24,6 +24,7 @@ body {
     background-color: white;
     font-family: Mont;
     color: #2D1D38;
+    line-height: unset;
 }
 
 .site-header {
@@ -1293,9 +1294,13 @@ ul, li, ol {
         font-size: 20px;
         height: 300px;
     }
-    .page4-text, .word-krizis {
+    .page4-text {
         font-size: 20px;
     }
+    .btn-page4 {
+        --bs-btn-font-size: 20px !important;
+    }
+
     .page5-img {
         width: 600px;
     }

@@ -100,7 +100,7 @@ function NextPageWithBar(btn, nextPage, previousPage, li1, li2, li3) {
         nextPage.scrollIntoView({block: "start", behavior: "smooth"});
         setTimeout(() => {
             previousPage.style.display = "none"
-        }, 400);
+        }, 600);
         Change_bar(li1, 'is-active', ' is-complete');
         Change_bar(li2, 'in-progress', ' is-active');
         li3.className += ' in-progress';

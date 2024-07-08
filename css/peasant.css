@@ -1045,7 +1045,7 @@ ul, li, ol {
         margin: 243px 0 0 82px;
     }
     .page3-choice1 {
-        padding-top: 60px;
+        padding-top: 90px;
     }
     .button-next {
         scale: 1;
@@ -1326,7 +1326,7 @@ ul, li, ol {
         font-size: 24px;
     }
     .page2 {
-        padding: 0 155px 0 155px;
+        padding: 40px 155px 0 155px;
     }
     .page2-text {
         padding-top: 60px !important;
@@ -1554,9 +1554,6 @@ img { pointer-events: none; }
     .page7-choice2-img {
         width: 700px;
     }
-    .page8 {
-        padding-top: 40px;
-    }
     .button-page8-choice1 {
         margin-bottom: 20px;
     }
@@ -1564,7 +1561,7 @@ img { pointer-events: none; }
         height: 490px;
     }
     .page8 {
-        padding-top: 50px;
+        padding-top: 80px;
     }
     .button-page9-choice1, .button-page13-choice1 {
         margin-top: 200px;
@@ -1668,6 +1665,9 @@ img { pointer-events: none; }
     .page17-choice2 {
         padding-top: 50px;
     }
+    .page3-choice1-img {
+        width: 600px;
+    }
 }
 @media screen and (max-height: 750px) {
     p, .dictionary-word {
@@ -1722,9 +1722,6 @@ img { pointer-events: none; }
         margin-top: 80px;
         /*height: 75vh;*/
     }
-    .page3-choice1-img {
-        width: 600px;
-    }
     .button-page3-choice1 {
         margin-top: 130px;
     }
@@ -1766,9 +1763,6 @@ img { pointer-events: none; }
     .page8 {
         padding-top: 50px;
     }
-    /*.page9-choice1-img {*/
-    /*    width: 500px;*/
-    /*}*/
     .page9-choice1 {
         padding-top: 60px;
     }
@@ -1818,6 +1812,9 @@ img { pointer-events: none; }
     }
     .page17-choice1-text2 {
         margin-top: 100px !important;
+    }
+    .page3-choice1-img {
+        width: 500px;
     }
 }
 
@@ -1923,5 +1920,8 @@ img { pointer-events: none; }
     }
     .page17-choice2 {
         padding-top: 30px;
+    }
+    .page2 {
+        padding-top: 0;
     }
 }

@@ -637,8 +637,8 @@ p {
 }
 
 .button-page10-choice1, .button-page10-choice2 {
-    width: 557px;
-    height: 157px;
+    /*width: 557px;*/
+    /*height: 157px;*/
     margin-bottom: 48px;
     text-align: left;
     padding: 32px 48px 32px 48px;
@@ -795,14 +795,24 @@ p {
     padding: 60px 72px 40px 150px;
 }
 
+.page15-choice1-img {
+    width: 700px;
+    height: 440px;
+    margin-top: 300px;
+}
+
 .page15-left {
     display: flex;
     flex-direction: column;
 }
 
-.page15-text {
+.page15-text, .page15-text2 {
     width: 1000px;
     padding-top: 105px;
+}
+
+.page15-text3 {
+    width: 1000px;
 }
 
 .button-page15-choice1, .button-page15-choice2 {
@@ -1155,8 +1165,8 @@ ul, li, ol {
     .page14-text2 {
         width: 786px;
     }
-    .page15-text {
-        width: 673px;
+    .page15-text, .page15-text2, .page15-text3 {
+        width: 580px;
     }
     .page16-img {
         scale: 1;
@@ -1347,6 +1357,13 @@ ul, li, ol {
     .page14 {
         padding-top: 60px;
     }
+    .page15-choice1-img {
+        width: 570px;
+        height: 340px;
+    }
+    .button-page15-choice1, .button-page15-choice2 {
+        margin-top: 200px;
+    }
     .button-page14-choice1, .button-page14-choice2 {
         font-size: 22px;
     }
@@ -1490,7 +1507,7 @@ ul, li, ol {
     .page13 {
         padding-top: 90px;
     }
-    .page15-text {
+    .page15-text, .page15-text2 {
         padding-top: 30px;
     }
     .button-page15-choice1, .button-page15-choice2 {
@@ -1540,6 +1557,11 @@ ul, li, ol {
     }
     .play-again-button, .more-lit {
         scale: 0.8;
+    }
+    .page15-choice1-img {
+        width: 470px;
+        height: 300px;
+        margin-top: 200px;
     }
 }
 @media screen and (max-height: 780px) {
@@ -1637,6 +1659,7 @@ ul, li, ol {
     .button-page13 {
         margin-top: 200px;
     }
+
     .page16-text2 {
         padding-bottom: 20px;
     }
@@ -1700,9 +1723,9 @@ ul, li, ol {
     .page10-img {
         width: 450px;
     }
-    .button-page10-choice1, .button-page10-choice2{
-        height: 120px;
-    }
+    /*.button-page10-choice1, .button-page10-choice2{*/
+    /*    height: 120px;*/
+    /*}*/
     .page13-img {
         width: 600px;
         margin-top: -50px;
@@ -1870,6 +1893,9 @@ ul, li, ol {
     .button-page17-choice1 {
         margin-top: 150px;
     }
+    .page15-choice1-img {
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-height: 500px) {
@@ -1897,12 +1923,14 @@ ul, li, ol {
         width: 100vw;
         padding-left: 40px;
         padding-top: 40px;
+        margin-top: 40px;
+
     }
     .site-header {
         z-index: 10;
         display: flex;
         padding: 16px 40px 0 40px;
-        position: sticky; !important;
+        position: fixed; !important;
         top: 0;
         width: 100%;
         background-color: unset;
@@ -1965,9 +1993,9 @@ ul, li, ol {
         font-size: 12px;
     }
     .preface {
-        display: none;
         height: 89vh;
         width: 100vw;
+        margin-top: 40px;
         padding: 40px 40px 40px 40px;
         background-image: url("../img/merchant/page1-mob-back.png");
     }
@@ -2045,7 +2073,7 @@ ul, li, ol {
     .page3-choice3-img {
         width: 250px;
         height: 160px;
-        margin: -55px 0 0 340px;
+        margin: -55px 0 0 310px;
     }
     .merchant {
         display: flex;
@@ -2060,7 +2088,7 @@ ul, li, ol {
     }
     .page4-img {
         height: 200px;
-        margin: -40px -40px 0 0;
+        margin: -10px -50px 0 0;
     }
     .page5-choice1 {
         background-image: url("../img/merchant/page5-choice1-mob-back.png");
@@ -2105,6 +2133,7 @@ ul, li, ol {
         height: 150px;
         scale: 1;
         margin-top: 10px;
+        border-radius: 12px;
     }
     .page7-choice1 {
         background-image: url("../img/merchant/page7-choice1-mob-back.png");
@@ -2115,10 +2144,11 @@ ul, li, ol {
     .page7-img, .page7-choice2-img {
         width: 326px;
         scale: 1;
+        border-radius: 12px;
     }
     .page7-img {
-        margin-left: 300px;
-        margin-top: -60px;
+        margin-left: 250px;
+        margin-top: -40px;
     }
     .page7-choice2-img {
         margin-left: 250px;
@@ -2133,20 +2163,23 @@ ul, li, ol {
     .page7-choice3-img {
         width: 310px;
         margin: -60px 0 0 270px;
+        border-radius: 12px;
     }
-    .page7-choice3-text {
+    .page7-choice3-text, .page15-text {
         padding-right: 55vw;
     }
     .page8 {
         background-image: url("../img/merchant/page8-mob-back.png");
     }
-    .page8-text {
+    .page8-text, .page12-text, .page15-text2 {
         padding-right: 38vw;
     }
     .page8-img {
         width: 275px;
         height: 168px;
         margin-top: -10px;
+        border-radius: 12px;
+        margin-left: 20px;
     }
     .page9-choice1 {
         background-image: url("../img/merchant/page9-choice1-mob-back.png");
@@ -2162,14 +2195,212 @@ ul, li, ol {
         margin: -105px 0 0 -220px;
     }
     .page9-choice2 {
-        display: flex;
         background-image: url("../img/merchant/page9-choice2-mob-back.png");
     }
-    .page9-choice2-text1, .page9-choice2-text2 {
+    .page9-choice2-text1, .page9-choice2-text2, .page11-choice2-text, .page15-text3 {
         padding-right: 49vw;
     }
     .page9-choice2-img {
         width: 323px;
         margin: -100px 0 0 290px;
+        border-radius: 12px;
+
     }
+    .page10 {
+        background-image: url("../img/merchant/page10-mob-back.png");
+    }
+    .page10-img {
+        width: 340px;
+        height: 210px;
+        margin-top: -70px;
+    }
+    .page10-text1, .page10-text2, .page17-choice1-text, .page17-text {
+        padding-right: 42vw;
+    }
+    .button-page10-choice1, .button-page10-choice2 {
+        margin-bottom: 0;
+    }
+    .page10-left, .page14-bottom {
+        padding: 0;
+    }
+    .page11-choice1 {
+        background-image: url("../img/merchant/page11-choice1-mob-back.png");
+    }
+    .page11-choice1-text, .page13-text {
+        padding-right: 53vw;
+    }
+    .page11-choice1-img {
+        height: 240px;
+        margin: -20px 0 0 -300px;
+        max-width: unset;
+    }
+    .page11-choice2 {
+        background-image: url("../img/merchant/page11-choice2-mob-back.png");
+    }
+    .page11-choice2-img {
+        width: 283px;
+        margin: -40px 0 0 300px;
+        border-radius: 12px;
+    }
+    .page12 {
+        background-image: url("../img/merchant/page12-mob-back.png");
+    }
+    .page12-img {
+        max-width: unset;
+        height: 237px;
+        width: 137px;
+        margin: -30px 0 0 -220px;
+    }
+    .page13 {
+        background-image: url("../img/merchant/page13-mob-back.png");
+    }
+    .page13-img {
+        width: 350px;
+        margin-top: -110px;
+        margin-left: 220px;
+    }
+    .page14 {
+        padding-top: 30px;
+        background-image: url("../img/merchant/page14-mob-back.png");
+    }
+    .page14-img {
+        width: 240px;
+        margin-left: -20px;
+    }
+    .button-page14-choice1, .button-page14-choice2 {
+        width: 340px;
+    }
+    .page14-text2 {
+        padding-right: 47vw;
+    }
+    .page15-choice1 {
+        background-image: url("../img/merchant/page15-choice1-mob-back.png");
+    }
+    .page15-text, .page15-text2 {
+        padding-top: 0;
+    }
+    .page15-choice1-img {
+        max-width: unset;
+        width: 285px;
+        height: 175px;
+        margin: 20px 0 0 -310px;
+    }
+    .page15-choice2 {
+        background-image: url("../img/merchant/page15-choice2-mob-back.png");
+
+    }
+    .page15-choice2-img {
+        max-width: unset;
+
+        margin: 0 0 0 -260px;
+    }
+    .page16 {
+        background-image: url("../img/merchant/page16-mob-back.png");
+        padding-top: 30px;
+    }
+    .button-page16-choice1, .button-page16-choice3, .button-page16-choice2 {
+        margin-bottom: 0;
+    }
+    .page16-img {
+        width: 230px;
+        height: 200px;
+        margin-top: -40px;
+        margin-right: 20px;
+    }
+    .page16-text2 {
+        padding-right: 35vw;
+    }
+    .page16-text1 {
+        padding-right: 20vw;
+    }
+    .page16-text2 {
+        padding-bottom: 0;
+    }
+    .button-page16-choice1, .button-page16-choice3, .button-page16-choice2 {
+        width: 288px;
+    }
+    .page17-choice1 {
+        background-image: url("../img/merchant/page17-choice1-mob-back.png");
+    }
+    .page17-choice1-img {
+        margin: -20px 0 0 300px;
+        height: 178px;
+        width: 240px;
+        border-radius: 12px;
+    }
+    .page17-choice2 {
+        background-image: url("../img/merchant/page17-choice2-mob-back.png");
+    }
+    .page17-choice2-img {
+        width: 265px;
+        position: absolute;
+        margin: -272px 0 0 -263px;
+    }
+    .page17-choice3 {
+        background-image: url("../img/merchant/page17-choice3-mob-back.png");
+    }
+    .page17-choice3-img {
+        width: 240px;
+        height: 170px;
+        margin: 40px 0 0 -300px;
+        max-width: unset;
+    }
+    .page17-text3 {
+        width: 96.5vw !important;
+    }
+    .page18 {
+        background-image: url("../img/merchant/page18-mob-back.png");
+    }
+    .more-lit {
+        margin: 0;
+        width: 172px;
+        height: 48px;
+        font-size: 16px;
+        scale: 1;
+        border-radius: 4px;
+    }
+    .play-again-button {
+        width: 135px;
+        height: 48px;
+        font-size: 16px;
+        scale: 1;
+        border-radius: 4px;
+        margin-top: 0;
+    }
+    .page18-buttons {
+        scale: 1;
+        margin-top: 35px;
+    }
+    .more-lit-page {
+        font-size: 10px;
+        margin-top: 10px;
+        left: 40px;
+        padding: 16px 10px;
+        width: 89vw;
+        height: 80vh;
+        border-radius: 16px;
+        z-index: 10;
+    }
+    .more-let-btn {
+        width: 8px;
+        height: 8px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin-top: -3px;
+        background-image: url("../img/merchant/more-lit-mob.png");
+    }
+    ul {
+        padding-left: 10px !important;
+    }
+    .more-lit-li, .more-lit-li1 {
+        padding-bottom: 0 !important;
+    }
+    .more-lit-li::marker, .more-lit-li1::marker {
+         font-size: 10px;
+    }
+    .more-lit-li1, .more-lit-ul1 {
+        width: unset;
+    }
+
+
 }
