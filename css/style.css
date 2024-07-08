@@ -616,6 +616,17 @@ body {
         width: 39px;
         height: 39px;
         margin-top: 16px;
+        margin-right: 100px;
+    }
+
+    .logo1 {
+        width: 223px;
+        height: 39px;
+        margin-top: 16px;
+    }
+
+    .header {
+        margin-top: 0;
     }
 
     .main-page1-text1 {
