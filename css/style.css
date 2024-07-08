@@ -603,13 +603,10 @@ body {
     }
 }
 
-@media screen and (max-width: 1420px) {
-}
 
 .page-row1-mobile {
     display: none;
 }
-
 
 @media screen and (max-height: 500px) {
     .logo2, .logo {
