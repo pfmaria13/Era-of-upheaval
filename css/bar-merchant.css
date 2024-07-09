@@ -268,7 +268,7 @@
 }
 @media screen and (max-height: 360px) {
     .progress_bar {
-        margin-top: -20px;
+        margin-top: -28px;
         margin-left: -375px;
         width: 458px;
     }
@@ -296,17 +296,17 @@
 
 @media screen and (max-height: 345px) {
     .progress_bar {
-        margin-top: -103px;
+        margin-top: -50px;
     }
 }
 @media screen and (max-height: 328px) {
     .progress_bar {
-        margin-top: -118px;
+        margin-top: -60px;
     }
 }
-@media screen and (max-height: 314px) {
+@media screen and (max-height: 309px) {
     .progress_bar {
-        margin-top: -134px;
+        margin-top: -76px;
     }
 }
 @media screen and (max-height: 296px) {

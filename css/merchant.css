@@ -1919,11 +1919,10 @@ ul, li, ol {
         --bs-btn-font-size: 10px !important;
     }
     .page {
-        height: 89vh;
+        height: 100vh;
         width: 100vw;
         padding-left: 40px;
-        padding-top: 40px;
-        margin-top: 40px;
+        padding-top: 80px;
 
     }
     .site-header {
@@ -1993,10 +1992,10 @@ ul, li, ol {
         font-size: 12px;
     }
     .preface {
-        height: 89vh;
+        height: 100vh;
         width: 100vw;
-        margin-top: 40px;
-        padding: 40px 40px 40px 40px;
+        /*margin-top: 40px;*/
+        padding: 80px 40px 40px 40px;
         background-image: url("../img/merchant/page1-mob-back.png");
     }
     .preface-heading {
@@ -2055,13 +2054,12 @@ ul, li, ol {
     .page3-choice2-img {
         width: 290px;
         height: 200px;
-        margin: -120px 0 0 300px;
+        margin: -120px 0 0 auto;
     }
     .page3-choice2-text {
         padding-right: 52vw;
     }
     .page3-choice3 {
-        padding-top: 30px;
         background-image: url("../img/merchant/page3-choice3-mob-back.png");
     }
     .page3-choice3-text1 {
@@ -2073,14 +2071,13 @@ ul, li, ol {
     .page3-choice3-img {
         width: 250px;
         height: 160px;
-        margin: -55px 0 0 310px;
+        margin: -64px 0 0 auto;
     }
     .merchant {
         display: flex;
         flex-direction: row;
     }
     .page4 {
-        padding-top: 30px;
         background-image: url("../img/merchant/page4-mob-back.png");
     }
     .page4-text {
@@ -2111,12 +2108,11 @@ ul, li, ol {
         background-image: url("../img/merchant/page5-choice2-mob-back.png");
     }
     .page5-choice2-img {
-        width: 380px;
-        height: 257px;
-        margin: -135px 0 0 200px;
+        width: 330px;
+        height: 237px;
+        margin: -110px 0 0 auto;
     }
     .page6 {
-        padding-top: 30px;
         background-image: url("../img/merchant/page6-mob-back.png");
     }
     .page6-text {
@@ -2142,19 +2138,20 @@ ul, li, ol {
         padding-right: 49vw;
     }
     .page7-img, .page7-choice2-img {
-        width: 326px;
+        width: 300px;
         scale: 1;
         border-radius: 12px;
     }
     .page7-img {
-        margin-left: 250px;
+        margin-left: auto;
         margin-top: -40px;
     }
     .page7-choice2-img {
-        margin-left: 250px;
+        margin-left: auto;
         margin-top: -95px;
     }
     .page7-choice2 {
+        padding-right: 10px;
         background-image: url("../img/merchant/page7-choice2-mob-back.png");
     }
     .page7-choice3 {
@@ -2162,7 +2159,7 @@ ul, li, ol {
     }
     .page7-choice3-img {
         width: 310px;
-        margin: -60px 0 0 270px;
+        margin: -60px 0 0 auto;
         border-radius: 12px;
     }
     .page7-choice3-text, .page15-text {
@@ -2192,25 +2189,26 @@ ul, li, ol {
     }
     .page9-choice1-img {
         height: 276px;
-        margin: -105px 0 0 -220px;
+        margin: -85px 0 0 -220px;
     }
     .page9-choice2 {
+        padding-right: 10px;
         background-image: url("../img/merchant/page9-choice2-mob-back.png");
     }
     .page9-choice2-text1, .page9-choice2-text2, .page11-choice2-text, .page15-text3 {
         padding-right: 49vw;
     }
     .page9-choice2-img {
-        width: 323px;
-        margin: -100px 0 0 290px;
+        width: 290px;
+        margin: -100px 0 0 auto;
         border-radius: 12px;
-
     }
     .page10 {
+        display: flex;
         background-image: url("../img/merchant/page10-mob-back.png");
     }
     .page10-img {
-        width: 340px;
+        width: 300px;
         height: 210px;
         margin-top: -70px;
     }
@@ -2231,8 +2229,9 @@ ul, li, ol {
     }
     .page11-choice1-img {
         height: 240px;
-        margin: -20px 0 0 -300px;
+        margin: -20px 0 0 -210px;
         max-width: unset;
+
     }
     .page11-choice2 {
         background-image: url("../img/merchant/page11-choice2-mob-back.png");
@@ -2260,7 +2259,7 @@ ul, li, ol {
         margin-left: 220px;
     }
     .page14 {
-        padding-top: 30px;
+        padding-top: 70px;
         background-image: url("../img/merchant/page14-mob-back.png");
     }
     .page14-img {
@@ -2291,12 +2290,11 @@ ul, li, ol {
     }
     .page15-choice2-img {
         max-width: unset;
-
         margin: 0 0 0 -260px;
     }
     .page16 {
         background-image: url("../img/merchant/page16-mob-back.png");
-        padding-top: 30px;
+        padding-top: 70px;
     }
     .button-page16-choice1, .button-page16-choice3, .button-page16-choice2 {
         margin-bottom: 0;
@@ -2320,10 +2318,11 @@ ul, li, ol {
         width: 288px;
     }
     .page17-choice1 {
+        padding-right: 10px;
         background-image: url("../img/merchant/page17-choice1-mob-back.png");
     }
     .page17-choice1-img {
-        margin: -20px 0 0 300px;
+        margin: -20px 0 0 auto;
         height: 178px;
         width: 240px;
         border-radius: 12px;

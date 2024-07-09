@@ -974,10 +974,6 @@ ul, li, ol {
     display: flex;
     justify-content: space-between;
 }
-.word-kulak {
-    right: 70px;
-    top: 350px;
-}
 
 .custom-class {
     --bs-tooltip-bg: #6C6174 !important;

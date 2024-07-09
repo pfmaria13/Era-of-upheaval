@@ -570,7 +570,7 @@ body {
     .site-header, .site-header-choice {
         scale: 0.9;
         padding: 0 20px;
-        margin: -20px 0 0 -50px;
+        margin: -6px 0 0 -50px;
     }
     .main-btn-team {
         scale: 0.8;
@@ -614,6 +614,9 @@ body {
         height: 39px;
         margin-top: 16px;
         margin-right: 100px;
+    }
+    .logo3 {
+        margin-right: 0;
     }
 
     .logo1 {
