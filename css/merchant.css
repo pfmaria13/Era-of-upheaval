@@ -2204,7 +2204,6 @@ ul, li, ol {
         border-radius: 12px;
     }
     .page10 {
-        display: flex;
         background-image: url("../img/merchant/page10-mob-back.png");
     }
     .page10-img {

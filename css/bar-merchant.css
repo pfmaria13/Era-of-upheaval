@@ -220,58 +220,15 @@
 @media screen and (max-height: 500px) {
     .progress_bar {
         transform: rotate(0deg);
-        width: 658px;
-        margin-left: -360px;
-        margin-top: 40px;
-    }
-    .progress_bar .in-progress:not(:first-child):after {
-        left: -53px;
-    }
-        /*.progress_bar li:first-child {*/
-        /*    flex: 87px;*/
-        /*}*/
-
-        /*.progress_bar li:last-child {*/
-        /*    text-align: right;*/
-        /*    flex: 1px;*/
-        /*}*/
-
-        /*.progress_bar .in-progress:not(:first-child):after {*/
-        /*    left: -52px;*/
-        /*}*/
-        /*.progress_bar .is-active:not(:first-child):after {*/
-        /*    left: -60px;*/
-        /*}*/
-}
-
-@media screen and (max-height: 450px) {
-    .progress_bar {
-        margin-top: -75px;
-    }
-}
-
-@media screen and (max-height: 420px) {
-    .progress_bar {
-        margin-top: -95px;
-    }
-}
-
-@media screen and (max-height: 420px) {
-    .progress_bar {
-        margin-top: -105px;
-    }
-}
-@media screen and (max-height: 380px) {
-    .progress_bar {
-        margin-top: -123px;
-    }
-}
-@media screen and (max-height: 360px) {
-    .progress_bar {
-        margin-top: -28px;
-        margin-left: -375px;
+        position: fixed;
+        /* margin-top: -28px; */
+        /* margin-left: -375px; */
+        bottom: 324px;
+        left: -377px;
+        margin: 0;
         width: 458px;
     }
+
     .progress_bar .is-active:not(:first-child):after {
         left: -20px;
     }
@@ -294,9 +251,22 @@
     }
 }
 
+@media screen and (max-height: 360px) {
+    .progress_bar {
+        position: fixed;
+        /* margin-top: -28px; */
+        /* margin-left: -375px; */
+        bottom: 320px;
+        left: -377px;
+        margin: 0;
+        width: 458px;
+    }
+
+}
+
 @media screen and (max-height: 345px) {
     .progress_bar {
-        margin-top: -50px;
+        bottom: 318px;
     }
 }
 @media screen and (max-height: 328px) {
