@@ -119,6 +119,7 @@ body {
     color: white;
     font-size: 32px;
     font-family: Mont-Semibold !important;
+    align-items: center;
 }
 
 .button-play-again:hover {
