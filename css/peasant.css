@@ -624,6 +624,10 @@ p {
     padding-right: 100px;
 }
 
+.page12-mob {
+    display: none;
+}
+
 .button-page12-choice1, .button-page12-choice2 {
     width: 700px;
     margin: 48px 0 0 200px;
@@ -2023,10 +2027,8 @@ img { pointer-events: none; }
     }
 
     .preface {
-        display: none;
         height: 100vh;
         width: 100vw;
-        /*margin-top: 40px;*/
         padding: 80px 40px 40px 40px;
         background-image: url("../img/peasant/page1-back-mob.png");
     }
@@ -2050,7 +2052,7 @@ img { pointer-events: none; }
         bottom: 15px;
         left: 540px;
         scale: 1;
-        margin: 0;
+        margin: 0 !important;
     }
 
     .button-next:hover {
@@ -2085,7 +2087,7 @@ img { pointer-events: none; }
         background-image: url("../img/peasant/page3-choice1-3-back-mob.png");
     }
 
-    .page3-text1, .page3-choice1-text2, .page3-choice3-text {
+    .page3-text1, .page3-choice1-text2, .page3-choice3-text, .page15-choice3-text2 {
         padding-right: 43vw !important;
     }
 
@@ -2100,7 +2102,7 @@ img { pointer-events: none; }
     }
 
     .page3-choice2-text, .page3-choice2-text2, .page7-choice2-text1, .page8-text1, .page11-choice1-text, .page11-choice2-text,
-    .page13-choice2-text3 {
+    .page13-choice2-text3, .page17-choice1-text {
         padding-right: 50vw !important;
     }
 
@@ -2239,7 +2241,7 @@ img { pointer-events: none; }
         margin: 24px 0 0 59px;
     }
 
-    .page9-choice1-img {
+    .page9-choice2-img {
         width: 300px;
         height: 170px;
         margin: 0 0 0 auto;
@@ -2280,7 +2282,7 @@ img { pointer-events: none; }
 
     .page11-choice2-img {
         height: 250px;
-        margin: -10px 0 0 auto;
+        margin: -20px 0 0 auto;
     }
 
     .page11-choice2-left {
@@ -2288,15 +2290,26 @@ img { pointer-events: none; }
     }
 
     .page12 {
+        padding-right: 0;
         background-image: url("../img/peasant/page12-back-mob.png");
+    }
+
+    .page12-left {
+        width: 300px;
+    }
+
+    .page12-mob {
+        display: unset;
+        /*width: 40px !important;*/
     }
 
     .page12-img {
         height: 171px;
-        margin: 50px 0 0 -220px;
+        margin: 50px 0 0 30px;
     }
 
     .page13-choice1 {
+
         padding-right: 30px;
         background-image: url("../img/peasant/page13-choice1-back-mob.png");
     }
@@ -2319,12 +2332,16 @@ img { pointer-events: none; }
     }
 
     .page13-choice2-img {
-        width: 321px;
-        margin: -50px 0 0 0;
+        width: 290px;
+        margin: -40px 30px 0 auto !important;
+    }
+
+    .page13-choice2-bottom {
+        padding-top: 0;
     }
 
     .page13-choice2-left {
-        width: 300px;
+        width: 230px;
     }
 
     .page14 {
@@ -2340,7 +2357,6 @@ img { pointer-events: none; }
     }
 
     .page15-choice1 {
-        display: flex;
         background-image: url("../img/peasant/page15-choice1-back-mob.png");
     }
 
@@ -2350,4 +2366,163 @@ img { pointer-events: none; }
         border-radius: 12px;
     }
 
+    .page15-choice3 {
+        background-image: url("../img/peasant/page15-choice3-back-mob.png");
+    }
+
+    .page15-text2 {
+        margin-left: 0 !important;
+        padding-top: 70px;
+    }
+
+    .button-page15-choice3 {
+        margin: 24px 0 0 59px;
+    }
+
+    .page15-choice3-img {
+        height: 240px;
+        margin: 0 200px 0 -200px;
+    }
+
+    .page15-choice2 {
+        background-image: url("../img/peasant/page15-choice2-back-mob.png");
+    }
+
+    .page15-choice2-text4 {
+        padding-right: 60vw !important;
+    }
+
+    .page15-choice2-img {
+        width: 300px;
+        border-radius: 12px;
+        margin: -80px 30px 0 auto;
+    }
+
+    .page16 {
+        padding-top: 70px;
+        background-image: url("../img/peasant/page16-back-mob.png");
+    }
+
+    .page16-img {
+        width: 230px;
+        height: 170px;
+        border-radius: 12px;
+    }
+
+    .page16-bottom {
+        padding-top: 0;
+    }
+
+    .button-page16-choice1, .button-page16-choice2 {
+        width: 320px;
+    }
+
+    .page17-choice1 {
+        background-image: url("../img/peasant/page17-choice1-back-mob.png");
+    }
+
+    .page17-choice1-text2 {
+        margin: 60px 0 24px 0 !important;
+    }
+
+    .button-page17-choice1 {
+        margin-left: 59px;
+    }
+
+    .page17-choice1-img {
+        width: 270px;
+        margin: -80px 30px 0 -290px;
+        max-width: unset;
+    }
+
+    .page17-choice2-text {
+        padding-right: 55vw !important;
+    }
+
+    /*.page17-choice1-left, .page17-choice2-left {*/
+    /*    width: 250px;*/
+    /*}*/
+
+    .page17-choice2 {
+        padding-right: 150px;
+        background-image: url("../img/peasant/page17-choice2-back-mob.png");
+    }
+
+    .page17-choice2-left {
+        padding-top: 0;
+    }
+
+    .page17-choice2-img {
+        max-width: unset;
+        margin: 0 30px 0 -250px;
+    }
+
+    .page18 {
+        padding-right: 40px;
+        background-image: url("../img/peasant/page18-back-mob.png");
+    }
+
+    .page18-text {
+        padding-right: 20vw;
+    }
+
+    .more-lit {
+        margin: 0;
+        width: 172px;
+        height: 48px;
+        font-size: 16px;
+        scale: 1;
+        border-radius: 4px;
+    }
+
+    .play-again-button {
+        width: 135px;
+        height: 48px;
+        font-size: 16px;
+        scale: 1;
+        border-radius: 4px;
+        margin-top: 0;
+        border: 2px solid #9FC625;
+    }
+
+    .page18-buttons {
+        scale: 1;
+        padding-top: 35px;
+    }
+
+    .more-lit-page {
+        font-size: 10px;
+        margin-top: 10px;
+        left: 40px;
+        padding: 16px 10px;
+        width: 89vw;
+        height: 80vh;
+        border-radius: 16px;
+        z-index: 10;
+    }
+
+    .more-let-btn {
+        width: 8px;
+        height: 8px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin-top: -3px;
+        background-image: url("../img/peasant/btn-page18-mob.png");
+    }
+
+    ul {
+        padding-left: 10px !important;
+    }
+
+    .more-lit-li, .more-lit-li1 {
+        padding-bottom: 0 !important;
+    }
+
+    .more-lit-li::marker, .more-lit-li1::marker {
+        font-size: 10px;
+    }
+
+    .more-lit-li1, .more-lit-ul1 {
+        width: unset;
+    }
 }
