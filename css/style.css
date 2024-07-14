@@ -296,6 +296,8 @@ body {
     height: 475px;
     background-image: url("../img/peasant.png");
     filter: drop-shadow(0 0 10px rgba(45,29,56,0.1));
+    border-radius: 20px;
+
 }
 
 .noble {
@@ -303,6 +305,8 @@ body {
     height: 475px;
     background-image: url("../img/noble.png");
     filter: drop-shadow(0 0 20px rgba(45,29,56,0.1));
+    border-radius: 20px;
+
 }
 
 .noble:hover, .merchant:hover, .peasant:hover, .worker:hover {
@@ -613,7 +617,7 @@ body {
         width: 39px;
         height: 39px;
         margin-top: 16px;
-        margin-right: 100px;
+        margin-right: 8px;
     }
     .logo3 {
         margin-right: 0;
@@ -623,6 +627,7 @@ body {
         width: 223px;
         height: 39px;
         margin-top: 16px;
+        margin-left: 60px;
     }
 
     .header {
@@ -689,7 +694,7 @@ body {
     }
 
     .site-header {
-        width: 264px;
+        /*width: 264px;*/
         height: 39px;
         padding: 0;
     }
@@ -874,5 +879,42 @@ body {
         scale: unset;
         margin: 0;
         padding: 10px 0 0;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .worker, .merchant, .noble, .peasant {
+        height: 170px;
+    }
+    .rules-img {
+        width: 234px;
+        height: 155px;
+    }
+}
+
+@media screen and (max-height: 320px) {
+    .main-page1-text3 {
+        padding-top: 95px;
+    }
+
+    .main-page1-text2 {
+        padding-top: 65px;
+    }
+
+    .main-page1-text1 {
+        padding-top: 45px;
+    }
+    .worker, .merchant, .noble, .peasant {
+        scale: 0.8;
+    }
+    .main-choices {
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-height: 300px) {
+    .rules-img {
+        display: none;
     }
 }
