@@ -2368,6 +2368,7 @@ img { pointer-events: none; }
 
     .page8-img {
         height: 178px;
+        width: unset;
         margin: -50px 66px 0 -184px;
         content: url("../img/noble/page8-mob.png");
     }
